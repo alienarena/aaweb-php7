@@ -34,6 +34,17 @@ $CONFIG['dbPass'] = 'your_db_password_here';
 
 You may get "NO DATA" appearing in the usage graphs.
 
+The 'stats' table may be unitialized. There should be a single row in 'stats', which
+represents the time of the last update.
+
+From mysql, try
+```
+insert stats (id, lastupdated) values (0,0);
+```
+and refresh the browser page.
+
+If that doesn't help:
+
 Check the Apache2 (or other server's) error log. Example location:
 /var/log/apache2/error.log. If you see something like:
 
