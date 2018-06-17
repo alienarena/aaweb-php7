@@ -45,7 +45,7 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 	if($addlink)
 		echo "<a href=\"{$filename}?action=mapinfo&amp;id={$mapname}\">";
 
-	echo "<img border=1 alt={$mapname} width={$width} height={$height} src=\"";
+	echo "<img border=0 alt={$mapname} width={$width} height={$height} src=\"";
 	
 	$mappath = "maps/1st/{$mapfile}";
 	if(file_exists($mappath))
