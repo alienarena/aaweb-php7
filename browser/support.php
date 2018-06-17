@@ -29,6 +29,8 @@ function Generate_HTML_Headers()
 	global $CONFIG;
 	global $_starttime;
 
+	$menuHeaderImageHeight = 100;
+
 	/*  Start time for page generation */
 	$_starttime = explode( ' ', microtime() );
 	$_starttime = $_starttime[1] + $_starttime[0];
@@ -42,8 +44,41 @@ function Generate_HTML_Headers()
 	echo "        <meta name=\"keywords\" content=\"Code Red CodeRed Alien Arena 2006 2007 GE UE Uranium Edition Server Browser\">\n";
 	echo "        <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
 	echo "    <link rel=\"stylesheet\" href=\"".$CONFIG['stylesheet']."\">\n";
+	echo "    <script type=\"text/javascript\" src=\"scripts/jquery-3.3.1.min.js\"></script>\n";
+    echo "    <script type=\"text/javascript\" src=\"scripts/parallaxie.js\"></script>\n";
+    echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
 	echo "<body>\n";
+
+	/* Background with parallax-effect */
+	/* https://github.com/TheUltrasoft/Parallaxie */	
+	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('img/background.jpg')\">\n";
+    echo "<script>\n";
+	echo "   $(\".parallaxie\").parallaxie({\n";
+	echo "	    speed: 0.8,\n";
+	echo "	    offset: 7,\n";
+	echo "	    repeat: \"no-repeat\",\n";
+	echo "	    size: \"auto\"\n";
+	echo "   });\n";
+	echo "</script>\n";
+	echo "<center>\n";
+
+	/* Menu header */
+	echo "<div style=\"height: 25px\"></div\n>";
+	echo "<table class=\"menuheader\" cellspacing=\"0\" cellpadding=\"0\">\n";
+	echo "<tbody>\n";
+	echo "<tr>\n";
+	echo "<td class=\"menuheaderimage\">\n";
+	echo "   <a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" \n";
+	echo "      target=\"_blank\" title=\"Get Alien Arena on Steam!\"><img src=\"img/aawom.jpg\" alt=\"Get Alien Arena on Steam\" height=\"$menuHeaderImageHeight\"></a>\n";
+	echo "</td>\n";
+	echo "<td class=\"cdtitle\">\n";
+	echo "   <a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" target=\"_blank\" \n";
+	echo "      title=\"Get Alien Arena on Steam!\">Get Alien Arena Warriors of Mars<br>Now available on Steam!</a>\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+	echo "</tbody>\n";
+	echo "</table>\n";
 }
 
 function Generate_HTML_Footers()
@@ -51,53 +86,57 @@ function Generate_HTML_Footers()
 	global $_starttime;
 	$endtime = explode( ' ', microtime() );
 	$endtime = $endtime[1] + $endtime[0];
-
+ 
 	/* Section to display when database was last updated */
 	echo "<p class=\"cdfooter\">Database updated on ".date(DATE_RFC822, GetLastUpdated()).". Page generated in ".round($endtime-$_starttime, 3)." seconds.<br>\n";
-	echo "&copy 2007 Tony Jackson - tonyj[at]cooldark[dot]com</p>\n";
+	echo "&copy 2007 Tony Jackson - tonyj[at]cooldark[dot]com<br/>\n";
+	echo "Maintained by Jar-El<br/>&nbsp;</p>\n";
+
+	echo "</center>\n";
+	echo "</div>\n";
 	echo "</body></html>\n";
 }
 
 /* Build control array and sanitise URL input */
 function BuildControl()
 {
-/* Array of actions, allowed parameters, and defaults/limits/allowed values for these parameters */
-$actionparams = array(	
-	'liveservers' => array(),
-	'liveplayers' => array(),
-	'serverstats' => array(
-		'orderby' => array('default'=>'playertime', 'uptime', 'maxplayers'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)
-		),
-	'playerstats' => array(
-		'orderby' => array('name', 'totalscore', 'default'=>'playertime', 'fragrate'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)		
-		),
-	'mapstats' => array(
-		'orderby' => array('mapname', 'servedtime', 'default'=>'playertime', 'maxplayers'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)				
-		),
-	'serverinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array('default'=>0, 'min'=>0)
-		),
-	'playerinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array() /* Anything accepted */
-		),
-	'mapinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array() /* Anything accepted */
-		),
-	'serversearch' => array(),
-	'playersearch' => array(),
-	'mapsearch' => array(),
+	/* Array of actions, allowed parameters, and defaults/limits/allowed values for these parameters */
+	$actionparams = array(	
+		'liveservers' => array(),
+		'liveplayers' => array(),
+		'serverstats' => array(
+			'orderby' => array('default'=>'playertime', 'uptime', 'maxplayers'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)
+			),
+		'playerstats' => array(
+			'orderby' => array('name', 'totalscore', 'default'=>'playertime', 'fragrate'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)		
+			),
+		'mapstats' => array(
+			'orderby' => array('mapname', 'servedtime', 'default'=>'playertime', 'maxplayers'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)				
+			),
+		'serverinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array('default'=>0, 'min'=>0)
+			),
+		'playerinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array() /* Anything accepted */
+			),
+		'mapinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array() /* Anything accepted */
+			),
+		'serversearch' => array(),
+		'playersearch' => array(),
+		'mapsearch' => array(),
 	);
 
 //	print_r($actioncontrol);
@@ -175,8 +214,7 @@ function LimitString($string, $len)
         $string = "...";
     }
 	
-	return $string;
-    
+	return $string;    
 }
 
 function GenerateInfoLink($type = "player", $name)
@@ -195,7 +233,8 @@ function GenerateMapLink($name)
 
 function GetServerNameFromID($id = 0)
 {
-  global $conn;
+	global $conn;
+
 	$filename = GetFilename();
 	$query  = "SELECT ip, port, hostname FROM servers WHERE serverid = '{$id}'";
 	$svinfo_result = mysqli_query($conn,$query);
@@ -215,12 +254,11 @@ function GetServerNameFromID($id = 0)
 
 function GenerateSearchInput($searchtype="serversearch", $description="Search")
 {
-  
-		$filename = GetFilename();
-		echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
-		echo "<p class=cdsubtitle>{$description}<br><input name=\"searchstring\" type=\"text\">"; 
-		echo "<input type=\"submit\"></p>";
-		echo "</form>";
+	$filename = GetFilename();
+	echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
+	echo "<p class=cdsubtitle>{$description}&nbsp;<input name=\"searchstring\" type=\"text\">&nbsp;"; 
+	echo "<input type=\"submit\"></p>";
+	echo "</form>";
 }
 
 function GetFilename()

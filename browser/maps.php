@@ -25,15 +25,21 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 {
 	$filename = GetFilename();
 	$info = '';  /* Function returns an information string */
+	$defaultmapfile = '';
+	$mapfile = '';
 	if($thumbnail)
 	{   /* Thumbnail sizes */
-		$width = 80;
-		$height = 60;
+		$width = 182;
+		$height = 103;
+		$defaultmapfile = "default_tn.jpg";
+		$mapfile = "{$mapname}_tn.jpg";
 	}
 	else
 	{	/* Normal sizes */
-		$width = 341;
-		$height = 256;
+		$width = 650;
+		$height = 365;
+		$defaultmapfile = "default.jpg";
+		$mapfile = "{$mapname}.jpg";
 	}
 	
 	if($addlink)
@@ -41,23 +47,23 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 
 	echo "<img border=1 alt={$mapname} width={$width} height={$height} src=\"";
 	
-	$mapfile = "maps/1st/{$mapname}_{$width}x{$height}.jpg";
-	if(file_exists($mapfile))
+	$mappath = "maps/1st/{$mapfile}";
+	if(file_exists($mappath))
 	{
-		echo $mapfile;  /* 1st party map */
+		echo $mappath;  /* 1st party map */
 		$info = "supplied with the game";
 	}
 	else
 	{
-		$mapfile = "maps/3rd/{$mapname}_{$width}x{$height}.jpg";
-		if(file_exists($mapfile))
+		$mappath = "maps/3rd/{$mapfile}";
+		if(file_exists($mappath))
 		{	/* 3rd party map */
-			echo $mapfile;
+			echo $mappath;
 			$info = "3rd party add-on";
 		}
 		else
 		{ /* Unknown map */
-			echo "maps/default_{$width}x{$height}.jpg";
+			echo "maps/{$defaultmapfile}";
 			$info = "unknown - a new map!";
 		}
 	}
@@ -70,11 +76,11 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 
 function GenerateMapTable(&$control)
 {
-  global $conn;
+	global $conn;
 
 	$filename = GetFilename();
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history']*60*60;
 
 	$query = 'SELECT mapname , SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime , MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
@@ -118,12 +124,12 @@ function GenerateMapTable(&$control)
 
 function GenerateMapInfo(&$control)
 {
-  global $conn;
-  /* Find time of last database update */
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
-
-  $filename = GetFilename();
+	global $conn;
+	
+	/* Find time of last database update */
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history']*60*60;
+	$filename = GetFilename();
   
 	$query = 'SELECT SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime, MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
@@ -179,7 +185,7 @@ function GenerateMapInfo(&$control)
 	
 	if($num_players > 0)
 	{
-		echo "<p class=cdsubtitle>{$num_players} players have been using {$control['id']}</p>\n";
+		echo "<div class=cdsubtitle>{$num_players} players have been using {$control['id']}</div>\n";
 
 		if($num_players > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -215,7 +221,7 @@ function GenerateMapInfo(&$control)
 	
 	if($num_servers > 0)
 	{
-		echo "<p class=cdsubtitle>{$num_servers} servers have hosted {$control['id']}</p>\n";
+		echo "<div class=cdsubtitle>{$num_servers} servers have hosted {$control['id']}</div>\n";
 
 		if($num_servers > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -245,17 +251,17 @@ function GenerateMapInfo(&$control)
 
 function DoMapSearch(&$control)
 {
-  global $conn;
-	$filename = GetFilename();
+	global $conn;
 
-	$searchstring = addslashes($_POST['searchstring']);
+	$filename = GetFilename();
+	$searchstring = mysqli_real_escape_string($conn, $_POST['searchstring']);
 	
 	if($searchstring != "")
 	{
 
     $query = 'SELECT mapname'
 	        . ' FROM serverlog '
-    			. ' WHERE mapname LIKE \'%'.$searchstring.'%\''
+    		. ' WHERE mapname LIKE \'%'.$searchstring.'%\''
 	        . ' GROUP BY mapname ';
 					
 		$svlog_result = mysqli_query($conn,$query);
@@ -265,7 +271,7 @@ function DoMapSearch(&$control)
 			return;
 		}
 
-		echo '<p class=cdsubtitle>'.mysqli_num_rows($svlog_result).' results for \''.$searchstring.'\'</p>';
+		echo '<p class=cdsubtitle>'.mysqli_num_rows($svlog_result).' results for \''.htmlspecialchars($_POST['searchstring']).'\'</p>';
 		
 		echo "<p style=cdbody>";
 		while($svlog_row = mysqli_fetch_array($svlog_result, MYSQLI_ASSOC))

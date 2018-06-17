@@ -42,7 +42,7 @@ function GenerateLivePlayerTable(&$control)
 
 	$numservers = mysqli_num_rows($sv_result);
 
-	echo "<p class=\"cdsubtitle\">{$numplayers} players using {$numservers} servers<p>\n";
+	echo "<div class=\"cdsubtitle\">{$numplayers} players using {$numservers} servers</div>\n";
 
 	/* Section to build table of servers */
 	echo "<p>\n<table id=cdtable>\n";
@@ -99,7 +99,7 @@ function GenerateTotalPlayers(&$control)
 	$result = mysqli_query($conn,$query);
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
-	echo '<p class="cdsubtitle">'.$row['total_players'].' unique players in the last '.$control['history'].' hours</p>';
+	echo '<div class="cdsubtitle">'.$row['total_players'].' unique players in the last '.$control['history'].' hours</div>';
 }
 
 function GeneratePlayerTable(&$control)
@@ -150,14 +150,16 @@ function GeneratePlayerTable(&$control)
 
 function GeneratePlayerInfo(&$control)
 {
-  global $conn;
+	global $conn;
+
 	/* Find time of last database update */
 	$endtime = GetLastUpdated();
 	$starttime = $endtime - $control['history']*60*60;
+	$playername = mysqli_real_escape_string($conn, $control['id']);
 
 	$query = 'SELECT COUNT(name) as playertime'
 	        . ' FROM playerlog '
-    		. ' WHERE name = \''.$control['id'].'\''
+    		. ' WHERE name = \''.$playername.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY name ';
 //	        . ' ORDER BY '. $control['orderby'] .' '.$control['sort'].' LIMIT 0, '.$control['numresults'];
@@ -165,7 +167,7 @@ function GeneratePlayerInfo(&$control)
 	$pllog_result = mysqli_query($conn,$query);
 	$pllog_row = mysqli_fetch_array($pllog_result, MYSQLI_ASSOC);
 
-	echo "<p class=\"cdsubtitle\">Player information covering the last {$control['history']} hours</p>\n";
+	echo "<div class=\"cdsubtitle\">Player information covering the last {$control['history']} hours</div>\n";
 
 	echo "<table id=cdtable>\n";
 
@@ -182,7 +184,7 @@ function GeneratePlayerInfo(&$control)
 	$query = 'SELECT serverid, mapname, COUNT( serverid ) as playertime, ROUND(AVG(ping),1) as avgping'
 //			. ' GROUP_CONCAT(DISTINCT name ORDER BY name DESC SEPARATOR \', \')'
 	        . ' FROM playerlog '
-    		. ' WHERE name = \''.$control['id'].'\''
+    		. ' WHERE name = \''.$playername.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 			. ' AND ping > 0'
 	        . ' GROUP BY serverid'
@@ -192,7 +194,7 @@ function GeneratePlayerInfo(&$control)
 	
 	if($num_servers > 0)
 	{
-		echo "<p class=cdsubtitle>{$control['id']} has played on {$num_servers} servers</p>\n";
+		echo "<div class=cdsubtitle>{$control['id']} has played on {$num_servers} servers</div>\n";
 
 		if($num_servers > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -221,7 +223,7 @@ function GeneratePlayerInfo(&$control)
 	/* Now get a list of maps that this player has played on */
 	$query = 'SELECT time, mapname, COUNT( mapname ) as playertime'
 		. ' FROM playerlog '
-		. ' WHERE name = \''.$control['id'].'\''
+		. ' WHERE name = \''.$playername.'\''
 		. ' AND ping > 0'
 		. ' AND time > '.$starttime.' AND time <= '.$endtime
 		. ' GROUP BY mapname '
@@ -234,7 +236,7 @@ function GeneratePlayerInfo(&$control)
 	
 	if($num_maps > 0)
 	{
-		echo "<p class=cdsubtitle>{$control['id']} has played on {$num_maps} maps</p>\n";
+		echo "<div class=cdsubtitle>{$control['id']} has played on {$num_maps} maps</div>\n";
 
 		if($num_maps > 50)
 			echo "<p class=cdbody>Top 50 times shown</p>";
@@ -255,13 +257,13 @@ function GeneratePlayerInfo(&$control)
 	}
 	mysqli_free_result($pllog_result);
 		
-		return;
+	return;
 		
 	/* Show which servers this player has been playing on */
 	$query = 'SELECT score, MIN(time) as starttime, MAX(time) as endtime, CONCAT_WS(\',\', serverid, mapname) as serverandmap, serverid, mapname, COUNT( serverid ) as playertime'
 //			. ' GROUP_CONCAT(DISTINCT name ORDER BY name DESC SEPARATOR \', \')'
 	        . ' FROM playerlog '
-    		. ' WHERE name = \''.$control['id'].'\''
+    		. ' WHERE name = \''.$playername.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 			. ' AND ping > 0'
 	        . ' GROUP BY serverandmap'
@@ -271,7 +273,7 @@ function GeneratePlayerInfo(&$control)
 	
 	if($num_matches > 0)
 	{
-		echo "<p class=cdsubtitle>Experimental: Tracking {$control['id']} across {$num_matches} matches</p>\n";
+		echo "<div class=cdsubtitle>Experimental: Tracking {$control['id']} across {$num_matches} matches</div>\n";
 
 		if($num_maps > 50)
 			echo "<p class=cdbody>First 50 matches shown</p>";
@@ -305,7 +307,7 @@ function GeneratePlayerInfo(&$control)
 			        . ' FROM playerlog '
 		    		. ' WHERE time >= '.($pllog_row['starttime'])
 		    		. ' AND time <= '.($pllog_row['endtime']+480)
-					. ' AND name = \''.$control['id'].'\''
+					. ' AND name = \''.$playername.'\''
 					. ' AND mapname = \''.$pllog_row['mapname'].'\''
 					. ' ORDER BY time ASC';
 			$score_result = mysqli_query($conn,$query);
@@ -324,15 +326,14 @@ function GeneratePlayerInfo(&$control)
 
 function DoPlayerSearch(&$control)
 {
-  global $conn;
-	$searchstring = addslashes($_POST['searchstring']);
+  	global $conn;
+	$searchstring = mysqli_real_escape_string($conn, $_POST['searchstring']);
 	
 	if($searchstring != "")
 	{
-
 		$query = 'SELECT name'
 	        . ' FROM playerlog '
-    			. ' WHERE name LIKE \'%'.$searchstring.'%\''
+    		. ' WHERE name LIKE \'%'.$searchstring.'%\''
 	        . ' GROUP BY name ';
 					
 		$pllog_result = mysqli_query($conn,$query);
@@ -342,7 +343,7 @@ function DoPlayerSearch(&$control)
 			return;
 		}
 
-		echo '<p class=cdsubtitle>'.mysqli_num_rows($pllog_result).' results for \''.$searchstring.'\'</p>';
+		echo '<p class=cdsubtitle>'.mysqli_num_rows($pllog_result).' results for \''.htmlspecialchars($_POST['searchstring']).'\'</p>';
 		
 		echo "<p style=cdbody>";
 		while($pllog_row = mysqli_fetch_array($pllog_result, MYSQLI_ASSOC))

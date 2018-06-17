@@ -26,7 +26,8 @@ include("flags.php");
 
 function GenerateLiveServerTable(&$control)
 {
-  global $conn;
+	global $conn;
+
 	$lastupdated = GetLastUpdated();
 	$filename = GetFilename();
 	/* Get all servers from last update which responded */
@@ -103,7 +104,7 @@ function GenerateLiveServerTable(&$control)
 						echo "<td>";
 						if($svinfo_row['website'] != "")
 						{
-							echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"{$svinfo_row['website']}\"><img border=0 alt=www src=\"img/www.gif\"></a>";		
+							echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"{$svinfo_row['website']}\" target=\"_blank\"><img border=0 alt=www src=\"img/www.png\"></a>";		
 						}
 						echo "</td>";
 					break;
@@ -151,15 +152,15 @@ function GenerateTotalServers(&$control)
 	$result = mysqli_query($conn,$query);
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
-	echo '<p class="cdsubtitle">'.$row['total_servers'].' unique servers in the last '.$control['history'].' hours</p>';
+	echo '<div class="cdsubtitle">'.$row['total_servers'].' unique servers in the last '.$control['history'].' hours</div>';
 }
 
 function GenerateServerTable(&$control)
 {
-  global $conn;
+  	global $conn;
 	$filename = GetFilename();
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
+  	$endtime = GetLastUpdated();
+  	$starttime = $endtime - $control['history']*60*60;
 	
 	$query = 'SELECT serverid , SUM( realplayers ) AS playertime , COUNT( serverid ) AS uptime , MAX( realplayers ) AS maxplayers '
 	        . ' FROM serverlog '
@@ -194,9 +195,9 @@ function GenerateServerTable(&$control)
 
     $uptime=round(100*$svlog_row['uptime']/($control['history']*60), 1);
     if($uptime > 100)
-      $uptime = 100;
+    	$uptime = 100;
 
-    echo "<tr>";
+    	echo "<tr>";
 		echo "<td><a href=\"".$filename."?action=serverinfo&amp;id=".$svlog_row['serverid']."\">".$sv_row['hostname']."</a> ";
 		echo "</td>";
 
@@ -219,17 +220,19 @@ function GenerateServerTable(&$control)
 
 function GenerateServerInfo(&$control)
 {
-  global $conn;
+	global $conn;
 	global $CONFIG;
 //	echo "<p class=cdbody>Eventually there will be lots more information on uptimes, peak usage times, players that have played on it here.</p>\n";
   /* Find time of last database update */
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
+	
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history']*60*60;
+	$serverid = mysqli_real_escape_string($conn, $control['id']);
 	
 
 	$query =  'SELECT ip, port, hostname, admin, website, version'
             .' FROM servers '
-            .' WHERE serverid = \''.$control['id'].'\'';
+            .' WHERE serverid = \''.$serverid.'\'';
 	$sv_result = mysqli_query($conn,$query);
 	if($sv_result === FALSE)
 	{
@@ -241,7 +244,7 @@ function GenerateServerInfo(&$control)
 	
 	$query = 'SELECT SUM( realplayers ) AS playertime , COUNT( serverid ) AS uptime , MAX( realplayers ) AS maxplayers '
 		. ' FROM serverlog '
-		. ' WHERE serverid = \''.$control['id'].'\' '
+		. ' WHERE serverid = \''.$serverid.'\' '
 		. ' AND time > '.$starttime.' AND time <= '.$endtime
 		. ' GROUP BY serverid ';
 				
@@ -259,11 +262,17 @@ function GenerateServerInfo(&$control)
 	if($uptime > 100)
 		$uptime = 100;
 
-	echo "<p class=\"cdsubtitle\">Server information covering the last {$control['history']} hours</p>\n";
+	echo "<br/>\n";
+	echo "<table class=\"graph\" cellpadding=\"0\" cellspacing=\"0\">\n";
+	echo "<tr>\n";
+	echo "   <td class=\"graphheader\">Server information covering the last {$control['history']} hours</td>\n";
+	echo "</tr>\n";
+	echo "<tr><td class=\"graph\">\n";
+	echo "   <img class=\"graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} alt=\"Usage graph\" src=\"graph.php?show=server&amp;id={$control['id']}&amp;history={$control['history']}\">\n";
+	echo "</td></tr>\n";
+	echo "</table>\n";
 
-	echo "<img width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} alt=\"Usage graph\" src=\"graph.php?show=server&amp;id={$control['id']}&amp;history={$control['history']}\">\n";
-	echo "<br><br>\n";
-
+	echo "<br/>\n";
 	echo "<table id=cdtable>";
 
 	echo "<tr><th>Hostname</th>";
@@ -273,7 +282,7 @@ function GenerateServerInfo(&$control)
 	echo "<td>{$sv_row['ip']}:{$sv_row['port']}</td></tr>";
 
 	echo "<tr><th>Website</th>";
-	echo "<td><a href={$sv_row['website']}>{$sv_row['website']}</a></td></tr>";
+	echo "<td><a href={$sv_row['website']} target=\"_blank\">{$sv_row['website']}</a></td></tr>";
 
 	echo "<tr><th>Admin</th>";
 	echo "<td>{$sv_row['admin']}</td></tr>";
@@ -300,7 +309,7 @@ function GenerateServerInfo(&$control)
 	
 	$query = 'SELECT mapname , SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime , MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
-			. ' WHERE serverid = \''.$control['id'].'\' '
+			. ' WHERE serverid = \''.$serverid.'\' '
 			. ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY mapname '
 	        . ' ORDER BY playertime DESC';
@@ -315,7 +324,7 @@ function GenerateServerInfo(&$control)
 		return;
 	}
 	
-	echo "<p class=\"cdsubtitle\">{$hostname} has served {$num_maps} maps in the last {$control['history']} hours</p>\n";
+	echo "<div class=\"cdsubtitle\">{$hostname} has served {$num_maps} maps in the last {$control['history']} hours</div>\n";
 
 	if($num_maps > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -343,7 +352,7 @@ function GenerateServerInfo(&$control)
 	
 	$query = 'SELECT name , COUNT( name ) as playertime'
 	        . ' FROM playerlog '
-			. ' WHERE serverid = \''.$control['id'].'\' '
+			. ' WHERE serverid = \''.$serverid.'\' '
 			. ' AND time > '.$starttime.' AND time <= '.$endtime
 			. ' AND ping > 0 '
 	        . ' GROUP BY name '
@@ -357,7 +366,7 @@ function GenerateServerInfo(&$control)
 		return;
 	}
 	
-	echo "<p class=\"cdsubtitle\">{$num_players} players have played on {$hostname} in the last {$control['history']} hours</p>\n";
+	echo "<div class=\"cdsubtitle\">{$num_players} players have played on {$hostname} in the last {$control['history']} hours</div>\n";
 
 	if($num_players > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -369,16 +378,18 @@ function GenerateServerInfo(&$control)
 	
 	while(($pllog_row = mysqli_fetch_array($pllog_result, MYSQLI_ASSOC)) && ($count++ < 50))
 	{
+		$playername = mysqli_real_escape_string($conn, $pllog_row['name']);
+
 		echo "<tr>";
 		echo "<td>".GenerateInfoLink("player", $pllog_row['name'])."</td>";
 		echo "<td>".MinutesToString($pllog_row['playertime'])."</td>";
 		echo "<td>";
 		$query = 'SELECT ROUND(AVG(ping),1) as avping'
 	    	    . ' FROM playerlog '
-				. ' WHERE serverid = \''.$control['id'].'\' '
+				. ' WHERE serverid = \''.$serverid.'\' '
 				. ' AND time > '.$starttime.' AND time <= '.$endtime
 				. ' AND ping > 0 '
-				. ' AND name = \''.addslashes($pllog_row['name']).'\' ';
+				. ' AND name = \''.$playername.'\' ';
 				
 		$ping_result = mysqli_query($conn,$query);
 		$ping_row = mysqli_fetch_array($ping_result, MYSQLI_ASSOC);
@@ -446,7 +457,7 @@ function OldGenerateServerInfo(&$control)
 	echo "<td>{$sv_row['hostname']} ";
 	if($sv_row['website'] != "")
 	{
-		echo "<a href=\"{$sv_row['website']}\"><img border=0 alt=www src=\"img/www.gif\"></a>";
+		echo "<a href=\"{$sv_row['website']}\" target=\"_blank\"><img border=0 alt=www src=\"img/www.png\"></a>";
 	}
 	echo "</td>";
 	echo "<td>{$sv_row['admin']}</td>";
@@ -464,10 +475,10 @@ function OldGenerateServerInfo(&$control)
 
 function DoServerSearch(&$control)
 {
-  global $conn;
-	$filename = GetFilename();
+	global $conn;
 
-	$searchstring = addslashes($_POST['searchstring']);
+	$filename = GetFilename();
+	$searchstring = mysqli_real_escape_string($conn, $_POST['searchstring']);
 	
 	if($searchstring != "")
 	{ /* No server to show, but a string to search with */
@@ -484,7 +495,7 @@ function DoServerSearch(&$control)
 			return;
 		}
 
-		echo '<p class=cdsubtitle>'.mysqli_num_rows($sv_result).' results for \''.$searchstring.'\'</p>';
+		echo '<p class=cdsubtitle>'.mysqli_num_rows($sv_result).' results for \''.htmlspecialchars($_POST['searchstring']).'\'</p>';
 		
 		echo "<p style=cdbody>";
 		while($sv_row = mysqli_fetch_array($sv_result, MYSQLI_ASSOC))
