@@ -92,11 +92,19 @@ function GenerateLivePlayerTable(&$control)
 	echo "</table>\n";
 }
 
+function TotalPlayersWhereClause(&$control)
+{
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history'] * 60 * 60;
+	return ' WHERE ping > 0 AND name != \'Player\''
+		. ' AND time > '.$starttime.' AND time <= '.$endtime;
+}
+
 function GenerateTotalPlayers(&$control)
 {
-  global $conn;
-	$query = 'select count(distinct name) as total_players from playerlog;';
-	$result = mysqli_query($conn,$query);
+	global $conn;
+	$query = 'select count(distinct name) as total_players from playerlog '.TotalPlayersWhereClause($control).';';
+	$result = mysqli_query($conn, $query);
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	
 	echo '<div class="cdsubtitle">'.$row['total_players'].' unique players in the last '.$control['history'].' hours</div>';
@@ -104,17 +112,13 @@ function GenerateTotalPlayers(&$control)
 
 function GeneratePlayerTable(&$control)
 {
-  global $conn;
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
-  
-	$query = 'SELECT name, SUM( score ) AS totalscore, COUNT(name) as playertime, SUM( score )/COUNT(name) as fragrate'
+	global $conn;  
+	$query = 'SELECT name, SUM(score) AS totalscore, COUNT(name) as playertime, SUM(score) / COUNT(name) as fragrate'
 	        . ' FROM playerlog'
-	        . ' WHERE ping >0 AND name != \'Player\''
-	        . ' AND time > '.$starttime.' AND time <= '.$endtime			
+	        . TotalPlayersWhereClause($control)
 	        . ' GROUP BY name'
 	        . ' ORDER BY '.$control['orderby'].' '.$control['sort']
-	        . ' LIMIT 0 , '.$control['results'];
+	        . ' LIMIT 0, '.$control['results'];
 	
 	//echo $query."<br>\n";
 	

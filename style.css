@@ -42,16 +42,13 @@ a:hover {
 	text-decoration: underline;
 }
 
-.cdbody a:link {
+.cdbody a:link, .cdbody a:hover, .cdbody a:visited {
 	color: rgb(200, 200, 200);
+	text-decoration: underline;
 }
 
 .cdtitle a:hover {
 	color: rgb(220, 220, 220);
-}
-
-.cdbody a:hover {
-	color: rgb(245, 245, 245);
 }
 
 .cdtitle { 
