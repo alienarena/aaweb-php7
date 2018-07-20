@@ -13,3 +13,19 @@ function showHideServerGraph() {
         $("#showservergraph").text(visible ? "\u25BC" : "\u25B6");
     });    
 }
+
+var hide = true;
+function showSteamWidget() {
+    setTimeout(function() {
+        $("#buyit").slideToggle("slow");
+        setTimeout(tryHide, 5000);    
+    }, 2000);
+}
+
+function tryHide() {
+    if (hide) {
+        $("#buyit").fadeOut(1000);
+    } else {
+        setTimeout(tryHide, 5000);
+    }
+}

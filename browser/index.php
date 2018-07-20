@@ -36,6 +36,21 @@ $control = BuildControl();  /* Get config from URL line */
 
 Generate_HTML_Headers($CONFIG['baseurl'].'browser/', $CONFIG['title']);
 
+$steamWidgetCookieName = "SteamWidgetShown";
+$steamWidgetCookieExpirationSeconds = 60 * 60 * 24 * 365 * 10; // Ten years
+$showSteamWidget = $control['action'] == 'liveservers' && $_COOKIE[$steamWidgetCookieName] != "true";
+
+echo "<script>\n";
+echo "$(document).ready(function() {\n";	
+echo "   $(\".parallaxie\").parallaxie();\n";
+if ($showSteamWidget)
+{
+	echo "   showSteamWidget();\n";
+	setcookie($steamWidgetCookieName, "true", time() + $steamWidgetCookieExpirationSeconds);
+}
+echo "});\n";
+echo "</script>\n";
+
 $filename = GetFilename();
 
 // InsertAds();
@@ -43,7 +58,7 @@ $filename = GetFilename();
 
 //$conn = mysql_connect($CONFIG['dbHost'], $CONFIG['dbUser'], $CONFIG['dbPass']) or die ('Cannot connect to the database because: ' . mysql_error());
 
-
+echo '<div class="container">';
 echo '<div class="menu">';
 echo ' - ';
 echo "<a href=\"{$filename}?action=liveservers\">Live games</a> - ";
@@ -51,6 +66,7 @@ echo "<a href=\"{$filename}?action=liveplayers\">Live players</a> - ";
 echo "<a href=\"{$filename}?action=serverstats\">Server stats</a> - ";
 echo "<a href=\"{$filename}?action=playerstats\">Player stats</a> - ";
 echo "<a href=\"{$filename}?action=mapstats\">Map stats</a> - ";
+echo "</div>\n";
 echo "</div>\n";
 
 CheckDBLive();
@@ -60,6 +76,15 @@ switch ($control['action'])
 	case 'liveservers':
 		ShowCollapsibleGraphs();
 		GenerateLiveServerTable($control);
+
+		if ($showSteamWidget)
+		{
+			// Steam widget pop-up
+			echo "<iframe id=\"buyit\" onmouseover=\"hide = false;\" onmouseenter=\"hide = false;\" onmousemove=\"hide = false;\" onmouseout=\"hide = true\" "; 
+			echo "   style=\"display:none; position:fixed; bottom:0px; right:0px; margin-right: 20px; margin-bottom: 10px;\" ";
+			echo "   src=\"https://store.steampowered.com/widget/629540/\" width=\"646\" height=\"190\" frameborder=\"0\" scrolling=\"no\"></iframe>\n";
+		}
+
 		break;
 	case 'liveplayers':
 		ShowCollapsibleGraphs();

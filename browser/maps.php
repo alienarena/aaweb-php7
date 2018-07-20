@@ -29,15 +29,15 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 	$mapfile = '';
 	if($thumbnail)
 	{   /* Thumbnail sizes */
-		$width = 182;
-		$height = 103;
+		$width = 190;
+		$height = 107;
 		$defaultmapfile = "default_tn.jpg";
 		$mapfile = "{$mapname}_tn.jpg";
 	}
 	else
 	{	/* Normal sizes */
-		$width = 650;
-		$height = 365;
+		$width = 750;
+		$height = 421;
 		$defaultmapfile = "default.jpg";
 		$mapfile = "{$mapname}.jpg";
 	}
@@ -139,6 +139,24 @@ function GenerateMapInfo(&$control)
 //	        . ' ORDER BY '. $control['orderby'] .' '.$control['sort'].' LIMIT 0, '.$control['numresults'];
 
 	$svlog_result = mysqli_query($conn,$query);
+
+// TODO
+// https://hal.nanoid.net/arena/tools/browser/index.php?action=mapinfo&id=whatever%27%20or%20%271%27=%271
+// prepared query:
+// https://stackoverflow.com/questions/34119537/mysqli-fetch-array-with-prepared-statements
+// http://php.net/manual/en/mysqli-stmt.get-result.php
+// mysqlnd MySQL native driver is required
+// $query = 'SELECT SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime, MAX( realplayers ) AS maxplayers'
+// 	. ' FROM serverlog '
+// 	. ' WHERE mapname = ?'
+// 	. ' AND time > ? AND time <= ?'
+// 	. ' GROUP BY mapname ';
+// $statement = mysqli_prepare($conn, $query);
+// mysqli_stmt_bind_param($statement, "sss", $control['id'], $starttime, $endtime);
+// mysqli_stmt_execute($statement);
+// $svlog_result = mysqli_stmt_get_result($stmt);
+
+
 	$svlog_row = mysqli_fetch_array($svlog_result, MYSQLI_ASSOC);
 
 	echo "<p class=\"cdsubtitle\">Map information covering the last {$control['history']} hours</p>\n";

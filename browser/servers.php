@@ -243,12 +243,25 @@ function GenerateServerInfo(&$control)
 	$sv_row = mysqli_fetch_array($sv_result, MYSQLI_ASSOC);
 	
 	$query = 'SELECT SUM( realplayers ) AS playertime , COUNT( serverid ) AS uptime , MAX( realplayers ) AS maxplayers '
-		. ' FROM serverlog '
-		. ' WHERE serverid = \''.$serverid.'\' '
-		. ' AND time > '.$starttime.' AND time <= '.$endtime
-		. ' GROUP BY serverid ';
+	. ' FROM serverlog '
+	. ' WHERE serverid = \''.$serverid.'\' '
+	. ' AND time > '.$starttime.' AND time <= '.$endtime
+	. ' GROUP BY serverid ';
+			
+	$svlog_result = mysqli_query($conn,$query);	
+	
+	// TODO
+	// $query = 'SELECT SUM( realplayers ) AS playertime , COUNT( serverid ) AS uptime , MAX( realplayers ) AS maxplayers '
+	// 	. ' FROM serverlog '
+	// 	. ' WHERE serverid = ? '
+	// 	. ' AND time > ? AND time <= ? '
+	// 	. ' GROUP BY serverid ';
 				
-	$svlog_result = mysqli_query($conn,$query);
+	// $statement = mysqli_prepare($conn, $query);
+	// mysqli_stmt_bind_param($statement, "iss", $serverid, $starttime, $endtime);
+	// mysqli_stmt_execute($statement);
+	// $svlog_result = mysqli_stmt_get_result($stmt);
+		
 	if($svlog_result === FALSE)
 	{
 		echo "<p class=\"cdbody\">Unable to display stats at this time.</p>\n";
@@ -318,6 +331,21 @@ function GenerateServerInfo(&$control)
 				
 	$svlog_result = mysqli_query($conn,$query);
 	$num_maps = mysqli_num_rows($svlog_result);
+
+	// TODO
+	// $query = 'SELECT mapname , SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime , MAX( realplayers ) AS maxplayers'
+	//         . ' FROM serverlog '
+	// 		. ' WHERE serverid = ? '
+	// 		. ' AND time > ? AND time <= ? '
+	//         . ' GROUP BY mapname '
+	// 		. ' ORDER BY playertime DESC';
+			
+	// $statement = mysqli_prepare($conn, $query);
+	// mysqli_stmt_bind_param($statement, "iss", $serverid, $starttime, $endtime);
+	// mysqli_stmt_execute($statement);
+	// $svlog_result = mysqli_stmt_get_result($stmt);									
+	// $num_maps = mysqli_num_rows($svlog_result) ?? 0;
+
 	if($svlog_result === FALSE)
 	{
 		echo "<p class=\"cdbody\">Unable to display stats at this time.</p>\n";

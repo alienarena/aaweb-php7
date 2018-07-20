@@ -29,8 +29,6 @@ function Generate_HTML_Headers()
 	global $CONFIG;
 	global $_starttime;
 
-	$menuHeaderImageHeight = 100;
-
 	/*  Start time for page generation */
 	$_starttime = explode( ' ', microtime() );
 	$_starttime = $_starttime[1] + $_starttime[0];
@@ -48,37 +46,20 @@ function Generate_HTML_Headers()
     echo "    <script type=\"text/javascript\" src=\"scripts/parallaxie.js\"></script>\n";
     echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
-	echo "<body>\n";
+	echo "<body style=\"background-image: url('img/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
 
 	/* Background with parallax-effect */
 	/* https://github.com/TheUltrasoft/Parallaxie */	
-	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('img/background.jpg')\">\n";
-    echo "<script>\n";
-	echo "   $(\".parallaxie\").parallaxie({\n";
-	echo "	    speed: 0.8,\n";
-	echo "	    offset: 7,\n";
-	echo "	    repeat: \"no-repeat\",\n";
-	echo "	    size: \"auto\"\n";
-	echo "   });\n";
-	echo "</script>\n";
+	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('img/background.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
 	echo "<center>\n";
 
-	/* Menu header */
-	echo "<div style=\"height: 25px\"></div\n>";
-	echo "<table class=\"menuheader\" cellspacing=\"0\" cellpadding=\"0\">\n";
-	echo "<tbody>\n";
-	echo "<tr>\n";
-	echo "<td class=\"menuheaderimage\">\n";
-	echo "   <a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" \n";
-	echo "      target=\"_blank\" title=\"Get Alien Arena on Steam!\"><img src=\"img/aawom.jpg\" alt=\"Get Alien Arena on Steam\" height=\"$menuHeaderImageHeight\"></a>\n";
-	echo "</td>\n";
-	echo "<td class=\"cdtitle\">\n";
-	echo "   <a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" target=\"_blank\" \n";
-	echo "      title=\"Get Alien Arena on Steam!\">Get Alien Arena Warriors of Mars<br>Now available on Steam!</a>\n";
-	echo "</td>\n";
-	echo "</tr>\n";
-	echo "</tbody>\n";
-	echo "</table>\n";
+	/* Banner/title and menu header */
+	echo "<div class=\"container\">\n";
+	echo "<a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" target=\"_blank\" \n";
+	echo "   title=\"Get Alien Arena: Warriors of Mars on Steam!\">\n";
+	echo "<div class=\"parallaxie container\" style=\"background-image: url('img/banner.jpg');\" data-parallaxie='{\"speed\": 0.3, \"size\": \"auto\"}'></div>\n";
+	echo "</a>\n";
+	echo "</div>\n";
 }
 
 function Generate_HTML_Footers()
@@ -86,11 +67,15 @@ function Generate_HTML_Footers()
 	global $_starttime;
 	$endtime = explode( ' ', microtime() );
 	$endtime = $endtime[1] + $endtime[0];
- 
+
 	/* Section to display when database was last updated */
 	echo "<p class=\"cdfooter\">Database updated on ".date(DATE_RFC822, GetLastUpdated()).". Page generated in ".round($endtime-$_starttime, 3)." seconds.<br>\n";
 	echo "&copy 2007 Tony Jackson - tonyj[at]cooldark[dot]com<br/>\n";
-	echo "Maintained by Jar-El<br/>&nbsp;</p>\n";
+	echo "Maintained by Jar-El</p>\n";
+
+	echo '<p><a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank" title="Get Alien Arena: Warriors of Mars on Steam!">';
+	echo '<img style="height: 36px;" src="img/steam.png">';
+	echo '</a></p><br>';
 
 	echo "</center>\n";
 	echo "</div>\n";
@@ -290,9 +275,9 @@ function Insert_Table_Sorter($control, $display, $orderby)
 	echo "<th>".$display."<br>";
 	$control['orderby'] = $orderby;
 	$control['sort'] = 'desc';
-	echo "<a href=\"".Generate_URL($control)."\"><img border=0 alt=up src=\"img/up.gif\"></a>";
+	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▲</span>";
 	$control['sort'] = 'asc';
-	echo "<a href=\"".Generate_URL($control)."\"><img border=0 alt=down src=\"img/down.gif\"></a>";
+	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▼</span>";
 	echo "</th>";
 }
 
@@ -361,13 +346,13 @@ function CheckDBLive()
 	$now = time();
 	if(($now - $lastupdated) > 60*60)
 	{
-		echo "<p class=cdsubtitle>Error: Database out-of-date!<br>(Serious network/database problems)</p>\n";
-		echo "<p class=cdbody>Run a <a href=healthcheck.php>healthcheck</a>, and please contact {$CONFIG['contact']} with the results.</p>\n";
+		echo "<div class=cdsubtitle>Error: Database out-of-date!<br>(Serious network/database problems)</div>\n";
+		echo "<div class=cdbody>Run a <a href=healthcheck.php>healthcheck</a>, and please contact {$CONFIG['contact']} with the results.</div>\n";
 	}
 	else if(($now - $lastupdated) > 15*60)
-		echo "<p class=cdsubtitle>Warning: Database more than 15 minutes out-of-date<br>(Temporary network/database problems?)</p>\n";
+		echo "<div class=cdsubtitle>Warning: Database more than 15 minutes out-of-date<br>(Temporary network/database problems?)</div>\n";
 	else if(($now - $lastupdated) > 3*60)
-		echo "<p class=cdsubtitle>Notice: Database slightly out-of-date<br>(Network glitch?)</p>\n";
+		echo "<div class=cdsubtitle>Notice: Database slightly out-of-date<br>(Network glitch?)</div>\n";
 }
 
 /* W3C complient generation of URL for linking */
