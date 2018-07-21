@@ -275,9 +275,9 @@ function Insert_Table_Sorter($control, $display, $orderby)
 	echo "<th>".$display."<br>";
 	$control['orderby'] = $orderby;
 	$control['sort'] = 'desc';
-	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▲</span>";
-	$control['sort'] = 'asc';
 	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▼</span>";
+	$control['sort'] = 'asc';
+	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▲</span>";
 	echo "</th>";
 }
 
