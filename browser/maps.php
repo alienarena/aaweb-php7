@@ -130,10 +130,11 @@ function GenerateMapInfo(&$control)
 	$endtime = GetLastUpdated();
 	$starttime = $endtime - $control['history']*60*60;
 	$filename = GetFilename();
+	$mapname = mysqli_real_escape_string($conn, $control['id']);
   
 	$query = 'SELECT SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime, MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
-    		. ' WHERE mapname = \''.$control['id'].'\''
+    		. ' WHERE mapname = \''.$mapname.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY mapname ';
 //	        . ' ORDER BY '. $control['orderby'] .' '.$control['sort'].' LIMIT 0, '.$control['numresults'];
@@ -190,7 +191,7 @@ function GenerateMapInfo(&$control)
 	/* Now get a list of (real) players that have used this map */
 	$query = 'SELECT name, COUNT( name ) as time'
 		. ' FROM playerlog '
-		. ' WHERE mapname = \''.$control['id'].'\''
+		. ' WHERE mapname = \''.$mapname.'\''
 		. ' AND ping > 0'
 		. ' AND time > '.$starttime.' AND time <= '.$endtime
 		. ' GROUP BY name '
@@ -230,7 +231,7 @@ function GenerateMapInfo(&$control)
 	/* Show which servers this map has been served from */
 	$query = 'SELECT serverid, COUNT( serverid ) as servedtime, SUM( realplayers ) as playertime, MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
-    		. ' WHERE mapname = \''.$control['id'].'\''
+    		. ' WHERE mapname = \''.$mapname.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY serverid '
 			. ' ORDER BY playertime DESC';

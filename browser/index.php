@@ -38,7 +38,7 @@ Generate_HTML_Headers($CONFIG['baseurl'].'browser/', $CONFIG['title']);
 
 $steamWidgetCookieName = "SteamWidgetShown";
 $steamWidgetCookieExpirationSeconds = 60 * 60 * 24 * 365 * 10; // Ten years
-$showSteamWidget = $control['action'] == 'liveservers' && $_COOKIE[$steamWidgetCookieName] != "true";
+$showSteamWidget = $_COOKIE[$steamWidgetCookieName] != "true";
 
 echo "<script>\n";
 echo "$(document).ready(function() {\n";	
@@ -76,15 +76,6 @@ switch ($control['action'])
 	case 'liveservers':
 		ShowCollapsibleGraphs();
 		GenerateLiveServerTable($control);
-
-		if ($showSteamWidget)
-		{
-			// Steam widget pop-up
-			echo "<iframe id=\"buyit\" onmouseover=\"hide = false;\" onmouseenter=\"hide = false;\" onmousemove=\"hide = false;\" onmouseout=\"hide = true\" "; 
-			echo "   style=\"display:none; position:fixed; bottom:0px; right:0px; margin-right: 20px; margin-bottom: 10px;\" ";
-			echo "   src=\"https://store.steampowered.com/widget/629540/\" width=\"646\" height=\"190\" frameborder=\"0\" scrolling=\"no\"></iframe>\n";
-		}
-
 		break;
 	case 'liveplayers':
 		ShowCollapsibleGraphs();
@@ -141,6 +132,14 @@ switch ($control['action'])
 
 	default:
 		break;
+}
+
+if ($showSteamWidget)
+{
+	// Steam widget pop-up
+	echo "<iframe id=\"buyit\" onmouseover=\"hide = false;\" onmouseenter=\"hide = false;\" onmousemove=\"hide = false;\" onmouseout=\"hide = true\" "; 
+	echo "   style=\"display:none; position:fixed; bottom:0px; right:0px; margin-right: 20px; margin-bottom: 10px;\" ";
+	echo "   src=\"https://store.steampowered.com/widget/629540/\" width=\"646\" height=\"190\" frameborder=\"0\" scrolling=\"no\"></iframe>\n";
 }
 
 Generate_HTML_Footers();
