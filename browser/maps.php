@@ -25,21 +25,19 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 {
 	$filename = GetFilename();
 	$info = '';  /* Function returns an information string */
-	$defaultmapfile = '';
-	$mapfile = '';
+	
+	$defaultmapfile = "default.jpg";
+	$mapfile = "{$mapname}.jpg";
+
 	if($thumbnail)
 	{   /* Thumbnail sizes */
 		$width = 190;
 		$height = 107;
-		$defaultmapfile = "default_tn.jpg";
-		$mapfile = "{$mapname}_tn.jpg";
 	}
 	else
 	{	/* Normal sizes */
 		$width = 750;
 		$height = 421;
-		$defaultmapfile = "default.jpg";
-		$mapfile = "{$mapname}.jpg";
 	}
 	
 	if($addlink)
