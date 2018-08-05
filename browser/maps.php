@@ -216,7 +216,7 @@ function GenerateMapInfo(&$control)
 		{
 			echo "<tr>";
 			if($pllog_row['name'] == 'Player')
-				echo "<td>".GenerateInfoLink("player", "Player")." <i>(cumilative time)</i></td>";
+				echo "<td>".GenerateInfoLink("player", "Player")." <i>(cumulative time)</i></td>";
 			else
 				echo "<td>".GenerateInfoLink("player", $pllog_row['name'])."</td>";
 			echo "<td>".MinutesToString($pllog_row['time'])."</td>";
