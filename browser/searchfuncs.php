@@ -23,17 +23,20 @@
 
 function GenerateSearchInput($searchtype = "serversearch")
 {
-		$filename = GetFilename();
-		echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
-		echo "<p class=cdbody>Search: <input name=\"searchstring\" type=\"text\">"; 
-		echo "<input type=\"submit\"></p>";
-		echo "</form>";
+	$filename = GetFilename();
+	echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
+	echo "<p class=cdbody>Search: <input name=\"searchstring\" type=\"text\">&nbsp;"; 
+	echo "<input type=\"submit\"></p>";
+	echo "</form>";
 }
 
 function GenerateServerInfo(&$control)
 {
-  global $conn;
+	global $conn;
 	global $CONFIG;
+
+	$serverid = mysqli_real_escape_string($conn, $control['id']);
+
 	echo "<p class=cdbody>Server information for the last ".mins_to_string(($control['endtime'] - $control['starttime'])/60)."</p>\n";
 //	echo "<p class=cdbody>Eventually there will be lots more information on uptimes, peak usage times, players that have played on it here.</p>\n";
 	
@@ -43,14 +46,14 @@ function GenerateServerInfo(&$control)
 		return;
 	}
 
-	$query  = "SELECT ip, port, hostname, admin, website, version FROM servers WHERE serverid = '".$control['id']."'";
+	$query  = "SELECT ip, port, hostname, admin, website, version FROM servers WHERE serverid = '".$serverid."'";
 	$sv_result = mysqli_query($conn,$query);
 	$sv_row = mysqli_fetch_array($sv_result, MYSQLI_ASSOC);
 	
 	$query = 'SELECT SUM( realplayers ) AS playertime , COUNT( serverid ) AS uptime , MAX( realplayers ) AS maxplayers , SUM( realplayers ) / COUNT( serverid ) as popularity '
 		. ' FROM serverlog '
 		. ' WHERE time > '.$control['starttime'].' AND time <= '.$control['endtime']
-		. ' AND serverid = \''.$control['id'].'\' '
+		. ' AND serverid = \''.$serverid.'\' '
 		. ' GROUP BY serverid ';
 				
 	//echo $query;
@@ -76,7 +79,7 @@ function GenerateServerInfo(&$control)
 	echo "<td>{$sv_row['hostname']} ";
 	if($sv_row['website'] != "")
 	{
-		echo "<a href=\"{$sv_row['website']}\"><img border=0 alt=www src=\"img/www.gif\"></a>";
+		echo "<a href=\"{$sv_row['website']}\" target=\"_blank\"><img border=0 alt=www src=\"img/www.png\"></a>";
 	}
 	echo "</td>";
 	echo "<td>{$sv_row['admin']}</td>";
@@ -89,16 +92,16 @@ function GenerateServerInfo(&$control)
 	echo "</table>";
 	mysqli_free_result($sv_result);	
 	echo "<br>\n";
-	echo "<img width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} alt=\"Usage graph\" src=\"graph.php?show=server&amp;id={$control['id']}\">\n";
-	
+
+	echo "<img class=\"graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} alt=\"Usage graph\" src=\"graph.php?show=server&amp;id={$control['id']}\">\n";	
 }
 
 function DoServerSearch(&$control, $searchstring)
 {
-  global $conn;
-	$filename = GetFilename();
+	global $conn;
 
-	$searchstring = $_POST['searchstring'];
+	$filename = GetFilename();
+	$searchstring = mysqli_real_escape_string($conn, $_POST['searchstring']);
 	
 	if($searchstring != "")
 	{ /* No server to show, but a string to search with */
@@ -110,7 +113,7 @@ function DoServerSearch(&$control, $searchstring)
 					
 		$sv_result = mysqli_query($conn,$query);
 
-		echo '<p class=cdbody>'.mysqli_num_rows($sv_result).' results for \''.$searchstring.'\'</p>';
+		echo '<p class=cdbody>'.mysqli_num_rows($sv_result).' results for \''.htmlspecialchars($_POST['searchstring']).'\'</p>';
 		
 		echo "<p style=cdbody>";
 		while($sv_row = mysqli_fetch_array($sv_result, MYSQLI_ASSOC))

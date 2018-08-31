@@ -73,6 +73,7 @@ function GetLastUpdated()
 	return $lastupdated;
 }
 
+// TODO: Remove, I don't think this function is still used
 function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 {
 	$filename = GetFilename();
@@ -192,7 +193,7 @@ function GenerateLiveServerTable(&$control)
 						echo "<td>";
 						if($svinfo_row['website'] != "")
 						{
-							echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"{$svinfo_row['website']}\"><img border=0 alt=www src=\"img/www.gif\"></a>";		
+							echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"{$svinfo_row['website']}\" target=\"_blank\"><img border=0 alt=www src=\"img/www.png\"></a>";		
 						}
 						echo "</td>";
 					break;
@@ -311,7 +312,7 @@ function GenerateServerTable(&$control)
 		echo "<td><a href=\"".$filename."?action=serverinfo&amp;id=".$svlog_row['serverid']."\">".$sv_row['hostname']."</a> ";
 		if($sv_row['website'] != "")
 		{
-			echo "<a href=\"{$sv_row['website']}\"><img border=0 alt=www src=\"img/www.gif\"></a>";
+			echo "<a href=\"{$sv_row['website']}\" target=\"_blank\"><img border=0 alt=www src=\"img/www.png\"></a>";
 		}
 		echo "</td>";
 		echo "<td>{$sv_row['admin']}</td>";

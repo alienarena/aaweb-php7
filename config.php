@@ -34,8 +34,8 @@ $CONFIG['dbPass'] = 'your_db_password_here';
 $CONFIG['contact'] = 'your@email.here';
 
 /* Graphs that are shown on browser pages */
-$CONFIG['graphwidth'] = 500;
-$CONFIG['graphheight'] = 100;
+$CONFIG['graphwidth'] = 750;
+$CONFIG['graphheight'] = 150;
 
 /* Server scanner - duration (in seconds) to keep server
    and player data in the database */

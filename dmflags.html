@@ -8,58 +8,53 @@
 <body>
 
 <script type="text/javascript" language="JavaScript">
-<!--
-
-function CalcDMFLAGS() {
-  total = 0;
-  for (i=0; i < document.FlagCalc.elements.length; i++) {
-	  if (document.FlagCalc.elements[i].checked) {
-	  	total = total + parseFloat(document.FlagCalc.elements[i].id.slice(4))}
-	  	else;
-	}
-	
-	document.FlagCalc.setstring.value = "set dmflags " + total;
-	document.FlagCalc.inputflags.value = total;
-}
-
-function setCookie()
-{
-	var the_cookie = "wm_javascript=dmflags:" + cookie_flag;
-	var the_date = new Date("December 31, 1999");
-        var the_cookie_date = the_date.toGMTString();
-	the_cookie = the_cookie + ";expires=" + the_cookie_date;
-	document.cookie = the_cookie;
-}
-
-
-function readCookie(){
-	var the_cookie = document.cookie;
-	var broken_cookie =the_cookie.split(":");
-	var cookie_flag = broken_cookie[1];
-	var cookie_flag = unescape(total);
-}
-
-function SetFlags(){
-	var InputFlags = document.getElementById("inputflags").value;
-
+	function CalcDMFLAGS() {
+	total = 0;
 	for (i=0; i < document.FlagCalc.elements.length; i++) {
-		document.FlagCalc.elements[i].checked = 0;
-	}
-
-
-	for (i=0; i < document.FlagCalc.elements.length; i++)
-	{
-		if((InputFlags & (1 << i)) != 0)
-		{
-			document.getElementById("flag".concat(1 << i)).checked = 1;
+		if (document.FlagCalc.elements[i].checked) {
+			total = total + parseFloat(document.FlagCalc.elements[i].id.slice(4))}
+			else;
 		}
+		
+		document.FlagCalc.setstring.value = "set dmflags " + total;
+		document.FlagCalc.inputflags.value = total;
 	}
-	
-	document.FlagCalc.setstring.value = "set dmflags " + InputFlags;
-}
 
-// -->
+	function setCookie()
+	{
+		var the_cookie = "wm_javascript=dmflags:" + cookie_flag;
+		var the_date = new Date("December 31, 1999");
+			var the_cookie_date = the_date.toGMTString();
+		the_cookie = the_cookie + ";expires=" + the_cookie_date;
+		document.cookie = the_cookie;
+	}
 
+
+	function readCookie(){
+		var the_cookie = document.cookie;
+		var broken_cookie =the_cookie.split(":");
+		var cookie_flag = broken_cookie[1];
+		var cookie_flag = unescape(total);
+	}
+
+	function SetFlags(){
+		var InputFlags = document.getElementById("inputflags").value;
+
+		for (i=0; i < document.FlagCalc.elements.length; i++) {
+			document.FlagCalc.elements[i].checked = 0;
+		}
+
+
+		for (i=0; i < document.FlagCalc.elements.length; i++)
+		{
+			if((InputFlags & (1 << i)) != 0)
+			{
+				document.getElementById("flag".concat(1 << i)).checked = 1;
+			}
+		}
+		
+		document.FlagCalc.setstring.value = "set dmflags " + InputFlags;
+	}
 </script>
 <HR>
 <P>
@@ -81,7 +76,7 @@ Based on the original "Flagulator" but customised for Alien Arena, reverse dmfla
 <fieldset>
 <legend>Pick-Ups</legend>
 
-<span title="Stop special powerups (quad, invinicbility, etc.) from appearing in the game">
+<span title="Stop special powerups (quad, invincibility, etc.) from appearing in the game">
 	<input type="checkbox" id="flag2" onClick="CalcDMFLAGS();"><LABEL>no powerups</LABEL><br>
 </span>
 

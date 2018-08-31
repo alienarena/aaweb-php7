@@ -22,6 +22,7 @@
 */
 
 global $conn;
+
 include '../config.php';
 // connect here : handle $conn visible througout includes
 $conn = new mysqli($CONFIG['dbHost'], $CONFIG['dbUser'], $CONFIG['dbPass'],$CONFIG['dbName']) or die ('Cannot connect to the database because: ' . mysqli_error());
@@ -35,96 +36,188 @@ $control = BuildControl();  /* Get config from URL line */
 
 Generate_HTML_Headers($CONFIG['baseurl'].'browser/', $CONFIG['title']);
 
-$filename = GetFilename();
+$steamWidgetCookieName = "SteamWidgetShown";
+$steamWidgetCookieExpirationSeconds = 60 * 60 * 24 * 365 * 10; // Ten years
+$showSteamWidget = $_COOKIE[$steamWidgetCookieName] != "true";
 
+echo "<script>\n";
+echo "$(document).ready(function() {\n";	
+echo "   $(\".parallaxie\").parallaxie();\n";
+if ($showSteamWidget)
+{
+	echo "   showSteamWidget();\n";
+	setcookie($steamWidgetCookieName, "true", time() + $steamWidgetCookieExpirationSeconds);
+}
+echo "});\n";
+echo "</script>\n";
+
+$filename = GetFilename();
 
 // InsertAds();
 
 
 //$conn = mysql_connect($CONFIG['dbHost'], $CONFIG['dbUser'], $CONFIG['dbPass']) or die ('Cannot connect to the database because: ' . mysql_error());
 
-
-echo '<p class="cdsubtitle">';
+echo '<div class="container">';
+echo '<div class="menu">';
 echo ' - ';
 echo "<a href=\"{$filename}?action=liveservers\">Live games</a> - ";
 echo "<a href=\"{$filename}?action=liveplayers\">Live players</a> - ";
 echo "<a href=\"{$filename}?action=serverstats\">Server stats</a> - ";
 echo "<a href=\"{$filename}?action=playerstats\">Player stats</a> - ";
 echo "<a href=\"{$filename}?action=mapstats\">Map stats</a> - ";
-echo "</p>\n";
+echo "</div>\n";
+echo "</div>\n";
 
 CheckDBLive();
 
 switch ($control['action'])
 {
 	case 'liveservers':
-		echo "<img alt=\"Player graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=players\"><br><br>\n";
-		echo "<img alt=\"Server graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=servers\"><br>\n";
+		ShowCollapsibleGraphs();
 		GenerateLiveServerTable($control);
-	break;
+		break;
 	case 'liveplayers':
-		echo "<img alt=\"Player graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=players\"><br><br>\n";
-		echo "<img alt=\"Server graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=servers\"><br>\n";
+		ShowCollapsibleGraphs();
 		GenerateLivePlayerTable($control);
-	break;
+		break;
 	case 'serverstats':
 		/* Section to build table of servers with most playertime*/
-		echo "<p class=\"cdsubtitle\">Server usage in the last {$control['history']} hours</p>\n";
-		echo "<img alt=\"Server graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=servers&amp;history={$control['history']}\"><br><br>\n";
+		ShowServerHistoryGraph();
 		GenerateTotalServers($control);
 		GenerateServerTable($control);
 		GenerateNumResultsSelector($control);
 		GenerateSearchInput("serversearch", "Server search");
-	break;
+		break;
 	case 'playerstats':
-		echo "<p class=\"cdsubtitle\">Player activity in the last {$control['history']} hours</p>\n";
-		echo "<img alt=\"Player graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=players&amp;history={$control['history']}\"><br><br>\n";
+		ShowPlayerHistoryGraph();
 		GenerateTotalPlayers($control);
 		GeneratePlayerTable($control);
 		GenerateNumResultsSelector($control);
 		GenerateSearchInput("playersearch", "Player search");
-	break;
+		break;
 	case 'mapstats':
 		/* Get list of most played maps */
-		echo "<p class=\"cdsubtitle\">Map usage in the last {$control['history']} hours</p>\n";
+		echo "<div class=\"cdsubtitle\">Map usage in the last {$control['history']} hours</div>\n";
 		GenerateMapTable($control);
 		GenerateNumResultsSelector($control);
 		GenerateSearchInput("mapsearch", "Map search");
-	break;
+		break;
 	
 	case 'serverinfo':
 		GenerateServerInfo($control);
 		GenerateSearchInput("serversearch", "Find another server");
-	break;
+		break;
 	case 'playerinfo':
 		GeneratePlayerInfo($control);
 		GenerateSearchInput("playersearch", "Find another player");
-	break;
+		break;
 	case 'mapinfo':
 		GenerateMapInfo($control);
 		GenerateSearchInput("mapsearch", "Find another map");
-	break;
+		break;
 
 	case 'serversearch':
 		DoServerSearch($control);
 		GenerateSearchInput("serversearch", "Search for another server");
-	break;
+		break;
 	case 'playersearch':
 		DoPlayerSearch($control);
 		GenerateSearchInput("playersearch", "Search for another player");
-	break;
+		break;
 	case 'mapsearch':
 		DoMapSearch($control);
 		GenerateSearchInput("mapsearch", "Search for another map");
-	break;
+		break;
 
-	break;
 	default:
-	break;
+		break;
+}
+
+if ($showSteamWidget)
+{
+	// Steam widget pop-up
+	echo "<iframe id=\"buyit\" onmouseover=\"hide = false;\" onmouseenter=\"hide = false;\" onmousemove=\"hide = false;\" onmouseout=\"hide = true\" "; 
+	echo "   style=\"display:none; position:fixed; bottom:0px; right:0px; margin-right: 20px; margin-bottom: 10px;\" ";
+	echo "   src=\"https://store.steampowered.com/widget/629540/\" width=\"646\" height=\"190\" frameborder=\"0\" scrolling=\"no\"></iframe>\n";
 }
 
 Generate_HTML_Footers();
 // mysql_close($conn);
+
+function CollapsiblePlayerGraph()
+{
+	global $CONFIG;
+
+	$html = "<tr>\n";
+	$html = $html."<td id=\"showplayergraph\" class=\"showhidegraph\" onclick=\"showHidePlayerGraph();\">&#9658;</td>\n";
+	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHidePlayerGraph();\">Player activity</td>\n";
+	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHidePlayerGraph();\" style=\"width: 16px\"></td>\n";
+	$html = $html."</tr>\n";
+	$html = $html."<tr><td class=\"graph\" colspan=\"3\">\n";
+	$html = $html."   <img id=\"playergraph\" class=\"graph\" style=\"display: none\" alt=\"Player graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=players\">\n";
+	$html = $html."</td></tr>\n";
+
+	return $html;
+}
+
+function CollapsibleServerGraph()
+{
+	global $CONFIG;
+
+	$html = "<tr>\n";
+	$html = $html."<td id=\"showservergraph\" class=\"showhidegraph\" onclick=\"showHideServerGraph();\">&#9658;</td>\n";
+	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHideServerGraph();\">Server usage</td>\n";
+	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHideServerGraph();\" style=\"width: 16px\"></td>\n";
+	$html = $html."</tr>\n";
+	$html = $html."<tr><td class=\"graph\" colspan=\"3\">\n";
+	$html = $html."   <img id=\"servergraph\" class=\"graph\" style=\"display: none\" alt=\"Server graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=servers\">\n";
+	$html = $html."</td></tr>\n";
+
+	return $html;
+}
+
+function ShowCollapsibleGraphs()
+{
+	echo "<br/>\n";
+	echo "<table class=\"graph\" cellpadding=\"0\" cellspacing=\"0\">\n";
+	echo CollapsiblePlayerGraph();
+	echo "<tr><td colspan=\"3\" style=\"height: 5px\"></td></tr>\n";
+	echo CollapsibleServerGraph();
+	echo "</table>\n";
+}
+
+function ShowPlayerHistoryGraph()
+{
+	global $CONFIG;
+	global $control;
+
+	echo "<br/>\n";
+	echo "<table class=\"graph\" cellpadding=\"0\" cellspacing=\"0\">\n";
+	echo "<tr>\n";
+	echo "   <td class=\"graphheader\">Player activity in the last {$control['history']} hours</td>\n";
+	echo "</tr>\n";
+	echo "<tr><td class=\"graph\">\n";
+	echo "   <img class=\"graph\" alt=\"Player graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=players&amp;history={$control['history']}\">\n";
+	echo "</td></tr>\n";
+	echo "</table>\n";
+}
+
+function ShowServerHistoryGraph()
+{
+	global $CONFIG;
+	global $control;
+
+	echo "<br/>\n";
+	echo "<table class=\"graph\" cellpadding=\"0\" cellspacing=\"0\">\n";
+	echo "<tr>\n";
+	echo "   <td class=\"graphheader\">Server usage in the last {$control['history']} hours</td>\n";
+	echo "</tr>\n";
+	echo "<tr><td class=\"graph\">\n";
+	echo "   <img class=\"graph\" alt=\"Server graph\" width={$CONFIG['graphwidth']} height={$CONFIG['graphheight']} src=\"graph.php?show=servers&amp;history={$control['history']}\">\n";
+	echo "</td></tr>\n";
+	echo "</table>\n";
+}
 
 function InsertAds()
 {

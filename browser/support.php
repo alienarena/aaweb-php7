@@ -42,8 +42,24 @@ function Generate_HTML_Headers()
 	echo "        <meta name=\"keywords\" content=\"Code Red CodeRed Alien Arena 2006 2007 GE UE Uranium Edition Server Browser\">\n";
 	echo "        <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
 	echo "    <link rel=\"stylesheet\" href=\"".$CONFIG['stylesheet']."\">\n";
+	echo "    <script type=\"text/javascript\" src=\"scripts/jquery-3.3.1.min.js\"></script>\n";
+    echo "    <script type=\"text/javascript\" src=\"scripts/parallaxie.js\"></script>\n";
+    echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
-	echo "<body>\n";
+	echo "<body style=\"background-image: url('img/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
+
+	/* Background with parallax-effect */
+	/* https://github.com/TheUltrasoft/Parallaxie */	
+	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('img/background.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
+	echo "<center>\n";
+
+	/* Banner/title and menu header */
+	echo "<div class=\"container\">\n";
+	echo "<a href=\"http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars\" target=\"_blank\" \n";
+	echo "   title=\"Get Alien Arena: Warriors of Mars on Steam!\">\n";
+	echo "<div class=\"parallaxie container\" style=\"background-image: url('img/banner.jpg');\" data-parallaxie='{\"speed\": 0.3, \"size\": \"auto\"}'></div>\n";
+	echo "</a>\n";
+	echo "</div>\n";
 }
 
 function Generate_HTML_Footers()
@@ -54,50 +70,58 @@ function Generate_HTML_Footers()
 
 	/* Section to display when database was last updated */
 	echo "<p class=\"cdfooter\">Database updated on ".date(DATE_RFC822, GetLastUpdated()).". Page generated in ".round($endtime-$_starttime, 3)." seconds.<br>\n";
-	echo "&copy 2007 Tony Jackson - tonyj[at]cooldark[dot]com</p>\n";
+	echo "&copy 2007 Tony Jackson - tonyj[at]cooldark[dot]com<br/>\n";
+	echo "Maintained by Jar-El</p>\n";
+
+	echo '<p><a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank" title="Get Alien Arena: Warriors of Mars on Steam!">';
+	echo '<img style="height: 36px;" src="img/steam.png">';
+	echo '</a></p><br>';
+
+	echo "</center>\n";
+	echo "</div>\n";
 	echo "</body></html>\n";
 }
 
 /* Build control array and sanitise URL input */
 function BuildControl()
 {
-/* Array of actions, allowed parameters, and defaults/limits/allowed values for these parameters */
-$actionparams = array(	
-	'liveservers' => array(),
-	'liveplayers' => array(),
-	'serverstats' => array(
-		'orderby' => array('default'=>'playertime', 'uptime', 'maxplayers'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)
-		),
-	'playerstats' => array(
-		'orderby' => array('name', 'totalscore', 'default'=>'playertime', 'fragrate'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)		
-		),
-	'mapstats' => array(
-		'orderby' => array('mapname', 'servedtime', 'default'=>'playertime', 'maxplayers'),
-		'sort' => array('default'=>'desc', 'asc'),
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'results' => array('default'=>20, 'min'=>1, 'max'=>50)				
-		),
-	'serverinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array('default'=>0, 'min'=>0)
-		),
-	'playerinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array() /* Anything accepted */
-		),
-	'mapinfo' => array(
-		'history' => array('default'=>24, 'min'=>1, 'max'=>24),
-		'id'=>array() /* Anything accepted */
-		),
-	'serversearch' => array(),
-	'playersearch' => array(),
-	'mapsearch' => array(),
+	/* Array of actions, allowed parameters, and defaults/limits/allowed values for these parameters */
+	$actionparams = array(	
+		'liveservers' => array(),
+		'liveplayers' => array(),
+		'serverstats' => array(
+			'orderby' => array('default'=>'playertime', 'uptime', 'maxplayers'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)
+			),
+		'playerstats' => array(
+			'orderby' => array('name', 'totalscore', 'default'=>'playertime', 'fragrate'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)		
+			),
+		'mapstats' => array(
+			'orderby' => array('mapname', 'servedtime', 'default'=>'playertime', 'maxplayers'),
+			'sort' => array('default'=>'desc', 'asc'),
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'results' => array('default'=>20, 'min'=>1, 'max'=>50)				
+			),
+		'serverinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array('default'=>0, 'min'=>0)
+			),
+		'playerinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array() /* Anything accepted */
+			),
+		'mapinfo' => array(
+			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'id'=>array() /* Anything accepted */
+			),
+		'serversearch' => array(),
+		'playersearch' => array(),
+		'mapsearch' => array(),
 	);
 
 //	print_r($actioncontrol);
@@ -175,8 +199,7 @@ function LimitString($string, $len)
         $string = "...";
     }
 	
-	return $string;
-    
+	return $string;    
 }
 
 function GenerateInfoLink($type = "player", $name)
@@ -195,7 +218,8 @@ function GenerateMapLink($name)
 
 function GetServerNameFromID($id = 0)
 {
-  global $conn;
+	global $conn;
+
 	$filename = GetFilename();
 	$query  = "SELECT ip, port, hostname FROM servers WHERE serverid = '{$id}'";
 	$svinfo_result = mysqli_query($conn,$query);
@@ -215,12 +239,11 @@ function GetServerNameFromID($id = 0)
 
 function GenerateSearchInput($searchtype="serversearch", $description="Search")
 {
-  
-		$filename = GetFilename();
-		echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
-		echo "<p class=cdsubtitle>{$description}<br><input name=\"searchstring\" type=\"text\">"; 
-		echo "<input type=\"submit\"></p>";
-		echo "</form>";
+	$filename = GetFilename();
+	echo "<form action=\"".$filename."?action=".$searchtype."\" method=\"post\">";
+	echo "<p class=cdsubtitle>{$description}&nbsp;<input name=\"searchstring\" type=\"text\">&nbsp;"; 
+	echo "<input type=\"submit\"></p>";
+	echo "</form>";
 }
 
 function GetFilename()
@@ -252,9 +275,9 @@ function Insert_Table_Sorter($control, $display, $orderby)
 	echo "<th>".$display."<br>";
 	$control['orderby'] = $orderby;
 	$control['sort'] = 'desc';
-	echo "<a href=\"".Generate_URL($control)."\"><img border=0 alt=up src=\"img/up.gif\"></a>";
+	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▼</span>";
 	$control['sort'] = 'asc';
-	echo "<a href=\"".Generate_URL($control)."\"><img border=0 alt=down src=\"img/down.gif\"></a>";
+	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▲</span>";
 	echo "</th>";
 }
 
@@ -323,13 +346,13 @@ function CheckDBLive()
 	$now = time();
 	if(($now - $lastupdated) > 60*60)
 	{
-		echo "<p class=cdsubtitle>Error: Database out-of-date!<br>(Serious network/database problems)</p>\n";
-		echo "<p class=cdbody>Run a <a href=healthcheck.php>healthcheck</a>, and please contact {$CONFIG['contact']} with the results.</p>\n";
+		echo "<div class=cdsubtitle>Error: Database out-of-date!<br>(Serious network/database problems)</div>\n";
+		echo "<div class=cdbody>Run a <a href=healthcheck.php>healthcheck</a>, and please contact {$CONFIG['contact']} with the results.</div>\n";
 	}
 	else if(($now - $lastupdated) > 15*60)
-		echo "<p class=cdsubtitle>Warning: Database more than 15 minutes out-of-date<br>(Temporary network/database problems?)</p>\n";
+		echo "<div class=cdsubtitle>Warning: Database more than 15 minutes out-of-date<br>(Temporary network/database problems?)</div>\n";
 	else if(($now - $lastupdated) > 3*60)
-		echo "<p class=cdsubtitle>Notice: Database slightly out-of-date<br>(Network glitch?)</p>\n";
+		echo "<div class=cdsubtitle>Notice: Database slightly out-of-date<br>(Network glitch?)</div>\n";
 }
 
 /* W3C complient generation of URL for linking */

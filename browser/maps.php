@@ -25,39 +25,43 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 {
 	$filename = GetFilename();
 	$info = '';  /* Function returns an information string */
+	
+	$defaultmapfile = "default.jpg";
+	$mapfile = "{$mapname}.jpg";
+
 	if($thumbnail)
 	{   /* Thumbnail sizes */
-		$width = 80;
-		$height = 60;
+		$width = 190;
+		$height = 107;
 	}
 	else
 	{	/* Normal sizes */
-		$width = 341;
-		$height = 256;
+		$width = 750;
+		$height = 421;
 	}
 	
 	if($addlink)
 		echo "<a href=\"{$filename}?action=mapinfo&amp;id={$mapname}\">";
 
-	echo "<img border=1 alt={$mapname} width={$width} height={$height} src=\"";
+	echo "<img border=0 alt={$mapname} width={$width} height={$height} src=\"";
 	
-	$mapfile = "maps/1st/{$mapname}_{$width}x{$height}.jpg";
-	if(file_exists($mapfile))
+	$mappath = "maps/1st/{$mapfile}";
+	if(file_exists($mappath))
 	{
-		echo $mapfile;  /* 1st party map */
+		echo $mappath;  /* 1st party map */
 		$info = "supplied with the game";
 	}
 	else
 	{
-		$mapfile = "maps/3rd/{$mapname}_{$width}x{$height}.jpg";
-		if(file_exists($mapfile))
+		$mappath = "maps/3rd/{$mapfile}";
+		if(file_exists($mappath))
 		{	/* 3rd party map */
-			echo $mapfile;
+			echo $mappath;
 			$info = "3rd party add-on";
 		}
 		else
 		{ /* Unknown map */
-			echo "maps/default_{$width}x{$height}.jpg";
+			echo "maps/{$defaultmapfile}";
 			$info = "unknown - a new map!";
 		}
 	}
@@ -70,11 +74,11 @@ function ShowMapImage($mapname, $thumbnail = 0, $addlink = 1)
 
 function GenerateMapTable(&$control)
 {
-  global $conn;
+	global $conn;
 
 	$filename = GetFilename();
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history']*60*60;
 
 	$query = 'SELECT mapname , SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime , MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
@@ -118,21 +122,40 @@ function GenerateMapTable(&$control)
 
 function GenerateMapInfo(&$control)
 {
-  global $conn;
-  /* Find time of last database update */
-  $endtime = GetLastUpdated();
-  $starttime = $endtime - $control['history']*60*60;
-
-  $filename = GetFilename();
+	global $conn;
+	
+	/* Find time of last database update */
+	$endtime = GetLastUpdated();
+	$starttime = $endtime - $control['history']*60*60;
+	$filename = GetFilename();
+	$mapname = mysqli_real_escape_string($conn, $control['id']);
   
 	$query = 'SELECT SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime, MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
-    		. ' WHERE mapname = \''.$control['id'].'\''
+    		. ' WHERE mapname = \''.$mapname.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY mapname ';
 //	        . ' ORDER BY '. $control['orderby'] .' '.$control['sort'].' LIMIT 0, '.$control['numresults'];
 
 	$svlog_result = mysqli_query($conn,$query);
+
+// TODO
+// https://hal.nanoid.net/arena/tools/browser/index.php?action=mapinfo&id=whatever%27%20or%20%271%27=%271
+// prepared query:
+// https://stackoverflow.com/questions/34119537/mysqli-fetch-array-with-prepared-statements
+// http://php.net/manual/en/mysqli-stmt.get-result.php
+// mysqlnd MySQL native driver is required
+// $query = 'SELECT SUM( realplayers ) as playertime , COUNT( realplayers ) as servedtime, MAX( realplayers ) AS maxplayers'
+// 	. ' FROM serverlog '
+// 	. ' WHERE mapname = ?'
+// 	. ' AND time > ? AND time <= ?'
+// 	. ' GROUP BY mapname ';
+// $statement = mysqli_prepare($conn, $query);
+// mysqli_stmt_bind_param($statement, "sss", $control['id'], $starttime, $endtime);
+// mysqli_stmt_execute($statement);
+// $svlog_result = mysqli_stmt_get_result($stmt);
+
+
 	$svlog_row = mysqli_fetch_array($svlog_result, MYSQLI_ASSOC);
 
 	echo "<p class=\"cdsubtitle\">Map information covering the last {$control['history']} hours</p>\n";
@@ -166,7 +189,7 @@ function GenerateMapInfo(&$control)
 	/* Now get a list of (real) players that have used this map */
 	$query = 'SELECT name, COUNT( name ) as time'
 		. ' FROM playerlog '
-		. ' WHERE mapname = \''.$control['id'].'\''
+		. ' WHERE mapname = \''.$mapname.'\''
 		. ' AND ping > 0'
 		. ' AND time > '.$starttime.' AND time <= '.$endtime
 		. ' GROUP BY name '
@@ -179,7 +202,7 @@ function GenerateMapInfo(&$control)
 	
 	if($num_players > 0)
 	{
-		echo "<p class=cdsubtitle>{$num_players} players have been using {$control['id']}</p>\n";
+		echo "<div class=cdsubtitle>{$num_players} players have been using {$control['id']}</div>\n";
 
 		if($num_players > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -193,7 +216,7 @@ function GenerateMapInfo(&$control)
 		{
 			echo "<tr>";
 			if($pllog_row['name'] == 'Player')
-				echo "<td>".GenerateInfoLink("player", "Player")." <i>(cumilative time)</i></td>";
+				echo "<td>".GenerateInfoLink("player", "Player")." <i>(cumulative time)</i></td>";
 			else
 				echo "<td>".GenerateInfoLink("player", $pllog_row['name'])."</td>";
 			echo "<td>".MinutesToString($pllog_row['time'])."</td>";
@@ -206,7 +229,7 @@ function GenerateMapInfo(&$control)
 	/* Show which servers this map has been served from */
 	$query = 'SELECT serverid, COUNT( serverid ) as servedtime, SUM( realplayers ) as playertime, MAX( realplayers ) AS maxplayers'
 	        . ' FROM serverlog '
-    		. ' WHERE mapname = \''.$control['id'].'\''
+    		. ' WHERE mapname = \''.$mapname.'\''
 	        . ' AND time > '.$starttime.' AND time <= '.$endtime
 	        . ' GROUP BY serverid '
 			. ' ORDER BY playertime DESC';
@@ -215,7 +238,7 @@ function GenerateMapInfo(&$control)
 	
 	if($num_servers > 0)
 	{
-		echo "<p class=cdsubtitle>{$num_servers} servers have hosted {$control['id']}</p>\n";
+		echo "<div class=cdsubtitle>{$num_servers} servers have hosted {$control['id']}</div>\n";
 
 		if($num_servers > 50)
 			echo "<p class=cdbody>Top 50 results shown</p>";
@@ -245,17 +268,17 @@ function GenerateMapInfo(&$control)
 
 function DoMapSearch(&$control)
 {
-  global $conn;
-	$filename = GetFilename();
+	global $conn;
 
-	$searchstring = addslashes($_POST['searchstring']);
+	$filename = GetFilename();
+	$searchstring = mysqli_real_escape_string($conn, $_POST['searchstring']);
 	
 	if($searchstring != "")
 	{
 
     $query = 'SELECT mapname'
 	        . ' FROM serverlog '
-    			. ' WHERE mapname LIKE \'%'.$searchstring.'%\''
+    		. ' WHERE mapname LIKE \'%'.$searchstring.'%\''
 	        . ' GROUP BY mapname ';
 					
 		$svlog_result = mysqli_query($conn,$query);
@@ -265,7 +288,7 @@ function DoMapSearch(&$control)
 			return;
 		}
 
-		echo '<p class=cdsubtitle>'.mysqli_num_rows($svlog_result).' results for \''.$searchstring.'\'</p>';
+		echo '<p class=cdsubtitle>'.mysqli_num_rows($svlog_result).' results for \''.htmlspecialchars($_POST['searchstring']).'\'</p>';
 		
 		echo "<p style=cdbody>";
 		while($svlog_row = mysqli_fetch_array($svlog_result, MYSQLI_ASSOC))
