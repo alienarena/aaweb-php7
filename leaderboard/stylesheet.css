@@ -1,0 +1,90 @@
+body {	
+	margin: 0px;
+	padding: 0px;
+	color: rgb(230, 230, 230); 
+	font-family: Aldrich, Arial, Helvetica, sans-serif;
+}
+
+div#content {
+	min-height: 1200px;
+}
+
+.scoretable {
+	opacity: 0.8;
+}
+
+.pagetitle {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 22px;	
+    font-weight: bold;
+	height: 60px;
+}
+
+.title {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: medium;	
+    font-weight: bold;
+	height: 40px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.subtitle {
+	color: rgb(200, 200, 200);
+	text-align: center;
+	font-size: small;	
+	font-weight: bold;
+    height: 20px;
+}
+
+.subtitle2 {
+	font-size: x-small;
+	font-weight: normal;
+}
+
+td.header {
+	background-image: linear-gradient(rgb(70, 70, 70), rgb(50, 50, 50));
+	font-size: smaller;
+	text-align: center;
+	white-space: nowrap;
+	border: solid 2px;
+	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
+	border-radius: 4px;
+	text-shadow: 3px 3px 2px rgb(10, 10, 10);
+}
+
+td.datarow {
+	background-image: linear-gradient(rgb(32, 32, 32), rgb(42, 42, 42));
+	border: solid 2px;
+	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
+	border-radius: 4px;
+}
+
+.weaponaccuracy {
+	position: absolute;
+	border: none;
+	border: solid 2px;
+	border-color: rgb(90, 110, 100) rgb(100, 120, 100)  rgb(100, 120, 100) rgb(90, 110, 100);
+	border-radius: 3px;	 
+}
+
+td.weaponskillheader {
+	color: rgb(150, 180, 160);
+	opacity: 0.95;
+	background-color: rgb(80, 80, 80);
+	font-size: x-small;
+	white-space: nowrap;
+	border: none;
+}
+
+td.weaponskilldatarow {
+	color: rgb(22, 45, 29);
+	opacity: 0.95;
+	background-color: rgb(150, 150, 150);
+	font-size: small;
+	border: none;
+}

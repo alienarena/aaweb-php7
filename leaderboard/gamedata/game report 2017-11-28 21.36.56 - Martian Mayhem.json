@@ -1,0 +1,312 @@
+{
+    "players": [
+    {
+            "name": "^3[GM]^1Jar^5'El",
+            "score": 7,
+            "deaths": 2,
+            "ratio": 350,
+            "weapon_skill": [
+                {"weapon": "disruptor", "hits": 3, "shots": 6, "accuracy": 50},
+                {"weapon": "smartgun", "hits": 25, "shots": 31, "accuracy": 80},
+                {"weapon": "flamethrower", "hits": 7, "shots": 15, "accuracy": 46},
+                {"weapon": "rocketlauncher", "hits": 1, "shots": 9, "accuracy": 11}
+            ]
+        },
+        {
+            "name": "^3Hugo^1Manic",
+            "score": 3,
+            "deaths": 3,
+            "ratio": 100,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 7, "shots": 16, "accuracy": 43},
+                {"weapon": "smartgun", "hits": 28, "shots": 34, "accuracy": 82},
+                {"weapon": "beamgun", "hits": 2, "shots": 1, "accuracy": 200},
+                {"weapon": "violator", "hits": 8, "shots": 34, "accuracy": 23}
+            ]
+        },
+        {
+            "name": "^1Squirtney",
+            "score": 3,
+            "deaths": 4,
+            "ratio": 75,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 4, "shots": 16, "accuracy": 25},
+                {"weapon": "beamgun", "hits": 32, "shots": 52, "accuracy": 61},
+                {"weapon": "violator", "hits": 8, "shots": 14, "accuracy": 57}
+            ]
+        },
+        {
+            "name": "^5Beavis",
+            "score": 2,
+            "deaths": 3,
+            "ratio": 66,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 7, "shots": 21, "accuracy": 33},
+                {"weapon": "flamethrower", "hits": 9, "shots": 28, "accuracy": 32}
+            ]
+        },
+        {
+            "name": "^7Ruh^4Lur",
+            "score": 0,
+            "deaths": 3,
+            "ratio": 0,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 2, "shots": 10, "accuracy": 20},
+                {"weapon": "chaingun", "hits": 6, "shots": 24, "accuracy": 25}
+            ]
+        },
+        {
+            "name": "^3[GM]^1Jar^5'El",
+            "score": 7,
+            "deaths": 2,
+            "ratio": 350,
+            "weapon_skill": [
+                {"weapon": "disruptor", "hits": 3, "shots": 6, "accuracy": 50},
+                {"weapon": "smartgun", "hits": 25, "shots": 31, "accuracy": 80},
+                {"weapon": "flamethrower", "hits": 7, "shots": 15, "accuracy": 46},
+                {"weapon": "rocketlauncher", "hits": 1, "shots": 9, "accuracy": 11}
+            ]
+        },
+        {
+            "name": "^3Hugo^1Manic",
+            "score": 3,
+            "deaths": 3,
+            "ratio": 100,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 7, "shots": 16, "accuracy": 43},
+                {"weapon": "smartgun", "hits": 28, "shots": 34, "accuracy": 82},
+                {"weapon": "beamgun", "hits": 2, "shots": 1, "accuracy": 200},
+                {"weapon": "violator", "hits": 8, "shots": 34, "accuracy": 23}
+            ]
+        },
+        {
+            "name": "^1Squirtney",
+            "score": 3,
+            "deaths": 4,
+            "ratio": 75,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 4, "shots": 16, "accuracy": 25},
+                {"weapon": "beamgun", "hits": 32, "shots": 52, "accuracy": 61},
+                {"weapon": "violator", "hits": 8, "shots": 14, "accuracy": 57}
+            ]
+        },
+        {
+            "name": "^5Beavis",
+            "score": 2,
+            "deaths": 3,
+            "ratio": 66,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 7, "shots": 21, "accuracy": 33},
+                {"weapon": "flamethrower", "hits": 9, "shots": 28, "accuracy": 32}
+            ]
+        },
+        {
+            "name": "^7Ruh^4Lur",
+            "score": 0,
+            "deaths": 3,
+            "ratio": 0,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 2, "shots": 10, "accuracy": 20},
+                {"weapon": "chaingun", "hits": 6, "shots": 24, "accuracy": 25}
+            ]
+        },
+        {
+            "name": "ACEBot_8",
+            "score": 13,
+            "deaths": 11,
+            "ratio": 118,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 11, "shots": 26, "accuracy": 42},
+                {"weapon": "chaingun", "hits": 4, "shots": 25, "accuracy": 16},
+                {"weapon": "violator", "hits": 20, "shots": 25, "accuracy": 80}
+            ]
+        },
+        {
+            "name": "ACEBot_3",
+            "score": 12,
+            "deaths": 9,
+            "ratio": 133,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 17, "shots": 36, "accuracy": 47},
+                {"weapon": "violator", "hits": 45, "shots": 54, "accuracy": 83}
+            ]
+        },
+        {
+            "name": "ACEBot_4",
+            "score": 11,
+            "deaths": 7,
+            "ratio": 157,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 15, "shots": 31, "accuracy": 48},
+                {"weapon": "disruptor", "hits": 2, "shots": 3, "accuracy": 66},
+                {"weapon": "violator", "hits": 79, "shots": 135, "accuracy": 58}
+            ]
+        },
+        {
+            "name": "ACEBot_7",
+            "score": 11,
+            "deaths": 8,
+            "ratio": 137,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 13, "shots": 26, "accuracy": 50},
+                {"weapon": "chaingun", "hits": 10, "shots": 50, "accuracy": 20},
+                {"weapon": "violator", "hits": 63, "shots": 93, "accuracy": 67}
+            ]
+        },
+        {
+            "name": "ACEBot_5",
+            "score": 11,
+            "deaths": 8,
+            "ratio": 137,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 6, "shots": 18, "accuracy": 33},
+                {"weapon": "chaingun", "hits": 2, "shots": 17, "accuracy": 11},
+                {"weapon": "rocketlauncher", "hits": 0, "shots": 4, "accuracy": 0},
+                {"weapon": "violator", "hits": 68, "shots": 86, "accuracy": 79}
+            ]
+        },
+        {
+            "name": "ACEBot_15",
+            "score": 9,
+            "deaths": 7,
+            "ratio": 128,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 30, "shots": 35, "accuracy": 85},
+                {"weapon": "flamethrower", "hits": 0, "shots": 2, "accuracy": 0},
+                {"weapon": "violator", "hits": 20, "shots": 30, "accuracy": 66}
+            ]
+        },
+        {
+            "name": "^1Mina",
+            "score": 9,
+            "deaths": 7,
+            "ratio": 128,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 8, "shots": 23, "accuracy": 34},
+                {"weapon": "rocketlauncher", "hits": 3, "shots": 6, "accuracy": 50},
+                {"weapon": "violator", "hits": 57, "shots": 66, "accuracy": 86}
+            ]
+        },
+        {
+            "name": "ACEBot_12",
+            "score": 9,
+            "deaths": 9,
+            "ratio": 100,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 15, "shots": 32, "accuracy": 46},
+                {"weapon": "rocketlauncher", "hits": 5, "shots": 16, "accuracy": 31},
+                {"weapon": "violator", "hits": 36, "shots": 52, "accuracy": 69}
+            ]
+        },
+        {
+            "name": "ACEBot_6",
+            "score": 8,
+            "deaths": 9,
+            "ratio": 88,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 8, "shots": 30, "accuracy": 26},
+                {"weapon": "rocketlauncher", "hits": 0, "shots": 2, "accuracy": 0},
+                {"weapon": "violator", "hits": 19, "shots": 27, "accuracy": 70}
+            ]
+        },
+        {
+            "name": "ACEBot_9",
+            "score": 7,
+            "deaths": 4,
+            "ratio": 175,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 24, "shots": 43, "accuracy": 55},
+                {"weapon": "violator", "hits": 15, "shots": 32, "accuracy": 46}
+            ]
+        },
+        {
+            "name": "ACEBot_13",
+            "score": 7,
+            "deaths": 13,
+            "ratio": 53,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 17, "shots": 26, "accuracy": 65},
+                {"weapon": "flamethrower", "hits": 0, "shots": 1, "accuracy": 0},
+                {"weapon": "rocketlauncher", "hits": 0, "shots": 1, "accuracy": 0},
+                {"weapon": "violator", "hits": 29, "shots": 42, "accuracy": 69}
+            ]
+        },
+        {
+            "name": "ACEBot_11",
+            "score": 6,
+            "deaths": 6,
+            "ratio": 100,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 10, "shots": 19, "accuracy": 52},
+                {"weapon": "smartgun", "hits": 118, "shots": 132, "accuracy": 89},
+                {"weapon": "violator", "hits": 34, "shots": 83, "accuracy": 40}
+            ]
+        },
+        {
+            "name": "ACEBot_17",
+            "score": 6,
+            "deaths": 9,
+            "ratio": 66,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 19, "shots": 47, "accuracy": 40},
+                {"weapon": "violator", "hits": 28, "shots": 55, "accuracy": 50}
+            ]
+        },
+        {
+            "name": "ACEBot_14",
+            "score": 5,
+            "deaths": 7,
+            "ratio": 71,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 8, "shots": 19, "accuracy": 42},
+                {"weapon": "disruptor", "hits": 1, "shots": 10, "accuracy": 10},
+                {"weapon": "violator", "hits": 46, "shots": 61, "accuracy": 75}
+            ]
+        },
+        {
+            "name": "^3[GM]^1Jar^5'El",
+            "score": 5,
+            "deaths": 7,
+            "ratio": 71,
+            "weapon_skill": [
+                { "weapon": "blaster", "hits": 17, "shots": 26, "accuracy": 65 },
+                { "weapon": "disruptor", "hits": 11, "shots": 14, "accuracy": 78 },
+                { "weapon": "chaingun", "hits": 1, "shots": 1, "accuracy": 100 },
+                { "weapon": "rocketlauncher", "hits": 2, "shots": 6, "accuracy": 33 }
+            ]
+        },
+        {
+            "name": "ACEBot_10",
+            "score": 5,
+            "deaths": 10,
+            "ratio": 50,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 9, "shots": 22, "accuracy": 40},
+                {"weapon": "chaingun", "hits": 0, "shots": 8, "accuracy": 0},
+                {"weapon": "rocketlauncher", "hits": 1, "shots": 6, "accuracy": 16},
+                {"weapon": "violator", "hits": 8, "shots": 14, "accuracy": 57}
+            ]
+        },
+        {
+            "name": "Beavis",
+            "score": 4,
+            "deaths": 7,
+            "ratio": 57,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 25, "shots": 51, "accuracy": 49},
+                {"weapon": "chaingun", "hits": 1, "shots": 18, "accuracy": 5}
+            ]
+        },
+        {
+            "name": "ACEBot_16",
+            "score": 4,
+            "deaths": 8,
+            "ratio": 50,
+            "weapon_skill": [
+                {"weapon": "blaster", "hits": 9, "shots": 23, "accuracy": 39},
+                {"weapon": "disruptor", "hits": 2, "shots": 7, "accuracy": 28},
+                {"weapon": "violator", "hits": 59, "shots": 102, "accuracy": 57}
+            ]
+        }
+    ]
+}
