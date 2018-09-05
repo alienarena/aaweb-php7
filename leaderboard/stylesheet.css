@@ -47,7 +47,7 @@ div#content {
 }
 
 td.header {
-	background-image: linear-gradient(rgb(70, 70, 70), rgb(50, 50, 50));
+	background-image: linear-gradient(rgb(82, 73, 82), rgb(60, 55, 60));
 	font-size: smaller;
 	text-align: center;
 	white-space: nowrap;
@@ -58,7 +58,7 @@ td.header {
 }
 
 td.datarow {
-	background-image: linear-gradient(rgb(32, 32, 32), rgb(42, 42, 42));
+	background-image: linear-gradient(rgb(50, 45, 50), rgb(60, 53, 60));
 	border: solid 2px;
 	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
 	border-radius: 4px;

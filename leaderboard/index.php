@@ -45,7 +45,7 @@ echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('..
 echo "  <center>\n";
 echo "    <div style=\"height: 30px\"></div>\n";
 echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
-echo "        top: 0px; left: 0px; height: 1250px; width: 100%; background: rgb(0, 4, 8); opacity: 0.9;\" \n";
+echo "        top: 0px; left: 0px; height: 1250px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
 echo "        onclick=\"hidePopup();\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
 echo "    <table border=\"0\" style=\"width: 750px; display: none;\" id=\"leaderboardtable\">\n";

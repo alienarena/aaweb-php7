@@ -28,14 +28,13 @@ function showWeaponAccuracy(id) {
     if (!showAccuracy) {
         return;
     }
-
     var xoffset = 280;
     var yoffset = 50;
     var el = $("#" + id);
     var top = ypos - yoffset;
     var left;
-    
-    if (xpos - xoffset < 90) {
+   
+    if (xpos + xoffset + 20 < $(window).width()) {
         left = xpos + 20;
     } else {
         left = xpos - xoffset;
