@@ -16,7 +16,10 @@ $weaponAccuracyTemplate = $mustache->loadTemplate('weaponaccuracy');
 $detailsHtml = "";
 
 // Get game files.
-// File name must be in the format: "game report 2017-11-30 01.17.17 - Martian Supremacy Tournament.json"
+// The file name must be in the format: 
+// "gamereport_2017-11-30_01.17.17_Martian Supremacy Tournament.json"
+// or "gamereport_2017-11-30_01.17.17.json"
+// The title is optional (with or without spaces). Without title it will display "- No title -".
 $path = dirname(__FILE__).'/gamedata';
 $files = array_diff(scandir($path), array('.', '..'));
 
@@ -143,17 +146,13 @@ function enrichData($file, $data)
         $data['players'][$i]['totalshots'] = $shots;    
     }
    
-    $tourneyTitle = substr($file, 34, strlen($file) - 39);
-    if (strlen($tourneyTitle) == 0)
-    {
-        $tourneyTitle = '- No title -';
-    }
+    $tourneyTitle = strlen($file) <= 35 ? '- No title -' : substr($file, 31, strlen($file) - 36);
     $tourneyId = str_replace(' ', '', $tourneyTitle);
     
     // Fill tourney title, tourney id and tourney date which are used in the templates
     $data['tourney_title'] = $tourneyTitle;
     $data['tourney_id'] = $tourneyId;
-    $data['tourney_date'] = date('F j, Y', strtotime(substr($file, 12, 10)));
+    $data['tourney_date'] = date('F j, Y', strtotime(substr($file, 11, 10)));
     
     return $data;
 }

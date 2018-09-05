@@ -9,8 +9,9 @@ function hideWeaponAccuracy() {
 function showPopup(id) {
     showAccuracy = false;
     hideWeaponAccuracy();
-    $("#" + id).fadeIn();         
-    $("#overlay").fadeIn();   
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("#" + id).fadeIn();
+    $("#overlay").fadeIn();
     window.setTimeout(function() { showAccuracy = true; }, 100);
 }
 
