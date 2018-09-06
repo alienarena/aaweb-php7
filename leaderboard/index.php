@@ -147,12 +147,13 @@ function enrichData($file, $data)
     }
    
     $tourneyTitle = strlen($file) <= 35 ? '- No title -' : substr($file, 31, strlen($file) - 36);
-    $tourneyId = str_replace(' ', '', $tourneyTitle);
+    $dateString = substr($file, 11, 10);
+    $tourneyId = str_replace(' ', '', $tourneyTitle).$dateString;
     
     // Fill tourney title, tourney id and tourney date which are used in the templates
     $data['tourney_title'] = $tourneyTitle;
     $data['tourney_id'] = $tourneyId;
-    $data['tourney_date'] = date('F j, Y', strtotime(substr($file, 11, 10)));
+    $data['tourney_date'] = date('F j, Y', strtotime($dateString));
     
     return $data;
 }
