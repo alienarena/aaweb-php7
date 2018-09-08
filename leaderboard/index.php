@@ -146,7 +146,7 @@ function enrichData($file, $data)
         $data['players'][$i]['totalshots'] = $shots;    
     }
    
-    $tourneyTitle = strlen($file) <= 35 ? '- No title -' : substr($file, 31, strlen($file) - 36);
+    $tourneyTitle = htmlspecialchars(strlen($file) <= 35 ? '- No title -' : str_replace('_', ' ', substr($file, 31, strlen($file) - 36)));
     $dateString = substr($file, 11, 10);
     $tourneyId = str_replace(' ', '', $tourneyTitle).$dateString;
     
