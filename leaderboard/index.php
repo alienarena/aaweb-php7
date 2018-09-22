@@ -17,9 +17,9 @@ $detailsHtml = "";
 
 // Get game files.
 // The file name must be in the format: 
-// "gamereport_2017-11-30_01.17.17_Martian Supremacy Tournament.json"
+// "gamereport_2017-11-30_01.17.17_Martian_Supremacy_Tournament.json"
 // or "gamereport_2017-11-30_01.17.17.json"
-// The title is optional (with or without spaces). Without title it will display "- No title -".
+// The title is optional. Without title it will display "- No title -".
 $path = dirname(__FILE__).'/gamedata';
 $files = array_diff(scandir($path), array('.', '..'));
 
