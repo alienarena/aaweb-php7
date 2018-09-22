@@ -1,0 +1,28 @@
+<center>
+    <div class="title">
+        <span id="title">{{tourney_title}}</span>
+    </div>
+    <div class="subtitle" id="subtitle">{{tourney_date}}</div>
+    <table border="0" cellspacing="0" cellpadding="3" class="scoretable details" id="{{tourney_id}}">
+        <tr>
+            <td class="header playerid" style="display: none">&nbsp;</td>
+            <td class="header" style="text-align:left">NAME</td>
+            <td class="header">SCORE</td>
+            <td class="header">DEATHS</td>
+            <td class="header">RATIO</td>
+            <td class="header">HITS</td>
+            <td class="header">SHOTS</td>               
+        </tr>
+    {{#players}}
+        <tr>
+            <td class="datarow playerid" style="text-align: right; display: none">{{index}}</td>
+            <td class="datarow playername">{{name}}</td>
+            <td class="datarow" align="right">{{score}}</td>
+            <td class="datarow" align="right">{{deaths}}</td>
+            <td class="datarow" align="right">{{ratio}}%</td>
+            <td class="datarow" align="right">{{totalhits}}</td>
+            <td class="datarow" align="right">{{totalshots}}</td>
+        </tr>
+    {{/players}}
+    </table>
+</center>

@@ -42,15 +42,15 @@ function Generate_HTML_Headers()
 	echo "        <meta name=\"keywords\" content=\"Code Red CodeRed Alien Arena 2006 2007 GE UE Uranium Edition Server Browser\">\n";
 	echo "        <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
 	echo "    <link rel=\"stylesheet\" href=\"".$CONFIG['stylesheet']."\">\n";
-	echo "    <script type=\"text/javascript\" src=\"scripts/jquery-3.3.1.min.js\"></script>\n";
-    echo "    <script type=\"text/javascript\" src=\"scripts/parallaxie.js\"></script>\n";
+	echo "    <script type=\"text/javascript\" src=\"../sharedscripts/jquery-3.3.1.min.js\"></script>\n";
+    echo "    <script type=\"text/javascript\" src=\"../sharedscripts/parallaxie.js\"></script>\n";
     echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
-	echo "<body style=\"background-image: url('img/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
+	echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
 
 	/* Background with parallax-effect */
 	/* https://github.com/TheUltrasoft/Parallaxie */	
-	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('img/background.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
+	echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('../sharedimages/background.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
 	echo "<center>\n";
 
 	/* Banner/title and menu header */
