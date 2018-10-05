@@ -205,3 +205,15 @@ table#cdtable th {
 	width: 190px; /* thumbnail width */
 	padding-bottom: 3px;
 }
+
+table#cdfooter {
+	width: 270px;
+	border-spacing: 3px;        
+	border: none;
+}
+
+table#cdfooter th {
+	text-align: center;
+	background-color: rgba(17, 3, 17, 0.3);
+	padding: 5px;
+}
