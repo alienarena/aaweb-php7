@@ -165,7 +165,7 @@ function GenerateMapInfo(&$control)
 	echo "</p>\n";
 
 	
-	echo "<table id=cdtable>\n";
+	echo "<table id=cdtable class=info>\n";
 
 	echo "<tr><th>Map name</th>";
 	echo "<td>{$control['id']}</td></tr>\n";

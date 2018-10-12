@@ -173,7 +173,7 @@ function GeneratePlayerInfo(&$control)
 
 	echo "<div class=\"cdsubtitle\">Player information covering the last {$control['history']} hours</div>\n";
 
-	echo "<table id=cdtable>\n";
+	echo "<table id=cdtable class=info>\n";
 
 	echo "<tr><th>Name</th>";
 	echo "<td>{$control['id']}</td></tr>\n";

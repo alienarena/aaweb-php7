@@ -286,7 +286,7 @@ function GenerateServerInfo(&$control)
 	echo "</table>\n";
 
 	echo "<br/>\n";
-	echo "<table id=cdtable>";
+	echo "<table id=cdtable class=info>";
 
 	echo "<tr><th>Hostname</th>";
 	echo "<td>".LimitString($hostname, 40)."</td></tr>";

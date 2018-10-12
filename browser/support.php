@@ -94,31 +94,31 @@ function BuildControl()
 		'serverstats' => array(
 			'orderby' => array('default'=>'playertime', 'uptime', 'maxplayers'),
 			'sort' => array('default'=>'desc', 'asc'),
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'results' => array('default'=>20, 'min'=>1, 'max'=>50)
 			),
 		'playerstats' => array(
 			'orderby' => array('name', 'totalscore', 'default'=>'playertime', 'fragrate'),
 			'sort' => array('default'=>'desc', 'asc'),
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'results' => array('default'=>20, 'min'=>1, 'max'=>50)		
 			),
 		'mapstats' => array(
 			'orderby' => array('mapname', 'servedtime', 'default'=>'playertime', 'maxplayers'),
 			'sort' => array('default'=>'desc', 'asc'),
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'results' => array('default'=>20, 'min'=>1, 'max'=>50)				
 			),
 		'serverinfo' => array(
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'id'=>array('default'=>0, 'min'=>0)
 			),
 		'playerinfo' => array(
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'id'=>array() /* Anything accepted */
 			),
 		'mapinfo' => array(
-			'history' => array('default'=>24, 'min'=>1, 'max'=>24),
+			'history' => array('default'=>48, 'min'=>1, 'max'=>48),
 			'id'=>array() /* Anything accepted */
 			),
 		'serversearch' => array(),

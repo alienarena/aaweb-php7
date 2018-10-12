@@ -39,7 +39,7 @@ $CONFIG['graphheight'] = 150;
 
 /* Server scanner - duration (in seconds) to keep server
    and player data in the database */
-$CONFIG['dbExpire'] = 60 * 60 * 24;  /* Default - 24 hours */
+$CONFIG['dbExpire'] = 60 * 60 * 48;  /* Default - 48 hours */
 
 /* RSS "popular servers" feed - duration in seconds to consider */
 $CONFIG['duration'] = 6*60*60; /* Default - 6 hours */

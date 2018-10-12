@@ -63,7 +63,7 @@ foreach ($_GET as $key => $value)
 if(!array_key_exists('show', $control))
 	$control['show'] = 'players';
 if(!array_key_exists('history', $control))
-	$control['history'] = 24;
+	$control['history'] = 48;
 if(!array_key_exists('id', $control))
 	$control['id'] = 0;
 
@@ -71,8 +71,8 @@ if(!array_key_exists('id', $control))
 if($control['history'] < 1)
 	$control['history'] = 1;
 
-if($control['history'] > 24)
-	$control['history'] = 24;
+if($control['history'] > 48)
+	$control['history'] = 48;
 	
 $control['id'] = intval($control['id']);  /* Just in case someone tries mysql injection with a string */
 if($control['id'] < 0)
