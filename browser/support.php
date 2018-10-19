@@ -272,9 +272,10 @@ function GetLastUpdated()
 
 // $display is the string to show in the header, $orderby is the sort order
 // uses a copy of $control in order not modify original array
-function Insert_Table_Sorter($control, $display, $orderby)
+function Insert_Table_Sorter($control, $display, $orderby, $align = "left", $break = false)
 {
-	echo "<th>".$display."<br>";
+	echo "<th style=\"text-align: ".$align."\">".$display;
+	echo $break ? "<br>" : "&nbsp;";
 	$control['orderby'] = $orderby;
 	$control['sort'] = 'desc';
 	echo "<span onclick='location.href=\"".Generate_URL($control)."\"' style=\"cursor:pointer;\">▼</span>";

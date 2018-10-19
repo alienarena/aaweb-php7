@@ -98,7 +98,7 @@ function GenerateMapTable(&$control)
 	Insert_Table_Sorter($control, $display = 'Map name', $orderby = 'mapname'); 
 	Insert_Table_Sorter($control, $display = 'Total player time', $orderby = 'playertime'); 
 	Insert_Table_Sorter($control, $display = 'Time served', $orderby = 'servedtime'); 
-	Insert_Table_Sorter($control, $display = 'Most players at once', $orderby = 'maxplayers'); 
+	Insert_Table_Sorter($control, $display = 'Most players', $orderby = 'maxplayers'); 
 	echo "</tr>\n";
 
 	while($svlog_row = mysqli_fetch_array($svlog_result, MYSQLI_ASSOC))

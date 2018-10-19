@@ -181,9 +181,9 @@ function GenerateServerTable(&$control)
 	echo "<th>Country</th>";
 	echo "<th>Admin</th>";
 
-	Insert_Table_Sorter($control, $display = 'Uptime', $orderby = 'uptime'); 
-	Insert_Table_Sorter($control, $display = 'Total player time', $orderby = 'playertime'); 
-	Insert_Table_Sorter($control, $display = 'Most players at once', $orderby = 'maxplayers'); 
+	Insert_Table_Sorter($control, $display = 'Uptime', $orderby = 'uptime', $align = "center", $break = true); 
+	Insert_Table_Sorter($control, $display = 'Player time', $orderby = 'playertime', $align = "center", $break = true); 
+	Insert_Table_Sorter($control, $display = 'Most players', $orderby = 'maxplayers', $align = "center", $break = true); 
 	
 	echo "</tr>\n";
 
@@ -208,9 +208,9 @@ function GenerateServerTable(&$control)
 		echo '</td>';
 
 		echo "<td>{$sv_row['admin']}</td>";
-		echo "<td>".$uptime."%</td>";
-		echo "<td>".MinutesToString($svlog_row['playertime'])."</td>";
-		echo "<td>{$svlog_row['maxplayers']}</td>";
+		echo "<td style=\"text-align: center\">".$uptime."%</td>";
+		echo "<td style=\"text-align: center\">".MinutesToString($svlog_row['playertime'])."</td>";
+		echo "<td style=\"text-align: center\">{$svlog_row['maxplayers']}</td>";
 		echo "</tr>\n";
 		mysqli_free_result($sv_result);
 	} 
