@@ -60,12 +60,12 @@ $filename = GetFilename();
 
 echo '<div class="container">';
 echo '<div class="menu">';
-echo ' - ';
-echo "<a href=\"{$filename}?action=liveservers\">Live games</a> - ";
-echo "<a href=\"{$filename}?action=liveplayers\">Live players</a> - ";
-echo "<a href=\"{$filename}?action=serverstats\">Server stats</a> - ";
-echo "<a href=\"{$filename}?action=playerstats\">Player stats</a> - ";
-echo "<a href=\"{$filename}?action=mapstats\">Map stats</a> - ";
+echo "<a href=\"{$filename}?action=liveservers\">Live games</a>";
+echo " | <a href=\"{$filename}?action=liveplayers\">Live players</a>";
+echo " | <a href=\"{$filename}?action=serverstats\">Server stats</a>";
+echo " | <a href=\"{$filename}?action=playerstats\">Player stats</a>";
+echo " | <a href=\"{$filename}?action=mapstats\">Map stats</a>";
+//echo " | <a href=\"".$CONFIG['baseurl']."leaderboard/\" target=\"_blank\">Leaderboard</a>";
 echo "</div>\n";
 echo "</div>\n";
 
