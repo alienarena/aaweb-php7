@@ -77,9 +77,9 @@ echo "    <script type=\"text/javascript\">\n";
 echo "        $(document).ready(function() {\n";
 echo "           documentReady();\n";
 echo "              $(\".parallaxie\").parallaxie();\n";
+echo "              $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";
 if (!$details) 
 {
-    echo "           $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";
     echo "           $(document).keyup(function(e) {\n";
     echo "               if (e.keyCode == 27) {\n"; 
     echo "                   hidePopup();\n";
