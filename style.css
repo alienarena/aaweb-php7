@@ -209,7 +209,9 @@ table#cdtable th {
 
 table#cdtable.info th {
 	text-align: right;
+	white-space: nowrap;
 	padding-right: 5px;
+	width: 1px;
 }
 
 table#cdfooter {
