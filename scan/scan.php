@@ -19,7 +19,7 @@ define("MAX_SERVERS",256); /* Used to be hardcoded to 64! */
 define("MASTER_QUERY","query"); /* Query string to sent to master server */
 
 /* Query string to send to individual games servers. This needs to start with 0xFFFFFFFF. */
-define("SERVER_QUERY","����status\n"); 
+define("SERVER_QUERY","ÿÿÿÿstatus\n");
 
 define("MASTER_ADDRESS",'master2.corservers.com');
 define("MASTER_PORT",27900);
