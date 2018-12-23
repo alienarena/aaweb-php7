@@ -17,10 +17,7 @@ define("VERSION", "1.0.0");
 define("MAX_INSTANCES",5); /* Maximum number of instances of this script allowed to run at once */
 define("MAX_SERVERS",256); /* Used to be hardcoded to 64! */
 define("MASTER_QUERY","query"); /* Query string to sent to master server */
-
-/* Query string to send to individual games servers. This needs to start with 0xFFFFFFFF. */
-define("SERVER_QUERY","Ã¿Ã¿Ã¿Ã¿status\n");
-
+define("SERVER_QUERY","ÿÿÿÿstatus\n"); /* Query string to send to individual games servers */
 define("MASTER_ADDRESS",'master2.corservers.com');
 define("MASTER_PORT",27900);
 define("SERVER_RETRIES",3); /* Maximum number of times to try querying a games server */
