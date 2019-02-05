@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 48,
+			"deaths": 57,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 422, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 39,
+			"deaths": 56,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 412, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 39,
+			"deaths": 61,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 407, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3(^8GM^3)^7Dondo",
+			"score": 37,
+			"deaths": 51,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 453, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^3^1Jar^5'El",
+			"score": 24,
+			"deaths": 68,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 404, "accuracy": 25}
+			]
+		}
+	]
+}

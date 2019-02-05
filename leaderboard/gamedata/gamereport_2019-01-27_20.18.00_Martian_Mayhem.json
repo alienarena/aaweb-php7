@@ -1,0 +1,153 @@
+{
+	"players": [
+		{
+			"name": "^0[^3GM^0]^6vis",
+			"score": 79,
+			"deaths": 41,
+			"ratio": 192,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 36, "shots": 59, "accuracy": 61},
+				{"weapon": "disruptor", "hits": 59, "shots": 105, "accuracy": 56},
+				{"weapon": "smartgun", "hits": 159, "shots": 212, "accuracy": 75},
+				{"weapon": "chaingun", "hits": 124, "shots": 482, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 23, "shots": 87, "accuracy": 26},
+				{"weapon": "beamgun", "hits": 245, "shots": 406, "accuracy": 60},
+				{"weapon": "violator", "hits": 33, "shots": 361, "accuracy": 9}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 71,
+			"deaths": 47,
+			"ratio": 151,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 12, "accuracy": 50},
+				{"weapon": "disruptor", "hits": 9, "shots": 25, "accuracy": 36},
+				{"weapon": "smartgun", "hits": 445, "shots": 535, "accuracy": 83},
+				{"weapon": "chaingun", "hits": 191, "shots": 959, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 18, "shots": 51, "accuracy": 35},
+				{"weapon": "beamgun", "hits": 155, "shots": 340, "accuracy": 45},
+				{"weapon": "violator", "hits": 55, "shots": 1005, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 49,
+			"deaths": 47,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 36, "accuracy": 41},
+				{"weapon": "disruptor", "hits": 5, "shots": 17, "accuracy": 29},
+				{"weapon": "smartgun", "hits": 221, "shots": 267, "accuracy": 82},
+				{"weapon": "chaingun", "hits": 158, "shots": 572, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 83, "accuracy": 25},
+				{"weapon": "beamgun", "hits": 285, "shots": 686, "accuracy": 41},
+				{"weapon": "violator", "hits": 17, "shots": 413, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3[GM]^3^1Jar^5'El",
+			"score": 49,
+			"deaths": 51,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 66, "shots": 126, "accuracy": 52},
+				{"weapon": "disruptor", "hits": 14, "shots": 43, "accuracy": 32},
+				{"weapon": "smartgun", "hits": 387, "shots": 452, "accuracy": 85},
+				{"weapon": "chaingun", "hits": 181, "shots": 880, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 66, "accuracy": 24},
+				{"weapon": "beamgun", "hits": 66, "shots": 142, "accuracy": 46},
+				{"weapon": "violator", "hits": 15, "shots": 258, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 46,
+			"deaths": 49,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 17, "shots": 46, "accuracy": 36},
+				{"weapon": "disruptor", "hits": 14, "shots": 38, "accuracy": 36},
+				{"weapon": "smartgun", "hits": 158, "shots": 193, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 219, "shots": 1077, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 6, "shots": 29, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 159, "shots": 377, "accuracy": 42},
+				{"weapon": "violator", "hits": 41, "shots": 734, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[T3]Nero",
+			"score": 39,
+			"deaths": 55,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 165, "shots": 333, "accuracy": 49},
+				{"weapon": "disruptor", "hits": 22, "shots": 84, "accuracy": 26},
+				{"weapon": "smartgun", "hits": 183, "shots": 228, "accuracy": 80},
+				{"weapon": "chaingun", "hits": 48, "shots": 178, "accuracy": 26},
+				{"weapon": "rocketlauncher", "hits": 26, "shots": 47, "accuracy": 55},
+				{"weapon": "beamgun", "hits": 66, "shots": 122, "accuracy": 54}
+			]
+		},
+		{
+			"name": "(T3)mtsu",
+			"score": 37,
+			"deaths": 46,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 82, "shots": 214, "accuracy": 38},
+				{"weapon": "disruptor", "hits": 11, "shots": 41, "accuracy": 26},
+				{"weapon": "smartgun", "hits": 128, "shots": 162, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 54, "shots": 195, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 54, "accuracy": 38},
+				{"weapon": "beamgun", "hits": 107, "shots": 242, "accuracy": 44},
+				{"weapon": "violator", "hits": 2, "shots": 78, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 34,
+			"deaths": 54,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 95, "shots": 258, "accuracy": 36},
+				{"weapon": "disruptor", "hits": 2, "shots": 4, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 240, "shots": 314, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 93, "shots": 528, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 29, "accuracy": 34},
+				{"weapon": "beamgun", "hits": 47, "shots": 189, "accuracy": 24},
+				{"weapon": "violator", "hits": 6, "shots": 240, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 28,
+			"deaths": 63,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 137, "shots": 436, "accuracy": 31},
+				{"weapon": "disruptor", "hits": 2, "shots": 9, "accuracy": 22},
+				{"weapon": "smartgun", "hits": 170, "shots": 208, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 67, "shots": 157, "accuracy": 42},
+				{"weapon": "rocketlauncher", "hits": 6, "shots": 28, "accuracy": 21},
+				{"weapon": "beamgun", "hits": 43, "shots": 202, "accuracy": 21},
+				{"weapon": "violator", "hits": 12, "shots": 572, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 23,
+			"deaths": 20,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 36, "shots": 70, "accuracy": 51},
+				{"weapon": "disruptor", "hits": 12, "shots": 26, "accuracy": 46},
+				{"weapon": "smartgun", "hits": 54, "shots": 68, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 25, "shots": 133, "accuracy": 18},
+				{"weapon": "rocketlauncher", "hits": 11, "shots": 19, "accuracy": 57},
+				{"weapon": "beamgun", "hits": 59, "shots": 128, "accuracy": 46},
+				{"weapon": "violator", "hits": 9, "shots": 180, "accuracy": 5}
+			]
+		}
+	]
+}

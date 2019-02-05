@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^3(^8GM^3)^7Dondo",
+			"score": 98,
+			"deaths": 60,
+			"ratio": 163,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 109, "shots": 316, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 92,
+			"deaths": 67,
+			"ratio": 137,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 284, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^7[SIN]^3pantera",
+			"score": 72,
+			"deaths": 80,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 77, "shots": 294, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^3^1Jar^5'El",
+			"score": 62,
+			"deaths": 61,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 279, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 43,
+			"deaths": 84,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 47, "shots": 243, "accuracy": 19}
+			]
+		}
+	]
+}

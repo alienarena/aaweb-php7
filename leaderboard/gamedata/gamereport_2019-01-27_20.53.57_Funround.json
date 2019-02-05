@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "^0[^3GM^0]^6vis",
+			"score": 73,
+			"deaths": 49,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 179, "shots": 460, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 62,
+			"deaths": 51,
+			"ratio": 121,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 675, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[T3]Nero",
+			"score": 44,
+			"deaths": 43,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 360, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^3^1Jar^5'El",
+			"score": 39,
+			"deaths": 61,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 499, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 38,
+			"deaths": 52,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 385, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 26,
+			"deaths": 24,
+			"ratio": 108,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 72, "shots": 192, "accuracy": 37}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 26,
+			"deaths": 58,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 375, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 11,
+			"deaths": 57,
+			"ratio": 19,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 64, "shots": 294, "accuracy": 21}
+			]
+		}
+	]
+}

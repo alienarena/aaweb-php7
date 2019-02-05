@@ -1,0 +1,78 @@
+{
+	"players": [
+		{
+			"name": "{T3}ToastRawr",
+			"score": 192,
+			"deaths": 71,
+			"ratio": 270,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 213, "shots": 404, "accuracy": 52}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 128,
+			"deaths": 77,
+			"ratio": 166,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 138, "shots": 312, "accuracy": 44}
+			]
+		},
+		{
+			"name": "^3[GM]^3^1Jar^5'El",
+			"score": 94,
+			"deaths": 88,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 365, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 89,
+			"deaths": 87,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 98, "shots": 294, "accuracy": 33},
+				{"weapon": "violator", "hits": 0, "shots": 7, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^5[^3GM^4]^3VSI",
+			"score": 68,
+			"deaths": 103,
+			"ratio": 66,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 220, "accuracy": 32},
+				{"weapon": "violator", "hits": 18, "shots": 425, "accuracy": 4}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 58,
+			"deaths": 100,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 294, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^4Sasuke",
+			"score": 50,
+			"deaths": 102,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 231, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 26,
+			"deaths": 107,
+			"ratio": 24,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 27, "shots": 430, "accuracy": 6}
+			]
+		}
+	]
+}

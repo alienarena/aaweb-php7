@@ -14,6 +14,8 @@ $template = $mustache->loadTemplate('scoretemplate');
 $detailsTemplate = $mustache->loadTemplate('scoretemplatedetails');
 $weaponAccuracyTemplate = $mustache->loadTemplate('weaponaccuracy');
 $detailsHtml = "";
+$leaderboardCols = 4;
+$leaderboardWidth = 1000;
 
 // Get game files.
 // The file name must be in the format: 
@@ -48,17 +50,17 @@ echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('..
 echo "  <center>\n";
 echo "    <div style=\"height: 30px\"></div>\n";
 echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
-echo "        top: 0px; left: 0px; height: 1250px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
+echo "        top: 0px; left: 0px; height: 2512px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
 echo "        onclick=\"hidePopup();\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
-echo "    <table border=\"0\" style=\"width: 750px; display: none;\" id=\"leaderboardtable\">\n";
+echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
 
 echo "        <tr>\n";
 
 $colCount = 0;
 foreach($files as $file) 
 {
-    if ($colCount > 0 && $colCount % 3 == 0)
+    if ($colCount > 0 && $colCount % $leaderboardCols == 0)
     {
         echo "</tr>\n";
         echo "<tr>\n";
@@ -116,10 +118,10 @@ function renderScoreListAndPrepareDetails($file)
     echo $details ? $detailsTemplate->render($data) : $template->render($shortlist);
     echo "</td>\n";
     
-    if (!$details) 
+    if (!$details)
     {
         $detailsHtml = $detailsHtml."<div class=\"details\" id=\"$popupId\" style=\"display: none; z-index: 200; ";
-        $detailsHtml = $detailsHtml."  position: absolute; top: 90px; left: 50%; margin-left: -363px; height: 950px; width: 725px;\" ";
+        $detailsHtml = $detailsHtml."  position: fixed; top: 90px; left: 50%; margin-left: -363px; height: 950px; width: 725px;\" ";
         $detailsHtml = $detailsHtml."  onclick=\"hidePopup();\">\n";
         $detailsHtml = $detailsHtml.$detailsTemplate->render($data);
         $detailsHtml = $detailsHtml."</div>\n";    
