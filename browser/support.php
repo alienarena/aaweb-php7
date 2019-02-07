@@ -38,13 +38,13 @@ function Generate_HTML_Headers()
 	echo "<head>\n";
 	echo "    <title>".$CONFIG['title']."</title>\n";
 	echo "    <base href=\"".$CONFIG['baseurl']."browser/\">\n";
-	echo "        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\n";
-	echo "        <meta name=\"keywords\" content=\"Code Red CodeRed Alien Arena 2006 2007 GE UE Uranium Edition Server Browser\">\n";
-	echo "        <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
+	echo "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\n";
+	echo "    <meta name=\"keywords\" content=\"Alien Arena Warriors of Mars Server Browser player activity online players\">\n";
+	echo "    <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
 	echo "    <link rel=\"stylesheet\" href=\"".$CONFIG['stylesheet']."\">\n";
 	echo "    <script type=\"text/javascript\" src=\"../sharedscripts/jquery-3.3.1.min.js\"></script>\n";
-    echo "    <script type=\"text/javascript\" src=\"../sharedscripts/parallaxie.js\"></script>\n";
-    echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
+  echo "    <script type=\"text/javascript\" src=\"../sharedscripts/parallaxie.js\"></script>\n";
+  echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
 	echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
 

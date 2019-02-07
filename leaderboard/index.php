@@ -34,6 +34,8 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR
 echo "<html>\n";
 echo "<head>\n";
 echo "    <title>Alien Arena tournament leaderboard</title>\n";
+echo "    <meta name=\"description\" content=\"Alien Arena tournament leaderboard\">\n";
+echo "    <meta name=\"keywords\" content=\"Alien Arena Warriors of Mars tournament leaderboard scores statistics stats\">\n";
 echo "    <link href=\"https://fonts.googleapis.com/css?family=Aldrich\" rel=\"stylesheet\">\n";
 echo "    <link rel=\"stylesheet\" type=\"text/css\" href=\"stylesheet.css\">\n";
 echo "    <script src=\"../sharedscripts/jquery-3.3.1.min.js\"></script>\n";
