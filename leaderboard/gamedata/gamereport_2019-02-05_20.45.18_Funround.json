@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 59,
+			"deaths": 56,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 140, "shots": 473, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 48,
+			"deaths": 51,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 580, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 47,
+			"deaths": 55,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 135, "shots": 454, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[GM]aliencat",
+			"score": 45,
+			"deaths": 57,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 434, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 45,
+			"deaths": 59,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 126, "shots": 505, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^8(^4GM^8)^5Dondo",
+			"score": 44,
+			"deaths": 60,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 155, "shots": 596, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 43,
+			"deaths": 61,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 497, "accuracy": 21}
+			]
+		}
+	]
+}

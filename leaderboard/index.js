@@ -9,6 +9,10 @@ function hideWeaponAccuracy() {
 function showPopup(id) {
     showAccuracy = false;
     hideWeaponAccuracy();
+    
+    // Disable scrolling    
+    $("body").css("overflow", "hidden");
+
     $("#" + id).fadeIn();
     $("#overlay").fadeIn();
     window.setTimeout(function() { showAccuracy = true; }, 100);
@@ -17,6 +21,10 @@ function showPopup(id) {
 function hidePopup() {
     showAccuracy = false;
     hideWeaponAccuracy();
+    
+    // Enable scrolling    
+    $("body").css("overflow", "visible");
+
     $("#overlay").fadeOut()
     $("div.details").fadeOut()
 }
@@ -31,7 +39,7 @@ function showWeaponAccuracy(id) {
     var xoffset = 280;
     var yoffset = 50;
     var el = $("#" + id);
-    var top = ypos - yoffset;
+    var top = ypos - yoffset;    
     var left;
    
     if (xpos + xoffset + 20 < $(window).width()) {
