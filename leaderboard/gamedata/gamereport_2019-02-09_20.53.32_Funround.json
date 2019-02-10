@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 58,
+			"deaths": 43,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 132, "shots": 483, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 46,
+			"deaths": 54,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 508, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 35,
+			"deaths": 55,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 549, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[SiN]Xenos",
+			"score": 28,
+			"deaths": 48,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 78, "shots": 461, "accuracy": 16}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 21,
+			"deaths": 50,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 75, "shots": 378, "accuracy": 19}
+			]
+		}
+	]
+}

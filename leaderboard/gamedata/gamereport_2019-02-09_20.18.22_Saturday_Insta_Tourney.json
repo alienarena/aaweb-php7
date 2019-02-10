@@ -1,0 +1,87 @@
+{
+	"players": [
+		{
+			"name": "[T3]ToastRawr",
+			"score": 122,
+			"deaths": 54,
+			"ratio": 225,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 153, "shots": 333, "accuracy": 45}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 96,
+			"deaths": 78,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 114, "shots": 288, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 83,
+			"deaths": 56,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 265, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 72,
+			"deaths": 76,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 86, "shots": 208, "accuracy": 41}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 58,
+			"deaths": 63,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 262, "accuracy": 29},
+				{"weapon": "violator", "hits": 0, "shots": 3, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 58,
+			"deaths": 74,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 284, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[SiN]Xenos",
+			"score": 47,
+			"deaths": 74,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 176, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 42,
+			"deaths": 57,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 50, "shots": 145, "accuracy": 34},
+				{"weapon": "violator", "hits": 2, "shots": 39, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1o^3r^1a^3n",
+			"score": 25,
+			"deaths": 71,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 167, "accuracy": 17}
+			]
+		}
+	]
+}
