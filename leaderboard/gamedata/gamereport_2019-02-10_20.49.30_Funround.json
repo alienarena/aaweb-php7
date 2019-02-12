@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "hanz GM guy",
+			"score": 64,
+			"deaths": 45,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 142, "shots": 463, "accuracy": 30}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 34,
+			"deaths": 53,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 441, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 29,
+			"deaths": 46,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 406, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 27,
+			"deaths": 57,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 434, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 23,
+			"deaths": 50,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 87, "shots": 344, "accuracy": 25}
+			]
+		},
+		{
+			"name": "Fleet",
+			"score": 18,
+			"deaths": 52,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 75, "shots": 246, "accuracy": 30}
+			]
+		}
+	]
+}
