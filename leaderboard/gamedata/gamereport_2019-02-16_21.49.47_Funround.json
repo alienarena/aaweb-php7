@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "h",
+			"score": 61,
+			"deaths": 31,
+			"ratio": 196,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 164, "shots": 519, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 39,
+			"deaths": 45,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 510, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 37,
+			"deaths": 36,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 519, "accuracy": 16}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 34,
+			"deaths": 44,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 97, "shots": 455, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 33,
+			"deaths": 40,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 483, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^3[GM]^4AlienCat",
+			"score": 5,
+			"deaths": 8,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 19, "shots": 84, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 5,
+			"deaths": 46,
+			"ratio": 10,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 292, "accuracy": 12}
+			]
+		}
+	]
+}

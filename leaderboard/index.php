@@ -10,6 +10,7 @@ $mustache = new Mustache_Engine(array(
 $details = false;
 $maxPlayersForDetails = 25;    
 $maxPlayersTopView = 12;    
+$maxGameReports = 20;
 $template = $mustache->loadTemplate('scoretemplate');
 $detailsTemplate = $mustache->loadTemplate('scoretemplatedetails');
 $weaponAccuracyTemplate = $mustache->loadTemplate('weaponaccuracy');
@@ -23,11 +24,25 @@ $leaderboardWidth = 1000;
 // or "gamereport_2017-11-30_01.17.17.json"
 // The title is optional. Without title it will display "- No title -".
 $path = dirname(__FILE__).'/gamedata';
-$files = array_diff(scandir($path), array('.', '..'));
+$files = array_diff(scandir($path, SCANDIR_SORT_DESCENDING), array('.', '..'));
 
 if (count($files) == 1)
 {
     $details = true;
+} else {
+    array_splice($files, $maxGameReports);
+    for($i = 0; $i < count($files); $i++) {
+        $tourneyTitle = htmlspecialchars(strlen($files[$i]) <= 35 ? '- No title -' : str_replace('_', ' ', substr($files[$i], 31, strlen($files[$i]) - 36)));
+        $tourneyDateString = substr($files[$i], 11, 10);
+        if(strtolower($tourneyTitle) == 'funround' && $i < count($files)) {
+            if ($tourneyDateString == substr($files[$i + 1], 11, 10)) {
+                // Switch order to show the funround after the main round
+                $temp = $files[$i];
+                $files[$i] = $files[$i + 1];
+                $files[$i + 1] = $temp;
+            }
+        }
+    }
 }
 
 echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n";
@@ -68,7 +83,7 @@ foreach($files as $file)
         echo "<tr>\n";
     }
 
-    renderScoreListAndPrepareDetails($file);
+    echo renderScoreListAndPrepareDetails($file);
 
     $colCount++;
 }
@@ -116,9 +131,14 @@ function renderScoreListAndPrepareDetails($file)
     $height = $details ? '950px' : '480px';
     $popupId = 'popup'.$data['tourney_id'];
     $onclick = !$details ? " onclick=\"showPopup('$popupId');\"" : "";
-    echo "<td style=\"vertical-align: top; height: $height;\" $onclick>\n";
-    echo $details ? $detailsTemplate->render($data) : $template->render($shortlist);
-    echo "</td>\n";
+    
+    $table = "<td style=\"vertical-align: top; height: $height;\" $onclick>\n";
+    if ($details) {
+        $table = $table.$detailsTemplate->render($data);
+    } else {
+        $table = $table.$template->render($shortlist);
+    }
+    $table = $table."</td>\n";
     
     if (!$details)
     {
@@ -129,6 +149,8 @@ function renderScoreListAndPrepareDetails($file)
         $detailsHtml = $detailsHtml."</div>\n";    
     }
     $detailsHtml = $detailsHtml.$weaponAccuracyTemplate->render($data);
+
+    return $table;
 }
 
 function enrichData($file, $data)
@@ -151,13 +173,13 @@ function enrichData($file, $data)
     }
    
     $tourneyTitle = htmlspecialchars(strlen($file) <= 35 ? '- No title -' : str_replace('_', ' ', substr($file, 31, strlen($file) - 36)));
-    $dateString = substr($file, 11, 10);
-    $tourneyId = str_replace(' ', '', $tourneyTitle).$dateString;
+    $tourneyDateString = substr($file, 11, 10);
+    $tourneyId = str_replace(' ', '', $tourneyTitle).$tourneyDateString;
     
     // Fill tourney title, tourney id and tourney date which are used in the templates
     $data['tourney_title'] = $tourneyTitle;
     $data['tourney_id'] = $tourneyId;
-    $data['tourney_date'] = date('F j, Y', strtotime($dateString));
+    $data['tourney_date'] = date('F j, Y', strtotime($tourneyDateString));
     
     return $data;
 }

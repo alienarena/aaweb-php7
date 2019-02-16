@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 110,
+			"deaths": 43,
+			"ratio": 255,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 130, "shots": 281, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 68,
+			"deaths": 59,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 82, "shots": 186, "accuracy": 44}
+			]
+		},
+		{
+			"name": "hanz frags you",
+			"score": 59,
+			"deaths": 60,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 162, "shots": 333, "accuracy": 48}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 46,
+			"deaths": 63,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 50, "shots": 186, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 40,
+			"deaths": 63,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 102, "shots": 243, "accuracy": 41}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 17,
+			"deaths": 77,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 223, "accuracy": 30}
+			]
+		}
+	]
+}
