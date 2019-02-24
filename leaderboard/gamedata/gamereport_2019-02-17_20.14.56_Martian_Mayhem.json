@@ -1,0 +1,153 @@
+{
+	"players": [
+		{
+			"name": "{T3}ToastRawr",
+			"score": 98,
+			"deaths": 59,
+			"ratio": 166,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 29, "accuracy": 34},
+				{"weapon": "disruptor", "hits": 8, "shots": 16, "accuracy": 50},
+				{"weapon": "chaingun", "hits": 206, "shots": 706, "accuracy": 29},
+				{"weapon": "rocketlauncher", "hits": 2, "shots": 3, "accuracy": 66},
+				{"weapon": "beamgun", "hits": 654, "shots": 996, "accuracy": 65},
+				{"weapon": "vaporizer", "hits": 38, "shots": 45, "accuracy": 84},
+				{"weapon": "violator", "hits": 86, "shots": 1175, "accuracy": 7}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 87,
+			"deaths": 53,
+			"ratio": 164,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 23, "accuracy": 65},
+				{"weapon": "disruptor", "hits": 14, "shots": 33, "accuracy": 42},
+				{"weapon": "chaingun", "hits": 30, "shots": 174, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 24, "shots": 66, "accuracy": 36},
+				{"weapon": "beamgun", "hits": 154, "shots": 306, "accuracy": 50},
+				{"weapon": "vaporizer", "hits": 10, "shots": 13, "accuracy": 76},
+				{"weapon": "violator", "hits": 157, "shots": 2078, "accuracy": 7}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 71,
+			"deaths": 62,
+			"ratio": 114,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 7, "shots": 25, "accuracy": 28},
+				{"weapon": "disruptor", "hits": 1, "shots": 6, "accuracy": 16},
+				{"weapon": "chaingun", "hits": 223, "shots": 919, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 38, "shots": 63, "accuracy": 60},
+				{"weapon": "beamgun", "hits": 20, "shots": 23, "accuracy": 86},
+				{"weapon": "vaporizer", "hits": 23, "shots": 35, "accuracy": 65},
+				{"weapon": "violator", "hits": 117, "shots": 1903, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 51,
+			"deaths": 55,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 54, "shots": 79, "accuracy": 68},
+				{"weapon": "disruptor", "hits": 0, "shots": 5, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 174, "shots": 632, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 33, "shots": 109, "accuracy": 30},
+				{"weapon": "vaporizer", "hits": 17, "shots": 31, "accuracy": 54},
+				{"weapon": "violator", "hits": 36, "shots": 635, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 66,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 129, "shots": 225, "accuracy": 57},
+				{"weapon": "disruptor", "hits": 3, "shots": 8, "accuracy": 37},
+				{"weapon": "chaingun", "hits": 97, "shots": 484, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 19, "accuracy": 26},
+				{"weapon": "beamgun", "hits": 180, "shots": 532, "accuracy": 33},
+				{"weapon": "vaporizer", "hits": 20, "shots": 32, "accuracy": 62},
+				{"weapon": "violator", "hits": 41, "shots": 869, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3{^8GM^3}Skelfir",
+			"score": 42,
+			"deaths": 60,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 141, "shots": 272, "accuracy": 51},
+				{"weapon": "disruptor", "hits": 6, "shots": 19, "accuracy": 31},
+				{"weapon": "chaingun", "hits": 23, "shots": 97, "accuracy": 23},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 34, "accuracy": 47},
+				{"weapon": "beamgun", "hits": 178, "shots": 363, "accuracy": 49},
+				{"weapon": "vaporizer", "hits": 10, "shots": 13, "accuracy": 76},
+				{"weapon": "violator", "hits": 49, "shots": 1007, "accuracy": 4}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 40,
+			"deaths": 58,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 190, "shots": 270, "accuracy": 70},
+				{"weapon": "disruptor", "hits": 25, "shots": 81, "accuracy": 30},
+				{"weapon": "chaingun", "hits": 24, "shots": 128, "accuracy": 18},
+				{"weapon": "rocketlauncher", "hits": 13, "shots": 19, "accuracy": 68},
+				{"weapon": "beamgun", "hits": 60, "shots": 135, "accuracy": 44},
+				{"weapon": "vaporizer", "hits": 1, "shots": 2, "accuracy": 50},
+				{"weapon": "violator", "hits": 31, "shots": 751, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3[GM]^4AlienCat",
+			"score": 30,
+			"deaths": 60,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 219, "shots": 569, "accuracy": 38},
+				{"weapon": "disruptor", "hits": 3, "shots": 7, "accuracy": 42},
+				{"weapon": "chaingun", "hits": 22, "shots": 137, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 33, "accuracy": 42},
+				{"weapon": "beamgun", "hits": 59, "shots": 108, "accuracy": 54},
+				{"weapon": "vaporizer", "hits": 12, "shots": 15, "accuracy": 80},
+				{"weapon": "violator", "hits": 15, "shots": 289, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 27,
+			"deaths": 73,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 210, "shots": 484, "accuracy": 43},
+				{"weapon": "disruptor", "hits": 2, "shots": 10, "accuracy": 20},
+				{"weapon": "chaingun", "hits": 25, "shots": 101, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 7, "shots": 23, "accuracy": 30},
+				{"weapon": "beamgun", "hits": 28, "shots": 116, "accuracy": 24},
+				{"weapon": "vaporizer", "hits": 10, "shots": 18, "accuracy": 55},
+				{"weapon": "violator", "hits": 5, "shots": 74, "accuracy": 6}
+			]
+		},
+		{
+			"name": "Fleet",
+			"score": 19,
+			"deaths": 59,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 185, "shots": 368, "accuracy": 50},
+				{"weapon": "disruptor", "hits": 1, "shots": 4, "accuracy": 25},
+				{"weapon": "chaingun", "hits": 23, "shots": 134, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 30, "accuracy": 40},
+				{"weapon": "beamgun", "hits": 109, "shots": 323, "accuracy": 33},
+				{"weapon": "vaporizer", "hits": 0, "shots": 4, "accuracy": 0},
+				{"weapon": "violator", "hits": 12, "shots": 359, "accuracy": 3}
+			]
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "vamos#vista",
+			"score": 65,
+			"deaths": 57,
+			"ratio": 114,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 458, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 48,
+			"deaths": 59,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 483, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 46,
+			"deaths": 60,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 535, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 41,
+			"deaths": 62,
+			"ratio": 66,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 146, "shots": 473, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^5[OS]$hifty",
+			"score": 39,
+			"deaths": 35,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 88, "shots": 492, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 30,
+			"deaths": 62,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 423, "accuracy": 25}
+			]
+		},
+		{
+			"name": "generic_sn",
+			"score": 29,
+			"deaths": 42,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 246, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 6,
+			"deaths": 57,
+			"ratio": 10,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 455, "accuracy": 17}
+			]
+		}
+	]
+}

@@ -95,7 +95,15 @@ echo $detailsHtml;
 echo "    <script type=\"text/javascript\">\n";
 echo "        $(document).ready(function() {\n";
 echo "           documentReady();\n";
-echo "              $(\".parallaxie\").parallaxie();\n";
+echo "              if (!window.isUsedOnMobile()) {\n";
+echo "                 $(\".parallaxie\").parallaxie();\n"; 
+echo "              } else {\n";
+echo "                 $('#content').removeAttr('class');\n";
+echo "                 $('#content').css('background-image', '');\n";
+echo "                 $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
+echo "                 $('body').css('width', ".$leaderboardWidth.");\n";
+echo "                 $('#overlay').css('width', ".$leaderboardWidth.");\n";
+echo "              }\n";
 if (!$details) 
 {
     echo "           $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";

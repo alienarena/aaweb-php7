@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 65,
+			"deaths": 45,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 478, "accuracy": 28}
+			]
+		},
+		{
+			"name": "less cambas",
+			"score": 64,
+			"deaths": 38,
+			"ratio": 168,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 146, "shots": 539, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 43,
+			"deaths": 49,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 567, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 33,
+			"deaths": 54,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 447, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[SiN]Xenos",
+			"score": 22,
+			"deaths": 44,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 448, "accuracy": 13}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 18,
+			"deaths": 64,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 51, "shots": 453, "accuracy": 11}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 17,
+			"deaths": 52,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 427, "accuracy": 20}
+			]
+		},
+		{
+			"name": "gm.aliencat",
+			"score": 17,
+			"deaths": 57,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 79, "shots": 445, "accuracy": 17}
+			]
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"players": [
+		{
+			"name": "less cambas",
+			"score": 86,
+			"deaths": 48,
+			"ratio": 179,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 195, "shots": 442, "accuracy": 44}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 61,
+			"deaths": 56,
+			"ratio": 108,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 136, "shots": 421, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 59,
+			"deaths": 60,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 167, "shots": 538, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 59,
+			"deaths": 65,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 487, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 48,
+			"deaths": 57,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 115, "shots": 468, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^3[GM]^4AlienCat",
+			"score": 45,
+			"deaths": 54,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 131, "shots": 503, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3{^8GM^3}Skelfir",
+			"score": 42,
+			"deaths": 58,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 119, "shots": 491, "accuracy": 24}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 36,
+			"deaths": 49,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 433, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 36,
+			"deaths": 58,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 107, "shots": 512, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 26,
+			"deaths": 68,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 442, "accuracy": 16}
+			]
+		},
+		{
+			"name": "Botiii",
+			"score": 9,
+			"deaths": 26,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 29, "shots": 133, "accuracy": 21}
+			]
+		}
+	]
+}

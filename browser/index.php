@@ -42,7 +42,13 @@ $showSteamWidget = $_COOKIE[$steamWidgetCookieName] != "true";
 
 echo "<script>\n";
 echo "$(document).ready(function() {\n";	
-echo "   $(\".parallaxie\").parallaxie();\n";
+echo "   if (!window.isUsedOnMobile()) {\n";
+echo "      $(\".parallaxie\").parallaxie();\n";
+echo "   } else {\n";
+echo "      $('#content').removeAttr('class');\n";
+echo "      $('#content').css('background-image', '');\n";
+echo "      $('body').css('background-image', 'url(../sharedimages/background.jpg)');\n";
+echo "   }\n";
 if ($showSteamWidget)
 {
 	echo "   showSteamWidget();\n";
