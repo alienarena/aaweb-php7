@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "^1vamos^7vista",
+			"score": 113,
+			"deaths": 58,
+			"ratio": 194,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 113, "shots": 330, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 95,
+			"deaths": 63,
+			"ratio": 150,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 259, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 69,
+			"deaths": 74,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 223, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^7[SIN]^1SINNER",
+			"score": 64,
+			"deaths": 64,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 293, "accuracy": 21}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 61,
+			"deaths": 70,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 61, "shots": 243, "accuracy": 25},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 28,
+			"deaths": 79,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 27, "shots": 277, "accuracy": 9}
+			]
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^1vamos^7vista",
+			"score": 76,
+			"deaths": 51,
+			"ratio": 149,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 183, "shots": 487, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 51,
+			"deaths": 47,
+			"ratio": 108,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 143, "shots": 426, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 45,
+			"deaths": 56,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 510, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[SIN]^1SINNER",
+			"score": 33,
+			"deaths": 60,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 499, "accuracy": 16}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 15,
+			"deaths": 58,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 55, "shots": 417, "accuracy": 13}
+			]
+		}
+	]
+}
