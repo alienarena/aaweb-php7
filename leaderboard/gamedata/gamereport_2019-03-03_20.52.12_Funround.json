@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^1gm^7vista",
+			"score": 47,
+			"deaths": 44,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 130, "shots": 413, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 38,
+			"deaths": 30,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 240, "accuracy": 46}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 35,
+			"deaths": 44,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 423, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 32,
+			"deaths": 54,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 102, "shots": 441, "accuracy": 23}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 11,
+			"deaths": 23,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 42, "shots": 174, "accuracy": 24}
+			]
+		}
+	]
+}
