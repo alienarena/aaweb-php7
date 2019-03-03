@@ -1,0 +1,60 @@
+{
+  "players": [
+    {
+      "name": "[T3]generic_sn",
+      "score": 42,
+      "deaths": 32,
+      "ratio": 131,
+      "weapon_skill": [
+        {
+          "weapon": "rocketlauncher",
+          "hits": 96,
+          "shots": 306,
+          "accuracy": 31
+        }
+      ]
+    },
+    {
+      "name": "^1gm^7vista",
+      "score": 36,
+      "deaths": 41,
+      "ratio": 87,
+      "weapon_skill": [
+        {
+          "weapon": "rocketlauncher",
+          "hits": 112,
+          "shots": 356,
+          "accuracy": 31
+        }
+      ]
+    },
+    {
+      "name": "(T3)mtsu",
+      "score": 26,
+      "deaths": 38,
+      "ratio": 68,
+      "weapon_skill": [
+        {
+          "weapon": "rocketlauncher",
+          "hits": 80,
+          "shots": 330,
+          "accuracy": 24
+        }
+      ]
+    },
+    {
+      "name": "^3[GM]^1Jar^5'El",
+      "score": 26,
+      "deaths": 47,
+      "ratio": 55,
+      "weapon_skill": [
+        {
+          "weapon": "rocketlauncher",
+          "hits": 94,
+          "shots": 429,
+          "accuracy": 21
+        }
+      ]
+    }
+  ]
+}
