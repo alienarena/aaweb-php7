@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^1gm^3gm^4gm^7gm^6vista^2GM",
+			"score": 63,
+			"deaths": 46,
+			"ratio": 136,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 176, "shots": 556, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 46,
+			"deaths": 51,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 481, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 52,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 125, "shots": 678, "accuracy": 18}
+			]
+		},
+		{
+			"name": "t3t3t3t3t3generic_sn",
+			"score": 34,
+			"deaths": 45,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 94, "shots": 252, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^8(^4GM^8)Dondo",
+			"score": 31,
+			"deaths": 59,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 522, "accuracy": 26}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 22,
+			"deaths": 58,
+			"ratio": 37,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 391, "accuracy": 20}
+			]
+		}
+	]
+}
