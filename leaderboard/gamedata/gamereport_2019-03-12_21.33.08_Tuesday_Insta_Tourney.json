@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^8(^4GM^8)Dondo",
+			"score": 178,
+			"deaths": 68,
+			"ratio": 261,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 185, "shots": 377, "accuracy": 49}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 98,
+			"deaths": 78,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 102, "shots": 282, "accuracy": 36}
+			]
+		},
+		{
+			"name": "Gensti",
+			"score": 65,
+			"deaths": 75,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 66, "shots": 289, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 59,
+			"deaths": 91,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 282, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[SIN]^1SINNER",
+			"score": 37,
+			"deaths": 45,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 38, "shots": 212, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 21,
+			"deaths": 105,
+			"ratio": 20,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 21, "shots": 315, "accuracy": 6}
+			]
+		}
+	]
+}

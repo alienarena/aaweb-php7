@@ -7,10 +7,14 @@ $mustache = new Mustache_Engine(array(
 ));
 
 // Global variables
+$pageNumber = intval($_GET['page']);
+if ($pageNumber < 1 || $pageNumber > 100) {
+    $pageNumber = 1;
+}
 $details = false;
 $maxPlayersForDetails = 25;    
 $maxPlayersTopView = 12;    
-$maxGameReports = 20;
+$gameReportsPerPage = 20;
 $template = $mustache->loadTemplate('scoretemplate');
 $detailsTemplate = $mustache->loadTemplate('scoretemplatedetails');
 $weaponAccuracyTemplate = $mustache->loadTemplate('weaponaccuracy');
@@ -25,12 +29,13 @@ $leaderboardWidth = 1000;
 // The title is optional. Without title it will display "- No title -".
 $path = dirname(__FILE__).'/gamedata';
 $files = array_diff(scandir($path, SCANDIR_SORT_DESCENDING), array('.', '..'));
+$pages = array_chunk($files, $gameReportsPerPage);
 
 if (count($files) == 1)
 {
     $details = true;
 } else {
-    array_splice($files, $maxGameReports);
+    $files = $pages[$pageNumber - 1];
     for($i = 0; $i < count($files); $i++) {
         $tourneyTitle = htmlspecialchars(strlen($files[$i]) <= 35 ? '- No title -' : str_replace('_', ' ', substr($files[$i], 31, strlen($files[$i]) - 36)));
         $tourneyDateString = substr($files[$i], 11, 10);
@@ -67,7 +72,7 @@ echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('..
 echo "  <center>\n";
 echo "    <div style=\"height: 30px\"></div>\n";
 echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
-echo "        top: 0px; left: 0px; height: 2512px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
+echo "        top: 0px; left: 0px; height: 2554px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
 echo "        onclick=\"hidePopup();\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
 echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
@@ -89,6 +94,23 @@ foreach($files as $file)
 }
 
 echo "        </tr>\n";
+
+// Pagination
+if ($pageNumber > 1 || $pageNumber < count($pages)) {
+    echo "<tr class=\"navigation\"><td class=\"navigation\" colspan=\"".$leaderboardCols."\">";
+    if ($pageNumber > 1) {
+        echo "<a title=\"Previous page\" href=\"index.php?page=".strval($pageNumber - 1)."\">◀</a>";
+    } else {
+        echo "<span class=\"navdisabled\">◀<span>";
+    }
+    echo "<span class=\"navdisabled\">&nbsp;|&nbsp;<span>";
+    if ($pageNumber < count($pages)) {
+        echo "<a title=\"Next page\" href=\"index.php?page=".strval($pageNumber + 1)."\">▶</a>";
+    } else {
+        echo "<span class=\"navdisabled\">▶<span>";
+    }
+    echo "</td></tr>\n";
+}
 
 echo "    </table>\n";
 echo $detailsHtml;

@@ -1,7 +1,7 @@
 body {	
 	margin: 0px;
 	padding: 0px;
-	color: rgb(230, 230, 230); 
+	color: rgb(215, 215, 215); 
 	font-family: Aldrich, Arial, Helvetica, sans-serif;
 }
 
@@ -62,6 +62,25 @@ td.datarow {
 	border: solid 2px;
 	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
 	border-radius: 4px;
+}
+
+/* For navigation */
+a:link, a:visited, a:active { 
+	text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+tr.navigation {
+	height: 40px;
+}
+
+td.navigation {
+	text-align: center; 
+	font-size: large;
+}
+
+span.navdisabled {
+	color: rgb(130, 130, 130);
 }
 
 .weaponaccuracy {

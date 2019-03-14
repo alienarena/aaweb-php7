@@ -20,18 +20,18 @@ function showHideServerGraph() {
     });    
 }
 
-var hide = true;
-function showSteamWidget() {
-    setTimeout(function() {
-        $("#buyit").slideToggle("slow");
-        setTimeout(tryHide, 5000);    
-    }, 2000);
-}
+// var hide = true;
+// function showSteamWidget() {
+//     setTimeout(function() {
+//         $("#buyit").slideToggle("slow");
+//         setTimeout(tryHide, 5000);    
+//     }, 2000);
+// }
 
-function tryHide() {
-    if (hide) {
-        $("#buyit").fadeOut(1000);
-    } else {
-        setTimeout(tryHide, 5000);
-    }
-}
+// function tryHide() {
+//     if (hide) {
+//         $("#buyit").fadeOut(1000);
+//     } else {
+//         setTimeout(tryHide, 5000);
+//     }
+// }
