@@ -36,10 +36,6 @@ $control = BuildControl();  /* Get config from URL line */
 
 Generate_HTML_Headers($CONFIG['baseurl'].'browser/', $CONFIG['title']);
 
-// $steamWidgetCookieName = "SteamWidgetShown";
-// $steamWidgetCookieExpirationSeconds = 60 * 60 * 24 * 365 * 10; // Ten years
-// $showSteamWidget = $_COOKIE[$steamWidgetCookieName] != "true";
-
 echo "<script>\n";
 echo "$(document).ready(function() {\n";	
 echo "   if (!window.isUsedOnMobile()) {\n";
@@ -49,11 +45,6 @@ echo "      $('#content').removeAttr('class');\n";
 echo "      $('#content').css('background-image', '');\n";
 echo "      $('body').css('background-image', 'url(../sharedimages/background.jpg)');\n";
 echo "   }\n";
-// if ($showSteamWidget)
-// {
-// 	echo "   showSteamWidget();\n";
-// 	setcookie($steamWidgetCookieName, "true", time() + $steamWidgetCookieExpirationSeconds);
-// }
 echo "});\n";
 echo "</script>\n";
 
@@ -140,14 +131,6 @@ switch ($control['action'])
 		break;
 }
 
-// if ($showSteamWidget)
-// {
-// 	// Steam widget pop-up
-// 	echo "<iframe id=\"buyit\" onmouseover=\"hide = false;\" onmouseenter=\"hide = false;\" onmousemove=\"hide = false;\" onmouseout=\"hide = true\" "; 
-// 	echo "   style=\"display:none; position:fixed; bottom:0px; right:0px; margin-right: 20px; margin-bottom: 10px;\" ";
-// 	echo "   src=\"https://store.steampowered.com/widget/629540/\" width=\"646\" height=\"190\" frameborder=\"0\" scrolling=\"no\"></iframe>\n";
-// }
-
 Generate_HTML_Footers();
 // mysql_close($conn);
 
@@ -156,7 +139,7 @@ function CollapsiblePlayerGraph()
 	global $CONFIG;
 
 	$html = "<tr>\n";
-	$html = $html."<td id=\"showplayergraph\" class=\"showhidegraph\" onclick=\"showHidePlayerGraph();\">&#9658;</td>\n";
+	$html = $html."<td id=\"showplayergraph\" class=\"showhidegraph\" onclick=\"showHidePlayerGraph();\">►</td>\n";
 	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHidePlayerGraph();\">Player activity</td>\n";
 	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHidePlayerGraph();\" style=\"width: 16px\"></td>\n";
 	$html = $html."</tr>\n";
@@ -172,7 +155,7 @@ function CollapsibleServerGraph()
 	global $CONFIG;
 
 	$html = "<tr>\n";
-	$html = $html."<td id=\"showservergraph\" class=\"showhidegraph\" onclick=\"showHideServerGraph();\">&#9658;</td>\n";
+	$html = $html."<td id=\"showservergraph\" class=\"showhidegraph\" onclick=\"showHideServerGraph();\">►</td>\n";
 	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHideServerGraph();\">Server usage</td>\n";
 	$html = $html."<td class=\"collapsiblegraphheader\" onclick=\"showHideServerGraph();\" style=\"width: 16px\"></td>\n";
 	$html = $html."</tr>\n";

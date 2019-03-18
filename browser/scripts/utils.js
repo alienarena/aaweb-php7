@@ -8,7 +8,7 @@ function showHidePlayerGraph() {
     $("#playergraph").slideToggle("fast", function() {
         var el = $("#playergraph");
 	    var visible = el.is(":visible");
-	    $("#showplayergraph").text(visible ? "\u25BC" : "\u25B6");
+	    $("#showplayergraph").text(visible ? "\u25BC" : "\u25BA");
     });    
 }
 
@@ -16,22 +16,6 @@ function showHideServerGraph() {
     $("#servergraph").slideToggle("fast", function() {
         var el = $("#servergraph");
 	    var visible = el.is(":visible");
-        $("#showservergraph").text(visible ? "\u25BC" : "\u25B6");
+        $("#showservergraph").text(visible ? "\u25BC" : "\u25BA");
     });    
 }
-
-// var hide = true;
-// function showSteamWidget() {
-//     setTimeout(function() {
-//         $("#buyit").slideToggle("slow");
-//         setTimeout(tryHide, 5000);    
-//     }, 2000);
-// }
-
-// function tryHide() {
-//     if (hide) {
-//         $("#buyit").fadeOut(1000);
-//     } else {
-//         setTimeout(tryHide, 5000);
-//     }
-// }

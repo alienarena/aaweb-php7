@@ -99,15 +99,15 @@ echo "        </tr>\n";
 if ($pageNumber > 1 || $pageNumber < count($pages)) {
     echo "<tr class=\"navigation\"><td class=\"navigation\" colspan=\"".$leaderboardCols."\">";
     if ($pageNumber > 1) {
-        echo "<a title=\"Previous page\" href=\"index.php?page=".strval($pageNumber - 1)."\">◀</a>";
+        echo "<a title=\"Previous page\" href=\"index.php?page=".strval($pageNumber - 1)."\">◄</a>";
     } else {
-        echo "<span class=\"navdisabled\">◀<span>";
+        echo "<span class=\"navdisabled\">◄<span>";
     }
     echo "<span class=\"navdisabled\">&nbsp;|&nbsp;<span>";
     if ($pageNumber < count($pages)) {
-        echo "<a title=\"Next page\" href=\"index.php?page=".strval($pageNumber + 1)."\">▶</a>";
+        echo "<a title=\"Next page\" href=\"index.php?page=".strval($pageNumber + 1)."\">►</a>";
     } else {
-        echo "<span class=\"navdisabled\">▶<span>";
+        echo "<span class=\"navdisabled\">►<span>";
     }
     echo "</td></tr>\n";
 }
