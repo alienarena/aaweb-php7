@@ -1,0 +1,41 @@
+{
+	"players": [
+		{
+			"name": "vista",
+			"score": 48,
+			"deaths": 34,
+			"ratio": 141,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 465, "accuracy": 28}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 30,
+			"deaths": 39,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 78, "shots": 396, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 29,
+			"deaths": 47,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 407, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 19,
+			"deaths": 50,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 75, "shots": 447, "accuracy": 16}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,32 @@
+{
+	"players": [
+		{
+			"name": "^1[T3]^7generic_sn",
+			"score": 37,
+			"deaths": 33,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 79, "shots": 192, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 34,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 93, "shots": 427, "accuracy": 21}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 22,
+			"deaths": 38,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 380, "accuracy": 18}
+			]
+		}
+	]
+}
+

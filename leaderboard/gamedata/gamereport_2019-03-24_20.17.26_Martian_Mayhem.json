@@ -1,0 +1,99 @@
+{
+	"players": [
+		{
+			"name": "{T3}ToastRawr",
+			"score": 92,
+			"deaths": 41,
+			"ratio": 224,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 31, "shots": 73, "accuracy": 42},
+				{"weapon": "disruptor", "hits": 91, "shots": 185, "accuracy": 49},
+				{"weapon": "chaingun", "hits": 57, "shots": 255, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 15, "shots": 31, "accuracy": 48},
+				{"weapon": "beamgun", "hits": 410, "shots": 611, "accuracy": 67},
+				{"weapon": "violator", "hits": 26, "shots": 198, "accuracy": 13}
+			]
+		},
+		{
+			"name": "vista",
+			"score": 78,
+			"deaths": 51,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 58, "shots": 106, "accuracy": 54},
+				{"weapon": "disruptor", "hits": 50, "shots": 121, "accuracy": 41},
+				{"weapon": "chaingun", "hits": 191, "shots": 608, "accuracy": 31},
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 79, "accuracy": 45},
+				{"weapon": "beamgun", "hits": 266, "shots": 457, "accuracy": 58},
+				{"weapon": "violator", "hits": 19, "shots": 279, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 52,
+			"deaths": 49,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 59, "shots": 126, "accuracy": 46},
+				{"weapon": "disruptor", "hits": 43, "shots": 112, "accuracy": 38},
+				{"weapon": "chaingun", "hits": 28, "shots": 112, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 29, "accuracy": 17},
+				{"weapon": "beamgun", "hits": 140, "shots": 352, "accuracy": 39},
+				{"weapon": "violator", "hits": 12, "shots": 159, "accuracy": 7}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 45,
+			"deaths": 60,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 2, "shots": 19, "accuracy": 10},
+				{"weapon": "disruptor", "hits": 24, "shots": 74, "accuracy": 32},
+				{"weapon": "chaingun", "hits": 160, "shots": 835, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 44, "accuracy": 27},
+				{"weapon": "beamgun", "hits": 161, "shots": 474, "accuracy": 33},
+				{"weapon": "violator", "hits": 34, "shots": 741, "accuracy": 4}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 36,
+			"deaths": 53,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 50, "shots": 63, "accuracy": 79},
+				{"weapon": "disruptor", "hits": 30, "shots": 101, "accuracy": 29},
+				{"weapon": "chaingun", "hits": 95, "shots": 430, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 28, "accuracy": 35},
+				{"weapon": "beamgun", "hits": 162, "shots": 390, "accuracy": 41},
+				{"weapon": "violator", "hits": 5, "shots": 157, "accuracy": 3}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 31,
+			"deaths": 70,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 43, "shots": 99, "accuracy": 43},
+				{"weapon": "disruptor", "hits": 16, "shots": 54, "accuracy": 29},
+				{"weapon": "chaingun", "hits": 119, "shots": 549, "accuracy": 21},
+				{"weapon": "rocketlauncher", "hits": 29, "shots": 93, "accuracy": 31},
+				{"weapon": "beamgun", "hits": 138, "shots": 404, "accuracy": 34},
+				{"weapon": "violator", "hits": 3, "shots": 145, "accuracy": 2}
+			]
+		},
+		{
+			"name": "cassana",
+			"score": 1,
+			"deaths": 14,
+			"ratio": 7,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 65, "accuracy": 23},
+				{"weapon": "chaingun", "hits": 5, "shots": 59, "accuracy": 8},
+				{"weapon": "beamgun", "hits": 29, "shots": 108, "accuracy": 26}
+			]
+		}
+	]
+}
