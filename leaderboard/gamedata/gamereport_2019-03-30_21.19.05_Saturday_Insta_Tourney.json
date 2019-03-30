@@ -1,0 +1,60 @@
+{
+	"players": [
+		{
+			"name": "toast",
+			"score": 113,
+			"deaths": 45,
+			"ratio": 251,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 119, "shots": 289, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 69,
+			"deaths": 63,
+			"ratio": 109,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 73, "shots": 191, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 63,
+			"deaths": 68,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 66, "shots": 308, "accuracy": 21}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 51,
+			"deaths": 65,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 310, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 24,
+			"deaths": 82,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 36, "shots": 311, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^7[SIN]^1SINNER",
+			"score": 19,
+			"deaths": 18,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 19, "shots": 98, "accuracy": 19}
+			]
+		}
+	]
+}
+
