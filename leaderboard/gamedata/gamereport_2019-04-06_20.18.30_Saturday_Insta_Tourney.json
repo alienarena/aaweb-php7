@@ -1,0 +1,78 @@
+{
+	"players": [
+		{
+			"name": "^1[T3]^7generic_sn",
+			"score": 103,
+			"deaths": 64,
+			"ratio": 160,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 255, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 96,
+			"deaths": 70,
+			"ratio": 137,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 94, "shots": 245, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 96,
+			"deaths": 74,
+			"ratio": 129,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 90, "shots": 274, "accuracy": 32},
+				{"weapon": "violator", "hits": 8, "shots": 65, "accuracy": 12}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 84,
+			"deaths": 69,
+			"ratio": 121,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 290, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 69,
+			"deaths": 72,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 266, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 58,
+			"deaths": 69,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 244, "accuracy": 24}
+			]
+		},
+		{
+			"name": "TiK",
+			"score": 38,
+			"deaths": 86,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 39, "shots": 152, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 37,
+			"deaths": 77,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 37, "shots": 271, "accuracy": 13}
+			]
+		}
+	]
+}
+

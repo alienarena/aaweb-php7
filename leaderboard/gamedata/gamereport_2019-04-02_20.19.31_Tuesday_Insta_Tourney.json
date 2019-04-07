@@ -1,0 +1,61 @@
+{
+	"players": [
+		{
+			"name": "^3[^8GM^3]^7Dondo",
+			"score": 132,
+			"deaths": 56,
+			"ratio": 235,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 132, "shots": 282, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^4[^3G^6M^7]maxi",
+			"score": 94,
+			"deaths": 64,
+			"ratio": 146,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 94, "shots": 337, "accuracy": 27},
+				{"weapon": "violator", "hits": 0, "shots": 3, "accuracy": 0}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 74,
+			"deaths": 74,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 74, "shots": 237, "accuracy": 31},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 52,
+			"deaths": 71,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 223, "accuracy": 23}
+			]
+		},
+		{
+			"name": "TiK",
+			"score": 23,
+			"deaths": 53,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 25, "shots": 132, "accuracy": 18}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 23,
+			"deaths": 84,
+			"ratio": 27,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 23, "shots": 258, "accuracy": 8}
+			]
+		}
+	]
+}
+

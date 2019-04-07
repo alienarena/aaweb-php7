@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^1|^7|^4|^7ToastRawr",
+			"score": 61,
+			"deaths": 52,
+			"ratio": 117,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 557, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 56,
+			"deaths": 58,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 541, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 54,
+			"deaths": 56,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 449, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 45,
+			"deaths": 50,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 392, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^1[T3]^7generic_sn",
+			"score": 39,
+			"deaths": 58,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 95, "shots": 265, "accuracy": 35}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 28,
+			"deaths": 60,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 77, "shots": 464, "accuracy": 16}
+			]
+		},
+		{
+			"name": "The^1Chosen^4One",
+			"score": 16,
+			"deaths": 23,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 53, "shots": 149, "accuracy": 35}
+			]
+		}
+	]
+}
