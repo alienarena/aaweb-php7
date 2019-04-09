@@ -1,0 +1,60 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 98,
+			"deaths": 57,
+			"ratio": 171,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 98, "shots": 230, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^6G^7M^5v^6i^7s^5t^6a",
+			"score": 93,
+			"deaths": 55,
+			"ratio": 169,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 93, "shots": 282, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^1[SIN]^0sinister",
+			"score": 60,
+			"deaths": 68,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 63, "shots": 236, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 59,
+			"deaths": 60,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 256, "accuracy": 23},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 55,
+			"deaths": 62,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 230, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 22,
+			"deaths": 78,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 22, "shots": 197, "accuracy": 11}
+			]
+		}
+	]
+}
+
