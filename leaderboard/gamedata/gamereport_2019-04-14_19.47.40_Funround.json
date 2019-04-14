@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^1[^2G^1M]vis^2t^1a*",
+			"score": 59,
+			"deaths": 48,
+			"ratio": 122,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 140, "shots": 437, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 49,
+			"deaths": 53,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 385, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 41,
+			"deaths": 55,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 571, "accuracy": 18}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 35,
+			"deaths": 64,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 382, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^1[T3]^7geriatrics",
+			"score": 22,
+			"deaths": 46,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 68, "shots": 198, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": -3,
+			"deaths": 15,
+			"ratio": -20,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 71, "accuracy": 19}
+			]
+		}
+	]
+}
