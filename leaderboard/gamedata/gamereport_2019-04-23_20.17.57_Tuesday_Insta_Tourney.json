@@ -1,0 +1,61 @@
+{
+	"players": [
+		{
+			"name": "^7[^4GM^7]^6LUNG",
+			"score": 131,
+			"deaths": 63,
+			"ratio": 207,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 138, "shots": 370, "accuracy": 37},
+				{"weapon": "violator", "hits": 0, "shots": 3, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 80,
+			"deaths": 75,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 81, "shots": 351, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 74,
+			"deaths": 74,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 77, "shots": 272, "accuracy": 28},
+				{"weapon": "violator", "hits": 3, "shots": 58, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 46,
+			"deaths": 85,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 54, "shots": 211, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^2[SIN]^6ling ^6ling",
+			"score": 32,
+			"deaths": 49,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 33, "shots": 147, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 29,
+			"deaths": 90,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 221, "accuracy": 14}
+			]
+		}
+	]
+}
+
