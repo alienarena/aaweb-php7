@@ -1,0 +1,86 @@
+{
+	"players": [
+		{
+			"name": "^7[^4GM^7]^6LUNG",
+			"score": 127,
+			"deaths": 66,
+			"ratio": 192,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 127, "shots": 352, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 120,
+			"deaths": 68,
+			"ratio": 176,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 120, "shots": 294, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 88,
+			"deaths": 78,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 244, "accuracy": 35},
+				{"weapon": "violator", "hits": 1, "shots": 37, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 76,
+			"deaths": 68,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 226, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^4UR-Next",
+			"score": 72,
+			"deaths": 80,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 72, "shots": 253, "accuracy": 28}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 69,
+			"deaths": 73,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 68, "shots": 230, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 69,
+			"deaths": 77,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 252, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 48,
+			"deaths": 87,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 196, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 30,
+			"deaths": 83,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 230, "accuracy": 13}
+			]
+		}
+	]
+}
