@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "kerem",
+			"score": 39,
+			"deaths": 32,
+			"ratio": 121,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 95, "shots": 459, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 32,
+			"deaths": 30,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 76, "shots": 531, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 26,
+			"deaths": 27,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 74, "shots": 502, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 22,
+			"deaths": 43,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 348, "accuracy": 20}
+			]
+		},
+		{
+			"name": "TiK",
+			"score": 5,
+			"deaths": 14,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 9, "shots": 90, "accuracy": 10}
+			]
+		}
+	]
+}

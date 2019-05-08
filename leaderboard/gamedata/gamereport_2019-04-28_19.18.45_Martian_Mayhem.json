@@ -1,0 +1,84 @@
+{
+	"players": [
+		{
+			"name": "kerem",
+			"score": 86,
+			"deaths": 45,
+			"ratio": 191,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 23, "shots": 66, "accuracy": 34},
+				{"weapon": "disruptor", "hits": 29, "shots": 75, "accuracy": 38},
+				{"weapon": "chaingun", "hits": 102, "shots": 407, "accuracy": 25},
+				{"weapon": "flamethrower", "hits": 14, "shots": 88, "accuracy": 15},
+				{"weapon": "rocketlauncher", "hits": 26, "shots": 100, "accuracy": 26},
+				{"weapon": "beamgun", "hits": 299, "shots": 731, "accuracy": 40},
+				{"weapon": "vaporizer", "hits": 37, "shots": 62, "accuracy": 59},
+				{"weapon": "violator", "hits": 6, "shots": 65, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 65,
+			"deaths": 51,
+			"ratio": 127,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 67, "shots": 132, "accuracy": 50},
+				{"weapon": "disruptor", "hits": 32, "shots": 72, "accuracy": 44},
+				{"weapon": "chaingun", "hits": 64, "shots": 380, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 22, "shots": 103, "accuracy": 21},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 49, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 115, "shots": 208, "accuracy": 55},
+				{"weapon": "vaporizer", "hits": 33, "shots": 62, "accuracy": 53},
+				{"weapon": "violator", "hits": 3, "shots": 46, "accuracy": 6}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 51,
+			"deaths": 57,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 9, "shots": 22, "accuracy": 40},
+				{"weapon": "disruptor", "hits": 7, "shots": 27, "accuracy": 25},
+				{"weapon": "chaingun", "hits": 115, "shots": 694, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 7, "shots": 42, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 69, "accuracy": 23},
+				{"weapon": "beamgun", "hits": 186, "shots": 476, "accuracy": 39},
+				{"weapon": "vaporizer", "hits": 22, "shots": 56, "accuracy": 39},
+				{"weapon": "violator", "hits": 3, "shots": 71, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 35,
+			"deaths": 47,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 27, "shots": 55, "accuracy": 49},
+				{"weapon": "disruptor", "hits": 16, "shots": 46, "accuracy": 34},
+				{"weapon": "chaingun", "hits": 99, "shots": 657, "accuracy": 15},
+				{"weapon": "flamethrower", "hits": 8, "shots": 285, "accuracy": 2},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 77, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 240, "shots": 643, "accuracy": 37},
+				{"weapon": "vaporizer", "hits": 6, "shots": 21, "accuracy": 28},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 19,
+			"deaths": 62,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 43, "shots": 234, "accuracy": 18},
+				{"weapon": "disruptor", "hits": 4, "shots": 26, "accuracy": 15},
+				{"weapon": "chaingun", "hits": 19, "shots": 239, "accuracy": 7},
+				{"weapon": "flamethrower", "hits": 8, "shots": 100, "accuracy": 8},
+				{"weapon": "rocketlauncher", "hits": 7, "shots": 36, "accuracy": 19},
+				{"weapon": "beamgun", "hits": 53, "shots": 369, "accuracy": 14},
+				{"weapon": "vaporizer", "hits": 10, "shots": 40, "accuracy": 25},
+				{"weapon": "violator", "hits": 2, "shots": 66, "accuracy": 3}
+			]
+		}
+	]
+}

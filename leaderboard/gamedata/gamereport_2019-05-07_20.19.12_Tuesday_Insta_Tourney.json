@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^3[Ay]^4Caramba",
+			"score": 102,
+			"deaths": 37,
+			"ratio": 275,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 102, "shots": 213, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 56,
+			"deaths": 62,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 180, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 45,
+			"deaths": 58,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 45, "shots": 124, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 27,
+			"deaths": 73,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 26, "shots": 142, "accuracy": 18}
+			]
+		}
+	]
+}

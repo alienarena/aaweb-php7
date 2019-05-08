@@ -1,0 +1,78 @@
+{
+	"players": [
+		{
+			"name": "(GM)Dondo",
+			"score": 154,
+			"deaths": 92,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 155, "shots": 365, "accuracy": 42}
+			]
+		},
+		{
+			"name": "kerem",
+			"score": 150,
+			"deaths": 81,
+			"ratio": 185,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 150, "shots": 425, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 109,
+			"deaths": 83,
+			"ratio": 131,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 111, "shots": 327, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 83,
+			"deaths": 97,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 266, "accuracy": 31},
+				{"weapon": "violator", "hits": 3, "shots": 66, "accuracy": 4}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 72,
+			"deaths": 99,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 286, "accuracy": 24}
+			]
+		},
+		{
+			"name": "007  Bond",
+			"score": 57,
+			"deaths": 93,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 253, "accuracy": 22},
+				{"weapon": "violator", "hits": 0, "shots": 124, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 32,
+			"deaths": 109,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 414, "accuracy": 7}
+			]
+		},
+		{
+			"name": "TiK",
+			"score": 0,
+			"deaths": 2,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 0, "shots": 3, "accuracy": 0}
+			]
+		}
+	]
+}
