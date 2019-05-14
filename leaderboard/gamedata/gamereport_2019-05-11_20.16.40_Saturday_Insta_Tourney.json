@@ -1,0 +1,69 @@
+{
+	"players": [
+		{
+			"name": "^8(^1GM^7^8)^7Dondo",
+			"score": 160,
+			"deaths": 48,
+			"ratio": 333,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 167, "shots": 352, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^6[^7GM^2]^7vi^3s^7tanas^6*",
+			"score": 101,
+			"deaths": 58,
+			"ratio": 174,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 106, "shots": 320, "accuracy": 33},
+				{"weapon": "violator", "hits": 2, "shots": 15, "accuracy": 13}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 54,
+			"deaths": 72,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 229, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 51,
+			"deaths": 69,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 282, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 47,
+			"deaths": 74,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 212, "accuracy": 22},
+				{"weapon": "violator", "hits": 3, "shots": 56, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 39,
+			"deaths": 84,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 41, "shots": 171, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 27,
+			"deaths": 74,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 218, "accuracy": 13}
+			]
+		}
+	]
+}

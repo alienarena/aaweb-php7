@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^6[^7GM^2]^7vi^3s^7tanas^6*",
+			"score": 70,
+			"deaths": 27,
+			"ratio": 259,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 147, "shots": 471, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 36,
+			"deaths": 49,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 87, "shots": 431, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 21,
+			"deaths": 35,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 319, "accuracy": 26}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 21,
+			"deaths": 53,
+			"ratio": 39,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 52, "shots": 373, "accuracy": 13}
+			]
+		},
+		{
+			"name": "007 Bond",
+			"score": 9,
+			"deaths": 27,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 248, "accuracy": 14}
+			]
+		}
+	]
+}

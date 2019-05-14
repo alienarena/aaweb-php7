@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "[SiN]nealcool",
+			"score": 52,
+			"deaths": 50,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 123, "shots": 480, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 50,
+			"deaths": 48,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 149, "shots": 566, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 43,
+			"deaths": 48,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 441, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^8(^1GM^7^8)^7Dondo",
+			"score": 37,
+			"deaths": 54,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 118, "shots": 443, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 35,
+			"deaths": 43,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 299, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 33,
+			"deaths": 51,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 78, "shots": 497, "accuracy": 15}
+			]
+		},
+		{
+			"name": "over",
+			"score": 18,
+			"deaths": 29,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 45, "shots": 214, "accuracy": 21}
+			]
+		}
+	]
+}

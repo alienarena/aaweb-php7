@@ -1,0 +1,32 @@
+{
+	"players": [
+		{
+			"name": "^6[^4G^7M^6]^7vis",
+			"score": 51,
+			"deaths": 54,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 247, "accuracy": 19},
+				{"weapon": "violator", "hits": 10, "shots": 343, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 49,
+			"deaths": 61,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 262, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 44,
+			"deaths": 68,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 46, "shots": 522, "accuracy": 8}
+			]
+		}
+	]
+}
