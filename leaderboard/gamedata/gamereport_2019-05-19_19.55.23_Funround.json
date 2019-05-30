@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^5V^01^5ster",
+			"score": 63,
+			"deaths": 40,
+			"ratio": 157,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 149, "shots": 489, "accuracy": 30}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 48,
+			"deaths": 52,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 114, "shots": 490, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 42,
+			"deaths": 58,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 113, "shots": 491, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 41,
+			"deaths": 55,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 412, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^5ToastRawr",
+			"score": 41,
+			"deaths": 61,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 486, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 37,
+			"deaths": 58,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 401, "accuracy": 27}
+			]
+		}
+	]
+}

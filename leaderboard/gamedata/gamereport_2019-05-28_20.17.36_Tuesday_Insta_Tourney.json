@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "vis",
+			"score": 137,
+			"deaths": 52,
+			"ratio": 263,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 137, "shots": 368, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 97,
+			"deaths": 69,
+			"ratio": 140,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 95, "shots": 241, "accuracy": 39}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 76,
+			"deaths": 77,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 256, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 68,
+			"deaths": 85,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 204, "accuracy": 28},
+				{"weapon": "violator", "hits": 9, "shots": 229, "accuracy": 3}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 58,
+			"deaths": 88,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 239, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 49,
+			"deaths": 71,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 49, "shots": 240, "accuracy": 20}
+			]
+		}
+	]
+}

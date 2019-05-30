@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "^5V^01^5ster",
+			"score": 141,
+			"deaths": 73,
+			"ratio": 193,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 145, "shots": 467, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 117,
+			"deaths": 82,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 116, "shots": 382, "accuracy": 30}
+			]
+		},
+		{
+			"name": "(T3)mtsu",
+			"score": 96,
+			"deaths": 95,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 356, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 85,
+			"deaths": 95,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 85, "shots": 365, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 71,
+			"deaths": 98,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 73, "shots": 339, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 33,
+			"deaths": 103,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 35, "shots": 311, "accuracy": 11},
+				{"weapon": "violator", "hits": 0, "shots": 5, "accuracy": 0}
+			]
+		}
+	]
+}

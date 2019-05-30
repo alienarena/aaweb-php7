@@ -1,0 +1,101 @@
+{
+	"players": [
+		{
+			"name": "^5ToastRawr",
+			"score": 62,
+			"deaths": 37,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 37, "shots": 123, "accuracy": 30},
+				{"weapon": "disruptor", "hits": 13, "shots": 25, "accuracy": 52},
+				{"weapon": "chaingun", "hits": 177, "shots": 791, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 33, "shots": 78, "accuracy": 42},
+				{"weapon": "vaporizer", "hits": 37, "shots": 79, "accuracy": 46},
+				{"weapon": "violator", "hits": 26, "shots": 262, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 47,
+			"deaths": 33,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 23, "accuracy": 65},
+				{"weapon": "disruptor", "hits": 38, "shots": 76, "accuracy": 50},
+				{"weapon": "chaingun", "hits": 233, "shots": 880, "accuracy": 26},
+				{"weapon": "rocketlauncher", "hits": 26, "shots": 61, "accuracy": 42},
+				{"weapon": "vaporizer", "hits": 7, "shots": 21, "accuracy": 33},
+				{"weapon": "violator", "hits": 0, "shots": 28, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 40,
+			"deaths": 40,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 28, "shots": 95, "accuracy": 29},
+				{"weapon": "disruptor", "hits": 22, "shots": 60, "accuracy": 36},
+				{"weapon": "chaingun", "hits": 114, "shots": 688, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 30, "shots": 89, "accuracy": 33},
+				{"weapon": "vaporizer", "hits": 13, "shots": 18, "accuracy": 72},
+				{"weapon": "violator", "hits": 10, "shots": 156, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 18,
+			"deaths": 47,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 61, "accuracy": 29},
+				{"weapon": "disruptor", "hits": 21, "shots": 81, "accuracy": 25},
+				{"weapon": "chaingun", "hits": 58, "shots": 400, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 18, "shots": 59, "accuracy": 30},
+				{"weapon": "vaporizer", "hits": 8, "shots": 14, "accuracy": 57},
+				{"weapon": "violator", "hits": 7, "shots": 254, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 16,
+			"deaths": 35,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 61, "shots": 184, "accuracy": 33},
+				{"weapon": "disruptor", "hits": 4, "shots": 8, "accuracy": 50},
+				{"weapon": "chaingun", "hits": 35, "shots": 210, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 9, "shots": 44, "accuracy": 20},
+				{"weapon": "vaporizer", "hits": 5, "shots": 19, "accuracy": 26},
+				{"weapon": "violator", "hits": 11, "shots": 266, "accuracy": 4}
+			]
+		},
+		{
+			"name": "Furr_Man",
+			"score": 14,
+			"deaths": 40,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 38, "shots": 129, "accuracy": 29},
+				{"weapon": "disruptor", "hits": 7, "shots": 17, "accuracy": 41},
+				{"weapon": "chaingun", "hits": 35, "shots": 184, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 13, "shots": 61, "accuracy": 21},
+				{"weapon": "vaporizer", "hits": 8, "shots": 11, "accuracy": 72}
+			]
+		},
+		{
+			"name": "^5V^01^5ster",
+			"score": 10,
+			"deaths": 47,
+			"ratio": 21,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 50, "shots": 115, "accuracy": 43},
+				{"weapon": "disruptor", "hits": 9, "shots": 27, "accuracy": 33},
+				{"weapon": "chaingun", "hits": 77, "shots": 405, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 9, "shots": 54, "accuracy": 16},
+				{"weapon": "vaporizer", "hits": 16, "shots": 29, "accuracy": 55},
+				{"weapon": "violator", "hits": 8, "shots": 264, "accuracy": 3}
+			]
+		}
+	]
+}

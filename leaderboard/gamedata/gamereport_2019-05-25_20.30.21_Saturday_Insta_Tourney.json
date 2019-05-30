@@ -1,0 +1,68 @@
+{
+	"players": [
+		{
+			"name": "^5ToastRawr",
+			"score": 125,
+			"deaths": 74,
+			"ratio": 168,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 125, "shots": 299, "accuracy": 41}
+			]
+		},
+		{
+			"name": "vis",
+			"score": 111,
+			"deaths": 73,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 115, "shots": 357, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 80,
+			"deaths": 69,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 79, "shots": 241, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 63,
+			"deaths": 77,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 63, "shots": 289, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^5nmc",
+			"score": 54,
+			"deaths": 75,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 266, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^1[T3] ^1notgeneric",
+			"score": 44,
+			"deaths": 52,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 44, "shots": 107, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 32,
+			"deaths": 93,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 131, "accuracy": 22},
+				{"weapon": "violator", "hits": 2, "shots": 56, "accuracy": 3}
+			]
+		}
+	]
+}

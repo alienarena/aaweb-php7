@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "^8(^1GM^7^8)^7Dondo",
+			"score": 141,
+			"deaths": 70,
+			"ratio": 201,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 303, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^5V^01^5ster",
+			"score": 132,
+			"deaths": 69,
+			"ratio": 191,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 152, "shots": 342, "accuracy": 44}
+			]
+		},
+		{
+			"name": "^9ToastRawr",
+			"score": 119,
+			"deaths": 63,
+			"ratio": 188,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 136, "shots": 287, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^5nmc",
+			"score": 63,
+			"deaths": 65,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 299, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 57,
+			"deaths": 82,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 241, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 57,
+			"deaths": 92,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 205, "accuracy": 29}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 53,
+			"deaths": 88,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 230, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 18,
+			"deaths": 92,
+			"ratio": 19,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 294, "accuracy": 10}
+			]
+		}
+	]
+}

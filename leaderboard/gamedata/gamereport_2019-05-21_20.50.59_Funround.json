@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^5V^01^5ster",
+			"score": 90,
+			"deaths": 50,
+			"ratio": 180,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 204, "shots": 509, "accuracy": 40}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 58,
+			"deaths": 64,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 508, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 57,
+			"deaths": 57,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 156, "shots": 593, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 57,
+			"deaths": 66,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 172, "shots": 449, "accuracy": 38}
+			]
+		},
+		{
+			"name": "FatCat",
+			"score": 34,
+			"deaths": 75,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 420, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 14,
+			"deaths": 70,
+			"ratio": 20,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 474, "accuracy": 16}
+			]
+		}
+	]
+}

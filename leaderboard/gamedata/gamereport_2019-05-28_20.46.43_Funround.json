@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "vis",
+			"score": 43,
+			"deaths": 48,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 107, "shots": 421, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 33,
+			"deaths": 48,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 87, "shots": 644, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 32,
+			"deaths": 45,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 436, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 28,
+			"deaths": 51,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 603, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 19,
+			"deaths": 55,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 56, "shots": 464, "accuracy": 12}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 0,
+			"deaths": 14,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 135, "accuracy": 10}
+			]
+		}
+	]
+}
