@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "[SiN]nealcool",
+			"score": 44,
+			"deaths": 35,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 439, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7[^6GunMan^7]^7Vista",
+			"score": 43,
+			"deaths": 41,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 131, "shots": 431, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 35,
+			"deaths": 43,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 388, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 32,
+			"deaths": 45,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 497, "accuracy": 18}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 8,
+			"deaths": 58,
+			"ratio": 13,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 376, "accuracy": 16}
+			]
+		}
+	]
+}

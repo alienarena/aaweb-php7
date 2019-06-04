@@ -1,0 +1,85 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 147,
+			"deaths": 75,
+			"ratio": 196,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 161, "shots": 396, "accuracy": 40}
+			]
+		},
+		{
+			"name": "(<>..<>)",
+			"score": 140,
+			"deaths": 79,
+			"ratio": 177,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 149, "shots": 395, "accuracy": 37}
+			]
+		},
+		{
+			"name": "fish n champs",
+			"score": 125,
+			"deaths": 69,
+			"ratio": 181,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 137, "shots": 441, "accuracy": 31}
+			]
+		},
+		{
+			"name": "HPDeskjet",
+			"score": 82,
+			"deaths": 90,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 101, "shots": 369, "accuracy": 27}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 77,
+			"deaths": 87,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 84, "shots": 279, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 46,
+			"deaths": 84,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 61, "shots": 331, "accuracy": 18}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 32,
+			"deaths": 90,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 37, "shots": 344, "accuracy": 10}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 31,
+			"deaths": 95,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 39, "shots": 235, "accuracy": 16}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 21,
+			"deaths": 109,
+			"ratio": 19,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 239, "accuracy": 22}
+			]
+		}
+	]
+}

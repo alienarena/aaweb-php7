@@ -1,0 +1,114 @@
+{
+	"players": [
+		{
+			"name": "^5[^1GM^5]^7Dondo",
+			"score": 155,
+			"deaths": 99,
+			"ratio": 156,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 152, "shots": 310, "accuracy": 49}
+			]
+		},
+		{
+			"name": "ToastRawr",
+			"score": 140,
+			"deaths": 84,
+			"ratio": 166,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 139, "shots": 300, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^7[^8GM^7]Skelfir",
+			"score": 134,
+			"deaths": 88,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 132, "shots": 350, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Vista",
+			"score": 120,
+			"deaths": 101,
+			"ratio": 118,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 119, "shots": 295, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 110,
+			"deaths": 95,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 109, "shots": 260, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 92,
+			"deaths": 101,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 88, "shots": 203, "accuracy": 43},
+				{"weapon": "violator", "hits": 1, "shots": 20, "accuracy": 5}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 90,
+			"deaths": 89,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 90, "shots": 256, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^5[^4666^5]^4UR-Next",
+			"score": 85,
+			"deaths": 108,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 336, "accuracy": 24}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 83,
+			"deaths": 105,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 81, "shots": 267, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 79,
+			"deaths": 108,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 206, "accuracy": 33},
+				{"weapon": "violator", "hits": 7, "shots": 162, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 58,
+			"deaths": 119,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 257, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 51,
+			"deaths": 100,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 164, "accuracy": 29}
+			]
+		}
+	]
+}

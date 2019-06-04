@@ -1,0 +1,112 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 72,
+			"deaths": 28,
+			"ratio": 257,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 16, "shots": 33, "accuracy": 48},
+				{"weapon": "disruptor", "hits": 140, "shots": 259, "accuracy": 54},
+				{"weapon": "flamethrower", "hits": 17, "shots": 99, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 4, "shots": 13, "accuracy": 30},
+				{"weapon": "violator", "hits": 21, "shots": 225, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[^6GunMan^7]^7Vista",
+			"score": 53,
+			"deaths": 38,
+			"ratio": 139,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 33, "shots": 62, "accuracy": 53},
+				{"weapon": "disruptor", "hits": 23, "shots": 51, "accuracy": 45},
+				{"weapon": "chaingun", "hits": 60, "shots": 203, "accuracy": 29},
+				{"weapon": "flamethrower", "hits": 23, "shots": 163, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 45, "shots": 124, "accuracy": 36},
+				{"weapon": "violator", "hits": 28, "shots": 281, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^8(^1GM^8)^7Dondo",
+			"score": 46,
+			"deaths": 48,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 9, "accuracy": 66},
+				{"weapon": "disruptor", "hits": 74, "shots": 160, "accuracy": 46},
+				{"weapon": "flamethrower", "hits": 4, "shots": 175, "accuracy": 2},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 18, "accuracy": 27},
+				{"weapon": "violator", "hits": 43, "shots": 610, "accuracy": 7}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 35,
+			"deaths": 48,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 8, "shots": 19, "accuracy": 42},
+				{"weapon": "disruptor", "hits": 1, "shots": 10, "accuracy": 10},
+				{"weapon": "smartgun", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "flamethrower", "hits": 27, "shots": 99, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 29, "shots": 76, "accuracy": 38},
+				{"weapon": "violator", "hits": 51, "shots": 922, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 33,
+			"deaths": 45,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 46, "shots": 59, "accuracy": 77},
+				{"weapon": "disruptor", "hits": 18, "shots": 58, "accuracy": 31},
+				{"weapon": "chaingun", "hits": 10, "shots": 50, "accuracy": 20},
+				{"weapon": "flamethrower", "hits": 62, "shots": 765, "accuracy": 8},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 105, "accuracy": 15},
+				{"weapon": "violator", "hits": 1, "shots": 21, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 25,
+			"deaths": 55,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 66, "shots": 211, "accuracy": 31},
+				{"weapon": "disruptor", "hits": 7, "shots": 32, "accuracy": 21},
+				{"weapon": "chaingun", "hits": 4, "shots": 13, "accuracy": 30},
+				{"weapon": "flamethrower", "hits": 21, "shots": 187, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 54, "accuracy": 38},
+				{"weapon": "violator", "hits": 31, "shots": 394, "accuracy": 7}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 20,
+			"deaths": 44,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 5, "shots": 30, "accuracy": 16},
+				{"weapon": "disruptor", "hits": 16, "shots": 46, "accuracy": 34},
+				{"weapon": "flamethrower", "hits": 3, "shots": 150, "accuracy": 2},
+				{"weapon": "rocketlauncher", "hits": 6, "shots": 17, "accuracy": 35},
+				{"weapon": "violator", "hits": 27, "shots": 883, "accuracy": 3}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 13,
+			"deaths": 50,
+			"ratio": 26,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 9, "shots": 32, "accuracy": 28},
+				{"weapon": "disruptor", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "flamethrower", "hits": 45, "shots": 199, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 20, "accuracy": 50},
+				{"weapon": "violator", "hits": 10, "shots": 287, "accuracy": 3}
+			]
+		}
+	]
+}
