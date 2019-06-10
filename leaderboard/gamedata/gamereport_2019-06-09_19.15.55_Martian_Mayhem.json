@@ -1,0 +1,94 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr.",
+			"score": 92,
+			"deaths": 40,
+			"ratio": 230,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 48, "accuracy": 31},
+				{"weapon": "disruptor", "hits": 58, "shots": 99, "accuracy": 58},
+				{"weapon": "smartgun", "hits": 83, "shots": 108, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 56, "shots": 275, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 20, "shots": 33, "accuracy": 60},
+				{"weapon": "beamgun", "hits": 497, "shots": 821, "accuracy": 60},
+				{"weapon": "violator", "hits": 31, "shots": 308, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 57,
+			"deaths": 44,
+			"ratio": 129,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 59, "shots": 97, "accuracy": 60},
+				{"weapon": "disruptor", "hits": 36, "shots": 62, "accuracy": 58},
+				{"weapon": "smartgun", "hits": 190, "shots": 238, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 144, "shots": 515, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 37, "shots": 78, "accuracy": 47},
+				{"weapon": "beamgun", "hits": 156, "shots": 342, "accuracy": 45},
+				{"weapon": "violator", "hits": 18, "shots": 94, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 54,
+			"deaths": 57,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 19, "accuracy": 31},
+				{"weapon": "disruptor", "hits": 28, "shots": 48, "accuracy": 58},
+				{"weapon": "smartgun", "hits": 142, "shots": 177, "accuracy": 80},
+				{"weapon": "chaingun", "hits": 10, "shots": 18, "accuracy": 55},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 38, "accuracy": 36},
+				{"weapon": "beamgun", "hits": 133, "shots": 246, "accuracy": 54},
+				{"weapon": "violator", "hits": 72, "shots": 1095, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 31,
+			"deaths": 54,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 41, "shots": 68, "accuracy": 60},
+				{"weapon": "disruptor", "hits": 6, "shots": 14, "accuracy": 42},
+				{"weapon": "smartgun", "hits": 117, "shots": 153, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 108, "shots": 538, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 7, "shots": 22, "accuracy": 31},
+				{"weapon": "beamgun", "hits": 251, "shots": 537, "accuracy": 46},
+				{"weapon": "violator", "hits": 2, "shots": 113, "accuracy": 1}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 29,
+			"deaths": 59,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 18, "accuracy": 33},
+				{"weapon": "disruptor", "hits": 6, "shots": 22, "accuracy": 27},
+				{"weapon": "smartgun", "hits": 161, "shots": 207, "accuracy": 77},
+				{"weapon": "chaingun", "hits": 56, "shots": 511, "accuracy": 10},
+				{"weapon": "rocketlauncher", "hits": 17, "shots": 54, "accuracy": 31},
+				{"weapon": "beamgun", "hits": 126, "shots": 337, "accuracy": 37},
+				{"weapon": "violator", "hits": 21, "shots": 759, "accuracy": 2}
+			]
+		},
+		{
+			"name": "007 Bond",
+			"score": 28,
+			"deaths": 48,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 69, "shots": 326, "accuracy": 21},
+				{"weapon": "disruptor", "hits": 15, "shots": 34, "accuracy": 44},
+				{"weapon": "smartgun", "hits": 40, "shots": 71, "accuracy": 56},
+				{"weapon": "chaingun", "hits": 61, "shots": 335, "accuracy": 18},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 56, "accuracy": 17},
+				{"weapon": "beamgun", "hits": 166, "shots": 311, "accuracy": 53},
+				{"weapon": "violator", "hits": 9, "shots": 629, "accuracy": 1}
+			]
+		}
+	]
+}

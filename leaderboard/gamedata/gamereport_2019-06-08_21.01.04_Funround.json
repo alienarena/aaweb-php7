@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 43,
+			"deaths": 34,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 379, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 29,
+			"deaths": 43,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 337, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 27,
+			"deaths": 49,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 288, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 22,
+			"deaths": 46,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 202, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 13,
+			"deaths": 52,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 77, "shots": 484, "accuracy": 15}
+			]
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 43,
+			"deaths": 27,
+			"ratio": 159,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 662, "accuracy": 12}
+			]
+		},
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 29,
+			"deaths": 27,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 563, "accuracy": 16}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 25,
+			"deaths": 41,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 64, "shots": 464, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 22,
+			"deaths": 39,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 76, "shots": 420, "accuracy": 18}
+			]
+		},
+		{
+			"name": "007 Bond",
+			"score": 21,
+			"deaths": 36,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 484, "accuracy": 12}
+			]
+		}
+	]
+}

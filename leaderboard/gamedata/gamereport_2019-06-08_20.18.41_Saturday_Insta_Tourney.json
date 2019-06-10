@@ -1,0 +1,85 @@
+{
+	"players": [
+		{
+			"name": "^8(GM)Dondo",
+			"score": 100,
+			"deaths": 77,
+			"ratio": 129,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 263, "accuracy": 37}
+			]
+		},
+		{
+			"name": "ToastRawr.",
+			"score": 99,
+			"deaths": 61,
+			"ratio": 162,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 100, "shots": 243, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 97,
+			"deaths": 61,
+			"ratio": 159,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 97, "shots": 267, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 73,
+			"deaths": 62,
+			"ratio": 117,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 73, "shots": 174, "accuracy": 41}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 65,
+			"deaths": 71,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 241, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 59,
+			"deaths": 56,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 147, "accuracy": 38}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 52,
+			"deaths": 81,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 51, "shots": 182, "accuracy": 28}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 32,
+			"deaths": 65,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 31, "shots": 120, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 31,
+			"deaths": 73,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 31, "shots": 181, "accuracy": 17}
+			]
+		}
+	]
+}
