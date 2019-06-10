@@ -27,12 +27,11 @@ $leaderboardWidth = 1000;
 // "gamereport_2017-11-30_01.17.17_Martian_Supremacy_Tournament.json"
 // or "gamereport_2017-11-30_01.17.17.json"
 // The title is optional. Without title it will display "- No title -".
-$path = dirname(__FILE__).'/gamedata';
-$files = array_diff(scandir($path, SCANDIR_SORT_DESCENDING), array('.', '..'));
+$gamedatapath = dirname(__FILE__).'/gamedata';
+$files = array_diff(scandir($gamedatapath, SCANDIR_SORT_DESCENDING), array('.', '..'));
 $pages = array_chunk($files, $gameReportsPerPage);
 
-if (count($files) == 1)
-{
+if (count($files) == 1) {
     $details = true;
 } else {
     $files = $pages[$pageNumber - 1];
@@ -78,6 +77,8 @@ echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
 echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
 
 echo "        <tr>\n";
+
+session_start();
 
 $colCount = 0;
 foreach($files as $file) 
@@ -148,7 +149,7 @@ function renderScoreListAndPrepareDetails($file)
     global $details, $maxPlayersForDetails, $maxPlayersTopView;
     global $template, $detailsTemplate, $weaponAccuracyTemplate, $detailsHtml;
     
-    $data_json = fileGetContents("gamedata/$file");
+    $data_json = getContents($file);
     $data = jsonDecode($data_json, true);
     array_splice($data['players'], $maxPlayersForDetails);
         
@@ -212,6 +213,16 @@ function enrichData($file, $data)
     $data['tourney_date'] = date('F j, Y', strtotime($tourneyDateString));
     
     return $data;
+}
+
+function getContents($fileName)
+{
+    $data_json = $_SESSION[$fileName];
+    if (strlen($data_json) == 0) {
+        $data_json = fileGetContents("gamedata/$fileName");
+        $_SESSION[$fileName] = $data_json;    
+    }
+    return $data_json;
 }
 
 function fileGetContents($path)
