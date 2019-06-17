@@ -1,0 +1,78 @@
+{
+	"players": [
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 85,
+			"deaths": 55,
+			"ratio": 154,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 175, "shots": 393, "accuracy": 44},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 80,
+			"deaths": 54,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 81, "shots": 233, "accuracy": 34}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 74,
+			"deaths": 60,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 138, "shots": 323, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 59,
+			"deaths": 64,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 204, "accuracy": 33},
+				{"weapon": "violator", "hits": 3, "shots": 51, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 47,
+			"deaths": 67,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 252, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 45,
+			"deaths": 52,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 51, "shots": 126, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[os]^5eddiebrkln",
+			"score": 40,
+			"deaths": 74,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 182, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 39,
+			"deaths": 65,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 228, "accuracy": 38}
+			]
+		}
+	]
+}

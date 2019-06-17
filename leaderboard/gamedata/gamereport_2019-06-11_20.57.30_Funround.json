@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^0[^5GM^0]^2Sista",
+			"score": 44,
+			"deaths": 35,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 351, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 30,
+			"deaths": 43,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 419, "accuracy": 15}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 28,
+			"deaths": 32,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 286, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 27,
+			"deaths": 38,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 479, "accuracy": 17}
+			]
+		}
+	]
+}

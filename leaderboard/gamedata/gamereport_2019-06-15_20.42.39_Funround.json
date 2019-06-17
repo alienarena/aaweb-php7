@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^0[^5GM^0]^2Pisa",
+			"score": 59,
+			"deaths": 49,
+			"ratio": 120,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 165, "shots": 433, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 56,
+			"deaths": 53,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 121, "shots": 313, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 55,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 126, "shots": 669, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 34,
+			"deaths": 33,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 75, "shots": 269, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 32,
+			"deaths": 50,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 269, "accuracy": 34}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 31,
+			"deaths": 71,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 384, "accuracy": 27}
+			]
+		}
+	]
+}
