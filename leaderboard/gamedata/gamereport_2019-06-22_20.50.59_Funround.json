@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^0[^5GM^0]^2Lisa",
+			"score": 64,
+			"deaths": 45,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 140, "shots": 484, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^8(^1GM^8)^7Dondo",
+			"score": 46,
+			"deaths": 52,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 114, "shots": 546, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 40,
+			"deaths": 62,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 595, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 35,
+			"deaths": 55,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 77, "shots": 480, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 30,
+			"deaths": 58,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 288, "accuracy": 37}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 21,
+			"deaths": 44,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 67, "shots": 439, "accuracy": 15}
+			]
+		}
+	]
+}

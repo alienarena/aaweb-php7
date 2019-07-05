@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^8(^1GM^8)^7Dondo",
+			"score": 142,
+			"deaths": 74,
+			"ratio": 191,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 358, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^0[^5GM^0]^2Lisa",
+			"score": 102,
+			"deaths": 68,
+			"ratio": 150,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 106, "shots": 323, "accuracy": 32}
+			]
+		},
+		{
+			"name": "666SoulCatcher",
+			"score": 82,
+			"deaths": 80,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 288, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 52,
+			"deaths": 82,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 54, "shots": 241, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 43,
+			"deaths": 84,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 46, "shots": 165, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 35,
+			"deaths": 66,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 37, "shots": 146, "accuracy": 25}
+			]
+		}
+	]
+}

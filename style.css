@@ -123,11 +123,17 @@ div.menu {
 	position: absolute; 
 	top: 87px; /* 130 - 43 = banner height - menu height */
 	width: 750px; 
-	color: rgb(255, 255, 255); 
+	color: rgb(190, 190, 255); 
 	background-color: rgba(17, 3, 17, 0.5);
+	z-index: 999;
+}
+div.menu a.active {
+	color: rgb(255, 255, 255);
+	text-shadow: 4px 4px 2px rgb(20, 20, 20);
 }
 div.menu a:hover {
-	color: rgb(220, 220, 220);
+	color: rgb(255, 255, 255);
+	text-shadow: none;
 }
 
 table.graph {

@@ -43,8 +43,8 @@ function Generate_HTML_Headers()
 	echo "    <meta name=\"description\" content=\"Alien Arena server browser - live server, player and map statistics.\">\n";
 	echo "    <link rel=\"stylesheet\" href=\"".$CONFIG['stylesheet']."\">\n";
 	echo "    <script type=\"text/javascript\" src=\"../sharedscripts/jquery-3.3.1.min.js\"></script>\n";
-  echo "    <script type=\"text/javascript\" src=\"../sharedscripts/parallaxie.js\"></script>\n";
-  echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
+	echo "    <script type=\"text/javascript\" src=\"../sharedscripts/parallaxie.js\"></script>\n";
+	echo "    <script type=\"text/javascript\" src=\"scripts/utils.js\"></script>\n";
 	echo "</head>\n";
 	echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
 

@@ -1,0 +1,31 @@
+{
+	"players": [
+		{
+			"name": "vs",
+			"score": 51,
+			"deaths": 34,
+			"ratio": 150,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 113, "shots": 375, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 37,
+			"deaths": 51,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 389, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 26,
+			"deaths": 49,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 383, "accuracy": 20}
+			]
+		}
+	]
+}

@@ -36,10 +36,37 @@ $control = BuildControl();  /* Get config from URL line */
 
 Generate_HTML_Headers($CONFIG['baseurl'].'browser/', $CONFIG['title']);
 
+$pinMenu = true;
+
 echo "<script>\n";
-echo "$(document).ready(function() {\n";	
+echo "function collapseMenu(el) {";
+echo "   el.css({'position': 'fixed', 'top': '0', 'background-image': 'url(img/banner.jpg)', 'background-position': 'left top -61px', 'background-blend-mode': 'color'});";
+echo "}\n";
+echo "if (!window.isUsedOnMobile() && localStorage.getItem('collapsedMenu') == 'true') {";
+echo "   collapseMenu($('div.menu'));";
+echo "   $(window).scrollTop(87);";
+echo "}\n";
+echo "$(document).ready(function() {\n";
 echo "   if (!window.isUsedOnMobile()) {\n";
 echo "      $(\".parallaxie\").parallaxie();\n";
+if ($pinMenu) 
+{
+	echo "      $(window).scroll(function() {";
+	echo "         var menu = $('div.menu');";
+	echo "         var pos = menu.offset().top - $(window).scrollTop();";
+	echo "         if (pos < 0) {";
+	echo "            if (menu.css('position') != 'fixed') {";
+	echo "               collapseMenu(menu);";
+	echo "               localStorage.setItem('collapsedMenu', 'true');";
+	echo "            }";
+	echo "         } else if ($(window).scrollTop() < 87) {";
+	echo "            localStorage.setItem('collapsedMenu', 'false');";
+	echo "            if (menu.css('position') == 'fixed') {";
+	echo "               menu.css({'position': 'absolute', 'top': '87', 'background-image': 'none'});";
+	echo "            }";
+	echo "         }";
+	echo "      });\n";
+}
 echo "   } else {\n";
 echo "      $('#content').removeAttr('class');\n";
 echo "      $('#content').css('background-image', '');\n";
@@ -57,11 +84,11 @@ $filename = GetFilename();
 
 echo '<div class="container">';
 echo '<div class="menu">';
-echo "<a href=\"{$filename}?action=liveservers\">Live games</a>";
-echo " | <a href=\"{$filename}?action=liveplayers\">Live players</a>";
-echo " | <a href=\"{$filename}?action=serverstats\">Server stats</a>";
-echo " | <a href=\"{$filename}?action=playerstats\">Player stats</a>";
-echo " | <a href=\"{$filename}?action=mapstats\">Map stats</a>";
+echo "<a href=\"{$filename}?action=liveservers\"".CheckActive('liveservers', $control['action']).">Live games</a>";
+echo " | <a href=\"{$filename}?action=liveplayers\"".CheckActive('liveplayers', $control['action']).">Live players</a>";
+echo " | <a href=\"{$filename}?action=serverstats\"".CheckActive('serverstats', $control['action']).">Server stats</a>";
+echo " | <a href=\"{$filename}?action=playerstats\"".CheckActive('playerstats', $control['action']).">Player stats</a>";
+echo " | <a href=\"{$filename}?action=mapstats\"".CheckActive('mapstats', $control['action']).">Map stats</a>";
 echo " | <a href=\"".$CONFIG['baseurl']."leaderboard/\" target=\"_blank\">Leaderboard</a>";
 echo "</div>\n";
 echo "</div>\n";
@@ -148,6 +175,15 @@ function CollapsiblePlayerGraph()
 	$html = $html."</td></tr>\n";
 
 	return $html;
+}
+
+function CheckActive($menuItem, $currentAction)
+{
+	if (strcmp($currentAction, $menuItem) == 0)
+	{
+		return ' class="active"';
+	}
+	return '';
 }
 
 function CollapsibleServerGraph()
