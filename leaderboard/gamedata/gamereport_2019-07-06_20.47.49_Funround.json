@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^1[T3]^2generic_sn",
+			"score": 54,
+			"deaths": 28,
+			"ratio": 192,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 292, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1[SiN]^4Sasuke",
+			"score": 49,
+			"deaths": 42,
+			"ratio": 116,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 94, "shots": 439, "accuracy": 21}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 47,
+			"deaths": 51,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 135, "shots": 479, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 36,
+			"deaths": 52,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 480, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 30,
+			"deaths": 54,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 506, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[BPC]mamabear",
+			"score": 15,
+			"deaths": 52,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 47, "shots": 386, "accuracy": 12}
+			]
+		}
+	]
+}

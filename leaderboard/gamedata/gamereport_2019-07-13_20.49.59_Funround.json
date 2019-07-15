@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 58,
+			"deaths": 38,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 130, "shots": 642, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 39,
+			"deaths": 42,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 697, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 38,
+			"deaths": 38,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 89, "shots": 490, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 38,
+			"deaths": 49,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 123, "shots": 586, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 35,
+			"deaths": 39,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 645, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^7[^3GM^7]^6anton",
+			"score": 28,
+			"deaths": 25,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 272, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[BPC]mamabear",
+			"score": 19,
+			"deaths": 60,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 47, "shots": 631, "accuracy": 7}
+			]
+		},
+		{
+			"name": "Flavio501",
+			"score": 10,
+			"deaths": 20,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 174, "accuracy": 20}
+			]
+		}
+	]
+}

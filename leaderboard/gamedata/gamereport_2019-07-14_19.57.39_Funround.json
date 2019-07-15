@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 58,
+			"deaths": 46,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 606, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 55,
+			"deaths": 51,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 131, "shots": 463, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7[^3GM^7]^6anton",
+			"score": 46,
+			"deaths": 48,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 491, "accuracy": 27}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 41,
+			"deaths": 61,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 467, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 35,
+			"deaths": 47,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 89, "shots": 265, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 57,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 119, "shots": 575, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 30,
+			"deaths": 61,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 96, "shots": 433, "accuracy": 22}
+			]
+		}
+	]
+}

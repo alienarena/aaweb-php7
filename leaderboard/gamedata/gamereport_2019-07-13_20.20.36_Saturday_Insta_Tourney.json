@@ -1,0 +1,87 @@
+{
+	"players": [
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 185,
+			"deaths": 76,
+			"ratio": 243,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 185, "shots": 392, "accuracy": 47}
+			]
+		},
+		{
+			"name": "ToastRawr",
+			"score": 160,
+			"deaths": 69,
+			"ratio": 231,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 159, "shots": 394, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 100,
+			"deaths": 67,
+			"ratio": 149,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 282, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 79,
+			"deaths": 88,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 79, "shots": 296, "accuracy": 26}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 68,
+			"deaths": 87,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 228, "accuracy": 29},
+				{"weapon": "violator", "hits": 0, "shots": 7, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 64,
+			"deaths": 85,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 315, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^5[^4666^5]^4UR-Next",
+			"score": 59,
+			"deaths": 98,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 299, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[BPC]mamabear",
+			"score": 24,
+			"deaths": 107,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 24, "shots": 280, "accuracy": 8}
+			]
+		},
+		{
+			"name": "Player1234",
+			"score": 17,
+			"deaths": 75,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 17, "shots": 156, "accuracy": 10},
+				{"weapon": "violator", "hits": 1, "shots": 10, "accuracy": 10}
+			]
+		}
+	]
+}
