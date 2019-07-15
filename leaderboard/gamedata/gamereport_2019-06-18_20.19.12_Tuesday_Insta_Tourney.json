@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "made in germany",
+			"score": 91,
+			"deaths": 56,
+			"ratio": 162,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 91, "shots": 293, "accuracy": 31}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 80,
+			"deaths": 75,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 80, "shots": 254, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 62,
+			"deaths": 73,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 61, "shots": 182, "accuracy": 33},
+				{"weapon": "violator", "hits": 0, "shots": 13, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 59,
+			"deaths": 83,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 251, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 56,
+			"deaths": 61,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 157, "accuracy": 35}
+			]
+		}
+	]
+}
