@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 55,
+			"deaths": 52,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 184, "shots": 501, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^2[^7GM^2]^7v^2....",
+			"score": 43,
+			"deaths": 45,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 113, "shots": 388, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 35,
+			"deaths": 54,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 128, "shots": 378, "accuracy": 33}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 32,
+			"deaths": 60,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 377, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 29,
+			"deaths": 47,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 495, "accuracy": 20}
+			]
+		}
+	]
+}
+
