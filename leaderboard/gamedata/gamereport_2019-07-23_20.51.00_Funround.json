@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "[GM]Jar'El",
+			"score": 39,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[OS]BeryCZ",
+			"score": 32,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "GM",
+			"score": 24,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 24,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 18,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		}
+	]
+}

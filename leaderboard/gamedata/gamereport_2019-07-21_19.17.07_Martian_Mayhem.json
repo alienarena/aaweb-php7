@@ -1,0 +1,61 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 39,
+			"deaths": 19,
+			"ratio": 205,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 3, "shots": 18, "accuracy": 16},
+				{"weapon": "disruptor", "hits": 13, "shots": 17, "accuracy": 76},
+				{"weapon": "smartgun", "hits": 0, "shots": 4, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 83, "shots": 342, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 1, "shots": 1, "accuracy": 100},
+				{"weapon": "beamgun", "hits": 159, "shots": 284, "accuracy": 55},
+				{"weapon": "vaporizer", "hits": 26, "shots": 42, "accuracy": 61},
+				{"weapon": "violator", "hits": 0, "shots": 28, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[GM]GM",
+			"score": 20,
+			"deaths": 33,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 30, "shots": 83, "accuracy": 36},
+				{"weapon": "disruptor", "hits": 5, "shots": 15, "accuracy": 33},
+				{"weapon": "smartgun", "hits": 11, "shots": 15, "accuracy": 73},
+				{"weapon": "chaingun", "hits": 44, "shots": 171, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 41, "accuracy": 34},
+				{"weapon": "beamgun", "hits": 53, "shots": 100, "accuracy": 53},
+				{"weapon": "vaporizer", "hits": 6, "shots": 9, "accuracy": 66},
+				{"weapon": "violator", "hits": 0, "shots": 38, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 11,
+			"deaths": 34,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 38, "accuracy": 15},
+				{"weapon": "disruptor", "hits": 2, "shots": 2, "accuracy": 100},
+				{"weapon": "smartgun", "hits": 86, "shots": 114, "accuracy": 75},
+				{"weapon": "chaingun", "hits": 7, "shots": 103, "accuracy": 6},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 43, "accuracy": 27},
+				{"weapon": "beamgun", "hits": 10, "shots": 37, "accuracy": 27},
+				{"weapon": "vaporizer", "hits": 12, "shots": 24, "accuracy": 50},
+				{"weapon": "violator", "hits": 1, "shots": 52, "accuracy": 1}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 6,
+			"deaths": 2,
+			"ratio": 300,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 11, "shots": 19, "accuracy": 57}
+			]
+		}
+	]
+}
