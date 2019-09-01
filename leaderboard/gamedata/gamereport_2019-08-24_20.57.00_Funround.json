@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "[T3]Cthulhu",
+			"score": 14,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 7,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[GM]Jar'El",
+			"score": 1,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[GM]Dondo",
+			"score": -1,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		}
+	]
+}

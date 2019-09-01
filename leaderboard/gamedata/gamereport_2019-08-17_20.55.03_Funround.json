@@ -1,0 +1,65 @@
+{
+	"players": [
+		{
+			"name": "[T3]generic_sn",
+			"score": 60,
+			"deaths": 35,
+			"ratio": 171,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 27, "accuracy": 55},
+				{"weapon": "smartgun", "hits": 27, "shots": 27, "accuracy": 100},
+				{"weapon": "chaingun", "hits": 205, "shots": 618, "accuracy": 33},
+				{"weapon": "flamethrower", "hits": 17, "shots": 81, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 25, "accuracy": 40},
+				{"weapon": "beamgun", "hits": 544, "shots": 817, "accuracy": 66},
+				{"weapon": "violator", "hits": 3, "shots": 37, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 56,
+			"deaths": 60,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 65, "accuracy": 21},
+				{"weapon": "smartgun", "hits": 201, "shots": 267, "accuracy": 75},
+				{"weapon": "chaingun", "hits": 270, "shots": 1646, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 51, "shots": 669, "accuracy": 7},
+				{"weapon": "rocketlauncher", "hits": 25, "shots": 95, "accuracy": 26},
+				{"weapon": "beamgun", "hits": 390, "shots": 851, "accuracy": 45},
+				{"weapon": "violator", "hits": 2, "shots": 3, "accuracy": 66}
+			]
+		},
+		{
+			"name": "^8{^2GM^8}^3Dondo",
+			"score": 53,
+			"deaths": 63,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 40, "accuracy": 45},
+				{"weapon": "smartgun", "hits": 109, "shots": 178, "accuracy": 61},
+				{"weapon": "chaingun", "hits": 198, "shots": 820, "accuracy": 24},
+				{"weapon": "flamethrower", "hits": 71, "shots": 477, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 56, "accuracy": 28},
+				{"weapon": "beamgun", "hits": 491, "shots": 1065, "accuracy": 46},
+				{"weapon": "violator", "hits": 31, "shots": 312, "accuracy": 9}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 34,
+			"deaths": 53,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 38, "shots": 128, "accuracy": 29},
+				{"weapon": "smartgun", "hits": 209, "shots": 271, "accuracy": 77},
+				{"weapon": "chaingun", "hits": 150, "shots": 842, "accuracy": 17},
+				{"weapon": "flamethrower", "hits": 6, "shots": 115, "accuracy": 5},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 69, "accuracy": 17},
+				{"weapon": "beamgun", "hits": 174, "shots": 488, "accuracy": 35},
+				{"weapon": "violator", "hits": 0, "shots": 13, "accuracy": 0}
+			]
+		}
+	]
+}
+

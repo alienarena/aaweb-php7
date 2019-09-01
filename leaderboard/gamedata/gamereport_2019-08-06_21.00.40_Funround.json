@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "^6GM^2-^6AvadaKadabra",
+			"score": 53,
+			"deaths": 46,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 143, "shots": 418, "accuracy": 34}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 40,
+			"deaths": 47,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 114, "shots": 443, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 36,
+			"deaths": 52,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 93, "shots": 496, "accuracy": 18}
+			]
+		},
+		{
+			"name": "{Anura} L.",
+			"score": 23,
+			"deaths": 42,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 64, "shots": 240, "accuracy": 26}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 15,
+			"deaths": 48,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 78, "shots": 367, "accuracy": 21}
+			]
+		}
+	]
+}
+

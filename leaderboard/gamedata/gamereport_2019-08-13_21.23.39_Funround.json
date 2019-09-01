@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 81,
+			"deaths": 53,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 161, "shots": 553, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 65,
+			"deaths": 53,
+			"ratio": 122,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 526, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^2vamos ^7vista",
+			"score": 48,
+			"deaths": 50,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 159, "shots": 513, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 28,
+			"deaths": 60,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 99, "shots": 587, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 13,
+			"deaths": 60,
+			"ratio": 21,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 57, "shots": 482, "accuracy": 11}
+			]
+		},
+		{
+			"name": "Manchev",
+			"score": 6,
+			"deaths": 71,
+			"ratio": 8,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 396, "accuracy": 15}
+			]
+		}
+	]
+}

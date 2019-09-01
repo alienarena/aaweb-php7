@@ -1,0 +1,52 @@
+{
+	"players": [
+		{
+			"name": "Lance",
+			"score": 92,
+			"deaths": 66,
+			"ratio": 139,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 93, "shots": 267, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 84,
+			"deaths": 67,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 84, "shots": 191, "accuracy": 43}
+			]
+		},
+		{
+			"name": "^1vamosia ^7vista",
+			"score": 67,
+			"deaths": 81,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 239, "accuracy": 28},
+				{"weapon": "violator", "hits": 1, "shots": 9, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 65,
+			"deaths": 68,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 215, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 28,
+			"deaths": 56,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 28, "shots": 140, "accuracy": 20},
+				{"weapon": "violator", "hits": 0, "shots": 23, "accuracy": 0}
+			]
+		}
+	]
+}
+

@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^5[GM]^6SAUSAGENESS",
+			"score": 40,
+			"deaths": 28,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 95, "shots": 294, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 29,
+			"deaths": 32,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 308, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 16,
+			"deaths": 37,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 56, "shots": 359, "accuracy": 15}
+			]
+		},
+		{
+			"name": "[SiN]Xenos",
+			"score": 15,
+			"deaths": 45,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 72, "shots": 299, "accuracy": 24}
+			]
+		}
+	]
+}

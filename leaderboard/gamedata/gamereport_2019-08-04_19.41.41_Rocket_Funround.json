@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^2[^7GM^2/^7vista",
+			"score": 62,
+			"deaths": 39,
+			"ratio": 158,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 439, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 47,
+			"deaths": 50,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 96, "shots": 440, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 47,
+			"deaths": 56,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 414, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 40,
+			"deaths": 45,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 533, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 14,
+			"deaths": 50,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 60, "shots": 422, "accuracy": 14}
+			]
+		}
+	]
+}

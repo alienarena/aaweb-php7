@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 67,
+			"deaths": 53,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 170, "shots": 440, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^2vamos ^7vista",
+			"score": 62,
+			"deaths": 44,
+			"ratio": 140,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 461, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 53,
+			"deaths": 43,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 381, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 40,
+			"deaths": 68,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 98, "shots": 430, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 37,
+			"deaths": 55,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 102, "shots": 481, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 34,
+			"deaths": 58,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 115, "shots": 448, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 14,
+			"deaths": 40,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 41, "shots": 318, "accuracy": 12}
+			]
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"players": [
+		{
+			"name": "^2[^7GM^2/^7vista^2_",
+			"score": 76,
+			"deaths": 33,
+			"ratio": 230,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 49, "shots": 86, "accuracy": 56},
+				{"weapon": "disruptor", "hits": 68, "shots": 152, "accuracy": 44},
+				{"weapon": "chaingun", "hits": 183, "shots": 795, "accuracy": 23},
+				{"weapon": "flamethrower", "hits": 16, "shots": 138, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 43, "shots": 106, "accuracy": 40},
+				{"weapon": "violator", "hits": 9, "shots": 94, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 42,
+			"deaths": 53,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 57, "shots": 133, "accuracy": 42},
+				{"weapon": "disruptor", "hits": 17, "shots": 33, "accuracy": 51},
+				{"weapon": "chaingun", "hits": 226, "shots": 983, "accuracy": 22},
+				{"weapon": "flamethrower", "hits": 53, "shots": 320, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 68, "accuracy": 20},
+				{"weapon": "violator", "hits": 13, "shots": 469, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 38,
+			"deaths": 44,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 61, "shots": 107, "accuracy": 57},
+				{"weapon": "disruptor", "hits": 11, "shots": 52, "accuracy": 21},
+				{"weapon": "chaingun", "hits": 43, "shots": 223, "accuracy": 19},
+				{"weapon": "flamethrower", "hits": 44, "shots": 450, "accuracy": 9},
+				{"weapon": "rocketlauncher", "hits": 48, "shots": 155, "accuracy": 30},
+				{"weapon": "violator", "hits": 0, "shots": 9, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 37,
+			"deaths": 53,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 30, "shots": 54, "accuracy": 55},
+				{"weapon": "disruptor", "hits": 15, "shots": 58, "accuracy": 25},
+				{"weapon": "chaingun", "hits": 183, "shots": 955, "accuracy": 19},
+				{"weapon": "flamethrower", "hits": 28, "shots": 76, "accuracy": 36},
+				{"weapon": "rocketlauncher", "hits": 18, "shots": 66, "accuracy": 27},
+				{"weapon": "violator", "hits": 29, "shots": 627, "accuracy": 4}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 26,
+			"deaths": 52,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 37, "shots": 134, "accuracy": 27},
+				{"weapon": "disruptor", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 54, "shots": 332, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 35, "shots": 244, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 22, "shots": 72, "accuracy": 30},
+				{"weapon": "violator", "hits": 27, "shots": 747, "accuracy": 3}
+			]
+		}
+	]
+}

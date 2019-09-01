@@ -1,0 +1,109 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 50,
+			"deaths": 41,
+			"ratio": 121,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 47, "shots": 99, "accuracy": 47},
+				{"weapon": "disruptor", "hits": 43, "shots": 99, "accuracy": 43},
+				{"weapon": "chaingun", "hits": 113, "shots": 537, "accuracy": 21},
+				{"weapon": "rocketlauncher", "hits": 24, "shots": 90, "accuracy": 26},
+				{"weapon": "violator", "hits": 12, "shots": 252, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 49,
+			"deaths": 32,
+			"ratio": 153,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 29, "shots": 42, "accuracy": 69},
+				{"weapon": "disruptor", "hits": 25, "shots": 50, "accuracy": 50},
+				{"weapon": "chaingun", "hits": 261, "shots": 1040, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 35, "shots": 82, "accuracy": 42},
+				{"weapon": "violator", "hits": 13, "shots": 163, "accuracy": 7}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 42,
+			"deaths": 43,
+			"ratio": 97,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 75, "shots": 179, "accuracy": 41},
+				{"weapon": "disruptor", "hits": 17, "shots": 37, "accuracy": 45},
+				{"weapon": "chaingun", "hits": 46, "shots": 196, "accuracy": 23},
+				{"weapon": "rocketlauncher", "hits": 54, "shots": 147, "accuracy": 36},
+				{"weapon": "violator", "hits": 9, "shots": 229, "accuracy": 3}
+			]
+		},
+		{
+			"name": "^2vamos ^7vista",
+			"score": 40,
+			"deaths": 45,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 91, "shots": 138, "accuracy": 65},
+				{"weapon": "disruptor", "hits": 14, "shots": 30, "accuracy": 46},
+				{"weapon": "chaingun", "hits": 103, "shots": 400, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 91, "accuracy": 39},
+				{"weapon": "violator", "hits": 5, "shots": 76, "accuracy": 6}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 31,
+			"deaths": 40,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 93, "shots": 202, "accuracy": 46},
+				{"weapon": "disruptor", "hits": 6, "shots": 29, "accuracy": 20},
+				{"weapon": "chaingun", "hits": 208, "shots": 863, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 33, "shots": 101, "accuracy": 32},
+				{"weapon": "violator", "hits": 23, "shots": 271, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 31,
+			"deaths": 44,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 93, "shots": 235, "accuracy": 39},
+				{"weapon": "disruptor", "hits": 21, "shots": 57, "accuracy": 36},
+				{"weapon": "chaingun", "hits": 131, "shots": 766, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 15, "shots": 86, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 84, "accuracy": 0}
+			]
+		},
+		{
+			"name": "Ultima",
+			"score": 17,
+			"deaths": 17,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 24, "shots": 79, "accuracy": 30},
+				{"weapon": "disruptor", "hits": 8, "shots": 26, "accuracy": 30},
+				{"weapon": "smartgun", "hits": 1, "shots": 1, "accuracy": 100},
+				{"weapon": "chaingun", "hits": 67, "shots": 505, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 8, "shots": 22, "accuracy": 36},
+				{"weapon": "violator", "hits": 0, "shots": 21, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[GM] Solrac",
+			"score": 16,
+			"deaths": 32,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 46, "shots": 166, "accuracy": 27},
+				{"weapon": "disruptor", "hits": 12, "shots": 49, "accuracy": 24},
+				{"weapon": "chaingun", "hits": 24, "shots": 186, "accuracy": 12},
+				{"weapon": "rocketlauncher", "hits": 8, "shots": 46, "accuracy": 17},
+				{"weapon": "violator", "hits": 4, "shots": 63, "accuracy": 6}
+			]
+		}
+	]
+}

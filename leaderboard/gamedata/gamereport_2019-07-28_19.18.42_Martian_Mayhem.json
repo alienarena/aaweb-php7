@@ -1,0 +1,60 @@
+{
+	"players": [
+		{
+			"name": "^5[GM]^6SAUSAGENESS",
+			"score": 43,
+			"deaths": 35,
+			"ratio": 122,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 66, "accuracy": 27},
+				{"weapon": "disruptor", "hits": 41, "shots": 98, "accuracy": 41},
+				{"weapon": "chaingun", "hits": 110, "shots": 354, "accuracy": 31},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 70, "accuracy": 30},
+				{"weapon": "vaporizer", "hits": 21, "shots": 34, "accuracy": 61},
+				{"weapon": "violator", "hits": 0, "shots": 74, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 30,
+			"deaths": 33,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 28, "shots": 48, "accuracy": 58},
+				{"weapon": "disruptor", "hits": 14, "shots": 57, "accuracy": 24},
+				{"weapon": "chaingun", "hits": 41, "shots": 286, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 9, "shots": 46, "accuracy": 19},
+				{"weapon": "vaporizer", "hits": 19, "shots": 31, "accuracy": 61},
+				{"weapon": "violator", "hits": 3, "shots": 219, "accuracy": 1}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 27,
+			"deaths": 37,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 36, "shots": 111, "accuracy": 32},
+				{"weapon": "disruptor", "hits": 17, "shots": 48, "accuracy": 35},
+				{"weapon": "chaingun", "hits": 53, "shots": 511, "accuracy": 10},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 57, "accuracy": 24},
+				{"weapon": "vaporizer", "hits": 18, "shots": 60, "accuracy": 30},
+				{"weapon": "violator", "hits": 0, "shots": 22, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]Xenos",
+			"score": 16,
+			"deaths": 37,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 22, "shots": 81, "accuracy": 27},
+				{"weapon": "disruptor", "hits": 20, "shots": 61, "accuracy": 32},
+				{"weapon": "chaingun", "hits": 72, "shots": 401, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 11, "shots": 49, "accuracy": 22},
+				{"weapon": "vaporizer", "hits": 5, "shots": 27, "accuracy": 18},
+				{"weapon": "violator", "hits": 2, "shots": 58, "accuracy": 3}
+			]
+		}
+	]
+}

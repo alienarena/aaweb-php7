@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "^7[GM]^1D^5o^7ndo",
+			"score": 141,
+			"deaths": 64,
+			"ratio": 220,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 155, "shots": 320, "accuracy": 48}
+			]
+		},
+		{
+			"name": "^5[GM]^6SAUSAGENESS",
+			"score": 115,
+			"deaths": 74,
+			"ratio": 155,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 129, "shots": 350, "accuracy": 36}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 63,
+			"deaths": 84,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 318, "accuracy": 22}
+			]
+		},
+		{
+			"name": "(T3)mtsu",
+			"score": 51,
+			"deaths": 79,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 245, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 28,
+			"deaths": 82,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 36, "shots": 323, "accuracy": 11},
+				{"weapon": "violator", "hits": 2, "shots": 82, "accuracy": 2}
+			]
+		},
+		{
+			"name": "Ultima",
+			"score": 17,
+			"deaths": 76,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 22, "shots": 210, "accuracy": 10}
+			]
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[^8GM^)]^3Dondo",
+			"score": 75,
+			"deaths": 46,
+			"ratio": 163,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 77, "shots": 218, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 52,
+			"deaths": 41,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 150, "accuracy": 34}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 47,
+			"deaths": 43,
+			"ratio": 109,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 50, "shots": 165, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 28,
+			"deaths": 51,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 166, "accuracy": 18}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 25,
+			"deaths": 48,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 26, "shots": 131, "accuracy": 19}
+			]
+		}
+	]
+}

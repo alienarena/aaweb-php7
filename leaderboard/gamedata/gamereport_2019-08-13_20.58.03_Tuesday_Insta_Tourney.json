@@ -1,0 +1,71 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 228,
+			"deaths": 52,
+			"ratio": 438,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 225, "shots": 447, "accuracy": 50}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 127,
+			"deaths": 88,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 121, "shots": 301, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 95,
+			"deaths": 102,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 319, "accuracy": 24}
+			]
+		},
+		{
+			"name": "Manchev",
+			"score": 70,
+			"deaths": 98,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 265, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 70,
+			"deaths": 112,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 256, "accuracy": 22},
+				{"weapon": "violator", "hits": 0, "shots": 4, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 48,
+			"deaths": 105,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 16, "shots": 105, "accuracy": 15},
+				{"weapon": "violator", "hits": 22, "shots": 987, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^2vamos ^7vista",
+			"score": 38,
+			"deaths": 120,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 27, "shots": 216, "accuracy": 12},
+				{"weapon": "violator", "hits": 0, "shots": 99, "accuracy": 0}
+			]
+		}
+	]
+}
+

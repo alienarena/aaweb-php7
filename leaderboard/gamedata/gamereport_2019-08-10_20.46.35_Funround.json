@@ -1,0 +1,95 @@
+{
+	"players": [
+		{
+			"name": "Vicious",
+			"score": 82,
+			"deaths": 58,
+			"ratio": 141,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 188, "shots": 404, "accuracy": 46}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 68,
+			"deaths": 52,
+			"ratio": 130,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 327, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 62,
+			"deaths": 61,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 136, "shots": 446, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 62,
+			"deaths": 68,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 155, "shots": 519, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 61,
+			"deaths": 65,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 642, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 53,
+			"deaths": 67,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 150, "shots": 414, "accuracy": 36}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 43,
+			"deaths": 66,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 120, "shots": 460, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 43,
+			"deaths": 70,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 123, "shots": 467, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Ultima",
+			"score": 23,
+			"deaths": 70,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 327, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 8,
+			"deaths": 17,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 28, "shots": 81, "accuracy": 34}
+			]
+		}
+	]
+}
+
