@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^1[^7GM^1]^8D^3o^8ndo",
+			"score": 140,
+			"deaths": 78,
+			"ratio": 179,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 140, "shots": 317, "accuracy": 44}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 96,
+			"deaths": 61,
+			"ratio": 157,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 288, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^0[^7GM^0]^7V1^0ST3R",
+			"score": 83,
+			"deaths": 87,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 85, "shots": 280, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 67,
+			"deaths": 92,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 252, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 54,
+			"deaths": 72,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 310, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 43,
+			"deaths": 93,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 42, "shots": 251, "accuracy": 16}
+			]
+		}
+	]
+}

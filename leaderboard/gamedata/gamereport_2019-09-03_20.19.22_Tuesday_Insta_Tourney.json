@@ -1,0 +1,68 @@
+{
+	"players": [
+		{
+			"name": "^1(^7GM^1)^8Dondo",
+			"score": 108,
+			"deaths": 54,
+			"ratio": 200,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 110, "shots": 270, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 74,
+			"deaths": 56,
+			"ratio": 132,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 232, "accuracy": 33}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 60,
+			"deaths": 58,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 237, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^0stupid ^7vista",
+			"score": 51,
+			"deaths": 72,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 244, "accuracy": 28},
+				{"weapon": "violator", "hits": 4, "shots": 248, "accuracy": 1}
+			]
+		},
+		{
+			"name": "[SiN]BonfireJr",
+			"score": 40,
+			"deaths": 23,
+			"ratio": 173,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 73, "shots": 169, "accuracy": 43}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 29,
+			"deaths": 59,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 40, "shots": 243, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 29,
+			"deaths": 71,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 30, "shots": 190, "accuracy": 15}
+			]
+		}
+	]
+}

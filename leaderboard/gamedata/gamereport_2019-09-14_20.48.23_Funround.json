@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "Lance",
+			"score": 50,
+			"deaths": 57,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 451, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^0[^7GM^0]^7V1^0ST3R",
+			"score": 49,
+			"deaths": 56,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 452, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 40,
+			"deaths": 53,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 489, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 39,
+			"deaths": 51,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 118, "shots": 370, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^1[^7GM^1]^8D^3o^8ndo",
+			"score": 36,
+			"deaths": 59,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 464, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 28,
+			"deaths": 60,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 575, "accuracy": 23}
+			]
+		}
+	]
+}

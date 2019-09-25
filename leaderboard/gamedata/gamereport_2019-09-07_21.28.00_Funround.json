@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "[GM]Vista",
+			"score": 44,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[OS]BeryCZ",
+			"score": 31,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[GM]Jar'El",
+			"score": 26,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 26,
+			"deaths": 0,
+			"ratio": 0,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 0, "shots": 0, "accuracy": 0}
+			]
+		}
+	]
+}

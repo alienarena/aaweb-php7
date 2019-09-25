@@ -1,0 +1,51 @@
+{
+	"players": [
+		{
+			"name": "^7ToastRawr",
+			"score": 84,
+			"deaths": 47,
+			"ratio": 178,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 247, "accuracy": 40},
+				{"weapon": "violator", "hits": 0, "shots": 14, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 59,
+			"deaths": 33,
+			"ratio": 178,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 183, "accuracy": 34}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 41,
+			"deaths": 64,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 237, "accuracy": 23}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 34,
+			"deaths": 46,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 34, "shots": 187, "accuracy": 18},
+				{"weapon": "violator", "hits": 1, "shots": 26, "accuracy": 3}
+			]
+		},
+		{
+			"name": "Alistair",
+			"score": 31,
+			"deaths": 59,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 120, "accuracy": 26}
+			]
+		}
+	]
+}

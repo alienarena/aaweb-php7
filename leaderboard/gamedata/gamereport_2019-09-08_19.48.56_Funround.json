@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^7ToastRawr",
+			"score": 43,
+			"deaths": 20,
+			"ratio": 215,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 577, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 30,
+			"deaths": 25,
+			"ratio": 120,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 662, "accuracy": 9}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 17,
+			"deaths": 39,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 50, "shots": 478, "accuracy": 10}
+			]
+		},
+		{
+			"name": "this is not BO4",
+			"score": 9,
+			"deaths": 39,
+			"ratio": 23,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 437, "accuracy": 16}
+			]
+		}
+	]
+}

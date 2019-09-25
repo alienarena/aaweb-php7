@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^6fantastica^7vista",
+			"score": 87,
+			"deaths": 58,
+			"ratio": 150,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 191, "shots": 512, "accuracy": 37}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 54,
+			"deaths": 68,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 562, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 53,
+			"deaths": 55,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 140, "shots": 391, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 46,
+			"deaths": 69,
+			"ratio": 66,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 118, "shots": 542, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 45,
+			"deaths": 71,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 102, "shots": 506, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 29,
+			"deaths": 55,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 456, "accuracy": 20}
+			]
+		}
+	]
+}
