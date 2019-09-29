@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "vista",
+			"score": 71,
+			"deaths": 53,
+			"ratio": 133,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 164, "shots": 476, "accuracy": 34}
+			]
+		},
+		{
+			"name": "ToastRawr",
+			"score": 64,
+			"deaths": 56,
+			"ratio": 114,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 155, "shots": 517, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 63,
+			"deaths": 52,
+			"ratio": 121,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 148, "shots": 346, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 46,
+			"deaths": 64,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 107, "shots": 455, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 45,
+			"deaths": 52,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 359, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 29,
+			"deaths": 60,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 87, "shots": 519, "accuracy": 16}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 26,
+			"deaths": 69,
+			"ratio": 37,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 385, "accuracy": 22}
+			]
+		}
+	]
+}
