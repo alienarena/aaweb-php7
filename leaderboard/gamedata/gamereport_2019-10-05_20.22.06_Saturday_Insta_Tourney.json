@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "^7[^8GM^7]^8Dondo",
+			"score": 76,
+			"deaths": 46,
+			"ratio": 165,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 77, "shots": 191, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^5[^7GM^6]^7v^51^7sta",
+			"score": 70,
+			"deaths": 56,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 73, "shots": 237, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 46,
+			"deaths": 59,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 47, "shots": 207, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 45,
+			"deaths": 61,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 45, "shots": 183, "accuracy": 24}
+			]
+		},
+		{
+			"name": "Supsun",
+			"score": 32,
+			"deaths": 67,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 37, "shots": 131, "accuracy": 28},
+				{"weapon": "violator", "hits": 0, "shots": 4, "accuracy": 0}
+			]
+		}
+	]
+}

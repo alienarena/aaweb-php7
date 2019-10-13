@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^1[^8GM^1]^8Dondo",
+			"score": 93,
+			"deaths": 39,
+			"ratio": 238,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 189, "accuracy": 50}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 37,
+			"deaths": 46,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 37, "shots": 136, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 35,
+			"deaths": 44,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 35, "shots": 113, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 26,
+			"deaths": 62,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 25, "shots": 155, "accuracy": 16}
+			]
+		}
+	]
+}

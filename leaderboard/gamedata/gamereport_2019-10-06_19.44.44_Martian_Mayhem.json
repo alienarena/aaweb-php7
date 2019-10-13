@@ -1,0 +1,109 @@
+{
+	"players": [
+		{
+			"name": "^5ToastRawr",
+			"score": 77,
+			"deaths": 44,
+			"ratio": 175,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 29, "accuracy": 62},
+				{"weapon": "smartgun", "hits": 253, "shots": 302, "accuracy": 83},
+				{"weapon": "chaingun", "hits": 121, "shots": 459, "accuracy": 26},
+				{"weapon": "rocketlauncher", "hits": 3, "shots": 7, "accuracy": 42},
+				{"weapon": "beamgun", "hits": 608, "shots": 888, "accuracy": 68},
+				{"weapon": "vaporizer", "hits": 39, "shots": 61, "accuracy": 63},
+				{"weapon": "violator", "hits": 29, "shots": 302, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[^8GM^7]^8Dondo",
+			"score": 65,
+			"deaths": 47,
+			"ratio": 138,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 13, "shots": 28, "accuracy": 46},
+				{"weapon": "smartgun", "hits": 151, "shots": 186, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 95, "shots": 724, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 2, "shots": 12, "accuracy": 16},
+				{"weapon": "beamgun", "hits": 209, "shots": 359, "accuracy": 58},
+				{"weapon": "vaporizer", "hits": 28, "shots": 45, "accuracy": 62},
+				{"weapon": "violator", "hits": 83, "shots": 728, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 52,
+			"deaths": 57,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 8, "shots": 25, "accuracy": 32},
+				{"weapon": "smartgun", "hits": 570, "shots": 698, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 51, "shots": 147, "accuracy": 34},
+				{"weapon": "rocketlauncher", "hits": 4, "shots": 11, "accuracy": 36},
+				{"weapon": "beamgun", "hits": 116, "shots": 257, "accuracy": 45},
+				{"weapon": "vaporizer", "hits": 13, "shots": 23, "accuracy": 56},
+				{"weapon": "violator", "hits": 35, "shots": 404, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^5[^7GM^6]^7v^51^7sta",
+			"score": 50,
+			"deaths": 47,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 53, "shots": 78, "accuracy": 67},
+				{"weapon": "smartgun", "hits": 506, "shots": 624, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 56, "shots": 242, "accuracy": 23},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 13, "accuracy": 38},
+				{"weapon": "beamgun", "hits": 202, "shots": 341, "accuracy": 59},
+				{"weapon": "vaporizer", "hits": 15, "shots": 20, "accuracy": 75},
+				{"weapon": "violator", "hits": 18, "shots": 216, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 37,
+			"deaths": 55,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 57, "shots": 113, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 199, "shots": 267, "accuracy": 74},
+				{"weapon": "chaingun", "hits": 75, "shots": 464, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 33, "shots": 118, "accuracy": 27},
+				{"weapon": "beamgun", "hits": 59, "shots": 114, "accuracy": 51},
+				{"weapon": "vaporizer", "hits": 9, "shots": 12, "accuracy": 75},
+				{"weapon": "violator", "hits": 9, "shots": 136, "accuracy": 6}
+			]
+		},
+		{
+			"name": "Manchev",
+			"score": 27,
+			"deaths": 55,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 59, "shots": 100, "accuracy": 59},
+				{"weapon": "smartgun", "hits": 225, "shots": 276, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 19, "shots": 160, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 40, "accuracy": 35},
+				{"weapon": "beamgun", "hits": 35, "shots": 106, "accuracy": 33},
+				{"weapon": "vaporizer", "hits": 10, "shots": 16, "accuracy": 62},
+				{"weapon": "violator", "hits": 10, "shots": 415, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 24,
+			"deaths": 52,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 70, "accuracy": 20},
+				{"weapon": "smartgun", "hits": 236, "shots": 284, "accuracy": 83},
+				{"weapon": "chaingun", "hits": 41, "shots": 201, "accuracy": 20},
+				{"weapon": "rocketlauncher", "hits": 3, "shots": 10, "accuracy": 30},
+				{"weapon": "beamgun", "hits": 224, "shots": 593, "accuracy": 37},
+				{"weapon": "vaporizer", "hits": 20, "shots": 28, "accuracy": 71},
+				{"weapon": "violator", "hits": 16, "shots": 403, "accuracy": 3}
+			]
+		}
+	]
+}

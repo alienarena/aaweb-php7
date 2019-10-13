@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 56,
+			"deaths": 45,
+			"ratio": 124,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 409, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^5[^7GM^6]^7v^51^7sta",
+			"score": 51,
+			"deaths": 53,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 424, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^1[^8GM^1]^8Dondo",
+			"score": 44,
+			"deaths": 56,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 464, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 26,
+			"deaths": 55,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 517, "accuracy": 21}
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^1[^8GM^1]^8Dondo",
+			"score": 83,
+			"deaths": 37,
+			"ratio": 224,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 190, "accuracy": 45}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 54,
+			"deaths": 55,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 155, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 38,
+			"deaths": 70,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 42, "shots": 177, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^5[^7GM^6]^7v^51^7sta",
+			"score": 36,
+			"deaths": 59,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 40, "shots": 144, "accuracy": 27}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 42,
+			"deaths": 38,
+			"ratio": 110,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 32, "shots": 86, "accuracy": 37},
+				{"weapon": "smartgun", "hits": 308, "shots": 394, "accuracy": 78},
+				{"weapon": "chaingun", "hits": 36, "shots": 121, "accuracy": 29},
+				{"weapon": "rocketlauncher", "hits": 68, "shots": 210, "accuracy": 32},
+				{"weapon": "violator", "hits": 11, "shots": 273, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 32,
+			"deaths": 39,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 42, "accuracy": 23},
+				{"weapon": "smartgun", "hits": 76, "shots": 115, "accuracy": 66},
+				{"weapon": "chaingun", "hits": 10, "shots": 125, "accuracy": 8},
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 283, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 23,
+			"deaths": 41,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 5, "shots": 40, "accuracy": 12},
+				{"weapon": "smartgun", "hits": 237, "shots": 323, "accuracy": 73},
+				{"weapon": "chaingun", "hits": 37, "shots": 153, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 46, "shots": 160, "accuracy": 28},
+				{"weapon": "violator", "hits": 15, "shots": 529, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 19,
+			"deaths": 29,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 1, "shots": 10, "accuracy": 10},
+				{"weapon": "chaingun", "hits": 76, "shots": 233, "accuracy": 32},
+				{"weapon": "rocketlauncher", "hits": 46, "shots": 137, "accuracy": 33},
+				{"weapon": "violator", "hits": 7, "shots": 62, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 15,
+			"deaths": 36,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 3, "shots": 9, "accuracy": 33},
+				{"weapon": "smartgun", "hits": 248, "shots": 316, "accuracy": 78},
+				{"weapon": "chaingun", "hits": 116, "shots": 867, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 35, "shots": 104, "accuracy": 33},
+				{"weapon": "violator", "hits": 5, "shots": 108, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 10,
+			"deaths": 50,
+			"ratio": 20,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 22, "shots": 84, "accuracy": 26},
+				{"weapon": "smartgun", "hits": 389, "shots": 495, "accuracy": 78},
+				{"weapon": "chaingun", "hits": 12, "shots": 125, "accuracy": 9},
+				{"weapon": "rocketlauncher", "hits": 20, "shots": 153, "accuracy": 13},
+				{"weapon": "violator", "hits": 5, "shots": 349, "accuracy": 1}
+			]
+		}
+	]
+}

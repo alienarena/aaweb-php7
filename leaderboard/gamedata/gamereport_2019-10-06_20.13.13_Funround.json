@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^5[^7GM^6]^7v^51^7sta",
+			"score": 64,
+			"deaths": 56,
+			"ratio": 114,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 157, "shots": 447, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 63,
+			"deaths": 60,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 173, "shots": 420, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 51,
+			"deaths": 61,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 141, "shots": 532, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Manchev",
+			"score": 30,
+			"deaths": 62,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 406, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 17,
+			"deaths": 66,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 424, "accuracy": 19}
+			]
+		}
+	]
+}
