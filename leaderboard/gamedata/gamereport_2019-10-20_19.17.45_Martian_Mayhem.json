@@ -1,0 +1,123 @@
+{
+	"players": [
+		{
+			"name": "^7ToastRawr",
+			"score": 85,
+			"deaths": 45,
+			"ratio": 188,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 42, "shots": 75, "accuracy": 56},
+				{"weapon": "chaingun", "hits": 181, "shots": 927, "accuracy": 19},
+				{"weapon": "flamethrower", "hits": 33, "shots": 102, "accuracy": 32},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 44, "accuracy": 27},
+				{"weapon": "beamgun", "hits": 266, "shots": 409, "accuracy": 65},
+				{"weapon": "vaporizer", "hits": 64, "shots": 85, "accuracy": 75},
+				{"weapon": "violator", "hits": 50, "shots": 430, "accuracy": 11}
+			]
+		},
+		{
+			"name": "[GM]Vista",
+			"score": 64,
+			"deaths": 46,
+			"ratio": 139,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 35, "shots": 58, "accuracy": 60},
+				{"weapon": "chaingun", "hits": 191, "shots": 709, "accuracy": 26},
+				{"weapon": "flamethrower", "hits": 11, "shots": 112, "accuracy": 9},
+				{"weapon": "rocketlauncher", "hits": 50, "shots": 119, "accuracy": 42},
+				{"weapon": "beamgun", "hits": 236, "shots": 391, "accuracy": 60},
+				{"weapon": "vaporizer", "hits": 21, "shots": 24, "accuracy": 87},
+				{"weapon": "violator", "hits": 34, "shots": 302, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 53,
+			"deaths": 51,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 72, "shots": 167, "accuracy": 43},
+				{"weapon": "chaingun", "hits": 70, "shots": 347, "accuracy": 20},
+				{"weapon": "flamethrower", "hits": 60, "shots": 509, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 19, "shots": 75, "accuracy": 25},
+				{"weapon": "beamgun", "hits": 102, "shots": 240, "accuracy": 42},
+				{"weapon": "vaporizer", "hits": 20, "shots": 31, "accuracy": 64},
+				{"weapon": "violator", "hits": 22, "shots": 327, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 46,
+			"deaths": 60,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 28, "shots": 44, "accuracy": 63},
+				{"weapon": "chaingun", "hits": 182, "shots": 773, "accuracy": 23},
+				{"weapon": "flamethrower", "hits": 17, "shots": 39, "accuracy": 43},
+				{"weapon": "rocketlauncher", "hits": 1, "shots": 5, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 179, "shots": 361, "accuracy": 49},
+				{"weapon": "vaporizer", "hits": 0, "shots": 2, "accuracy": 0},
+				{"weapon": "violator", "hits": 82, "shots": 1241, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 44,
+			"deaths": 51,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 33, "shots": 46, "accuracy": 71},
+				{"weapon": "chaingun", "hits": 126, "shots": 486, "accuracy": 25},
+				{"weapon": "flamethrower", "hits": 17, "shots": 164, "accuracy": 10},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 40, "accuracy": 30},
+				{"weapon": "beamgun", "hits": 299, "shots": 489, "accuracy": 61},
+				{"weapon": "vaporizer", "hits": 12, "shots": 20, "accuracy": 60},
+				{"weapon": "violator", "hits": 27, "shots": 508, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 41,
+			"deaths": 59,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 33, "shots": 100, "accuracy": 33},
+				{"weapon": "chaingun", "hits": 85, "shots": 506, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 21, "shots": 41, "accuracy": 51},
+				{"weapon": "rocketlauncher", "hits": 19, "shots": 59, "accuracy": 32},
+				{"weapon": "beamgun", "hits": 37, "shots": 99, "accuracy": 37},
+				{"weapon": "vaporizer", "hits": 17, "shots": 35, "accuracy": 48},
+				{"weapon": "violator", "hits": 53, "shots": 922, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 32,
+			"deaths": 57,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 33, "shots": 116, "accuracy": 28},
+				{"weapon": "chaingun", "hits": 19, "shots": 115, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 18, "shots": 138, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 41, "shots": 139, "accuracy": 29},
+				{"weapon": "beamgun", "hits": 27, "shots": 79, "accuracy": 34},
+				{"weapon": "vaporizer", "hits": 13, "shots": 22, "accuracy": 59},
+				{"weapon": "violator", "hits": 17, "shots": 311, "accuracy": 5}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 19,
+			"deaths": 56,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 148, "shots": 262, "accuracy": 56},
+				{"weapon": "chaingun", "hits": 27, "shots": 191, "accuracy": 14},
+				{"weapon": "flamethrower", "hits": 14, "shots": 194, "accuracy": 7},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 12, "accuracy": 41},
+				{"weapon": "vaporizer", "hits": 6, "shots": 16, "accuracy": 37},
+				{"weapon": "violator", "hits": 16, "shots": 527, "accuracy": 3}
+			]
+		}
+	]
+}

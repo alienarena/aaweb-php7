@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^7ToastRawr",
+			"score": 54,
+			"deaths": 53,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 503, "accuracy": 28}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 34,
+			"deaths": 46,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 110, "shots": 363, "accuracy": 30}
+			]
+		},
+		{
+			"name": "[GM]Vista",
+			"score": 30,
+			"deaths": 44,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 119, "shots": 316, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 20,
+			"deaths": 51,
+			"ratio": 39,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 97, "shots": 476, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 16,
+			"deaths": 37,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 65, "shots": 417, "accuracy": 15}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 16,
+			"deaths": 51,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 418, "accuracy": 19}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 4,
+			"deaths": 18,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 181, "accuracy": 19}
+			]
+		}
+	]
+}
