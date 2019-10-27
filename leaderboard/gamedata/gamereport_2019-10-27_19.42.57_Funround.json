@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "^7ToastRawr",
+			"score": 65,
+			"deaths": 52,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 170, "shots": 566, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[^5GM^3]^5Kicy",
+			"score": 63,
+			"deaths": 54,
+			"ratio": 116,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 463, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[T3]generic_sn",
+			"score": 63,
+			"deaths": 60,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 131, "shots": 351, "accuracy": 37}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 51,
+			"deaths": 57,
+			"ratio": 89,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 125, "shots": 548, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 42,
+			"deaths": 64,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 500, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 37,
+			"deaths": 59,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 391, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 36,
+			"deaths": 58,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 88, "shots": 434, "accuracy": 20}
+			]
+		},
+		{
+			"name": "Ultima",
+			"score": 28,
+			"deaths": 39,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 66, "shots": 227, "accuracy": 29}
+			]
+		}
+	]
+}

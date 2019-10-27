@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 111,
+			"deaths": 54,
+			"ratio": 205,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 111, "shots": 273, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^3[^5GM^3]^5Kicy",
+			"score": 102,
+			"deaths": 58,
+			"ratio": 175,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 102, "shots": 315, "accuracy": 32},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 55,
+			"deaths": 78,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 236, "accuracy": 23}
+			]
+		},
+		{
+			"name": "Ultima",
+			"score": 44,
+			"deaths": 75,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 44, "shots": 170, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 32,
+			"deaths": 79,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 190, "accuracy": 16}
+			]
+		}
+	]
+}
