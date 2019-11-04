@@ -1,0 +1,31 @@
+{
+	"players": [
+		{
+			"name": "^4gm^1.^3vi",
+			"score": 43,
+			"deaths": 17,
+			"ratio": 252,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 380, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 20,
+			"deaths": 35,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 412, "accuracy": 15}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 12,
+			"deaths": 43,
+			"ratio": 27,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 42, "shots": 305, "accuracy": 13}
+			]
+		}
+	]
+}
