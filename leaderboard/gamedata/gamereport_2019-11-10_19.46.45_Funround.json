@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "9k4k",
+			"score": 61,
+			"deaths": 36,
+			"ratio": 169,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 160, "shots": 428, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 36,
+			"deaths": 43,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 456, "accuracy": 25}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 13,
+			"deaths": 52,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 79, "shots": 348, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 7,
+			"deaths": 50,
+			"ratio": 14,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 50, "shots": 287, "accuracy": 17}
+			]
+		}
+	]
+}

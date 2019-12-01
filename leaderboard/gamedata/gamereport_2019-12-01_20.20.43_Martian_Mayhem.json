@@ -1,0 +1,60 @@
+{
+	"players": [
+		{
+			"name": "^2vamos^7vista",
+			"score": 49,
+			"deaths": 37,
+			"ratio": 132,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 21, "shots": 54, "accuracy": 38},
+				{"weapon": "disruptor", "hits": 44, "shots": 85, "accuracy": 51},
+				{"weapon": "smartgun", "hits": 67, "shots": 93, "accuracy": 72},
+				{"weapon": "chaingun", "hits": 159, "shots": 660, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 42, "shots": 145, "accuracy": 28},
+				{"weapon": "violator", "hits": 14, "shots": 190, "accuracy": 7}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 43,
+			"deaths": 43,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 42, "accuracy": 23},
+				{"weapon": "disruptor", "hits": 15, "shots": 61, "accuracy": 24},
+				{"weapon": "smartgun", "hits": 94, "shots": 127, "accuracy": 74},
+				{"weapon": "chaingun", "hits": 229, "shots": 1444, "accuracy": 15},
+				{"weapon": "rocketlauncher", "hits": 34, "shots": 122, "accuracy": 27},
+				{"weapon": "violator", "hits": 8, "shots": 85, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 39,
+			"deaths": 43,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 16, "shots": 56, "accuracy": 28},
+				{"weapon": "disruptor", "hits": 29, "shots": 49, "accuracy": 59},
+				{"weapon": "smartgun", "hits": 238, "shots": 307, "accuracy": 77},
+				{"weapon": "chaingun", "hits": 145, "shots": 679, "accuracy": 21},
+				{"weapon": "rocketlauncher", "hits": 22, "shots": 127, "accuracy": 17},
+				{"weapon": "violator", "hits": 1, "shots": 44, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 50,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 19, "shots": 53, "accuracy": 35},
+				{"weapon": "disruptor", "hits": 33, "shots": 90, "accuracy": 36},
+				{"weapon": "smartgun", "hits": 69, "shots": 104, "accuracy": 66},
+				{"weapon": "chaingun", "hits": 76, "shots": 283, "accuracy": 26},
+				{"weapon": "rocketlauncher", "hits": 27, "shots": 134, "accuracy": 20},
+				{"weapon": "violator", "hits": 4, "shots": 236, "accuracy": 1}
+			]
+		}
+	]
+}
