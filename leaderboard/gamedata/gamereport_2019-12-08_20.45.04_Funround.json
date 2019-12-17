@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 58,
+			"deaths": 41,
+			"ratio": 141,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 143, "shots": 494, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^2vamos^7vista^2/96",
+			"score": 47,
+			"deaths": 46,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 408, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 42,
+			"deaths": 55,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 442, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 33,
+			"deaths": 46,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 436, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 25,
+			"deaths": 51,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 88, "shots": 484, "accuracy": 18}
+			]
+		}
+	]
+}

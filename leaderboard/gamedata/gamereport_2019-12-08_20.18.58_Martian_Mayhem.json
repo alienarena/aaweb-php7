@@ -1,0 +1,79 @@
+{
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 45,
+			"deaths": 29,
+			"ratio": 155,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 37, "accuracy": 37},
+				{"weapon": "disruptor", "hits": 29, "shots": 62, "accuracy": 46},
+				{"weapon": "smartgun", "hits": 176, "shots": 222, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 109, "shots": 386, "accuracy": 28},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 28, "accuracy": 35},
+				{"weapon": "vaporizer", "hits": 35, "shots": 62, "accuracy": 56},
+				{"weapon": "violator", "hits": 7, "shots": 159, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^2vamos^7vista^2/96",
+			"score": 41,
+			"deaths": 36,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 55, "shots": 101, "accuracy": 54},
+				{"weapon": "disruptor", "hits": 27, "shots": 68, "accuracy": 39},
+				{"weapon": "smartgun", "hits": 92, "shots": 114, "accuracy": 80},
+				{"weapon": "chaingun", "hits": 37, "shots": 273, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 43, "shots": 88, "accuracy": 48},
+				{"weapon": "vaporizer", "hits": 13, "shots": 17, "accuracy": 76},
+				{"weapon": "violator", "hits": 3, "shots": 53, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 21,
+			"deaths": 43,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 30, "accuracy": 46},
+				{"weapon": "disruptor", "hits": 1, "shots": 2, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 189, "shots": 263, "accuracy": 71},
+				{"weapon": "chaingun", "hits": 65, "shots": 390, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 10, "shots": 32, "accuracy": 31},
+				{"weapon": "vaporizer", "hits": 16, "shots": 25, "accuracy": 64},
+				{"weapon": "violator", "hits": 32, "shots": 751, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 18,
+			"deaths": 52,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 60, "shots": 116, "accuracy": 51},
+				{"weapon": "disruptor", "hits": 4, "shots": 13, "accuracy": 30},
+				{"weapon": "smartgun", "hits": 110, "shots": 153, "accuracy": 71},
+				{"weapon": "chaingun", "hits": 53, "shots": 209, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 20, "shots": 83, "accuracy": 24},
+				{"weapon": "vaporizer", "hits": 5, "shots": 14, "accuracy": 35},
+				{"weapon": "violator", "hits": 2, "shots": 109, "accuracy": 1}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 10,
+			"deaths": 39,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 24, "shots": 87, "accuracy": 27},
+				{"weapon": "disruptor", "hits": 6, "shots": 11, "accuracy": 54},
+				{"weapon": "smartgun", "hits": 149, "shots": 201, "accuracy": 74},
+				{"weapon": "chaingun", "hits": 125, "shots": 555, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 3, "shots": 27, "accuracy": 11},
+				{"weapon": "vaporizer", "hits": 1, "shots": 2, "accuracy": 50},
+				{"weapon": "violator", "hits": 21, "shots": 438, "accuracy": 4}
+			]
+		}
+	]
+}
