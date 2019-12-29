@@ -1,0 +1,57 @@
+{
+	"players": [
+		{
+			"name": "^2pornovia^7vista^269",
+			"score": 70,
+			"deaths": 29,
+			"ratio": 241,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 29, "shots": 59, "accuracy": 49},
+				{"weapon": "chaingun", "hits": 279, "shots": 1176, "accuracy": 23},
+				{"weapon": "rocketlauncher", "hits": 69, "shots": 162, "accuracy": 42},
+				{"weapon": "beamgun", "hits": 317, "shots": 646, "accuracy": 49},
+				{"weapon": "violator", "hits": 8, "shots": 92, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 41,
+			"deaths": 40,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 29, "shots": 105, "accuracy": 27},
+				{"weapon": "chaingun", "hits": 134, "shots": 932, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 30, "shots": 144, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 223, "shots": 526, "accuracy": 42},
+				{"weapon": "violator", "hits": 10, "shots": 293, "accuracy": 3}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 23,
+			"deaths": 51,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 27, "shots": 107, "accuracy": 25},
+				{"weapon": "smartgun", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 41, "shots": 231, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 22, "shots": 62, "accuracy": 35},
+				{"weapon": "beamgun", "hits": 139, "shots": 311, "accuracy": 44},
+				{"weapon": "violator", "hits": 16, "shots": 672, "accuracy": 2}
+			]
+		},
+		{
+			"name": "nmc",
+			"score": 21,
+			"deaths": 43,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 60, "shots": 258, "accuracy": 23},
+				{"weapon": "chaingun", "hits": 24, "shots": 126, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 25, "shots": 125, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 161, "shots": 434, "accuracy": 37},
+				{"weapon": "violator", "hits": 0, "shots": 87, "accuracy": 0}
+			]
+		}
+	]
+}
