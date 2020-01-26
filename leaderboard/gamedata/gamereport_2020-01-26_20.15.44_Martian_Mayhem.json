@@ -1,0 +1,87 @@
+{
+	"players": [
+		{
+			"name": "Toast:Rawr",
+			"score": 56,
+			"deaths": 24,
+			"ratio": 233,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 32, "shots": 64, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 139, "shots": 172, "accuracy": 80},
+				{"weapon": "chaingun", "hits": 435, "shots": 1744, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 49, "accuracy": 24},
+				{"weapon": "beamgun", "hits": 359, "shots": 520, "accuracy": 69},
+				{"weapon": "violator", "hits": 23, "shots": 200, "accuracy": 11}
+			]
+		},
+		{
+			"name": "Jakob",
+			"score": 56,
+			"deaths": 26,
+			"ratio": 215,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 20, "shots": 43, "accuracy": 46},
+				{"weapon": "smartgun", "hits": 155, "shots": 210, "accuracy": 73},
+				{"weapon": "chaingun", "hits": 342, "shots": 1237, "accuracy": 27},
+				{"weapon": "rocketlauncher", "hits": 39, "shots": 85, "accuracy": 45},
+				{"weapon": "beamgun", "hits": 192, "shots": 514, "accuracy": 37},
+				{"weapon": "violator", "hits": 10, "shots": 67, "accuracy": 14}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 30,
+			"deaths": 28,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 21, "accuracy": 28},
+				{"weapon": "smartgun", "hits": 111, "shots": 163, "accuracy": 68},
+				{"weapon": "chaingun", "hits": 215, "shots": 1312, "accuracy": 16},
+				{"weapon": "rocketlauncher", "hits": 9, "shots": 45, "accuracy": 20},
+				{"weapon": "beamgun", "hits": 136, "shots": 353, "accuracy": 38},
+				{"weapon": "violator", "hits": 10, "shots": 223, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 20,
+			"deaths": 37,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 21, "shots": 77, "accuracy": 27},
+				{"weapon": "smartgun", "hits": 46, "shots": 72, "accuracy": 63},
+				{"weapon": "chaingun", "hits": 70, "shots": 381, "accuracy": 18},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 48, "accuracy": 25},
+				{"weapon": "beamgun", "hits": 77, "shots": 258, "accuracy": 29},
+				{"weapon": "violator", "hits": 21, "shots": 328, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 17,
+			"deaths": 41,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 44, "shots": 149, "accuracy": 29},
+				{"weapon": "smartgun", "hits": 185, "shots": 285, "accuracy": 64},
+				{"weapon": "chaingun", "hits": 119, "shots": 540, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 6, "shots": 24, "accuracy": 25},
+				{"weapon": "beamgun", "hits": 66, "shots": 241, "accuracy": 27},
+				{"weapon": "violator", "hits": 10, "shots": 235, "accuracy": 4}
+			]
+		},
+		{
+			"name": "Michael",
+			"score": 11,
+			"deaths": 36,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 39, "shots": 114, "accuracy": 34},
+				{"weapon": "smartgun", "hits": 38, "shots": 53, "accuracy": 71},
+				{"weapon": "chaingun", "hits": 28, "shots": 184, "accuracy": 15},
+				{"weapon": "rocketlauncher", "hits": 3, "shots": 21, "accuracy": 14},
+				{"weapon": "beamgun", "hits": 69, "shots": 241, "accuracy": 28}
+			]
+		}
+	]
+}

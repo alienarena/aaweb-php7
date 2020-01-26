@@ -1,0 +1,108 @@
+{
+	"players": [
+		{
+			"name": "^4Toast:Rawr",
+			"score": 72,
+			"deaths": 42,
+			"ratio": 171,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 34, "shots": 69, "accuracy": 49},
+				{"weapon": "disruptor", "hits": 70, "shots": 121, "accuracy": 57},
+				{"weapon": "smartgun", "hits": 101, "shots": 119, "accuracy": 84},
+				{"weapon": "chaingun", "hits": 256, "shots": 936, "accuracy": 27},
+				{"weapon": "flamethrower", "hits": 28, "shots": 143, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 5, "shots": 26, "accuracy": 19},
+				{"weapon": "violator", "hits": 34, "shots": 523, "accuracy": 6}
+			]
+		},
+		{
+			"name": "input",
+			"score": 63,
+			"deaths": 48,
+			"ratio": 131,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 58, "accuracy": 31},
+				{"weapon": "disruptor", "hits": 32, "shots": 66, "accuracy": 48},
+				{"weapon": "smartgun", "hits": 206, "shots": 238, "accuracy": 86},
+				{"weapon": "chaingun", "hits": 413, "shots": 1772, "accuracy": 23},
+				{"weapon": "flamethrower", "hits": 9, "shots": 84, "accuracy": 10},
+				{"weapon": "rocketlauncher", "hits": 36, "shots": 80, "accuracy": 45},
+				{"weapon": "violator", "hits": 18, "shots": 200, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 50,
+			"deaths": 39,
+			"ratio": 128,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 39, "shots": 69, "accuracy": 56},
+				{"weapon": "disruptor", "hits": 5, "shots": 17, "accuracy": 29},
+				{"weapon": "smartgun", "hits": 79, "shots": 99, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 278, "shots": 1057, "accuracy": 26},
+				{"weapon": "flamethrower", "hits": 24, "shots": 174, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 54, "shots": 133, "accuracy": 40},
+				{"weapon": "violator", "hits": 10, "shots": 181, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 47,
+			"deaths": 53,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 47, "shots": 111, "accuracy": 42},
+				{"weapon": "smartgun", "hits": 283, "shots": 351, "accuracy": 80},
+				{"weapon": "chaingun", "hits": 179, "shots": 891, "accuracy": 20},
+				{"weapon": "flamethrower", "hits": 27, "shots": 40, "accuracy": 67},
+				{"weapon": "rocketlauncher", "hits": 31, "shots": 105, "accuracy": 29},
+				{"weapon": "violator", "hits": 37, "shots": 571, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 45,
+			"deaths": 52,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 34, "shots": 71, "accuracy": 47},
+				{"weapon": "disruptor", "hits": 4, "shots": 11, "accuracy": 36},
+				{"weapon": "smartgun", "hits": 322, "shots": 407, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 202, "shots": 744, "accuracy": 27},
+				{"weapon": "flamethrower", "hits": 13, "shots": 54, "accuracy": 24},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 43, "accuracy": 48},
+				{"weapon": "violator", "hits": 32, "shots": 574, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 35,
+			"deaths": 61,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 60, "shots": 134, "accuracy": 44},
+				{"weapon": "disruptor", "hits": 2, "shots": 13, "accuracy": 15},
+				{"weapon": "smartgun", "hits": 34, "shots": 44, "accuracy": 77},
+				{"weapon": "chaingun", "hits": 89, "shots": 500, "accuracy": 17},
+				{"weapon": "flamethrower", "hits": 6, "shots": 212, "accuracy": 2},
+				{"weapon": "rocketlauncher", "hits": 47, "shots": 153, "accuracy": 30},
+				{"weapon": "violator", "hits": 21, "shots": 324, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 19,
+			"deaths": 62,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 69, "accuracy": 20},
+				{"weapon": "disruptor", "hits": 8, "shots": 16, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 108, "shots": 133, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 30, "shots": 228, "accuracy": 13},
+				{"weapon": "flamethrower", "hits": 0, "shots": 9, "accuracy": 0},
+				{"weapon": "rocketlauncher", "hits": 22, "shots": 86, "accuracy": 25},
+				{"weapon": "violator", "hits": 23, "shots": 408, "accuracy": 5}
+			]
+		}
+	]
+}

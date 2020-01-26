@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "Jakob",
+			"score": 54,
+			"deaths": 28,
+			"ratio": 192,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 372, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 24,
+			"deaths": 47,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 70, "shots": 305, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 20,
+			"deaths": 41,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 79, "shots": 466, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 15,
+			"deaths": 51,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 57, "shots": 295, "accuracy": 19}
+			]
+		}
+	]
+}
