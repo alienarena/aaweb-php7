@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^1:^0]]",
+			"score": 66,
+			"deaths": 30,
+			"ratio": 220,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 146, "shots": 481, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 37,
+			"deaths": 42,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 69, "shots": 479, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 31,
+			"deaths": 44,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 67, "shots": 469, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 9,
+			"deaths": 47,
+			"ratio": 19,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 427, "accuracy": 14}
+			]
+		}
+	]
+}

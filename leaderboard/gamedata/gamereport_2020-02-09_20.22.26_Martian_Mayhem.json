@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^1:^0]]",
+			"score": 49,
+			"deaths": 19,
+			"ratio": 257,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 4, "shots": 22, "accuracy": 18},
+				{"weapon": "disruptor", "hits": 29, "shots": 52, "accuracy": 55},
+				{"weapon": "smartgun", "hits": 149, "shots": 195, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 179, "shots": 611, "accuracy": 29},
+				{"weapon": "flamethrower", "hits": 7, "shots": 39, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 18, "shots": 60, "accuracy": 30},
+				{"weapon": "beamgun", "hits": 158, "shots": 352, "accuracy": 44},
+				{"weapon": "violator", "hits": 3, "shots": 25, "accuracy": 12}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 23,
+			"deaths": 31,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 9, "shots": 36, "accuracy": 25},
+				{"weapon": "disruptor", "hits": 10, "shots": 43, "accuracy": 23},
+				{"weapon": "smartgun", "hits": 29, "shots": 49, "accuracy": 59},
+				{"weapon": "chaingun", "hits": 90, "shots": 592, "accuracy": 15},
+				{"weapon": "flamethrower", "hits": 11, "shots": 147, "accuracy": 7},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 79, "accuracy": 17},
+				{"weapon": "beamgun", "hits": 65, "shots": 228, "accuracy": 28},
+				{"weapon": "violator", "hits": 2, "shots": 31, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 19,
+			"deaths": 37,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 35, "accuracy": 28},
+				{"weapon": "disruptor", "hits": 2, "shots": 15, "accuracy": 13},
+				{"weapon": "smartgun", "hits": 107, "shots": 145, "accuracy": 73},
+				{"weapon": "chaingun", "hits": 13, "shots": 150, "accuracy": 8},
+				{"weapon": "flamethrower", "hits": 21, "shots": 261, "accuracy": 8},
+				{"weapon": "rocketlauncher", "hits": 7, "shots": 48, "accuracy": 14},
+				{"weapon": "beamgun", "hits": 38, "shots": 97, "accuracy": 39},
+				{"weapon": "violator", "hits": 7, "shots": 146, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 17,
+			"deaths": 27,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 1, "shots": 14, "accuracy": 7},
+				{"weapon": "disruptor", "hits": 6, "shots": 25, "accuracy": 24},
+				{"weapon": "smartgun", "hits": 136, "shots": 178, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 11, "shots": 166, "accuracy": 6},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 48, "accuracy": 29},
+				{"weapon": "beamgun", "hits": 12, "shots": 36, "accuracy": 33},
+				{"weapon": "violator", "hits": 3, "shots": 98, "accuracy": 3}
+			]
+		}
+	]
+}

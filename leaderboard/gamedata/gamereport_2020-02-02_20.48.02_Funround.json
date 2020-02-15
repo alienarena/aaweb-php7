@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^3[^5AGY^3]^7ANTON",
+			"score": 73,
+			"deaths": 38,
+			"ratio": 192,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 183, "shots": 576, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 55,
+			"deaths": 52,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 119, "shots": 429, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 42,
+			"deaths": 49,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 107, "shots": 628, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 41,
+			"deaths": 49,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 560, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 27,
+			"deaths": 60,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 70, "shots": 611, "accuracy": 11}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 14,
+			"deaths": 62,
+			"ratio": 22,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 89, "shots": 472, "accuracy": 18}
+			]
+		}
+	]
+}
