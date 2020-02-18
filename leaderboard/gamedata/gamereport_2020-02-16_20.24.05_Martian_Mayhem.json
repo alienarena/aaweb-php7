@@ -1,0 +1,60 @@
+{
+	"players": [
+		{
+			"name": "Toast:Rawr",
+			"score": 83,
+			"deaths": 26,
+			"ratio": 319,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 38, "accuracy": 36},
+				{"weapon": "disruptor", "hits": 139, "shots": 241, "accuracy": 57},
+				{"weapon": "smartgun", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 73, "shots": 225, "accuracy": 32},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 63, "accuracy": 19},
+				{"weapon": "violator", "hits": 18, "shots": 168, "accuracy": 10}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 33,
+			"deaths": 46,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 14, "shots": 61, "accuracy": 22},
+				{"weapon": "disruptor", "hits": 10, "shots": 44, "accuracy": 22},
+				{"weapon": "smartgun", "hits": 17, "shots": 26, "accuracy": 65},
+				{"weapon": "chaingun", "hits": 130, "shots": 984, "accuracy": 13},
+				{"weapon": "rocketlauncher", "hits": 43, "shots": 167, "accuracy": 25},
+				{"weapon": "violator", "hits": 1, "shots": 89, "accuracy": 1}
+			]
+		},
+		{
+			"name": "^1:^0]]",
+			"score": 29,
+			"deaths": 51,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 24, "shots": 63, "accuracy": 38},
+				{"weapon": "disruptor", "hits": 16, "shots": 35, "accuracy": 45},
+				{"weapon": "smartgun", "hits": 131, "shots": 170, "accuracy": 77},
+				{"weapon": "chaingun", "hits": 88, "shots": 499, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 34, "shots": 122, "accuracy": 27},
+				{"weapon": "violator", "hits": 10, "shots": 303, "accuracy": 3}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 15,
+			"deaths": 52,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 13, "shots": 88, "accuracy": 14},
+				{"weapon": "disruptor", "hits": 11, "shots": 26, "accuracy": 42},
+				{"weapon": "smartgun", "hits": 359, "shots": 473, "accuracy": 75},
+				{"weapon": "chaingun", "hits": 57, "shots": 489, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 21, "shots": 95, "accuracy": 22},
+				{"weapon": "violator", "hits": 3, "shots": 150, "accuracy": 2}
+			]
+		}
+	]
+}
