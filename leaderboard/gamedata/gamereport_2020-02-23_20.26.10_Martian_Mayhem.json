@@ -1,0 +1,88 @@
+{
+	"players": [
+		{
+			"name": "doc. vice",
+			"score": 57,
+			"deaths": 43,
+			"ratio": 132,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 15, "shots": 39, "accuracy": 38},
+				{"weapon": "disruptor", "hits": 1, "shots": 2, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 363, "shots": 454, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 204, "shots": 780, "accuracy": 26},
+				{"weapon": "flamethrower", "hits": 30, "shots": 139, "accuracy": 21},
+				{"weapon": "rocketlauncher", "hits": 22, "shots": 40, "accuracy": 55},
+				{"weapon": "beamgun", "hits": 96, "shots": 170, "accuracy": 56},
+				{"weapon": "vaporizer", "hits": 19, "shots": 30, "accuracy": 63},
+				{"weapon": "violator", "hits": 15, "shots": 150, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 55,
+			"deaths": 37,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 5, "shots": 15, "accuracy": 33},
+				{"weapon": "disruptor", "hits": 20, "shots": 39, "accuracy": 51},
+				{"weapon": "smartgun", "hits": 115, "shots": 141, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 140, "shots": 498, "accuracy": 28},
+				{"weapon": "flamethrower", "hits": 28, "shots": 150, "accuracy": 18},
+				{"weapon": "rocketlauncher", "hits": 26, "shots": 57, "accuracy": 45},
+				{"weapon": "beamgun", "hits": 195, "shots": 401, "accuracy": 48},
+				{"weapon": "vaporizer", "hits": 4, "shots": 10, "accuracy": 40},
+				{"weapon": "violator", "hits": 17, "shots": 199, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 37,
+			"deaths": 49,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 26, "shots": 70, "accuracy": 37},
+				{"weapon": "disruptor", "hits": 10, "shots": 16, "accuracy": 62},
+				{"weapon": "smartgun", "hits": 228, "shots": 280, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 85, "shots": 657, "accuracy": 12},
+				{"weapon": "flamethrower", "hits": 19, "shots": 300, "accuracy": 6},
+				{"weapon": "rocketlauncher", "hits": 17, "shots": 52, "accuracy": 32},
+				{"weapon": "beamgun", "hits": 53, "shots": 148, "accuracy": 35},
+				{"weapon": "vaporizer", "hits": 3, "shots": 10, "accuracy": 30},
+				{"weapon": "violator", "hits": 9, "shots": 111, "accuracy": 8}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 30,
+			"deaths": 47,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 21, "accuracy": 47},
+				{"weapon": "smartgun", "hits": 131, "shots": 164, "accuracy": 79},
+				{"weapon": "chaingun", "hits": 56, "shots": 310, "accuracy": 18},
+				{"weapon": "flamethrower", "hits": 14, "shots": 45, "accuracy": 31},
+				{"weapon": "rocketlauncher", "hits": 11, "shots": 25, "accuracy": 44},
+				{"weapon": "beamgun", "hits": 200, "shots": 467, "accuracy": 42},
+				{"weapon": "vaporizer", "hits": 13, "shots": 18, "accuracy": 72},
+				{"weapon": "violator", "hits": 14, "shots": 298, "accuracy": 4}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 25,
+			"deaths": 46,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 30, "shots": 93, "accuracy": 32},
+				{"weapon": "disruptor", "hits": 4, "shots": 8, "accuracy": 50},
+				{"weapon": "smartgun", "hits": 56, "shots": 74, "accuracy": 75},
+				{"weapon": "chaingun", "hits": 14, "shots": 81, "accuracy": 17},
+				{"weapon": "flamethrower", "hits": 35, "shots": 377, "accuracy": 9},
+				{"weapon": "rocketlauncher", "hits": 15, "shots": 52, "accuracy": 28},
+				{"weapon": "beamgun", "hits": 28, "shots": 76, "accuracy": 36},
+				{"weapon": "vaporizer", "hits": 13, "shots": 34, "accuracy": 38},
+				{"weapon": "violator", "hits": 1, "shots": 18, "accuracy": 5}
+			]
+		}
+	]
+}

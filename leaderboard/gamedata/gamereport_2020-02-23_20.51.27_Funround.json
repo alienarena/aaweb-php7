@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 47,
+			"deaths": 52,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 123, "shots": 363, "accuracy": 33}
+			]
+		},
+		{
+			"name": "doc. vice",
+			"score": 45,
+			"deaths": 42,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 120, "shots": 300, "accuracy": 40}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 37,
+			"deaths": 54,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 334, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 48,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 350, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^2[T3]Cthulhu",
+			"score": 20,
+			"deaths": 53,
+			"ratio": 37,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 293, "accuracy": 27}
+			]
+		}
+	]
+}
