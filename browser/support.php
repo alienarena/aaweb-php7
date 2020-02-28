@@ -76,7 +76,7 @@ function Generate_HTML_Footers()
 	echo '<table id="cdfooter"><tbody><tr><th>';
 	echo '<a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank" title="Get Alien Arena: Warriors of Mars on Steam!">';
 	echo '<img style="height: 36px; opacity: 0.9" src="img/steam.png"></a></th><th>';
-	echo '<a href="https://discord.gg/2KS3KrF" target="_blank" title="Join us on Discord!">';
+	echo '<a href="https://discord.gg/Rd5fwBg" target="_blank" title="Join us on Discord!">';
 	echo '<img src="img/discord.png" style="height:42px"></a></th></tr></tbody></table><br>';
 
 	echo "</center>\n";
