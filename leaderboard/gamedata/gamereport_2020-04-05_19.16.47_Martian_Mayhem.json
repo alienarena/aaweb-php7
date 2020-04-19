@@ -1,0 +1,93 @@
+{
+	"players": [
+		{
+			"name": "^3[^5AGY^3]^7ANTON",
+			"score": 55,
+			"deaths": 38,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 27, "shots": 51, "accuracy": 52},
+				{"weapon": "smartgun", "hits": 402, "shots": 488, "accuracy": 82},
+				{"weapon": "chaingun", "hits": 171, "shots": 676, "accuracy": 25},
+				{"weapon": "rocketlauncher", "hits": 17, "shots": 56, "accuracy": 30},
+				{"weapon": "beamgun", "hits": 181, "shots": 322, "accuracy": 56},
+				{"weapon": "vaporizer", "hits": 30, "shots": 41, "accuracy": 73},
+				{"weapon": "violator", "hits": 13, "shots": 104, "accuracy": 12}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 47,
+			"deaths": 36,
+			"ratio": 130,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 18, "shots": 42, "accuracy": 42},
+				{"weapon": "smartgun", "hits": 155, "shots": 208, "accuracy": 74},
+				{"weapon": "chaingun", "hits": 68, "shots": 539, "accuracy": 12},
+				{"weapon": "rocketlauncher", "hits": 16, "shots": 32, "accuracy": 50},
+				{"weapon": "beamgun", "hits": 295, "shots": 861, "accuracy": 34},
+				{"weapon": "vaporizer", "hits": 19, "shots": 29, "accuracy": 65},
+				{"weapon": "violator", "hits": 30, "shots": 363, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 43,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 52, "shots": 107, "accuracy": 48},
+				{"weapon": "smartgun", "hits": 410, "shots": 499, "accuracy": 82},
+				{"weapon": "chaingun", "hits": 43, "shots": 368, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 26, "shots": 90, "accuracy": 28},
+				{"weapon": "beamgun", "hits": 62, "shots": 205, "accuracy": 30},
+				{"weapon": "vaporizer", "hits": 10, "shots": 17, "accuracy": 58},
+				{"weapon": "violator", "hits": 24, "shots": 379, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 40,
+			"deaths": 40,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 38, "shots": 127, "accuracy": 29},
+				{"weapon": "smartgun", "hits": 138, "shots": 175, "accuracy": 78},
+				{"weapon": "chaingun", "hits": 80, "shots": 280, "accuracy": 28},
+				{"weapon": "rocketlauncher", "hits": 4, "shots": 9, "accuracy": 44},
+				{"weapon": "beamgun", "hits": 130, "shots": 275, "accuracy": 47},
+				{"weapon": "vaporizer", "hits": 25, "shots": 40, "accuracy": 62},
+				{"weapon": "violator", "hits": 4, "shots": 72, "accuracy": 5}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 22,
+			"deaths": 43,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 48, "shots": 119, "accuracy": 40},
+				{"weapon": "smartgun", "hits": 197, "shots": 258, "accuracy": 76},
+				{"weapon": "chaingun", "hits": 48, "shots": 273, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 12, "shots": 53, "accuracy": 22},
+				{"weapon": "beamgun", "hits": 32, "shots": 117, "accuracy": 27},
+				{"weapon": "vaporizer", "hits": 14, "shots": 20, "accuracy": 70},
+				{"weapon": "violator", "hits": 10, "shots": 377, "accuracy": 2}
+			]
+		},
+		{
+			"name": "[BPC]mamab",
+			"score": 9,
+			"deaths": 50,
+			"ratio": 18,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 62, "shots": 214, "accuracy": 28},
+				{"weapon": "smartgun", "hits": 65, "shots": 77, "accuracy": 84},
+				{"weapon": "chaingun", "hits": 18, "shots": 150, "accuracy": 12},
+				{"weapon": "rocketlauncher", "hits": 13, "shots": 58, "accuracy": 22},
+				{"weapon": "vaporizer", "hits": 3, "shots": 9, "accuracy": 33},
+				{"weapon": "violator", "hits": 0, "shots": 14, "accuracy": 0}
+			]
+		}
+	]
+}

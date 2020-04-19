@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "[COVID]navidad",
+			"score": 67,
+			"deaths": 52,
+			"ratio": 128,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 156, "shots": 413, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 56,
+			"deaths": 57,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 348, "accuracy": 36}
+			]
+		},
+		{
+			"name": "lag",
+			"score": 54,
+			"deaths": 63,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 444, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 34,
+			"deaths": 36,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 99, "shots": 511, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 69,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 558, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^2chessplayer",
+			"score": 19,
+			"deaths": 59,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 61, "shots": 388, "accuracy": 15}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 17,
+			"deaths": 35,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 499, "accuracy": 14}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 13,
+			"deaths": 53,
+			"ratio": 24,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 69, "shots": 334, "accuracy": 20}
+			]
+		}
+	]
+}

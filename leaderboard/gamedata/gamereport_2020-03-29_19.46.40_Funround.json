@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "ne tasse tee",
+			"score": 52,
+			"deaths": 24,
+			"ratio": 216,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 125, "shots": 395, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 29,
+			"deaths": 35,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 74, "shots": 320, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 27,
+			"deaths": 32,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 68, "shots": 274, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 13,
+			"deaths": 44,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 49, "shots": 364, "accuracy": 13}
+			]
+		}
+	]
+}

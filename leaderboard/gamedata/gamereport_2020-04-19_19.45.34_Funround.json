@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^7gm/^1:^0]]",
+			"score": 53,
+			"deaths": 29,
+			"ratio": 182,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 160, "shots": 403, "accuracy": 39}
+			]
+		},
+		{
+			"name": "[T3]Nero",
+			"score": 23,
+			"deaths": 46,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 345, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 20,
+			"deaths": 49,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 53, "shots": 407, "accuracy": 13}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 13,
+			"deaths": 55,
+			"ratio": 23,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 84, "shots": 330, "accuracy": 25}
+			]
+		}
+	]
+}

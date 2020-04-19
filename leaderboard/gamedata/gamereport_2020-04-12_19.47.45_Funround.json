@@ -1,0 +1,49 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 55,
+			"deaths": 40,
+			"ratio": 137,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 139, "shots": 430, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 41,
+			"deaths": 50,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 104, "shots": 493, "accuracy": 21}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 34,
+			"deaths": 48,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 456, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 33,
+			"deaths": 53,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 96, "shots": 471, "accuracy": 20}
+			]
+		},
+		{
+			"name": "Pardu",
+			"score": 24,
+			"deaths": 60,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 340, "accuracy": 31}
+			]
+		}
+	]
+}
