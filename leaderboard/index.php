@@ -77,7 +77,7 @@ echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100;
 echo "        top: 0px; left: 0px; height: 2554px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
 echo "        onclick=\"hidePopup();\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
-echo "    <div class=\"menu\"><span class=\"navdisabled\">Results</span>&nbsp;|&nbsp;<a href=\"rankings.php\">Rankings</a></div>\n";
+echo "    <div class=\"menu\"><span class=\"navdisabled\">Results</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
 
 echo "        <tr>\n";

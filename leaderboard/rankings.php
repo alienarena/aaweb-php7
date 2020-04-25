@@ -31,7 +31,7 @@ echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('..
 echo "  <center>\n";
 echo "    <div style=\"height: 30px\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
-echo "    <div class=\"menu\"><a href=\"index.php\">Results</a>&nbsp;|&nbsp;<span class=\"navdisabled\">Rankings</span></div>\n";
+echo "    <div class=\"menu\"><a href=\"index.php\">Results</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><span class=\"navdisabled\">Rankings</span></div>\n";
 
 renderRankings();
 
