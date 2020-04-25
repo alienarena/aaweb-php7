@@ -11,6 +11,28 @@ function getQueryString(field, url) {
     return string ? string[1] : null;
 };
 
+function colorCodeToFontColor(color) {
+    switch (parseInt(color) % 8) {
+        case 0:
+            return "black";
+        case 1:
+            return "red";
+        case 2:
+            return "lime";
+        case 3:
+            return "yellow";
+        case 4:
+            return "blue";
+        case 5:
+            return "cyan";
+        case 6:
+            return "purple";
+        case 7:
+            return "white";
+    }
+    return "lime";
+}
+
 function colorize(element, color) {
     var currentHtml = element.innerHTML;
     var newHtml = '';
@@ -51,24 +73,18 @@ function colorize(element, color) {
     element.innerHTML = newHtml;
 }
 
-function colorCodeToFontColor(color) {
-    switch (parseInt(color) % 8) {
-        case 0:
-            return "black";
-        case 1:
-            return "red";
-        case 2:
-            return "lime";
-        case 3:
-            return "yellow";
-        case 4:
-            return "blue";
-        case 5:
-            return "cyan";
-        case 6:
-            return "purple";
-        case 7:
-            return "white";
-    }
-    return "lime";
+function setPlayerColors() {
+    var numberOfQualifiers = 9999;
+    $("table.scoretable").each(function(tableindex, table) {
+        var playerCounter = 0;
+        $(table).find("td.playername").each(function(index, elem) {
+            playerCounter += 1;
+            if (playerCounter <= numberOfQualifiers) {
+                colorize(elem);
+            } else {
+                colorize(elem, "grey");
+            }            
+        });        
+    });
 }
+

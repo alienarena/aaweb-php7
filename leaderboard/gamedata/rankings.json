@@ -1,0 +1,466 @@
+{
+ "dateFrom": "2019-01-27",
+ "dateTo": null,
+ "rankings": [
+  {
+   "name": "^0[^3GM^0]^6Vista",
+   "userID": "376698512513040394",
+   "points": 939,
+   "mainRoundWins": 29,
+   "funroundWins": 51,
+   "mainRoundsPlayed": 86,
+   "funroundsPlayed": 77,
+   "rank": 1
+  },
+  {
+   "name": "^7[OS]^5BeryCZ",
+   "userID": "506153187393142784",
+   "points": 621,
+   "mainRoundWins": 5,
+   "funroundWins": 14,
+   "mainRoundsPlayed": 68,
+   "funroundsPlayed": 57,
+   "rank": 2
+  },
+  {
+   "name": "Toast:Rawr",
+   "userID": "277302658568683523",
+   "points": 536,
+   "mainRoundWins": 42,
+   "funroundWins": 10,
+   "mainRoundsPlayed": 49,
+   "funroundsPlayed": 14,
+   "rank": 3
+  },
+  {
+   "name": "^3[GM]^3^1Jar^5'El",
+   "userID": "315223049471524866",
+   "points": 484,
+   "mainRoundWins": 0,
+   "funroundWins": 3,
+   "mainRoundsPlayed": 98,
+   "funroundsPlayed": 85,
+   "rank": 4
+  },
+  {
+   "name": "^3(^8GM^3)^7Dondo",
+   "userID": "497016978456707092",
+   "points": 403,
+   "mainRoundWins": 24,
+   "funroundWins": 1,
+   "mainRoundsPlayed": 41,
+   "funroundsPlayed": 16,
+   "rank": 5
+  },
+  {
+   "name": "[SiN]nealcool",
+   "userID": "496562213440585738",
+   "points": 341,
+   "mainRoundWins": 1,
+   "funroundWins": 2,
+   "mainRoundsPlayed": 59,
+   "funroundsPlayed": 49,
+   "rank": 6
+  },
+  {
+   "name": "^7[OS]^2METROID",
+   "userID": "474193393266851840",
+   "points": 197,
+   "mainRoundWins": 5,
+   "funroundWins": 2,
+   "mainRoundsPlayed": 35,
+   "funroundsPlayed": 17,
+   "rank": 7
+  },
+  {
+   "name": "Lance",
+   "userID": "514111143690633226",
+   "points": 162,
+   "mainRoundWins": 1,
+   "funroundWins": 2,
+   "mainRoundsPlayed": 21,
+   "funroundsPlayed": 20,
+   "rank": 8
+  },
+  {
+   "name": "[T3]Xzantronos",
+   "userID": "287048015737389057",
+   "points": 137,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 49,
+   "funroundsPlayed": 38,
+   "rank": 9
+  },
+  {
+   "name": "^7[OS]^6Izaiasss",
+   "userID": "457233861890408458",
+   "points": 79,
+   "mainRoundWins": 0,
+   "funroundWins": 1,
+   "mainRoundsPlayed": 17,
+   "funroundsPlayed": 11,
+   "rank": 10
+  },
+  {
+   "name": "[T3]Cthulhu",
+   "userID": "592200698884784128",
+   "points": 74,
+   "mainRoundWins": 0,
+   "funroundWins": 1,
+   "mainRoundsPlayed": 15,
+   "funroundsPlayed": 12,
+   "rank": 11
+  },
+  {
+   "name": "Sly",
+   "userID": "683042815726452775",
+   "points": 52,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 19,
+   "funroundsPlayed": 11,
+   "rank": 12
+  },
+  {
+   "name": "^4[SiN]Sasuke",
+   "userID": "265523761543905281",
+   "points": 39,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 8,
+   "funroundsPlayed": 9,
+   "rank": 13
+  },
+  {
+   "name": "^7[SIN]^3pantera",
+   "userID": "517097869443072001",
+   "points": 32,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 9,
+   "funroundsPlayed": 3,
+   "rank": 14
+  },
+  {
+   "name": "^7[SiN]animal",
+   "userID": "504744083366084648",
+   "points": 27,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 9,
+   "funroundsPlayed": 4,
+   "rank": 15
+  },
+  {
+   "name": "[GM]aliencat",
+   "userID": "238751644278325248",
+   "points": 24,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 7,
+   "funroundsPlayed": 9,
+   "rank": 16
+  },
+  {
+   "name": "^7[os]^5eddiebrkln",
+   "userID": "458889852352593921",
+   "points": 24,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 12,
+   "funroundsPlayed": 9,
+   "rank": 17
+  },
+  {
+   "name": "666SoulCatcher",
+   "userID": "144118539022893056",
+   "points": 23,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 7,
+   "funroundsPlayed": 3,
+   "rank": 18
+  },
+  {
+   "name": "[SiN]BonfireJr",
+   "userID": "299572194181382144",
+   "points": 23,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 14,
+   "funroundsPlayed": 3,
+   "rank": 19
+  },
+  {
+   "name": "^3{^8GM^3}Skelfir",
+   "userID": "497014532892262400",
+   "points": 18,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 4,
+   "funroundsPlayed": 1,
+   "rank": 20
+  },
+  {
+   "name": "vicious",
+   "userID": "169985628337995778",
+   "points": 15,
+   "mainRoundWins": 1,
+   "funroundWins": 1,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 21
+  },
+  {
+   "name": "^7[OS]^2chessplayer",
+   "userID": "253372897907834882",
+   "points": 14,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 4,
+   "funroundsPlayed": 4,
+   "rank": 22
+  },
+  {
+   "name": "[T3]Nero",
+   "userID": "466129668089577472",
+   "points": 14,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 2,
+   "funroundsPlayed": 2,
+   "rank": 23
+  },
+  {
+   "name": "(T3)mtsu",
+   "userID": "146822443951063042",
+   "points": 13,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 5,
+   "funroundsPlayed": 1,
+   "rank": 24
+  },
+  {
+   "name": "Manchev",
+   "userID": "326793810346770432",
+   "points": 10,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 3,
+   "rank": 25
+  },
+  {
+   "name": "^5nmc",
+   "userID": "533000759483301888",
+   "points": 9,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 2,
+   "rank": 26
+  },
+  {
+   "name": "[SiN]Xenos",
+   "userID": "453542722368700444",
+   "points": 9,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 3,
+   "rank": 27
+  },
+  {
+   "name": "TiK",
+   "userID": "507082542952742913",
+   "points": 8,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 4,
+   "funroundsPlayed": 3,
+   "rank": 28
+  },
+  {
+   "name": "The^1Chosen^4One",
+   "userID": "368064001118044161",
+   "points": 7,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 29
+  },
+  {
+   "name": "[BPC]mamabear",
+   "userID": "185073668324458496",
+   "points": 7,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 2,
+   "rank": 30
+  },
+  {
+   "name": "NOD",
+   "userID": "610182626740797440",
+   "points": 5,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 2,
+   "rank": 31
+  },
+  {
+   "name": "Ultima",
+   "userID": "295666797666107393",
+   "points": 5,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 2,
+   "rank": 32
+  },
+  {
+   "name": "^4[666]UR-Next",
+   "userID": "421310397451206656",
+   "points": 4,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 4,
+   "funroundsPlayed": 0,
+   "rank": 33
+  },
+  {
+   "name": "^5[OS]$hifty",
+   "userID": "449140331481530371",
+   "points": 3,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 34
+  },
+  {
+   "name": "Pardu",
+   "userID": "689955781487231200",
+   "points": 3,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 35
+  },
+  {
+   "name": "^![666]^@Blitz",
+   "userID": "310892608618627072",
+   "points": 2,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 36
+  },
+  {
+   "name": "Fleet",
+   "userID": "542017390024851466",
+   "points": 2,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 37
+  },
+  {
+   "name": "[SIN]^2D^1evil",
+   "userID": "506921804024119321",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 38
+  },
+  {
+   "name": "[GM] Solrac",
+   "userID": "241766383497510912",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 39
+  },
+  {
+   "name": "ThCShaPEShifter",
+   "userID": "411665079847616512",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 40
+  },
+  {
+   "name": "{Anura} L.",
+   "userID": "498258060284788738",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 0,
+   "funroundsPlayed": 1,
+   "rank": 41
+  },
+  {
+   "name": "Alistair",
+   "userID": "427057932991987713",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 0,
+   "funroundsPlayed": 1,
+   "rank": 42
+  },
+  {
+   "name": "Supsun",
+   "userID": "193381414593495040",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 43
+  },
+  {
+   "name": "FatCat",
+   "userID": "576122576405790740",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 0,
+   "funroundsPlayed": 1,
+   "rank": 44
+  },
+  {
+   "name": "Spideymon77",
+   "userID": "474786886645186590",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 45
+  },
+  {
+   "name": "Furr_Man",
+   "userID": "277995746119385110",
+   "points": 1,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 0,
+   "rank": 46
+  }
+ ]
+}

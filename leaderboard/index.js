@@ -64,23 +64,11 @@ function showWeaponAccuracy(id) {
 }
 
 function documentReady() {
-    var numberOfQualifiers = 9999;
     var enableWeaponSkillTable = true;
 
     $("#leaderboardtable").show();
 
-    // Set player colors
-    $("table.scoretable").each(function(tableindex, table) {
-        var playerCounter = 0;
-        $(table).find("td.playername").each(function(index, elem) {
-            playerCounter += 1;
-            if (playerCounter <= numberOfQualifiers) {
-                colorize(elem);
-            } else {
-                colorize(elem, "grey");
-            }            
-        });        
-    });
+    setPlayerColors();
 
     if (enableWeaponSkillTable) {
         $(document).mousemove(function(e){

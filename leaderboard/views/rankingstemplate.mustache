@@ -1,0 +1,31 @@
+<center>
+    <div class="title">
+        <span class="subtitle">{{rankingsTitle}}</span>
+    </div>
+    <table border="0" cellspacing="0" cellpadding="3" class="scoretable">
+        <tr>
+            <td class="header playerid" rowspan="2">RANK</td>
+            <td class="header" style="text-align: left" rowspan="2">NAME</td>
+            <td class="header" colspan="2">PLAYED</td>
+            <td class="header" colspan="2">WON</td>
+            <td class="header" rowspan="2">POINTS</td>
+        </tr>
+        <tr>
+            <td class="header">MAIN ROUNDS</td>
+            <td class="header">FUNROUNDS</td>
+            <td class="header">MAIN ROUNDS</td>
+            <td class="header">FUNROUNDS</td>
+        </tr>
+    {{#rankings}}
+        <tr>
+            <td class="datarow playerid" style="text-align: right;">{{rank}}</td>
+            <td class="playername datarow">{{name}}</td>
+            <td class="datarow" align="right">{{mainRoundsPlayed}}</td>
+            <td class="datarow" align="right">{{funroundsPlayed}}</td>
+            <td class="datarow" align="right">{{mainRoundWins}}</td>
+            <td class="datarow" align="right">{{funroundWins}}</td>
+            <td class="datarow" align="right">{{points}}</td>
+        </tr>
+    {{/rankings}}
+    </table>
+</center>
