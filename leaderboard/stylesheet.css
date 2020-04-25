@@ -31,7 +31,7 @@ div#content {
 }
 
 .menu {
-	color: rgb(220, 220, 220);
+	color: rgb(190, 198, 190);
 	text-align: center;
 	font-size: medium;	
     font-weight: bold;
@@ -73,14 +73,14 @@ td.datarow {
 	border-radius: 4px;
 }
 
-/* For navigation */
 a:link, a:visited, a:active { 
 	text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: inherit;
 }
 
 a:hover {
 	text-decoration: underline;
+    color: rgb(255, 255, 255);
 }
 
 tr.navigation {
@@ -90,6 +90,10 @@ tr.navigation {
 td.navigation {
 	text-align: center; 
 	font-size: large;
+}
+
+span.active {
+	color: rgb(255, 255, 255);
 }
 
 span.navdisabled {

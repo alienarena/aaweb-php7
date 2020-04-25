@@ -77,7 +77,7 @@ echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100;
 echo "        top: 0px; left: 0px; height: 2554px; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
 echo "        onclick=\"hidePopup();\"></div>\n";
 echo "    <div class=\"pagetitle\">Alien Arena tournament leaderboard</div>\n";
-echo "    <div class=\"menu\"><span class=\"navdisabled\">Results</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
+echo "    <div class=\"menu\"><span class=\"active\">Results</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
 
 echo "        <tr>\n";
@@ -104,13 +104,13 @@ echo "        </tr>\n";
 if ($pageNumber > 1 || $pageNumber < count($pages)) {
     echo "<tr class=\"navigation\"><td class=\"navigation\" colspan=\"".$leaderboardCols."\">";
     if ($pageNumber > 1) {
-        echo "<a title=\"Previous page\" href=\"index.php?page=".strval($pageNumber - 1)."\">◄</a>";
+        echo "<span class=\"active\"><a title=\"Previous page\" href=\"index.php?page=".strval($pageNumber - 1)."\">◄</a></span>";
     } else {
         echo "<span class=\"navdisabled\">◄<span>";
     }
-    echo "<span class=\"navdisabled\">&nbsp;|&nbsp;<span>";
+    echo "<span class=\"navdisabled\">&nbsp;|&nbsp;</span>";
     if ($pageNumber < count($pages)) {
-        echo "<a title=\"Next page\" href=\"index.php?page=".strval($pageNumber + 1)."\">►</a>";
+        echo "<span class=\"active\"><a title=\"Next page\" href=\"index.php?page=".strval($pageNumber + 1)."\">►</a></span>";
     } else {
         echo "<span class=\"navdisabled\">►<span>";
     }
