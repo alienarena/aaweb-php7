@@ -1,0 +1,76 @@
+{
+	"players": [
+		{
+			"name": "^7Toast:Rawr",
+			"score": 57,
+			"deaths": 29,
+			"ratio": 196,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 608, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7gm/^1:^0]]",
+			"score": 41,
+			"deaths": 49,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 437, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 37,
+			"deaths": 35,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 97, "shots": 484, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 45,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 88, "shots": 541, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 33,
+			"deaths": 39,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 420, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 29,
+			"deaths": 37,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 76, "shots": 558, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^7[OS]^#Izaiasss",
+			"score": 29,
+			"deaths": 53,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 550, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 16,
+			"deaths": 53,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 62, "shots": 516, "accuracy": 12}
+			]
+		}
+	]
+}

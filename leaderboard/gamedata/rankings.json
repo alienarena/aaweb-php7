@@ -5,41 +5,41 @@
   {
    "name": "^0[^3GM^0]^1Vista",
    "userID": "376698512513040394",
-   "points": 939,
+   "points": 944,
    "mainRoundWins": 29,
    "funroundWins": 51,
-   "mainRoundsPlayed": 86,
-   "funroundsPlayed": 77,
+   "mainRoundsPlayed": 87,
+   "funroundsPlayed": 78,
    "rank": 1
   },
   {
    "name": "^7[OS]^5BeryCZ",
    "userID": "506153187393142784",
-   "points": 621,
+   "points": 629,
    "mainRoundWins": 5,
    "funroundWins": 14,
-   "mainRoundsPlayed": 68,
-   "funroundsPlayed": 57,
+   "mainRoundsPlayed": 69,
+   "funroundsPlayed": 58,
    "rank": 2
   },
   {
    "name": "Toast:Rawr",
    "userID": "277302658568683523",
-   "points": 536,
-   "mainRoundWins": 42,
-   "funroundWins": 10,
-   "mainRoundsPlayed": 49,
-   "funroundsPlayed": 14,
+   "points": 551,
+   "mainRoundWins": 43,
+   "funroundWins": 11,
+   "mainRoundsPlayed": 50,
+   "funroundsPlayed": 15,
    "rank": 3
   },
   {
    "name": "^3[GM]^3^1Jar^5'El",
    "userID": "315223049471524866",
-   "points": 493,
+   "points": 496,
    "mainRoundWins": 0,
    "funroundWins": 3,
-   "mainRoundsPlayed": 99,
-   "funroundsPlayed": 86,
+   "mainRoundsPlayed": 100,
+   "funroundsPlayed": 87,
    "rank": 4
   },
   {
@@ -55,11 +55,11 @@
   {
    "name": "[SiN]nealcool",
    "userID": "496562213440585738",
-   "points": 342,
+   "points": 343,
    "mainRoundWins": 1,
    "funroundWins": 2,
    "mainRoundsPlayed": 60,
-   "funroundsPlayed": 49,
+   "funroundsPlayed": 50,
    "rank": 6
   },
   {
@@ -85,21 +85,21 @@
   {
    "name": "[T3]Xzantronos",
    "userID": "287048015737389057",
-   "points": 140,
+   "points": 143,
    "mainRoundWins": 0,
    "funroundWins": 0,
-   "mainRoundsPlayed": 50,
-   "funroundsPlayed": 39,
+   "mainRoundsPlayed": 51,
+   "funroundsPlayed": 40,
    "rank": 9
   },
   {
    "name": "^7[OS]^1Izaiasss",
    "userID": "457233861890408458",
-   "points": 89,
+   "points": 92,
    "mainRoundWins": 0,
    "funroundWins": 1,
-   "mainRoundsPlayed": 18,
-   "funroundsPlayed": 12,
+   "mainRoundsPlayed": 19,
+   "funroundsPlayed": 13,
    "rank": 10
   },
   {
@@ -193,6 +193,16 @@
    "rank": 19
   },
   {
+   "name": "^![666]^@Blitz",
+   "userID": "310892608618627072",
+   "points": 19,
+   "mainRoundWins": 0,
+   "funroundWins": 1,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 3,
+   "rank": 20
+  },
+  {
    "name": "^3{^8GM^3}Skelfir",
    "userID": "497014532892262400",
    "points": 18,
@@ -200,7 +210,7 @@
    "funroundWins": 0,
    "mainRoundsPlayed": 4,
    "funroundsPlayed": 1,
-   "rank": 20
+   "rank": 21
   },
   {
    "name": "vicious",
@@ -210,7 +220,7 @@
    "funroundWins": 1,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 1,
-   "rank": 21
+   "rank": 22
   },
   {
    "name": "^7[OS]^2chessplayer",
@@ -220,7 +230,7 @@
    "funroundWins": 0,
    "mainRoundsPlayed": 4,
    "funroundsPlayed": 4,
-   "rank": 22
+   "rank": 23
   },
   {
    "name": "[T3]Nero",
@@ -230,7 +240,7 @@
    "funroundWins": 0,
    "mainRoundsPlayed": 2,
    "funroundsPlayed": 2,
-   "rank": 23
+   "rank": 24
   },
   {
    "name": "(T3)mtsu",
@@ -240,7 +250,7 @@
    "funroundWins": 0,
    "mainRoundsPlayed": 5,
    "funroundsPlayed": 1,
-   "rank": 24
+   "rank": 25
   },
   {
    "name": "Manchev",
@@ -250,7 +260,7 @@
    "funroundWins": 0,
    "mainRoundsPlayed": 3,
    "funroundsPlayed": 3,
-   "rank": 25
+   "rank": 26
   },
   {
    "name": "NOD",
@@ -259,16 +269,6 @@
    "mainRoundWins": 0,
    "funroundWins": 0,
    "mainRoundsPlayed": 2,
-   "funroundsPlayed": 3,
-   "rank": 26
-  },
-  {
-   "name": "[SiN]Xenos",
-   "userID": "453542722368700444",
-   "points": 9,
-   "mainRoundWins": 0,
-   "funroundWins": 0,
-   "mainRoundsPlayed": 3,
    "funroundsPlayed": 3,
    "rank": 27
   },
@@ -283,13 +283,13 @@
    "rank": 28
   },
   {
-   "name": "^![666]^@Blitz",
-   "userID": "310892608618627072",
-   "points": 8,
+   "name": "[SiN]Xenos",
+   "userID": "453542722368700444",
+   "points": 9,
    "mainRoundWins": 0,
-   "funroundWins": 1,
-   "mainRoundsPlayed": 2,
-   "funroundsPlayed": 2,
+   "funroundWins": 0,
+   "mainRoundsPlayed": 3,
+   "funroundsPlayed": 3,
    "rank": 29
   },
   {

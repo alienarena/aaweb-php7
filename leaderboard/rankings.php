@@ -69,7 +69,25 @@ function renderRankings()
     if (strlen($data['dateTo']) == 0) {
         $data['dateTo'] = 'now';
     }
-    $data['rankingsTitle'] = 'Rankings from '.$data['dateFrom'].' until '.$data['dateTo'];
+    $data['rankingsTitle'] = 'Rankings from '.$data['dateFrom'].' until '.$data['dateTo'];    
+    
+    for ($i = 0; $i < count($data['rankings']); $i++) {
+        $mainRoundWins = floatval($data['rankings'][$i]['mainRoundWins']);
+        $mainRoundsPlayed = floatval($data['rankings'][$i]['mainRoundsPlayed']);
+
+        $funroundWins = floatval($data['rankings'][$i]['funroundWins']);
+        $funroundsPlayed = floatval($data['rankings'][$i]['funroundsPlayed']);
+
+        $data['rankings'][$i]['mainRoundWinRatio'] =
+            $mainRoundsPlayed > 0
+                ? strval(round(100 * $mainRoundWins / $mainRoundsPlayed, 0)).'%'
+                : '0%';
+
+        $data['rankings'][$i]['funroundWinRatio'] =
+            $funroundsPlayed > 0
+                ? strval(round(100 * $funroundWins / $funroundsPlayed, 0)).'%'
+                : '0%';
+    }
 
     $table = "<td style=\"vertical-align: top; height: \"100%\";\">\n";
     $table = $table.$template->render($data);
