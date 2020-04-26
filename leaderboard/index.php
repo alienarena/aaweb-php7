@@ -4,7 +4,7 @@ include 'common.php';
 require dirname(__FILE__).'/mustache.php-2.12.0/src/Mustache/Autoloader.php';
 Mustache_Autoloader::register();
 $mustache = new Mustache_Engine(array(
-    'cache' => dirname(__FILE__).'/tmp/cache/mustache',
+    /*'cache' => dirname(__FILE__).'/tmp/cache/mustache',*/
     'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__).'/views')
 ));
 

@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 58,
+			"deaths": 48,
+			"ratio": 120,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 422, "accuracy": 29}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 49,
+			"deaths": 49,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 120, "shots": 351, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 48,
+			"deaths": 51,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 125, "shots": 520, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^7[OS]^6Izaiasss",
+			"score": 43,
+			"deaths": 55,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 507, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 31,
+			"deaths": 39,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 476, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 18,
+			"deaths": 48,
+			"ratio": 37,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 59, "shots": 357, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 14,
+			"deaths": 31,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 52, "shots": 192, "accuracy": 27}
+			]
+		}
+	]
+}
