@@ -32,6 +32,18 @@ function fileGetContents($path)
     return $data_json;
 }
 
+// Input is a date string in the format yyyy-MM-dd HH:mm:ss, or empty
+function dateToString($date = false)
+{
+    if (strlen($date) > 0)
+    {
+        return date('F j, Y', strtotime($date));
+    } else
+    {
+        return date('F j, Y');
+    }
+}
+
 function jsonDecode($json, $assoc = false)
 {
     $ret = json_decode($json, $assoc);

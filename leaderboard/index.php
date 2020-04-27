@@ -214,7 +214,7 @@ function enrichData($file, $data)
     // Fill tourney title, tourney id and tourney date which are used in the templates
     $data['tourney_title'] = $tourneyTitle;
     $data['tourney_id'] = $tourneyId;
-    $data['tourney_date'] = date('F j, Y', strtotime($tourneyDateString));
+    $data['tourney_date'] = dateToString($tourneyDateString);
     
     return $data;
 }

@@ -56,8 +56,8 @@ echo "</html>\n";
 
 function renderRankings()
 {
-    global $mustache;
-
+    global $mustache, $tourneyStartDate;
+    
     $template = $mustache->loadTemplate('rankingstemplate');    
 
     $json = fileGetContents("gamedata/rankings.json");
@@ -66,10 +66,7 @@ function renderRankings()
     if (strlen($data['dateFrom']) == 0) {
         $data['dateFrom'] = $tourneyStartDate;
     }
-    if (strlen($data['dateTo']) == 0) {
-        $data['dateTo'] = 'now';
-    }
-    $data['rankingsTitle'] = 'Rankings from '.$data['dateFrom'].' until '.$data['dateTo'];    
+    $data['rankingsTitle'] = 'Rankings from '.dateToString($data['dateFrom']).' until '.dateToString($data['dateTo']);
     
     for ($i = 0; $i < count($data['rankings']); $i++) {
         $mainRoundWins = floatval($data['rankings'][$i]['mainRoundWins']);
