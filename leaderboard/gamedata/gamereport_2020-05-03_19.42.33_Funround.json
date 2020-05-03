@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 60,
+			"deaths": 52,
+			"ratio": 115,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 159, "shots": 530, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 47,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 463, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 43,
+			"deaths": 49,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 98, "shots": 529, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^7[OS]^#Izaiasss",
+			"score": 41,
+			"deaths": 53,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 98, "shots": 500, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 28,
+			"deaths": 54,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 423, "accuracy": 19}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 26,
+			"deaths": 36,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 296, "accuracy": 24}
+			]
+		}
+	]
+}

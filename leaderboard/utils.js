@@ -86,5 +86,9 @@ function setPlayerColors() {
             }            
         });        
     });
+
+    $("div.infotooltip td.playername").each(function(index, elem) {
+        colorize(elem);
+    });
 }
 

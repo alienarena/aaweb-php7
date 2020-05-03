@@ -122,15 +122,15 @@ echo $detailsHtml;
 echo "    <script type=\"text/javascript\">\n";
 echo "        $(document).ready(function() {\n";
 echo "           documentReady();\n";
-echo "              if (!window.isUsedOnMobile()) {\n";
-echo "                 $(\".parallaxie\").parallaxie();\n"; 
-echo "              } else {\n";
-echo "                 $('#content').removeAttr('class');\n";
-echo "                 $('#content').css('background-image', '');\n";
-echo "                 $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
-echo "                 $('body').css('width', ".$leaderboardWidth.");\n";
-echo "                 $('#overlay').css('width', ".$leaderboardWidth.");\n";
-echo "              }\n";
+echo "           if (!window.isUsedOnMobile()) {\n";
+echo "              $(\".parallaxie\").parallaxie();\n"; 
+echo "           } else {\n";
+echo "              $('#content').removeAttr('class');\n";
+echo "              $('#content').css('background-image', '');\n";
+echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
+echo "              $('body').css('width', ".$leaderboardWidth.");\n";
+echo "              $('#overlay').css('width', ".$leaderboardWidth.");\n";
+echo "           }\n";
 if (!$details) 
 {
     echo "           $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";
@@ -165,9 +165,10 @@ function renderScoreListAndPrepareDetails($file)
     
     $height = $details ? '950px' : '480px';
     $popupId = 'popup'.$data['tourney_id'];
+    $title = !$details ? " title=\"Click for more details\"" : "";
     $onclick = !$details ? " onclick=\"showPopup('$popupId');\"" : "";
     
-    $table = "<td style=\"vertical-align: top; height: $height;\" $onclick>\n";
+    $table = "<td style=\"vertical-align: top; height: $height;\" $onclick $title>\n";
     if ($details) {
         $table = $table.$detailsTemplate->render($data);
     } else {

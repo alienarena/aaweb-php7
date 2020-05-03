@@ -1,0 +1,85 @@
+{
+	"players": [
+		{
+			"name": "^7odnoD^8[^1MG^8]",
+			"score": 138,
+			"deaths": 52,
+			"ratio": 265,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 139, "shots": 279, "accuracy": 49}
+			]
+		},
+		{
+			"name": "ben_aflek",
+			"score": 104,
+			"deaths": 65,
+			"ratio": 160,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 270, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^2G^7M^6/^2forever^6_^7vaan",
+			"score": 103,
+			"deaths": 72,
+			"ratio": 143,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 282, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 76,
+			"deaths": 75,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 244, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 66,
+			"deaths": 83,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 212, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^1[T3^2]generic_sn",
+			"score": 58,
+			"deaths": 80,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 151, "accuracy": 38}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 55,
+			"deaths": 89,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 194, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 42,
+			"deaths": 76,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 41, "shots": 239, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 38,
+			"deaths": 81,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 38, "shots": 246, "accuracy": 15}
+			]
+		}
+	]
+}

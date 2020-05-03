@@ -6,29 +6,31 @@
         <tr>
             <td class="header playerid" rowspan="2">RANK</td>
             <td class="header" style="text-align: left" rowspan="2">NAME</td>
-            <td class="header" colspan="3">MAIN ROUNDS</td>
-            <td class="header" colspan="3">FUNROUNDS</td>
-            <td class="header" rowspan="2">POINTS</td>
+            <td class="header" colspan="4">POINTS</td>
         </tr>
         <tr>
-            <td class="subheader">PLAYED</td>
-            <td class="subheader">WON</td>
-            <td class="subheader">RATIO</td>
-            <td class="subheader">PLAYED</td>
-            <td class="subheader">WON</td>
-            <td class="subheader">RATIO</td>
+            <td class="subheader {{orderByDeathMatch}}" style="width: 120px; cursor: pointer"
+                title="Sort on Deathmatch score" onclick="window.location = 'rankings.php?orderby=1';">DEATHMATCH</td>
+            <td class="subheader {{orderByInstagib}}" style="width: 70px; cursor: pointer"
+                title="Sort on Instagib score" onclick="window.location = 'rankings.php?orderby=2';">INSTAGIB</td>
+            <td class="subheader {{orderByRocketArena}}" style="width: 120px; cursor: pointer"
+                title="Sort on Rocket Arena score" onclick="window.location = 'rankings.php?orderby=3';">ROCKET ARENA</td>
+            <td class="subheader {{orderByTotal}}" style="width: 50px; cursor: pointer"
+                title="Sort on total score" onclick="window.location = 'rankings.php?orderby=';">TOTAL</td>
         </tr>
     {{#rankings}}
-        <tr>
-            <td class="datarow playerid" style="text-align: right;">{{rank}}</td>
-            <td class="playername datarow">{{name}}</td>
-            <td class="datarow" align="right">{{mainRoundsPlayed}}</td>
-            <td class="datarow" align="right">{{mainRoundWins}}</td>
-            <td class="datarow" align="right">{{mainRoundWinRatio}}</td>
-            <td class="datarow" align="right">{{funroundsPlayed}}</td>
-            <td class="datarow" align="right">{{funroundWins}}</td>
-            <td class="datarow" align="right">{{funroundWinRatio}}</td>
-            <td class="datarow" align="right">{{points}}</td>
+        <tr id="{{rank}}_row" style="cursor: pointer" onclick="toggleRankingDetails('{{rank}}');"
+                title="Click for more details">
+            <td class="datarow playerid" rowspan="2" style="text-align: right;">{{rank}}</td>
+            <td class="playername datarow" rowspan="2" >{{name}}</td>
+            <td class="datarow {{orderByDeathMatch}}" align="right">{{deathMatchPoints}}</td>
+            <td class="datarow {{orderByInstagib}}" align="right">{{instagibPoints}}</td>
+            <td class="datarow {{orderByRocketArena}}" align="right">{{rocketArenaPoints}}</td>
+            <td class="datarow {{orderByTotal}}" align="right">{{points}}</td>
+        </tr>
+        <tr id="{{rank}}_details_row" style="cursor: pointer" onclick="toggleRankingDetails('{{rank}}');"
+                title="Click to hide">
+            <td class="datarowdetails" style="display: none" colspan="4"></td>
         </tr>
     {{/rankings}}
     </table>

@@ -1,21 +1,21 @@
 {{#players}}
-<div id="{{tourney_id}}_weaponaccuracy_{{index}}" class="weaponaccuracy" style="z-index: 300; display: none;">
+<div id="{{tourney_id}}_weaponaccuracy_{{index}}" class="infotooltip" style="z-index: 300; display: none;">
     <table border="0" cellspacing="0" cellpadding="3" style="width: 100%;">
         <tr>
-            <td class="weaponskillheader playername" style="font-size: small; text-align: center" colspan="4">{{name}}</td>
+            <td class="infotooltipheader playername" style="font-size: small; text-align: center" colspan="4">{{name}}</td>
         </tr>
         <tr>
-            <td class="weaponskillheader" style="width: 100px; text-align: left">WEAPON</td>
-            <td class="weaponskillheader" style="width: 10px; text-align: right">HITS</td>
-            <td class="weaponskillheader" style="width: 10px; text-align: right">SHOTS</td>
-            <td class="weaponskillheader" style="width: 10px; text-align: right">ACCURACY</td>
+            <td class="infotooltipheader" style="width: 100px; text-align: left">WEAPON</td>
+            <td class="infotooltipheader" style="width: 10px; text-align: right">HITS</td>
+            <td class="infotooltipheader" style="width: 10px; text-align: right">SHOTS</td>
+            <td class="infotooltipheader" style="width: 10px; text-align: right">ACCURACY</td>
         </tr>
         {{#weapon_skill}}
         <tr>
-            <td class="weaponskilldatarow" style="text-align:left">{{weapon}}</td>
-            <td class="weaponskilldatarow" style="text-align:right">{{hits}}</td>
-            <td class="weaponskilldatarow" style="text-align:right">{{shots}}</td>
-            <td class="weaponskilldatarow" style="text-align:right">{{accuracy}}%</td>
+            <td class="infotooltipdatarow" style="text-align:left">{{weapon}}</td>
+            <td class="infotooltipdatarow" style="text-align:right">{{hits}}</td>
+            <td class="infotooltipdatarow" style="text-align:right">{{shots}}</td>
+            <td class="infotooltipdatarow" style="text-align:right">{{accuracy}}%</td>
         </tr>
         {{/weapon_skill}}
     </table>

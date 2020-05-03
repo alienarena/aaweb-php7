@@ -1,0 +1,32 @@
+<div style="display:none">
+    {{#rankings}}
+    <div id="{{rank}}_details" class="infotooltip" style="display:none">
+        <table border="0" cellspacing="0" cellpadding="3" style="width: 100%;">
+            <tr>
+                <td class="infotooltipheader" style="width: 120px; text-align: left; vertical-align: top">&nbsp;</td>
+                <td class="infotooltipheader" style="text-align: right; width: 70px">PLAYED</td>
+                <td class="infotooltipheader" style="text-align: right; width: 40px">WON</td>
+                <td class="infotooltipheader" style="text-align: right; width: 40px">2ND</td>
+                <td class="infotooltipheader" style="text-align: right; width: 40px">3RD</td>
+                <td class="infotooltipheader" style="text-align: right; width: 50px">WIN RATIO</td>
+            </tr>
+            <tr>
+                <td class="infotooltipdatarow" style="text-align:right">Main rounds</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{mainRoundsPlayed}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{mainRoundWins}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{mainRoundSeconds}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{mainRoundThirds}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{mainRoundWinRatio}}</td>
+            </tr>
+            <tr>
+                <td class="infotooltipdatarow" style="text-align:right">Funrounds</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{funroundsPlayed}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{funroundWins}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{funroundSeconds}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{funroundThirds}}</td>
+                <td class="infotooltipdatarow" style="text-align:right">{{funroundWinRatio}}</td>
+            </tr>
+        </table>
+    </div>
+    {{/rankings}}
+</div>
