@@ -99,19 +99,46 @@ function renderDetails($data)
 
 function handleOrderBy(&$data) {
     global $orderby, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
+   
+    // TODO
+    // Make it more intuitive so there is no tooltip needed,
+    // for example: onmouseover makes the font bigger
+    // How to make it more clear you can click a row to expand it? Show + sign after name?    
+    // Nice to have: remove onclick and tooltip for the one currently sorted on
+    
+    $deathMatchHeader = 'DEATHMATCH';
+    $instagibHeader = 'INSTAGIB';
+    $rocketArenaHeader = 'ROCKET ARENA';
+    $totalHeader = 'TOTAL';
 
     switch ($orderby) {
         case $orderByDeathMatch:
             $data['orderByDeathMatch'] = 'selected';
+            $data['deathMatchHeader'] = $deathMatchHeader.' ▼';
+            $data['instagibHeader'] = $instagibHeader;
+            $data['rocketArenaHeader'] = $rocketArenaHeader;
+            $data['totalHeader'] = $totalHeader;
             break;
         case $orderByInstagib:
             $data['orderByInstagib'] = 'selected';
+            $data['deathMatchHeader'] = $deathMatchHeader;
+            $data['instagibHeader'] = $instagibHeader.' ▼';
+            $data['rocketArenaHeader'] = $rocketArenaHeader;
+            $data['totalHeader'] = $totalHeader;
             break;
         case $orderByRocketArena:
             $data['orderByRocketArena'] = 'selected';
+            $data['deathMatchHeader'] = $deathMatchHeader;
+            $data['instagibHeader'] = $instagibHeader;
+            $data['rocketArenaHeader'] = $rocketArenaHeader.' ▼';
+            $data['totalHeader'] = $totalHeader;
             break;
         default:
             $data['orderByTotal'] = 'selected';
+            $data['deathMatchHeader'] = $deathMatchHeader;
+            $data['instagibHeader'] = $instagibHeader;
+            $data['rocketArenaHeader'] = $rocketArenaHeader;
+            $data['totalHeader'] = $totalHeader.' ▼';
     }
 
     usort($data['rankings'], "doSorting");
@@ -128,7 +155,8 @@ function doSorting($a, $b) {
         case $orderByRocketArena:
             return $b['rocketArenaPoints'] - $a['rocketArenaPoints'];
         default:
-            return $b['points'] - $a['points'];
+            // Order by rank because the total score is not unique
+            return $a['rank'] - $b['rank'];
     }
 }
 
