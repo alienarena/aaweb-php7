@@ -118,6 +118,7 @@ function handleOrderBy(&$data) {
             $data['instagibHeader'] = $instagibHeader;
             $data['rocketArenaHeader'] = $rocketArenaHeader;
             $data['totalHeader'] = $totalHeader;
+            usort($data['rankings'], "sortByDeathMatch");
             break;
         case $orderByInstagib:
             $data['orderByInstagib'] = 'selected';
@@ -125,6 +126,7 @@ function handleOrderBy(&$data) {
             $data['instagibHeader'] = $instagibHeader.' ▼';
             $data['rocketArenaHeader'] = $rocketArenaHeader;
             $data['totalHeader'] = $totalHeader;
+            usort($data['rankings'], "sortByInstagib");
             break;
         case $orderByRocketArena:
             $data['orderByRocketArena'] = 'selected';
@@ -132,6 +134,7 @@ function handleOrderBy(&$data) {
             $data['instagibHeader'] = $instagibHeader;
             $data['rocketArenaHeader'] = $rocketArenaHeader.' ▼';
             $data['totalHeader'] = $totalHeader;
+            usort($data['rankings'], "sortByRocketArena");
             break;
         default:
             $data['orderByTotal'] = 'selected';
@@ -139,25 +142,40 @@ function handleOrderBy(&$data) {
             $data['instagibHeader'] = $instagibHeader;
             $data['rocketArenaHeader'] = $rocketArenaHeader;
             $data['totalHeader'] = $totalHeader.' ▼';
+            usort($data['rankings'], "sortByRank");
     }
-
-    usort($data['rankings'], "doSorting");
 }
 
-function doSorting($a, $b) {
-    global $orderby, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
-
-    switch ($orderby) {
-        case $orderByDeathMatch:
-            return $b['deathMatchPoints'] - $a['deathMatchPoints'];
-        case $orderByInstagib:
-            return $b['instagibPoints'] - $a['instagibPoints'];
-        case $orderByRocketArena:
-            return $b['rocketArenaPoints'] - $a['rocketArenaPoints'];
-        default:
-            // Order by rank because the total score is not unique
-            return $a['rank'] - $b['rank'];
+function sortByDeathMatch($a, $b) {
+    if ($b['deathMatchPoints'] == $a['deathMatchPoints']) {
+        return sortByRank($a, $b);
     }
+
+    return $b['deathMatchPoints'] < $a['deathMatchPoints'] ? -1 : 1;
+}
+
+function sortByInstagib($a, $b) {
+    if ($b['instagibPoints'] == $a['instagibPoints']) {
+        return sortByRank($a, $b);
+    }
+
+    return $b['instagibPoints'] < $a['instagibPoints'] ? -1 : 1;
+}
+
+function sortByRocketArena($a, $b) {
+    if ($b['rocketArenaPoints'] == $a['rocketArenaPoints']) {
+        return sortByRank($a, $b);
+    }
+
+    return $b['rocketArenaPoints'] < $a['rocketArenaPoints'] ? -1 : 1;
+}
+
+function sortByRank($a, $b) {
+    if ($b['rank'] == $a['rank']) {
+        return 0;
+    }
+
+    return $b['rank'] < $a['rank'] ? 1 : -1;
 }
 
 function calculateRatio(&$rankings) {
@@ -177,6 +195,12 @@ function calculateRatio(&$rankings) {
             $funroundsPlayed > 0
                 ? strval(round(100 * $funroundWins / $funroundsPlayed, 0)).'%'
                 : '0%';
+        
+        // Format all numbers with two decimals
+        $rankings[$i]['deathMatchPoints'] = sprintf('%0.2f', $rankings[$i]['deathMatchPoints']);
+        $rankings[$i]['instagibPoints'] = sprintf('%0.2f', $rankings[$i]['instagibPoints']);
+        $rankings[$i]['rocketArenaPoints'] = sprintf('%0.2f', $rankings[$i]['rocketArenaPoints']);
+        $rankings[$i]['points'] = sprintf('%0.2f', $rankings[$i]['points']);
     }
 }
 ?>
