@@ -1,0 +1,71 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 69,
+			"deaths": 24,
+			"ratio": 287,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 12, "shots": 17, "accuracy": 70},
+				{"weapon": "chaingun", "hits": 264, "shots": 1160, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 67, "shots": 174, "accuracy": 38},
+				{"weapon": "beamgun", "hits": 254, "shots": 497, "accuracy": 51},
+				{"weapon": "violator", "hits": 13, "shots": 112, "accuracy": 11}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 44,
+			"deaths": 39,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 36, "shots": 111, "accuracy": 32},
+				{"weapon": "smartgun", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 153, "shots": 790, "accuracy": 19},
+				{"weapon": "rocketlauncher", "hits": 30, "shots": 81, "accuracy": 37},
+				{"weapon": "beamgun", "hits": 445, "shots": 888, "accuracy": 50},
+				{"weapon": "violator", "hits": 30, "shots": 342, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 32,
+			"deaths": 42,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 73, "shots": 238, "accuracy": 30},
+				{"weapon": "chaingun", "hits": 158, "shots": 887, "accuracy": 17},
+				{"weapon": "rocketlauncher", "hits": 27, "shots": 150, "accuracy": 18},
+				{"weapon": "beamgun", "hits": 106, "shots": 405, "accuracy": 26},
+				{"weapon": "violator", "hits": 5, "shots": 76, "accuracy": 6}
+			]
+		},
+		{
+			"name": "[SiN]nealcool",
+			"score": 25,
+			"deaths": 48,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 32, "shots": 103, "accuracy": 31},
+				{"weapon": "chaingun", "hits": 195, "shots": 1244, "accuracy": 15},
+				{"weapon": "rocketlauncher", "hits": 18, "shots": 75, "accuracy": 24},
+				{"weapon": "beamgun", "hits": 227, "shots": 556, "accuracy": 40},
+				{"weapon": "violator", "hits": 22, "shots": 565, "accuracy": 3}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 21,
+			"deaths": 53,
+			"ratio": 39,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 6, "shots": 62, "accuracy": 9},
+				{"weapon": "smartgun", "hits": 0, "shots": 1, "accuracy": 0},
+				{"weapon": "chaingun", "hits": 67, "shots": 605, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 30, "shots": 121, "accuracy": 24},
+				{"weapon": "beamgun", "hits": 37, "shots": 103, "accuracy": 35},
+				{"weapon": "violator", "hits": 19, "shots": 406, "accuracy": 4}
+			]
+		}
+	]
+}
