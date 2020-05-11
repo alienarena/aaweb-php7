@@ -275,6 +275,23 @@
    "rank": 16
   },
   {
+   "name": "^3{^8GM^3}Skelfir",
+   "userID": "497014532892262400",
+   "points": 31.28,
+   "deathMatchPoints": 1.92,
+   "instagibPoints": 27.44,
+   "rocketArenaPoints": 1.92,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundSeconds": 2,
+   "funroundSeconds": 0,
+   "mainRoundThirds": 1,
+   "funroundThirds": 0,
+   "mainRoundsPlayed": 5,
+   "funroundsPlayed": 1,
+   "rank": 17
+  },
+  {
    "name": "^7[os]^5eddiebrkln",
    "userID": "458889852352593921",
    "points": 31.24,
@@ -289,7 +306,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 12,
    "funroundsPlayed": 10,
-   "rank": 17
+   "rank": 18
   },
   {
    "name": "[GM]aliencat",
@@ -306,7 +323,7 @@
    "funroundThirds": 1,
    "mainRoundsPlayed": 7,
    "funroundsPlayed": 9,
-   "rank": 18
+   "rank": 19
   },
   {
    "name": "[SiN]BonfireJr",
@@ -323,7 +340,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 14,
    "funroundsPlayed": 3,
-   "rank": 19
+   "rank": 20
   },
   {
    "name": "666SoulCatcher",
@@ -340,23 +357,6 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 7,
    "funroundsPlayed": 3,
-   "rank": 20
-  },
-  {
-   "name": "^3{^8GM^3}Skelfir",
-   "userID": "497014532892262400",
-   "points": 22.24,
-   "deathMatchPoints": 1.92,
-   "instagibPoints": 18.4,
-   "rocketArenaPoints": 1.92,
-   "mainRoundWins": 0,
-   "funroundWins": 0,
-   "mainRoundSeconds": 1,
-   "funroundSeconds": 0,
-   "mainRoundThirds": 1,
-   "funroundThirds": 0,
-   "mainRoundsPlayed": 4,
-   "funroundsPlayed": 1,
    "rank": 21
   },
   {

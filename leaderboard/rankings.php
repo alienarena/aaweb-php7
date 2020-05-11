@@ -99,13 +99,7 @@ function renderDetails($data)
 
 function handleOrderBy(&$data) {
     global $orderby, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
-   
-    // TODO
-    // Make it more intuitive so there is no tooltip needed,
-    // for example: onmouseover makes the font bigger
-    // How to make it more clear you can click a row to expand it? Show + sign after name?    
-    // Nice to have: remove onclick and tooltip for the one currently sorted on
-    
+     
     $deathMatchHeader = 'DEATHMATCH';
     $instagibHeader = 'INSTAGIB';
     $rocketArenaHeader = 'ROCKET ARENA';
@@ -142,7 +136,15 @@ function handleOrderBy(&$data) {
             $data['instagibHeader'] = $instagibHeader;
             $data['rocketArenaHeader'] = $rocketArenaHeader;
             $data['totalHeader'] = $totalHeader.' ▼';
-            usort($data['rankings'], "sortByRank");
+            usort($data['rankings'], "sortByTotalPoints");
+    }
+
+    // If not ordering by total, show sequence number,
+    // but shouldn't the official rank be shown as well?
+    if ($orderby != $orderByTotal) {
+        for ($i = 0; $i < count($data['rankings']); $i++) {
+            $data['rankings'][$i]['rank'] = $i + 1;
+        }            
     }
 }
 
@@ -168,6 +170,14 @@ function sortByRocketArena($a, $b) {
     }
 
     return $b['rocketArenaPoints'] < $a['rocketArenaPoints'] ? -1 : 1;
+}
+
+function sortByTotalPoints($a, $b) {
+    if ($b['points'] == $a['points']) {
+        return sortByRank($a, $b);
+    }
+
+    return $b['points'] < $a['points'] ? -1 : 1;
 }
 
 function sortByRank($a, $b) {
