@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 122,
+			"deaths": 56,
+			"ratio": 217,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 121, "shots": 292, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^5[^1GM^5]^7Dondo",
+			"score": 90,
+			"deaths": 71,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 89, "shots": 238, "accuracy": 37}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 72,
+			"deaths": 80,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 72, "shots": 283, "accuracy": 25}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 64,
+			"deaths": 74,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 228, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 59,
+			"deaths": 77,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 244, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 52,
+			"deaths": 80,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 225, "accuracy": 23}
+			]
+		},
+		{
+			"name": "",
+			"score": 48,
+			"deaths": 69,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 207, "accuracy": 23}
+			]
+		}
+	]
+}
