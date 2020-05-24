@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "^7[^8GM^7]Skelfir",
+			"score": 57,
+			"deaths": 46,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 477, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 54,
+			"deaths": 46,
+			"ratio": 117,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 153, "shots": 516, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 47,
+			"deaths": 43,
+			"ratio": 109,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 114, "shots": 360, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 40,
+			"deaths": 52,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 107, "shots": 523, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 40,
+			"deaths": 59,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 123, "shots": 496, "accuracy": 24}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 28,
+			"deaths": 56,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 78, "shots": 445, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 16,
+			"deaths": 52,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 51, "shots": 362, "accuracy": 14}
+			]
+		}
+	]
+}
