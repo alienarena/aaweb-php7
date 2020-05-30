@@ -1,6 +1,6 @@
 {
  "dateFrom": "2019-01-27",
- "dateTo": "2020-05-23",
+ "dateTo": "2020-05-30",
  "rankings": [
   {
    "name": "^0[^3GM^0]^1Vista",
@@ -39,35 +39,35 @@
   {
    "name": "^3[GM]^3^1Jar^5'El",
    "userID": "315223049471524866",
-   "points": 623.53,
+   "points": 632.66,
    "deathMatchPoints": 166.59,
-   "instagibPoints": 220.06,
-   "rocketArenaPoints": 236.88,
+   "instagibPoints": 227.36,
+   "rocketArenaPoints": 238.71,
    "mainRoundWins": 0,
    "funroundWins": 4,
    "mainRoundSeconds": 5,
    "funroundSeconds": 19,
-   "mainRoundThirds": 28,
+   "mainRoundThirds": 29,
    "funroundThirds": 26,
-   "mainRoundsPlayed": 107,
-   "funroundsPlayed": 93,
+   "mainRoundsPlayed": 108,
+   "funroundsPlayed": 94,
    "rank": 3
   },
   {
    "name": "Toast:Rawr",
    "userID": "277302658568683523",
-   "points": 609,
+   "points": 625.73,
    "deathMatchPoints": 345.31,
-   "instagibPoints": 200.16,
-   "rocketArenaPoints": 63.53,
-   "mainRoundWins": 43,
-   "funroundWins": 11,
+   "instagibPoints": 211.8,
+   "rocketArenaPoints": 68.62,
+   "mainRoundWins": 44,
+   "funroundWins": 12,
    "mainRoundSeconds": 6,
    "funroundSeconds": 2,
    "mainRoundThirds": 1,
    "funroundThirds": 1,
-   "mainRoundsPlayed": 50,
-   "funroundsPlayed": 15,
+   "mainRoundsPlayed": 51,
+   "funroundsPlayed": 16,
    "rank": 4
   },
   {
@@ -124,18 +124,18 @@
   {
    "name": "Lance",
    "userID": "514111143690633226",
-   "points": 201.84,
+   "points": 215.33,
    "deathMatchPoints": 17.78,
-   "instagibPoints": 125.31,
-   "rocketArenaPoints": 58.75,
+   "instagibPoints": 134.78,
+   "rocketArenaPoints": 62.77,
    "mainRoundWins": 1,
    "funroundWins": 2,
-   "mainRoundSeconds": 6,
-   "funroundSeconds": 6,
+   "mainRoundSeconds": 7,
+   "funroundSeconds": 7,
    "mainRoundThirds": 7,
    "funroundThirds": 8,
-   "mainRoundsPlayed": 23,
-   "funroundsPlayed": 21,
+   "mainRoundsPlayed": 24,
+   "funroundsPlayed": 22,
    "rank": 8
   },
   {
@@ -158,18 +158,18 @@
   {
    "name": "^7[OS]^1Izaiasss",
    "userID": "457233861890408458",
-   "points": 118.2,
+   "points": 123.27,
    "deathMatchPoints": 39.07,
-   "instagibPoints": 44.78,
-   "rocketArenaPoints": 34.35,
+   "instagibPoints": 46.88,
+   "rocketArenaPoints": 37.32,
    "mainRoundWins": 0,
    "funroundWins": 1,
    "mainRoundSeconds": 3,
    "funroundSeconds": 2,
    "mainRoundThirds": 5,
-   "funroundThirds": 1,
-   "mainRoundsPlayed": 21,
-   "funroundsPlayed": 14,
+   "funroundThirds": 2,
+   "mainRoundsPlayed": 22,
+   "funroundsPlayed": 15,
    "rank": 10
   },
   {
@@ -192,18 +192,18 @@
   {
    "name": "^![666]^@Blitz",
    "userID": "310892608618627072",
-   "points": 69.22,
+   "points": 73.24,
    "deathMatchPoints": 31.42,
-   "instagibPoints": 9.93,
-   "rocketArenaPoints": 27.87,
+   "instagibPoints": 12.08,
+   "rocketArenaPoints": 29.74,
    "mainRoundWins": 1,
    "funroundWins": 2,
    "mainRoundSeconds": 2,
    "funroundSeconds": 3,
    "mainRoundThirds": 0,
    "funroundThirds": 1,
-   "mainRoundsPlayed": 10,
-   "funroundsPlayed": 8,
+   "mainRoundsPlayed": 11,
+   "funroundsPlayed": 9,
    "rank": 12
   },
   {
@@ -615,6 +615,23 @@
    "rank": 36
   },
   {
+   "name": "SeneX",
+   "userID": "270468333562757120",
+   "points": 3.46,
+   "deathMatchPoints": 0,
+   "instagibPoints": 1.75,
+   "rocketArenaPoints": 1.71,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundSeconds": 0,
+   "funroundSeconds": 0,
+   "mainRoundThirds": 0,
+   "funroundThirds": 0,
+   "mainRoundsPlayed": 1,
+   "funroundsPlayed": 1,
+   "rank": 37
+  },
+  {
    "name": "Fleet",
    "userID": "542017390024851466",
    "points": 2.37,
@@ -629,7 +646,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 1,
-   "rank": 37
+   "rank": 38
   },
   {
    "name": "[SIN]^2D^1evil",
@@ -646,7 +663,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 38
+   "rank": 39
   },
   {
    "name": "Spideymon77",
@@ -663,7 +680,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 39
+   "rank": 40
   },
   {
    "name": "FatCat",
@@ -680,7 +697,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 0,
    "funroundsPlayed": 1,
-   "rank": 40
+   "rank": 41
   },
   {
    "name": "Supsun",
@@ -697,7 +714,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 41
+   "rank": 42
   },
   {
    "name": "Alistair",
@@ -714,7 +731,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 0,
    "funroundsPlayed": 1,
-   "rank": 42
+   "rank": 43
   },
   {
    "name": "{Anura} L.",
@@ -731,7 +748,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 0,
    "funroundsPlayed": 1,
-   "rank": 43
+   "rank": 44
   },
   {
    "name": "ThCShaPEShifter",
@@ -748,7 +765,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 44
+   "rank": 45
   },
   {
    "name": "[GM] Solrac",
@@ -765,7 +782,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 45
+   "rank": 46
   },
   {
    "name": "Furr_Man",
@@ -782,7 +799,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 0,
-   "rank": 46
+   "rank": 47
   }
  ]
 }

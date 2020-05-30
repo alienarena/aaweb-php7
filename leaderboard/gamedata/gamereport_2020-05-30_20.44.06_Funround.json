@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "Toast:Rawr",
+			"score": 59,
+			"deaths": 53,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 154, "shots": 521, "accuracy": 29}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 52,
+			"deaths": 56,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 146, "shots": 441, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 47,
+			"deaths": 57,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 471, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 37,
+			"deaths": 60,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 423, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 33,
+			"deaths": 59,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 94, "shots": 494, "accuracy": 19}
+			]
+		},
+		{
+			"name": "SeneX",
+			"score": 21,
+			"deaths": 57,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 60, "shots": 293, "accuracy": 20}
+			]
+		}
+	]
+}

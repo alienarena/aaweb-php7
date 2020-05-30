@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "Toast:Rawr",
+			"score": 114,
+			"deaths": 55,
+			"ratio": 207,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 114, "shots": 297, "accuracy": 38}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 97,
+			"deaths": 73,
+			"ratio": 132,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 97, "shots": 318, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 80,
+			"deaths": 71,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 80, "shots": 284, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 65,
+			"deaths": 78,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 270, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 60,
+			"deaths": 74,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 181, "accuracy": 33}
+			]
+		},
+		{
+			"name": "SeneX",
+			"score": 25,
+			"deaths": 90,
+			"ratio": 27,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 25, "shots": 195, "accuracy": 12}
+			]
+		}
+	]
+}
