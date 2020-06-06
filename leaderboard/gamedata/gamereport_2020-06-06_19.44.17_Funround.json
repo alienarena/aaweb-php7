@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "Toast:Rawr",
+			"score": 49,
+			"deaths": 49,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 135, "shots": 473, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 39,
+			"deaths": 42,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 511, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 31,
+			"deaths": 40,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 98, "shots": 359, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 23,
+			"deaths": 53,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 66, "shots": 347, "accuracy": 19}
+			]
+		}
+	]
+}
