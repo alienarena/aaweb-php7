@@ -1,0 +1,67 @@
+{
+	"players": [
+		{
+			"name": "not.guz",
+			"score": 55,
+			"deaths": 52,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 168, "shots": 484, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 54,
+			"deaths": 58,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 527, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 44,
+			"deaths": 58,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 602, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 42,
+			"deaths": 52,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 121, "shots": 442, "accuracy": 27}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 32,
+			"deaths": 51,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 412, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 10,
+			"deaths": 69,
+			"ratio": 14,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 75, "shots": 460, "accuracy": 16}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 8,
+			"deaths": 15,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 32, "shots": 96, "accuracy": 33}
+			]
+		}
+	]
+}
