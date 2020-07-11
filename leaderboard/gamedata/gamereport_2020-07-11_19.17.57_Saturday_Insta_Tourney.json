@@ -1,0 +1,68 @@
+{
+	"players": [
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 130,
+			"deaths": 64,
+			"ratio": 203,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 129, "shots": 329, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 96,
+			"deaths": 78,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 299, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 86,
+			"deaths": 82,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 86, "shots": 235, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^1[SIN]^4Sasuke",
+			"score": 74,
+			"deaths": 59,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 74, "shots": 215, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 51,
+			"deaths": 83,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 50, "shots": 275, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 46,
+			"deaths": 91,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 46, "shots": 189, "accuracy": 24},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "BPCur",
+			"score": 8,
+			"deaths": 34,
+			"ratio": 23,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 8, "shots": 50, "accuracy": 16}
+			]
+		}
+	]
+}

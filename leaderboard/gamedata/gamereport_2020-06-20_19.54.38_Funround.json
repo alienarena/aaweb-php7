@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 60,
+			"deaths": 56,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 162, "shots": 519, "accuracy": 31}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 47,
+			"deaths": 54,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 443, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 47,
+			"deaths": 62,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 114, "shots": 598, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 42,
+			"deaths": 59,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 533, "accuracy": 18}
+			]
+		}
+	]
+}

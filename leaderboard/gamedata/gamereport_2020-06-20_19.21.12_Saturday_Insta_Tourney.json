@@ -1,0 +1,41 @@
+{
+	"players": [
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 115,
+			"deaths": 54,
+			"ratio": 212,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 115, "shots": 289, "accuracy": 39},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 87,
+			"deaths": 70,
+			"ratio": 124,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 219, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 43,
+			"deaths": 83,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 43, "shots": 225, "accuracy": 19}
+			]
+		},
+		{
+			"name": "NOD",
+			"score": 39,
+			"deaths": 77,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 39, "shots": 211, "accuracy": 18}
+			]
+		}
+	]
+}
