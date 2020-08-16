@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "W1ST3R",
+			"score": 108,
+			"deaths": 60,
+			"ratio": 180,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 110, "shots": 302, "accuracy": 36},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 67,
+			"deaths": 66,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 68, "shots": 170, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 67,
+			"deaths": 71,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 230, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 55,
+			"deaths": 65,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 245, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^5^7[^3Os^7]^5eddie",
+			"score": 19,
+			"deaths": 50,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 21, "shots": 98, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 11,
+			"deaths": 16,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 11, "shots": 21, "accuracy": 52}
+			]
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"players": [
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 110,
+			"deaths": 72,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 118, "shots": 375, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^![666]^@Blitz",
+			"score": 83,
+			"deaths": 79,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 88, "shots": 396, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 82,
+			"deaths": 83,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 298, "accuracy": 29}
+			]
+		},
+		{
+			"name": "NippalesCage",
+			"score": 67,
+			"deaths": 50,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 75, "shots": 238, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 54,
+			"deaths": 83,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 397, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 27,
+			"deaths": 75,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 36, "shots": 411, "accuracy": 8}
+			]
+		}
+	]
+}
