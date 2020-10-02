@@ -1,0 +1,50 @@
+{
+	"players": [
+		{
+			"name": "^6[^7GM^6]^5V^61^5sta",
+			"score": 85,
+			"deaths": 57,
+			"ratio": 149,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 301, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 70,
+			"deaths": 57,
+			"ratio": 122,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 77, "shots": 193, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 67,
+			"deaths": 54,
+			"ratio": 124,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 288, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^0[SIN]^7pantera",
+			"score": 41,
+			"deaths": 69,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 45, "shots": 188, "accuracy": 23},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 34,
+			"deaths": 62,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 35, "shots": 237, "accuracy": 14}
+			]
+		}
+	]
+}

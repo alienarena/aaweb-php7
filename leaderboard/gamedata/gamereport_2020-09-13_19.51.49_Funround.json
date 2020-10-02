@@ -1,0 +1,31 @@
+{
+	"players": [
+		{
+			"name": "^1[GM]^4V1sta",
+			"score": 74,
+			"deaths": 37,
+			"ratio": 200,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 161, "shots": 442, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^1[GM]^4Jar'El",
+			"score": 29,
+			"deaths": 55,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 97, "shots": 533, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 23,
+			"deaths": 58,
+			"ratio": 39,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 63, "shots": 419, "accuracy": 15}
+			]
+		}
+	]
+}

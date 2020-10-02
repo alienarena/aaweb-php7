@@ -1,0 +1,59 @@
+{
+	"players": [
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 129,
+			"deaths": 63,
+			"ratio": 204,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 132, "shots": 311, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 90,
+			"deaths": 87,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 91, "shots": 295, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^7GM^1''^7v^11^7sta",
+			"score": 81,
+			"deaths": 76,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 84, "shots": 333, "accuracy": 25}
+			]
+		},
+		{
+			"name": "Snitzler",
+			"score": 41,
+			"deaths": 86,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 43, "shots": 185, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^1[SIN]^4Sasuke",
+			"score": 39,
+			"deaths": 65,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 40, "shots": 166, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 36,
+			"deaths": 69,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 38, "shots": 155, "accuracy": 24},
+				{"weapon": "violator", "hits": 2, "shots": 49, "accuracy": 4}
+			]
+		}
+	]
+}

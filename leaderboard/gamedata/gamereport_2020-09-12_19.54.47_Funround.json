@@ -1,0 +1,40 @@
+{
+	"players": [
+		{
+			"name": "^6[^7GM^6]^5V^61^5sta",
+			"score": 47,
+			"deaths": 44,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 148, "shots": 374, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 37,
+			"deaths": 47,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 476, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 24,
+			"deaths": 47,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 102, "shots": 626, "accuracy": 16}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 15,
+			"deaths": 57,
+			"ratio": 26,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 65, "shots": 371, "accuracy": 17}
+			]
+		}
+	]
+}
