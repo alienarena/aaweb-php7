@@ -10,9 +10,6 @@ function showPopup(id) {
     showAccuracy = false;
     hideWeaponAccuracy();
     
-    // Disable scrolling    
-    $("body").css("overflow", "hidden");
-
     $("#" + id).fadeIn();
     $("#overlay").fadeIn();
     window.setTimeout(function() { showAccuracy = true; }, 100);
@@ -22,9 +19,6 @@ function hidePopup() {
     showAccuracy = false;
     hideWeaponAccuracy();
     
-    // Enable scrolling    
-    $("body").css("overflow", "visible");
-
     $("#overlay").fadeOut()
     $("div.details").fadeOut()
 }
