@@ -119,6 +119,10 @@ if ($singleTourneyMode) {
     $boxBackgroundStyle = 'background-repeat: no repeat; background-size: cover;';
     $boxWidth = '1333px';
     $boxHeight = '750px';
+
+    if (strlen($map) == 0) {
+        $map = getMapFromTourney();
+    }
     if (strlen($map) == 0) {
         $mapImageLocation = '../browser/maps/default.jpg';
     } else if (file_exists(dirname(__FILE__)."/../browser/maps/1st/$map.jpg")) {
@@ -151,7 +155,7 @@ echo "        <tr>\n";
 session_start();
 
 $colCount = 0;
-foreach($files as $file) 
+foreach($files as $file)
 {
     if ($colCount > 0 && $colCount % $leaderboardCols == 0)
     {
@@ -276,12 +280,8 @@ function renderScoreListAndPrepareDetails($file)
     return $table;
 }
 
-$mapNames = [];
-
 function enrichData($file, $data)
 {
-    global $mapNames;
-
     // Define {{index}} to show player number (also needed if not shown, for the weapon accuracy table)
     for ($i = 0; $i < count($data['players']); $i++) 
     {
@@ -304,19 +304,28 @@ function enrichData($file, $data)
     $tourneyId = str_replace(' ', '', $tourneyTitle).$tourneyDateString;
     
     // Fill tourney title, tourney link, tourney id and tourney date which are used in the templates
-    $data['tourney_title'] = $tourneyTitle;
-    
-    // For the link to show the "single tourney mode".
-    // Get the map from the main round but keep it in the list for the funround
-    if (strtolower($tourneyTitle) != 'funround') {
-        $mapNames[$tourneyDateString] = $data['map'];
-    }
-    $data['tourney_link'] = 'index.php?date='.str_replace('-', '', $tourneyDateString).'&map='.$mapNames[$tourneyDateString];
-
+    $data['tourney_title'] = $tourneyTitle;   
+    $data['tourney_link'] = 'index.php?date='.str_replace('-', '', $tourneyDateString);
     $data['tourney_id'] = $tourneyId;
     $data['tourney_date'] = dateToString($tourneyDateString);
     
     return $data;
 }
 
+// Gets map from tourney main round in single tourney mode and in case it is not passed in the url
+function getMapFromTourney()
+{
+    global $files, $dateFilter;
+    
+    foreach($files as $file)
+    {
+        if (startsWith($file, 'gamereport_'.$dateFilter) && !endsWith($file, 'Funround.json'))
+        {
+            $data_json = getCachedContents($file);
+            $data = jsonDecode($data_json, true);
+            return $data['map'];
+        }
+    }
+    return null;
+}
 ?>
