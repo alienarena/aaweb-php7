@@ -130,6 +130,7 @@ if ($singleTourneyMode) {
     } else if (file_exists(dirname(__FILE__)."/../browser/maps/3rd/$map.jpg")) {
         $mapImageLocation = "../browser/maps/3rd/$map.jpg";
     } else {
+        $map = '';
         $mapImageLocation = '../browser/maps/default.jpg';
     }
 }
@@ -143,7 +144,9 @@ if ($singleTourneyMode) {
     echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 
     echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle width: $boxWidth; height: $boxHeight;'\">\n";
-    echo "    <div style=\"height: 100px\"></div>\n";
+    echo "    <div style=\"height: 100px\">\n";
+    echo "       <div id=\"mapTitle\" style=\"text-align: right; padding-top: 50px; padding-right: 175px; font-size: medium; font-weight: bold; color: rgba(255, 255, 255, 0.4)\">".strtoupper($map)."</div>\n";
+    echo "    </div>\n";
     echo "    <div class=\"pagetitle\">$subTitle</div>\n";
 } else {
     echo "    <div class=\"menu\"><span class=\"active\">Matches</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
@@ -198,6 +201,7 @@ if ($singleTourneyMode) {
     echo "              $('#content').css('background-image', '');\n";
     echo "              $('#mapImage').css('background-image', '');\n";
     echo "              $('#mapImage').css('width', $leaderboardWidth);\n";
+    echo "              $('#mapTitle').hide();\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
     echo "              $('body').css('width', $leaderboardWidth);\n";
     echo "              $('#overlay').css('width', $leaderboardWidth);\n";
