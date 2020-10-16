@@ -136,9 +136,11 @@ if ($singleTourneyMode) {
 }
 
 echo "    <div style=\"height: ".$emptySpaceHeight."px\"></div>\n";
-echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
-echo "        top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
-echo "        onclick=\"hidePopup();\"></div>\n";
+if ($singleTourneyMode) {
+    echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
+    echo "        top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
+    echo "        onclick=\"hidePopup();\"></div>\n";
+}
 echo "    <div class=\"pagetitle\">$pageTitle</div>\n";
 if ($singleTourneyMode) {
     echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
@@ -204,7 +206,6 @@ if ($singleTourneyMode) {
     echo "              $('#mapTitle').hide();\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
     echo "              $('body').css('width', $leaderboardWidth);\n";
-    echo "              $('#overlay').css('width', $leaderboardWidth);\n";
     echo "           }\n";
 } else {
     echo "           if (!window.isUsedOnMobile()) {\n";
@@ -214,7 +215,6 @@ if ($singleTourneyMode) {
     echo "              $('#content').css('background-image', '');\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
     echo "              $('body').css('width', $leaderboardWidth);\n";
-    echo "              $('#overlay').css('width', $leaderboardWidth);\n";
     echo "           }\n";
 }
 if (!$details) 
