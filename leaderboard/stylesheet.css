@@ -20,6 +20,7 @@ div#content {
     font-weight: bold;
 	height: 60px;
 	text-shadow: 0 0 3px #fcf, 0 0 6px #dad;
+	white-space: nowrap;
 }
 
 .title {
