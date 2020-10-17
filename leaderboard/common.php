@@ -1,5 +1,34 @@
 <?php
 
+function redirect($url, $statusCode = 303)
+{
+   header('Location: ' . $url, true, $statusCode);
+   die();
+}
+
+function rootUrl() {
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+        $url = "https://";   
+    } else {
+        $url = "http://";   
+    }
+    // Append the host(domain name, ip) to the URL.   
+    $url .= $_SERVER['HTTP_HOST'];
+    return $url;
+}
+
+function currentUrl() {
+    return rootUrl().$_SERVER['REQUEST_URI'];
+}
+
+function removeParameters($url) {
+    $questionMarkPosition = strpos($url, '?');
+    if ($questionMarkPosition > 0) {
+        return substr($url, 0, $questionMarkPosition);
+    }
+    return $url;
+}
+
 function startsWith($haystack, $needle)
 {
      $length = strlen($needle);

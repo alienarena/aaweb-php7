@@ -40,6 +40,13 @@ $leaderboardCols = $singleTourneyMode ? 2 : 4;
 $leaderboardWidth = $singleTourneyMode ? 500 : 1000;
 $emptySpaceHeight = 30;
 
+session_start();
+
+if (intval($_GET["deletesession"]) == 1) {
+    session_destroy();
+    redirect(removeParameters(currentUrl()));
+}
+
 // Get game files.
 // The file name must be in the format: 
 // "gamereport_2017-11-30_01.17.17_Martian_Supremacy_Tournament.json"
@@ -157,20 +164,23 @@ echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: n
 
 echo "        <tr>\n";
 
-session_start();
-
 $colCount = 0;
+$renderedFileCount = 0;
 foreach($files as $file)
 {
-    if ($colCount > 0 && $colCount % $leaderboardCols == 0)
+    renderFile($file);
+}
+if ($renderedFileCount < $gameReportsPerPage) {
+    // Fill up empty gaps from empty files with files from the next page
+    $files = $pages[$pageNumber];
+    foreach($files as $file)
     {
-        echo "</tr>\n";
-        echo "<tr>\n";
-    }
-
-    echo renderScoreListAndPrepareDetails($file);
-
-    $colCount++;
+        if ($renderedFileCount < $gameReportsPerPage) {
+            renderFile($file);
+        } else {
+            break;
+        }
+    }    
 }
 
 echo "        </tr>\n";
@@ -205,7 +215,6 @@ if ($singleTourneyMode) {
     echo "              $('#mapImage').css('width', $leaderboardWidth);\n";
     echo "              $('#mapTitle').hide();\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
-    echo "              $('body').css('width', $leaderboardWidth);\n";
     echo "           }\n";
 } else {
     echo "           if (!window.isUsedOnMobile()) {\n";
@@ -214,7 +223,6 @@ if ($singleTourneyMode) {
     echo "              $('#content').removeAttr('class');\n";
     echo "              $('#content').css('background-image', '');\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
-    echo "              $('body').css('width', $leaderboardWidth);\n";
     echo "           }\n";
 }
 if (!$details) 
@@ -233,6 +241,20 @@ echo "</div>\n";
 echo "</body>\n";
 echo "</html>\n";
 
+function renderFile($file) {
+    global $colCount, $leaderboardCols, $renderedFileCount;
+
+    if ($colCount > 0 && $colCount % $leaderboardCols == 0)
+    {
+        echo "</tr>\n";
+        echo "<tr>\n";
+    }
+
+    if (renderScoreListAndPrepareDetails($file)) {
+        $colCount++;
+        $renderedFileCount++;
+    }
+}
 
 function renderScoreListAndPrepareDetails($file)
 {
@@ -243,6 +265,10 @@ function renderScoreListAndPrepareDetails($file)
     $detailsTop = $singleTourneyMode ? '270px' : '90px';
 
     $data_json = getCachedContents($file);
+    if (strlen($data_json) == 0) {
+        return false;
+    }
+
     $data = jsonDecode($data_json, true);
     array_splice($data['players'], $maxPlayersForDetails);
         
@@ -281,7 +307,9 @@ function renderScoreListAndPrepareDetails($file)
     }
     $detailsHtml = $detailsHtml.$weaponAccuracyTemplate->render($data);
 
-    return $table;
+    echo $table;
+
+    return true;
 }
 
 function enrichData($file, $data)
