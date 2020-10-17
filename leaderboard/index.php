@@ -123,7 +123,7 @@ echo "  <center>\n";
 
 if ($singleTourneyMode) {
     $mapImageLocation = '';
-    $boxBackgroundStyle = 'background-repeat: no repeat; background-size: cover;';
+    $boxBackgroundStyle = 'background-size: cover;';
     $boxWidth = '1333px';
     $boxHeight = '750px';
 
@@ -152,7 +152,7 @@ echo "    <div class=\"pagetitle\">$pageTitle</div>\n";
 if ($singleTourneyMode) {
     echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 
-    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle width: $boxWidth; height: $boxHeight;'\">\n";
+    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle width: $boxWidth; height: $boxHeight;\">\n";
     echo "    <div style=\"height: 100px\">\n";
     echo "       <div id=\"mapTitle\" style=\"text-align: right; padding-top: 50px; padding-right: 175px; font-size: medium; font-weight: bold; color: rgba(255, 255, 255, 0.4)\">".strtoupper($map)."</div>\n";
     echo "    </div>\n";
