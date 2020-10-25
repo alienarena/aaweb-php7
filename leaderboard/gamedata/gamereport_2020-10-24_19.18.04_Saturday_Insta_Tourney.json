@@ -1,0 +1,51 @@
+{
+	"map": "dm-downfall",
+	"players": [
+		{
+			"name": "^8[^3GM^8]^7Dondo",
+			"score": 88,
+			"deaths": 49,
+			"ratio": 179,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 89, "shots": 187, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 61,
+			"deaths": 38,
+			"ratio": 160,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 62, "shots": 162, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 47,
+			"deaths": 52,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 146, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 41,
+			"deaths": 54,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 41, "shots": 150, "accuracy": 27},
+				{"weapon": "violator", "hits": 1, "shots": 12, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 19,
+			"deaths": 65,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 19, "shots": 151, "accuracy": 12}
+			]
+		}
+	]
+}
