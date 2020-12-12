@@ -1,0 +1,51 @@
+{
+	"map": "dm-liberation",
+	"players": [
+		{
+			"name": "annah",
+			"score": 105,
+			"deaths": 45,
+			"ratio": 233,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 109, "shots": 298, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 75,
+			"deaths": 55,
+			"ratio": 136,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 80, "shots": 235, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 45,
+			"deaths": 55,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 45, "shots": 166, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 30,
+			"deaths": 59,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 32, "shots": 151, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 25,
+			"deaths": 68,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 26, "shots": 151, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 4, "accuracy": 0}
+			]
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"map": "dm-oblivion",
+	"players": [
+		{
+			"name": "annah",
+			"score": 62,
+			"deaths": 37,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 413, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 41,
+			"deaths": 52,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 533, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 34,
+			"deaths": 45,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 536, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 28,
+			"deaths": 51,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 66, "shots": 386, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^7[OS]^3Izaiasss",
+			"score": 25,
+			"deaths": 51,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 517, "accuracy": 17}
+			]
+		}
+	]
+}
