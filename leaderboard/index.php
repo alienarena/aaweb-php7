@@ -29,6 +29,9 @@ if (strlen($map) > 0) {
 }
 
 $details = false;
+// TODO:
+// Use one variable with three different possible values: All, Single, Details
+// Don't show funround in mode All
 $maxPlayersForDetails = 25;
 $maxPlayersTopView = $singleTourneyMode ? 16 : 12;
 $gameReportsPerPage = 20;
