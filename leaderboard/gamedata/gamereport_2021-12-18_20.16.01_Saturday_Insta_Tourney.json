@@ -1,0 +1,96 @@
+{
+	"map": "dm-undergroundlabs",
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 164,
+			"deaths": 71,
+			"ratio": 230,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 161, "shots": 394, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^8[^1GM^8]^7Dondo",
+			"score": 159,
+			"deaths": 88,
+			"ratio": 180,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 155, "shots": 403, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 99,
+			"deaths": 91,
+			"ratio": 108,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 95, "shots": 382, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 96,
+			"deaths": 96,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 91, "shots": 312, "accuracy": 29}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 87,
+			"deaths": 85,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 86, "shots": 305, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 87,
+			"deaths": 98,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 241, "accuracy": 26},
+				{"weapon": "violator", "hits": 21, "shots": 284, "accuracy": 7}
+			]
+		},
+		{
+			"name": "^7[OS]^5BeryCZ",
+			"score": 73,
+			"deaths": 93,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 300, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 62,
+			"deaths": 100,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 437, "accuracy": 13}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 33,
+			"deaths": 108,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 33, "shots": 418, "accuracy": 7}
+			]
+		},
+		{
+			"name": "EndMe",
+			"score": 6,
+			"deaths": 35,
+			"ratio": 17,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 4, "shots": 59, "accuracy": 6}
+			]
+		}
+	]
+}

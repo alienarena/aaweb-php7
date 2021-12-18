@@ -1,0 +1,59 @@
+{
+	"map": "dm-atlantis-retro",
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 67,
+			"deaths": 54,
+			"ratio": 124,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 168, "shots": 481, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 50,
+			"deaths": 52,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 136, "shots": 577, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 50,
+			"deaths": 53,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 121, "shots": 418, "accuracy": 28}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 34,
+			"deaths": 50,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 442, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^1[T3]^4Xzantronos",
+			"score": 26,
+			"deaths": 53,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 408, "accuracy": 17}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 4,
+			"deaths": 13,
+			"ratio": 30,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 8, "shots": 70, "accuracy": 11}
+			]
+		}
+	]
+}
