@@ -23,7 +23,7 @@
 
 /* General configuration */
 $CONFIG['title'] = 'Alien Arena :: Server Stats Browser';
-$CONFIG['baseurl'] = 'http://www.chaingun.org/alienarena/tools/'; /* Trailing slash important */
+$CONFIG['baseurl'] = 'https://alienarena.nanoid.net/arena/'; /* Trailing slash important */
 $CONFIG['stylesheet'] = $CONFIG['baseurl'].'style.css';
 $CONFIG['dbHost'] = 'localhost';
 $CONFIG['dbName'] = 'your_db_name_here';
@@ -45,6 +45,6 @@ $CONFIG['dbExpire'] = 60 * 60 * 48;  /* Default - 48 hours */
 $CONFIG['duration'] = 6*60*60; /* Default - 6 hours */
 $CONFIG['statslink'] = $CONFIG['baseurl'].'browser/index.php';
 
-error_reporting (E_NONE);
+error_reporting (0);
 
 ?>

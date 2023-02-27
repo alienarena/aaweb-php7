@@ -9,13 +9,13 @@ $mustache = new Mustache_Engine(array(
 ));
 
 // Global variables
-$pageNumber = intval($_GET['page']);
+$pageNumber = intval((isset($_GET['page']) ? $_GET['page'] : NULL));
 if ($pageNumber < 1 || $pageNumber > 100) {
     $pageNumber = 1;
 }
 
 // Tourney date in format YYYYMMDD
-$dateFilter = $_GET['date'];
+$dateFilter = (isset($_GET['date']) ? $_GET['date'] : NULL);
 if ($dateFilter < 20190127 || $dateFilter > 20991231) {
     $dateFilter = '';
 } else {
@@ -23,7 +23,7 @@ if ($dateFilter < 20190127 || $dateFilter > 20991231) {
 }
 $singleTourneyMode = strlen($dateFilter) > 0;
 // Map name as it exists  in browser/maps/1st and browser/maps/3rd
-$map = $_GET['map'];
+$map = (isset($_GET['map']) ? $_GET['map'] : NULL);
 if (strlen($map) > 0) {
     $map = strtolower(preg_replace('/([^a-zA-Z0-9\-]+)/', '', $map));
 }
@@ -45,7 +45,7 @@ $emptySpaceHeight = 30;
 
 session_start();
 
-if (intval($_GET["deletesession"]) == 1) {
+if (intval((isset($_GET["deletesession"])) ? $_GET["deletesession"] : NULL) == 1) {
     session_destroy();
     redirect(removeParameters(currentUrl()));
 }
@@ -85,8 +85,8 @@ if (count($files) > 1 || $singleTourneyMode) {
             }
         }
 
-        if(strtolower($tourneyTitle) == 'funround' && $i < count($files)) {
-            if ($tourneyDateString == substr($files[$i + 1], 11, 10)) {        
+        if(strtolower($tourneyTitle) == 'funround' && $i < count($files) && array_key_exists($i + 1, $files)) {
+            if ($tourneyDateString == substr($files[$i + 1], 11, 10)) {
                 // Switch order to show the funround after the main round
                 $temp = $files[$i];
                 $files[$i] = $files[$i + 1];
@@ -175,15 +175,17 @@ foreach($files as $file)
 }
 if ($renderedFileCount < $gameReportsPerPage) {
     // Fill up empty gaps from empty files with files from the next page
-    $files = $pages[$pageNumber];
-    foreach($files as $file)
-    {
-        if ($renderedFileCount < $gameReportsPerPage) {
-            renderFile($file);
-        } else {
-            break;
-        }
-    }    
+    if (array_key_exists($pageNumber, $pages)) {
+        $files = $pages[$pageNumber];
+        foreach($files as $file)
+        {
+            if ($renderedFileCount < $gameReportsPerPage) {
+                renderFile($file);
+            } else {
+                break;
+            }
+        }    
+    }
 }
 
 echo "        </tr>\n";

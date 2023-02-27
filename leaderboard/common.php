@@ -47,7 +47,7 @@ function endsWith($haystack, $needle)
 
 function getCachedContents($fileName)
 {
-    $data_json = $_SESSION[$fileName];
+    $data_json = (isset($_SESSION[$fileName]) ? $_SESSION[$fileName] : NULL);
     if (strlen($data_json) == 0) {
         $data_json = fileGetContents("gamedata/$fileName");
         $_SESSION[$fileName] = $data_json;    

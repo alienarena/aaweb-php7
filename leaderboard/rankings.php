@@ -13,7 +13,7 @@ $orderByDeathMatch = 1;
 $orderByInstagib = 2;
 $orderByRocketArena = 3;
 $orderByTotal = 0; // default
-$orderby = intval($_GET['orderby']);
+$orderby = intval((isset($_GET['orderby']) ? $_GET['orderby'] : NULL));
 
 $tourneyStartDate = '2019-01-27';
 
