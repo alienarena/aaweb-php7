@@ -65,12 +65,12 @@
         justify-content: center;
         grid-template-areas: 
             'header header header'
-            'left middle middle'
+            'left left right'
             'footer footer footer';
     } 
 
     .left,
-    .middle {
+    .right {
         padding-top: 10px;
         padding-left: 35px;
         padding-right: 35px;
@@ -87,7 +87,7 @@
     }
 
     .left h1,
-    .middle h1 {
+    .right h1 {
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -110,9 +110,9 @@
         width: 138px;
     }
 
-    .middle {
+    .right {
         background-color: rgba(0, 0, 0, 0.6);
-        grid-area: middle;
+        grid-area: right;
     }
 
     .footer {
@@ -130,11 +130,12 @@
             grid-template-areas: 
                 'header header header'
                 'left left left'
-                'middle middle middle'
+                'right right right'
                 'footer footer footer';
         }
-        .left, .middle {
+        .left, .right {
             max-width: 550px;
+            height: 100%;
         }
         textarea.code {
             min-height: 100px;
@@ -208,7 +209,7 @@ sudo make install</textarea>
             </table>
         </div>
 
-        <div class="middle">
+        <div class="right">
             <h1 style="margin-top: 3px; margin-bottom: 1px;">Map packs and 3rd party maps</h1>
             <div style="color: silver;">
                 Download and extract the contents to your arena folder:
