@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>alienarena.nanoid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="alienarena.nanoid" />
+    <meta name="keywords" content="alien arena warriors of mars nanoid server browser" />
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        background-color: slategrey;
+        color: white;
+    }
+
+    a {
+        color: white;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: slategrey;
+        text-align: center;
+        font-size: 30px;
+        height: 9vh;
+        overflow-y: hidden;
+        min-height: 100px;
+    }
+
+    .grid-container {
+        display: grid;
+        column-gap: 1vh;
+        justify-content: center;
+        grid-template-areas: 
+            'header header header'
+            'left middle middle'
+            'footer footer footer';
+    } 
+
+    .left,
+    .middle {
+        padding-top: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+        height: 85vh;
+        min-width: 500px;
+        overflow-y: auto;
+    }
+
+    .left {
+        background: url("https://alienarena.nanoid.net/arena/sharedimages/purgatory.jpg");
+        background-size: cover;
+        grid-area: left;
+    }
+
+    table.maps {
+        border-spacing: 0px;
+        width: 100%;       
+    }
+
+    table.maps td {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        white-space: nowrap;
+        font-size: smaller;
+    }
+
+    table.maps img {
+        border: solid silver 2px;
+        height: 80px;
+        width: 141px;
+    }
+
+    .middle {
+        background-color: rgba(0, 0, 0, 0.6);
+        grid-area: middle;
+    }
+
+    .footer {
+        padding: 10px;
+        grid-area: footer;
+        background-color: slategrey;
+        text-align: center;
+        height: 4vh;
+        overflow-y: hidden;
+    }
+
+    /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+    @media (max-width: 900px) {
+        .grid-container  {
+            grid-template-areas: 
+                'header header header'
+                'left left left'
+                'middle middle middle'
+                'footer footer footer';
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .grid-container  {
+            justify-content: left;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="header">
+            <h2>alienarena.nanoid</h2>
+        </div>
+    
+        <div class="left">
+            <h1 style="margin-top: 3px; margin-bottom: 1px;">Map packs and 3rd party maps</h1>
+            <div style="color: silver;">
+                Download and extract the contents to your arena folder:
+                <ul>
+                    <li><u>Linux</u>
+                        <ul>
+                            <li>Steam: ~/.local/share/Steam/steamapps/common/AAWoM</li>
+                            <li>Non-Steam: ~/.local/share/cor-games</li>
+                        </ul>
+                    </li>
+                    <li><u>Windows</u>
+                        <ul>
+                            <li>Steam: [Your steam folder]\steamapps\common\AAWoM</li>
+                            <li>Non-Steam:The installation folder of Alien Arena</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <table class="maps">
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-061118-r1.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;dm-deadsimple&#13;dm-liberation&#13;dm-aquila&#13;ctf-bonechewer&#13;ctf-invasion&#13;ctf-vesuvius">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 1</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-201218.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;dm-tetrigib&#13;dm-warmachine&#13;ctf-bloodline&#13;ctf-chromium">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 2</div>
+                    </td>                
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-200119.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;dm-command&#13;dm-oblivion&#13;ctf-zorn&#13;ctf-spacejam">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 3</div>
+                    </td>                
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-220419.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;ctf-atlantis&#13;ctf-corrosion&#13;dm-eternal&#13;dm-zorn">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 4</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-220619.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;ctf-conexus&#13;ctf-terminal-classic&#13;dm-deimos&#13;dm-downfall">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 5</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-090818-r2.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;ctf-chamber&#13;ctf-fortofpillars&#13;dm-invasion&#13;dm-saucer-classic">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 6</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-200919.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;ctf-europa&#13;ctf-ghostsofmars&#13;dm-goregrinder&#13;dm-longestyard">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 7</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/mappack-081219.zip/download" target="_blank"
+                            title="This map pack contains:&#10;&#13;ctf-icarus-retro&#13;ctf-zion-retro&#13;dm-atlantis-retro&#13;dm-beyond-retro&#13;dm-dred-retro&#13;dm-furious-retro&#13;dm-horus-retro&#13;dm-omega-retro">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/917170/header.jpg?t=1534802867" />
+                        </a>
+                        <div>Map pack 8</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-titan.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-titan.jpg" />
+                        </a>
+                        <div>ctf-titan</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-terminal-classic2.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-terminal-classic2.jpg" />
+                        </a>
+                        <div>ctf-terminal-classic2</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-brownfield.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-brownfield.jpg" />
+                        </a>
+                        <div>ctf-brownfield</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-curvy.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-curvy.jpg" />
+                        </a>
+                        <div>ctf-curvy</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-exobiology.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-exobiology.jpg" />
+                        </a>
+                        <div>ctf-exobiology</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-spacejam-classic.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-spacejam-classic.jpg" />
+                        </a>
+                        <div>ctf-spacejam-classic</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-office.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-office.jpg" />
+                        </a>
+                        <div>ctf-office</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-ahtcity.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-ahtcity.jpg" />
+                        </a>
+                        <div>ctf-ahtcity</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-blockbattle.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-blockbattle.jpg" />
+                        </a>
+                        <div>ctf-blockbattle</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-mines-of-hell.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-mines-of-hell.jpg" />
+                        </a>
+                        <div>ctf-mines-of-hell</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-thepit.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-thepit.jpg" />
+                        </a>
+                        <div>ctf-thepit</div>
+                    </td>
+                    <td>
+                        <a href="https://sourceforge.net/projects/alienarena-cc/files/ctf-tribute.zip/download" target="_blank">
+                            <img src="https://alienarena.nanoid.net/arena/browser/maps/3rd/ctf-tribute.jpg" />
+                        </a>
+                        <div>ctf-tribute</div>
+                    </td>
+                    <td>
+                        <img src="https://alienarena.nanoid.net/arena/browser/maps/default.jpg" />
+                        <div>Your new map?</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="middle">
+            <h1>Server browser</h1>
+            <p>
+                <a href="https://alienarena.nanoid.net/arena/browser/index.php?action=playerstats" target="_blank">Check the player activity here</a>
+            </p>
+            <hr>
+            <h1>News</h1>
+            <h3>Debian and Ubuntu</h3>
+            <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm and Ubuntu 23.04 - Lunar Lobster!<br>
+            The release date for Debian 12 is not known yet. The release date for Ubuntu 23.04 is April 20th, 2023.</p>
+            <h3>IRC</h3>
+            <p>For IRC, use hal.nanoid.net if you have problems connecting to irc.planetarena.org.</p>
+            <hr>
+            <h1>Links</h1>
+            <ul>
+                <li><a href="https://martianbackup.com" target="_blank">Main website</a></li>
+                <li><a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
+                <li><a href="https://discord.gg/Rd5fwBg" target="_blank">Discord</a></li>
+                <li><a href="https://matrix.to/#/#alienarena:matrix.org" target="_blank">Matrix</a></li>
+                <li><a href="https://www.youtube.com/channel/UC4p_zL707sPjH-I9WqTbyNQ" target="_blank">YouTube</a></li>
+                <li><a href="https://www.twitch.tv/directory/game/Alien%20Arena%3A%20Warriors%20Of%20Mars" target="_blank">Twitch</a></li>
+            </ul>
+            <hr>
+            <h1>Tools</h1>
+            <ul>
+                <li><a href="https://alienarena.nanoid.net/arena/dmflags.html" target="_blank">DM flags calculator</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Join us on discord: <a href="https://discord.gg/Rd5fwBg" target="_blank">https://discord.gg/Rd5fwBg</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
