@@ -13,9 +13,13 @@
     body {
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         background-color: slategrey;
-        color: white;
+        color: silver;
         padding-left: 3px;
         padding-right: 3px;
+    }
+
+    h1, h2, h3 {
+        color: white;
     }
 
     code {
@@ -37,7 +41,7 @@
     }
 
     a {
-        color: white;
+        color: silver;
     }
     
     ul {
@@ -88,7 +92,7 @@
 
     .left h1,
     .right h1 {
-        margin-top: 5px;
+        margin-top: 4px;
         margin-bottom: 5px;
     }
 
@@ -99,7 +103,7 @@
 
     table.maps td {
         padding-top: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 18px;
         white-space: nowrap;
         font-size: smaller;
     }
@@ -111,17 +115,22 @@
     }
 
     .right {
-        background-color: rgba(0, 0, 0, 0.6);
+        background: linear-gradient(rgba(10, 10, 15), rgba(50, 50, 55));
         grid-area: right;
     }
 
     .footer {
         grid-area: footer;
         background-color: slategrey;
+        color: white;    
         text-align: center;
         overflow-y: hidden;
         position: sticky;
         bottom: 0px;
+    }
+
+    .footer a {
+        color: white;
     }
 
     /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
@@ -210,24 +219,22 @@ sudo make install</textarea>
         </div>
 
         <div class="right">
-            <h1 style="margin-top: 3px; margin-bottom: 1px;">Map packs and 3rd party maps</h1>
-            <div style="color: silver;">
-                Download and extract the contents to your arena folder:
-                <ul>
-                    <li><u>Linux</u>
-                        <ul>
-                            <li>Steam: ~/.local/share/Steam/steamapps/common/AAWoM</li>
-                            <li>Non-Steam: ~/.local/share/cor-games</li>
-                        </ul>
-                    </li>
-                    <li><u>Windows</u>
-                        <ul>
-                            <li>Steam: [Your steam folder]\steamapps\common\AAWoM</li>
-                            <li>Non-Steam:The installation folder of Alien Arena</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <h1 style="margin-bottom: 1px;">Map packs and 3rd party maps</h1>
+            Download and extract the contents to your arena folder:
+            <ul>
+                <li><u>Linux</u>
+                    <ul>
+                        <li>Steam: ~/.local/share/Steam/steamapps/common/AAWoM</li>
+                        <li>Non-Steam: ~/.local/share/cor-games</li>
+                    </ul>
+                </li>
+                <li><u>Windows</u>
+                    <ul>
+                        <li>Steam: [Your steam folder]\steamapps\common\AAWoM</li>
+                        <li>Non-Steam:The installation folder of Alien Arena</li>
+                    </ul>
+                </li>
+            </ul>
             <table class="maps">
                 <tr>
                     <td>
