@@ -136,11 +136,12 @@
     /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
     @media (max-width: 1080px) {
         .grid-container  {
-            grid-template-areas: 
+            grid-template-areas:
                 'header header header'
                 'left left left'
                 'right right right'
                 'footer footer footer';
+            row-gap: 1vh;
         }
         .left, .right {
             max-width: 550px;
