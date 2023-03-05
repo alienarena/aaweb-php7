@@ -179,10 +179,9 @@
             On Windows, you can install TortoiseSVN and download the source code. The alienarena.exe is already there.<br>
             On Linux, install subversion. Then you need to build the application yourself.</p>
             <p>For building on Linux, you need to install the following libraries first:
-            <textarea readonly="true" class="code" rows="2">apt install sharutils libglu1-mesa-dev libgl1-mesa-dev libjpeg-dev libpng-dev libxxf86vm-dev libxxf86dga-dev libxext-dev libx11-dev libcurl4-gnutls-dev libopenal-dev libvorbis-dev libfreetype6-dev pkg-config</textarea>
+            <textarea readonly="true" class="code" rows="3">apt install sharutils libglu1-mesa-dev libgl1-mesa-dev libjpeg-dev libpng-dev libxxf86vm-dev libxxf86dga-dev libxext-dev libx11-dev libcurl4-gnutls-dev libopenal-dev libvorbis-dev libfreetype6-dev pkg-config</textarea>
             <p>Then execute the following commands to download the source code into folder <code>alienarena</code>:
-            <textarea readonly="true" class="code" rows="5">
-svn checkout svn://svn.icculus.org/alienarena/trunk alienarena
+            <textarea readonly="true" class="code" rows="5">svn checkout svn://svn.icculus.org/alienarena/trunk alienarena
 cd alienarena
 ./configure
 make
@@ -221,21 +220,23 @@ sudo make install</textarea>
 
         <div class="right">
             <h1 style="margin-bottom: 1px;">Map packs and 3rd party maps</h1>
-            Download and extract the contents to your arena folder:
-            <ul>
-                <li><u>Linux</u>
-                    <ul>
-                        <li>Steam: ~/.local/share/Steam/steamapps/common/AAWoM</li>
-                        <li>Non-Steam: ~/.local/share/cor-games</li>
-                    </ul>
-                </li>
-                <li><u>Windows</u>
-                    <ul>
-                        <li>Steam: [Your steam folder]\steamapps\common\AAWoM</li>
-                        <li>Non-Steam:The installation folder of Alien Arena</li>
-                    </ul>
-                </li>
-            </ul>
+            <div style="max-width: 446px; font-size: smaller;">
+                Download and extract the zip, then copy the contents of the arena folder in the zip to your arena folder:
+                <ul>
+                    <li><u>Linux</u>
+                        <ul>
+                            <li>Steam: ~/.local/share/Steam/steamapps/common/AAWoM</li>
+                            <li>Non-Steam: ~/.local/share/cor-games</li>
+                        </ul>
+                    </li>
+                    <li><u>Windows</u>
+                        <ul>
+                            <li>Steam: [Your steam folder]\steamapps\common\AAWoM</li>
+                            <li>Non-Steam:The installation folder of Alien Arena</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <table class="maps">
                 <tr>
                     <td>
