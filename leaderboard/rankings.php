@@ -21,6 +21,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR
 echo "<html>\n";
 echo "<head>\n";
 echo "    <title>$pageTitle</title>\n";
+echo "    <link rel=\"icon\" type=\"image/x-icon\" href=\"../sharedimages/favicon.ico\">";
 echo "    <meta name=\"description\" content=\"$pageTitle\">\n";
 echo "    <meta name=\"keywords\" content=\"Alien Arena Warriors of Mars tournament rankings leaderboard scores deathmatch instagib rocket arena statistics stats\">\n";
 echo "    <link href=\"https://fonts.googleapis.com/css?family=Aldrich\" rel=\"stylesheet\">\n";
