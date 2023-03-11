@@ -37,6 +37,7 @@ function Generate_HTML_Headers()
 	echo "<html>\n";
 	echo "<head>\n";
 	echo "    <title>".$CONFIG['title']."</title>\n";
+	echo "    <link rel=\"icon\" type=\"image/x-icon\" href=\"../sharedimages/favicon.ico\">";
 	echo "    <base href=\"".$CONFIG['baseurl']."browser/\">\n";
 	echo "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\n";
 	echo "    <meta name=\"keywords\" content=\"Alien Arena Warriors of Mars Server Browser player activity online players\">\n";
