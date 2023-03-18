@@ -1,6 +1,5 @@
 /* display occupied servers using bery's api*/
 
-
 function FpsWS(gameName) {
     this.gameName = gameName;
     this.url = 'wss://api.bery.dev/ws/fps/' + this.gameName + '/';
@@ -65,7 +64,7 @@ FpsWS.prototype = {
         };
 
         client.onclose = function() {
-            console.error('Socket closed unexpectedly');
+            console.log('Socket closed unexpectedly');
             SELF.client = null;
             console.log('Reconnecting...');
             SELF.reconnect();
