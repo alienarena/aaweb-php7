@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Aien Arena community start page" />
     <meta name="keywords" content="alien arena warriors of mars nanoid server browser maps map packs levels download 3rd party community content" />
+    <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     * {
         box-sizing: border-box;
@@ -29,7 +30,7 @@
         color: white;
         padding: 1px;
     }
-    
+
     textarea.code {
         font-family: monospace;
         background-color: rgb(255, 255, 255, 0.1);
@@ -44,7 +45,7 @@
     a {
         color: silver;
     }
-    
+
     ul {
         list-style-type: none;
         padding: 5px;
@@ -72,11 +73,11 @@
         display: grid;
         column-gap: 1vh;
         justify-content: center;
-        grid-template-areas: 
+        grid-template-areas:
             'header header header'
             'left left right'
             'footer footer footer';
-    } 
+    }
 
     .left,
     .right {
@@ -95,6 +96,36 @@
         grid-area: left;
     }
 
+    table.subsection {
+        width: 100%; 
+        border-spacing: 0px;
+    }
+
+    table.subsection tr.sectionheader td.leftsection {
+        width: 50%;
+        vertical-align: top;
+        border-right: solid rgba(255, 255, 255, 0.2) 2px;
+    }
+    
+    table.subsection tr.sectionheader td.rightsection {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    table.subsection td.leftsection {
+        width: 50%;
+        vertical-align: top;
+    }
+
+    table.subsection td.divider {
+        border-right: solid rgba(255, 255, 255, 0.2) 2px;
+    }
+
+    table.subsection td.rightsection {
+        vertical-align: top;
+        padding-left: 20px;
+    }
+
     .left h1,
     .right h1 {
         margin-top: 3px;
@@ -103,7 +134,7 @@
 
     table.maps {
         border-spacing: 0px;
-        width: 100%;       
+        width: 100%;
     }
 
     table.maps td {
@@ -127,7 +158,7 @@
     .footer {
         grid-area: footer;
         background-color: slategrey;
-        color: white;    
+        color: white;
         text-align: center;
         overflow-y: hidden;
         position: sticky;
@@ -156,12 +187,19 @@
             height: 137px;
             width: 242px;
         }
-        
+
         textarea.code {
             min-height: 100px;
         }
     }
 
+    #occupied-servers h3 {
+        margin: 3px 0;
+    }
+    
+    #occupied-servers .server {
+        margin-bottom: 1em;
+    }
     </style>
 </head>
 <body>
@@ -170,21 +208,49 @@
         <div class="header">
             <h3>Alien Arena community start page</h3>
         </div>
-    
+
         <div class="left">
-            <h1>Server browser</h1>
-            <p>
-                <a href="https://invader.alienarena.org/arena/browser/index.php?action=playerstats" target="_blank">Check the player activity here</a>
-            </p>
-            <hr>
-            <h1>News</h1>
-            <h3>Debian and Ubuntu</h3>
-            <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm and Ubuntu 23.04 - Lunar Lobster!<br>
-            The release date for Debian 12 is not known yet. The release date for Ubuntu 23.04 is April 20th, 2023.</p>
-            <h3>New release 7.71.4</h3>
-            <p>Release 7.71.4 has most game operations running on alienarena.org. Also the old obsolete stats have been removed.</p>
-            <h3>IRC</h3>
-            <p>For IRC, use hal.nanoid.net if you have problems connecting to irc.planetarena.org.</p>
+            <table class="subsection">
+                <tr class="sectionheader">
+                    <td class="leftsection"><h1>Server browser</h1></td>
+                    <td class="rightsection"><h1>Occupied servers</h1></td>
+                </tr>
+                <tr>
+                    <td class="leftsection divider">
+                        <a href="https://invader.alienarena.org/arena/browser/index.php?action=playerstats" target="_blank">Check the player activity here</a>
+                    </td>
+                    <td class="rightsection">
+                        <div id="occupied-servers">Getting data ...</div>
+                    </td>
+                </tr>
+            </table>
+            <hr>            
+            <table class="subsection">
+                <tr>
+                    <td class="leftsection">
+                        <table style="border-spacing: 0px; height: 100%;">
+                            <tr>
+                                <td>
+                                    <h1>News</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: bottom; height: 100%">
+                                    <h3>Debian and Ubuntu</h3>
+                                    <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm and Ubuntu 23.04 - Lunar Lobster!<br>
+                                    The release date for Debian 12 is not known yet. The release date for Ubuntu 23.04 is April 20th, 2023.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="rightsection" style="height: 100%">
+                        <h3>New release 7.71.4</h3>
+                        <p>Release 7.71.4 has most game operations running on alienarena.org. Also the old obsolete stats have been removed.</p>
+                        <h3>IRC</h3>
+                        <p>For IRC, use hal.nanoid.net if you have problems connecting to irc.planetarena.org.</p>
+                    </td>
+                </tr>
+            </table>
             <hr>
             <h1>SVN</h1>
             <p>The repository is located at: <code>svn://svn.icculus.org/alienarena/trunk</code>.<br>
@@ -206,30 +272,30 @@ sudo make install</textarea>
             With debug symbols: <code>./configure --enable-debug</code>
             </p>
             <hr>
-            <table style="width: 100%; border-spacing: 0px;">
-                <tr>
-                    <td colspan="2" style="width: 50%; vertical-align: top; border-right: solid rgba(255, 255, 255, 0.2) 2px;"><h1>Links</h1></td>
-                    <td style="width: 50%; padding-left: 20px;"><h1>Tools</h1></td>
+            <table class="subsection">
+                <tr class="sectionheader">
+                    <td class="leftsection" colspan="2"><h1>Links</h1></td>
+                    <td class="rightsection"><h1>Tools</h1></td>
                 </tr>
                 <tr>
-                    <td style="vertical-align: top; width: 25%;">
+                    <td class="leftsection" style="width: 25%;">
                         <ul>
                             <li><a href="https://martianbackup.com" target="_blank">Official website</a></li>
                             <li><a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
                             <li><a href="https://discord.gg/Rd5fwBg" target="_blank">Discord</a></li>
-                        </ul>                                    
+                        </ul>
                     </td>
-                    <td style="vertical-align: top; width: 25%; border-right: solid rgba(255, 255, 255, 0.2) 2px;">
+                    <td class="leftsection divider" style="width: 25%;">
                         <ul>
                             <li><a href="https://matrix.to/#/#alienarena:matrix.org" target="_blank">Matrix</a></li>
                             <li><a href="https://www.youtube.com/channel/UC4p_zL707sPjH-I9WqTbyNQ" target="_blank">YouTube</a></li>
                             <li><a href="https://www.twitch.tv/directory/game/Alien%20Arena%3A%20Warriors%20Of%20Mars" target="_blank">Twitch</a></li>
-                        </ul>                                    
+                        </ul>
                     </td>
-                    <td style="vertical-align: top; padding-left: 20px;">
+                    <td class="rightsection">
                         <ul>
                             <li><a href="https://invader.alienarena.org/arena/dmflags.html" target="_blank">DM flags calculator</a></li>
-                        </ul>            
+                        </ul>
                     </td>
                 </tr>
             </table>
@@ -269,14 +335,14 @@ sudo make install</textarea>
                             <img src="https://invader.alienarena.org/arena/sharedimages/mappack.jpg" />
                         </a>
                         <div>Map pack 2</div>
-                    </td>                
+                    </td>
                     <td>
                         <a href="https://invader.alienarena.org/arena/files/mappack-201218.zip"
                             title="This map pack contains:&#10;&#13;dm-command&#13;dm-oblivion&#13;ctf-zorn&#13;ctf-spacejam">
                             <img src="https://invader.alienarena.org/arena/sharedimages/mappack.jpg" />
                         </a>
                         <div>Map pack 3</div>
-                    </td>                
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -410,11 +476,11 @@ sudo make install</textarea>
                 </tr>
             </table>
         </div>
-        
+
         <div class="footer">
             <p>Join us on discord: <a href="https://discord.gg/Rd5fwBg" target="_blank">https://discord.gg/Rd5fwBg</a></p>
         </div>
     </div>
-
+    <script type="text/javascript" src="occupied-servers.js"></script>
 </body>
 </html>
