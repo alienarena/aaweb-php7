@@ -14,14 +14,16 @@ include '../config.php';  /* Database config */
 
 define("VERSION", "1.0.0");
 
-define("MAX_INSTANCES",5); /* Maximum number of instances of this script allowed to run at once */
-define("MAX_SERVERS",256); /* Used to be hardcoded to 64! */
-define("MASTER_QUERY","query"); /* Query string to sent to master server */
-define("SERVER_QUERY","ÿÿÿÿstatus\n"); /* Query string to send to individual games servers */
-define("MASTER_ADDRESS",'master2.corservers.com');
-define("MASTER_PORT",27900);
-define("SERVER_RETRIES",3); /* Maximum number of times to try querying a games server */
-define("SOCKET_TIMEOUT",10); /* socket_select() timeout, in seconds */
+define("MAX_INSTANCES", 5); /* Maximum number of instances of this script allowed to run at once */
+define("MAX_SERVERS", 256); /* Used to be hardcoded to 64! */
+define("MASTER_QUERY", "query"); /* Query string to sent to master server */
+// define("SERVER_QUERY", "ï¿½ï¿½ï¿½ï¿½status\n");
+define("SERVER_QUERY", chr(0xFF).chr(0xFF).chr(0xFF).chr(0xFF)."status\n"); /* Query string to send to individual games servers */
+define("MASTER_ADDRESS", 'master.alienarena.org');
+define("MASTER2_ADDRESS", 'master2.alienarena.org');
+define("MASTER_PORT", 27900);
+define("SERVER_RETRIES", 3); /* Maximum number of times to try querying a games server */
+define("SOCKET_TIMEOUT", 10); /* socket_select() timeout, in seconds */
 
 $debug = 0; /* Global for debug configuration */
 
@@ -79,11 +81,11 @@ Function CheckInstances()
 		die_message("Too many instances (mysql tables locked?)");
 }
 
-Function QueryMasterServer()
+Function QueryMasterServer(&$serverlist, $master_address)
 {
 	global $debug;
-	$master_ip = gethostbyname(MASTER_ADDRESS);
-	if($master_ip == MASTER_ADDRESS) /* Test for fail */
+	$master_ip = gethostbyname($master_address);
+	if($master_ip == $master_address) /* Test for fail */
 		die_message("Failed to get master $master_ip IP address.");
 
 //	$master_ip = '111.111.111.111';  /* False address to test robustness */
@@ -94,7 +96,7 @@ Function QueryMasterServer()
 	if($socket === FALSE) /* Socket resource or FALSE */
 		die_socket($socket, "Failed in socket_create()");
 
-	echo "Connecting to master '".MASTER_ADDRESS."' ($master_ip) on port ".MASTER_PORT."...";
+	echo "Connecting to master '".$master_address."' ($master_ip) on port ".MASTER_PORT."...";
 	if (socket_connect ($socket, $master_ip, MASTER_PORT) === FALSE) /* TRUE on success, FALSE on fail */
 		die_socket($socket, "Failed in socket_connect()");
 		
@@ -170,16 +172,23 @@ Function QueryMasterServer()
 	//echo $buffer."<br>\n";
 	$index = 12;
 
-	$serverlist = array();
 	/* Generate array of arrays; ip addresses and port numbers */
 	while ($index < $len)
 	{
 		$server=substr($buffer,$index,4);
 		$port=substr($buffer,$index+4,2);
-		$serverlist[] = array("ip" => inet_ntop($server), "port" => hexdec(strhex($port)));
+		$newserver = array("ip" => inet_ntop($server), "port" => hexdec(strhex($port)));
+
+		if (!in_array($newserver, $serverlist)) {
+			$serverlist[] = $newserver;
+		} else if ($debug) {
+			echo "Server already in list: ";
+			print_r($newserver);
+			echo "<br>";
+		}
+		
 		$index += 6;
 	}
-	return $serverlist;
 }
 
 Function QueryGamesServers(&$serverlist)
@@ -228,7 +237,9 @@ Function QueryGamesServers(&$serverlist)
 		die_socket($socket, $error);
 	}
 
-	$try=1;
+	$try = 1;
+	$write = NULL;
+	$except = NULL;
 	do /* Retry loop */
 	{
 		do /* Wait for response loop */
@@ -236,8 +247,12 @@ Function QueryGamesServers(&$serverlist)
 			if($debug)
 				echo "<br>Waiting for replies...<br>";
 			$buffer = "";
-			$read = $socketlist; /* Take copy of list, as socket_select() writes back to it's params */
-			$result = socket_select($read, $write=NULL, $except=NULL, SOCKET_TIMEOUT, 0);
+			
+			/* Take copy of list, as socket_select() writes back to it's params */
+			// $read = $socketlist;
+			$read = array_merge(array(), $socketlist);
+
+			$result = socket_select($read, $write, $except, SOCKET_TIMEOUT, 0);
 			if($result === FALSE)
 				die_message("Failure in socket_select() (".socket_strerror(socket_last_error()).")"); 
 
@@ -513,7 +528,26 @@ else
 /* Check that this script isn't running too many times already - hung on mysql access? */
 CheckInstances();
 
-$serverlist = QueryMasterServer();
+$serverlist = array();
+
+QueryMasterServer($serverlist, MASTER_ADDRESS);
+if ($debug) {
+	print_r($serverlist);
+	echo "<br>";	
+}
+
+QueryMasterServer($serverlist, MASTER2_ADDRESS);
+if ($debug) {
+	print_r($serverlist);
+	echo "<br>";	
+}
+
+echo "Found ".count($serverlist)." servers on both master servers.<br>";
+
+if ($debug) {
+	print_r($serverlist);
+	echo "<br>";	
+}
 
 /* $serverlist is our master array of servers, into which we will add information about each server */
 
