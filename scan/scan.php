@@ -186,7 +186,7 @@ Function QueryMasterServer(&$serverlist, $master_address)
 			print_r($newserver);
 			echo "<br>";
 		}
-		
+
 		$index += 6;
 	}
 }
@@ -252,6 +252,10 @@ Function QueryGamesServers(&$serverlist)
 			// $read = $socketlist;
 			$read = array_merge(array(), $socketlist);
 
+			if ($debug) {
+				echo "Servers for socket_select: ".count($read)."<br>";
+			}
+
 			$result = socket_select($read, $write, $except, SOCKET_TIMEOUT, 0);
 			if($result === FALSE)
 				die_message("Failure in socket_select() (".socket_strerror(socket_last_error()).")"); 
@@ -296,7 +300,7 @@ Function QueryGamesServers(&$serverlist)
 					}
 				} /* End of for loop for each server */
 			} /* End of if */
-		} while ($result > 0); /* Repeat until no more responses come back */
+		} while ($result > 0 && count($socketlist) > 0); /* Repeat until no more responses come back */
 
 		$unresponsive = count($socketlist);
 		if($try < SERVER_RETRIES && $unresponsive > 0)

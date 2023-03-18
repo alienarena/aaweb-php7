@@ -30,12 +30,12 @@ The script diagnoses any problems with the system.
 
 define("VERSION", "Beta 0.2");
 
-define("MAX_SERVERS",256); /* Used to be hardcoded to 64! */
-define("MASTER_QUERY","query"); /* Query string to sent to master server */
-define("SERVER_QUERY","ÿÿÿÿstatus\n"); /* Query string to send to individual games servers */
-define("MASTER_ADDRESS",'master2.corservers.com');
-define("MASTER_PORT",27900);
-define("SERVER_RETRIES",3); /* Maximum number of times to try querying a games server */
+define("MAX_SERVERS", 256); /* Used to be hardcoded to 64! */
+define("MASTER_QUERY", "query"); /* Query string to sent to master server */
+define("SERVER_QUERY", chr(0xFF).chr(0xFF).chr(0xFF).chr(0xFF)."status\n"); /* Query string to send to individual games servers */
+define("MASTER_ADDRESS", 'master2.alienarena.org');
+define("MASTER_PORT", 27900);
+define("SERVER_RETRIES", 3); /* Maximum number of times to try querying a games server */
 
 /*********************
 *  Support functions *
@@ -205,7 +205,9 @@ Function QueryGamesServers(&$serverlist)
 		die_socket($socket, $error);
 	}
 
-	$try=1;
+	$try = 1;
+	$write = NULL;
+	$except = NULL;
 	do /* Retry loop */
 	{
 		do /* Wait for response loop */
@@ -213,8 +215,12 @@ Function QueryGamesServers(&$serverlist)
 			if($debug)
 				echo "<br>Waiting for replies...<br>";
 			$buffer = "";
-			$read = $socketlist; /* Take copy of list, as socket_select() writes back to it's params */
-			$result = socket_select($read, $write=NULL, $except=NULL, 3, 0);
+			//$read = $socketlist; /* Take copy of list, as socket_select() writes back to it's params */
+			$read = array_merge(array(), $socketlist);
+
+			// echo "Servers for socket_select: ".count($read)."<br>";
+
+			$result = socket_select($read, $write, $except, 3, 0);
 			if($result === FALSE)
 				die_message("Failure in socket_select() (".socket_strerror(socket_last_error()).")"); 
 
@@ -251,7 +257,7 @@ Function QueryGamesServers(&$serverlist)
 					}
 				} /* End of for loop for each server */
 			} /* End of if */
-		} while ($result > 0); /* Repeat until no more responses come back */
+		} while ($result > 0 && count($socketlist) > 0); /* Repeat until no more responses come back */
 
 		$unresponsive = count($socketlist);
 		if($try < SERVER_RETRIES && $unresponsive > 0)
@@ -342,7 +348,7 @@ Function compare_servers($x, $y)
 		return 1;
 }
 
-error_reporting (E_NONE);
+error_reporting (0);
 
 /* Main program starts here */
 echo "<html>\n";
