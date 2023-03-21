@@ -1,6 +1,15 @@
 /* display occupied servers using bery's api*/
 
 function FpsWS(gameName) {
+    fetch('../version/crx_version')
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(text) {
+            document.getElementById('latest-version').innerHTML = text;
+        })
+        .catch(function(err) {});
+
     this.gameName = gameName;
     this.url = 'wss://api.bery.dev/ws/fps/' + this.gameName + '/';
     this.init();
