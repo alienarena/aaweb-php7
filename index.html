@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Alien Arena community start page</title>
+    <title>Alien Arena Community</title>
     <link rel="icon" type="image/x-icon" href="/arena/sharedimages/favicon.ico">
     <meta charset="utf-8">
-    <meta name="description" content="Alien Arena community start page" />
+    <meta name="description" content="Alien Arena Community" />
     <meta name="keywords" content="alien arena warriors of mars free FPS CTF capture the flag deathmatch server browser" />
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     * {
@@ -53,16 +54,19 @@
 
     .header {
         grid-area: header;
-        background-color: slategrey;
+        background: url("header.jpg");
+        background-size: cover;
         text-align: center;
         font-size: 30px;
         overflow-y: hidden;
-        min-height: 70px;
+        height: 5vh;
+        min-height: 60px;
     }
 
     .header h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-family: Aldrich;
+        margin-top: 17px;
+        text-shadow: 0 0 3px #fcf, 0 0 6px #dad;
     }
 
     hr {
@@ -72,6 +76,7 @@
     .grid-container {
         display: grid;
         column-gap: 1vh;
+        row-gap: 1vh;
         justify-content: center;
         grid-template-areas:
             'header header header'
@@ -161,8 +166,7 @@
         color: white;
         text-align: center;
         overflow-y: hidden;
-        padding: 10px;
-        height: 80px;
+        height: 5vh;
     }
 
     .footer a {
@@ -206,7 +210,7 @@
 
     <div class="grid-container">
         <div class="header">
-            <h3>Alien Arena community start page</h3>
+            <h3>Alien Arena Community</h3>
         </div>
 
         <div class="left">
@@ -316,6 +320,7 @@ sudo make install</textarea>
                             <li><a href="/arena/dmflags.html" target="_blank">DM flags calculator</a></li>
                             <li><a href="/qcc" target="_blank">Console commands</a></li>
                             <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1185832191" target="_blank">Gameplay guide</a></li>
+                            <li><a href="https://steamcommunity.com/app/629540/discussions" target="_blank">Steam discussion forum</a></li>
                         </ul>
                     </td>
                 </tr>
