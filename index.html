@@ -5,7 +5,8 @@
     <link rel="icon" type="image/x-icon" href="/arena/sharedimages/favicon.ico">
     <meta charset="utf-8">
     <meta name="description" content="Alien Arena Community" />
-    <meta name="keywords" content="alien arena warriors of mars free FPS CTF capture the flag deathmatch server browser" />
+    <meta name="keywords" content="alienarena, alien arena, warriors of mars, free, FPS, CTF, capture the flag, deathmatch, server browser" />
+    <meta name="robots" content="alienarena, alien arena, warriors of mars, free, FPS, CTF, capture the flag, deathmatch, server browser" />
     <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
@@ -249,16 +250,16 @@
                     </td>
                     <td class="rightsection" style="height: 100%">
                         <h3>New release 7.71.4</h3>
-                        <p>Release 7.71.4 has most game operations running on alienarena.org. Also the old obsolete stats have been removed.</p>
+                        <p>Release 7.71.4 has most game operations running on alienarena.org. Automatic downloading of maps is using the http protocol again. The old obsolete stats have been removed.</p>
                         <h3>New IRC server</h3>
-                        <p>For IRC, use irc.alienarena.org. For secure connections, use port 6697, otherwise 6667.</p>
+                        <p>For IRC, use irc.alienarena.org. The port should be 6697 for secure connections, otherwise 6667. With the latest game clients the IRC server will be changed automatically.</p>
                     </td>
                 </tr>
             </table>
             <hr>
             <table class="subsection">
                 <tr>
-                    <td class="leftsection" style="width: 80%; padding-bottom: 8px;">
+                    <td class="leftsection divider" style="padding-bottom: 8px;">
                         <h1>How to install</h1>
                         <p>There are multiple options to install this game:</p>
                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
@@ -269,8 +270,13 @@
                         </ul>
                         <span style="font-size: smaller">Latest version number: <span id="latest-version" style="font-weight: bold"></span></span>
                     </td>
-                    <td class="rightsection" style="width: 20%;">
-                        <!-- Nothing here yet -->
+                    <td class="rightsection">
+                        <h1>Known issues</h1>
+                        <p>The Steam clients on Windows and Linux currently have the following issues:</p>
+                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                            <li>Automatic downloading of maps uses the (slow) udp protocol.</li>
+                            <li>The newsfeed is not working.</li>
+                        </ul>
                     </td>
                 </tr>
             </table>
@@ -289,7 +295,8 @@ make
 sudo make install</textarea>
             </p>
             If you have already done this before, use <code>svn update</code> to download the latest sources.<br>
-            Optionally, you can specify the number of threads to run make with, like <code>make -j 4</code>.
+            For windows, download the latest game client <a href="https://svn.icculus.org/*checkout*/alienarena/trunk/alienarena.exe">here.</a><br>
+            To compile faster, you can specify the number of threads it uses: <code>make -j 4</code>.
             <p>Other configure options that are useful:<br>
             Dedicated server: <code>./configure --disable-client</code><br>
             With debug symbols: <code>./configure --enable-debug</code>
