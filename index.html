@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     :root {
-        --backgroundcolor: rgb(155, 155, 175);
+        --backgroundcolor: rgb(120, 120, 120);
     }
 
     * {
@@ -60,7 +60,8 @@
 
     .header {
         grid-area: header;
-        background: url("/arena/sharedimages/background.jpg");
+        background: url("/arena/sharedimages/background.jpg"), rgb(95, 90, 100);
+        background-blend-mode: overlay;
         background-size: cover;
         text-align: center;
         font-size: 30px;
@@ -247,8 +248,9 @@
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
                                     <h3>Debian and Ubuntu</h3>
-                                    <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm and Ubuntu 23.04 - Lunar Lobster!<br>
-                                    The release date for Debian 12 is not known yet. The release date for Ubuntu 23.04 is April 20th, 2023.</p>
+                                    <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                                    <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm. The release date for Debian 12 has not been decided yet.<br>
+                                    See also: <a href="https://release.debian.org/" target="_blank">Debian Release Management</a>.</p>
                                 </td>
                             </tr>
                         </table>
@@ -269,6 +271,7 @@
                         <p>There are multiple options to install this game:</p>
                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
                             <li>Install from SVN (Windows/Linux). You'll have the latest code (see below).</li>
+                            <li>In case you have Ubuntu 23.04 - Lunar Lobster: it's available in the package repository.</li>
                             <!-- <li>Install from the <a href="https://snapcraft.io/alien-arena-linux" target="_blank">Snap Store</a> (Linux only).</li> -->
                             <li>Install from <a href="http://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a> (Windows/Linux), but it is outdated.</li>
                             <li>Install the obsolete <a href="https://martianbackup.com/files/AlienArena.zip">demo</a> (Windows/Linux). The demo is not being maintained.</li>
@@ -510,6 +513,12 @@ sudo make install</textarea>
                             <img src="/arena/browser/maps/3rd/ctf-anxiety.jpg" />
                         </a>
                         <div>ctf-anxiety</div>
+                    </td>
+                    <td>
+                        <a href="/arena/files/ctf-facingworlds.zip" title="To install, use installmap ctf-facingworlds">
+                            <img src="/arena/browser/maps/3rd/ctf-facingworlds.jpg" />
+                        </a>
+                        <div>ctf-facingworlds</div>
                     </td>
                 </tr>
             </table>
