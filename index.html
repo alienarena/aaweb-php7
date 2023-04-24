@@ -79,7 +79,7 @@
     hr {
         margin-bottom: 12px;
     }
-
+    
     .grid-container {
         display: grid;
         column-gap: 1vh;
@@ -100,6 +100,14 @@
         height: 85vh;
         min-width: 500px;
         overflow-y: auto;
+    }
+
+    div.highlight {
+        background-color: rgba(50, 45, 60, 0.8);
+        border: 1px solid silver;
+        color: white;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 
     .left {
@@ -247,8 +255,11 @@
                             </tr>
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
-                                    <h3>Debian and Ubuntu</h3>
-                                    <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                                    <div class="highlight">
+                                        <h3>Ubuntu 23.04</h3>
+                                        <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                                    </div>
+                                    <h3>Debian 12</h3>
                                     <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm. The release date for Debian 12 has not been decided yet.<br>
                                     See also: <a href="https://release.debian.org/" target="_blank">Debian Release Management</a>.</p>
                                 </td>
