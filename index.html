@@ -12,6 +12,8 @@
     <style>
     :root {
         --backgroundcolor: rgb(120, 120, 120);
+        --rightcolor-top: rgb(13, 10, 22);
+        --rightcolor-bottom: rgb(50, 50, 55);
     }
 
     * {
@@ -103,11 +105,18 @@
     }
 
     div.highlight {
-        background-color: rgba(50, 45, 60, 0.8);
-        border: 1px solid silver;
-        color: white;
+        background-image: repeating-linear-gradient(-45deg, orange, slategray, orange 4%);
+        padding: 1px;
+    }
+
+    div.highlight div {
+        background: var(--rightcolor-top);
+        margin: 15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         padding-left: 7px;
         padding-right: 7px;
+        color: white;
     }
 
     .left {
@@ -171,7 +180,7 @@
     }
 
     .right {
-        background: linear-gradient(rgb(13, 10, 22), rgb(50, 50, 55));
+        background: linear-gradient(var(--rightcolor-top), var(--rightcolor-bottom));
         grid-area: right;
     }
 
@@ -256,8 +265,10 @@
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
                                     <div class="highlight">
-                                        <h3>Ubuntu 23.04</h3>
-                                        <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                                        <div>
+                                            <h3>Ubuntu 23.04</h3>
+                                            <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                                        </div>
                                     </div>
                                     <h3>Debian 12</h3>
                                     <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm. The release date for Debian 12 has not been decided yet.<br>
