@@ -105,17 +105,13 @@
     }
 
     div.highlight {
-        background-image: repeating-linear-gradient(-45deg, orange, slategray, orange 4%);
-        padding: 1px;
-    }
-
-    div.highlight div {
-        background: var(--rightcolor-top);
-        margin: 15px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 7px;
-        padding-right: 7px;
+        border-image: repeating-linear-gradient(-45deg, orange, slategray, orange 4%) 15 round;
+        border-image-width: 15px;
+        background: rgba(0, 0, 0, 0.4);
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 22px;
+        padding-right: 22px;
         color: white;
     }
 
@@ -264,12 +260,8 @@
                             </tr>
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
-                                    <div class="highlight">
-                                        <div>
-                                            <h3>Ubuntu 23.04</h3>
-                                            <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
-                                        </div>
-                                    </div>
+                                    <h3>New release 7.71.4</h3>
+                                    <p>Release 7.71.4 has most game operations running on alienarena.org. Automatic downloading of maps is using the http protocol again. The old obsolete stats have been removed.</p>
                                     <h3>Debian 12</h3>
                                     <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm. The release date for Debian 12 has not been decided yet.<br>
                                     See also: <a href="https://release.debian.org/" target="_blank">Debian Release Management</a>.</p>
@@ -278,8 +270,10 @@
                         </table>
                     </td>
                     <td class="rightsection" style="height: 100%">
-                        <h3>New release 7.71.4</h3>
-                        <p>Release 7.71.4 has most game operations running on alienarena.org. Automatic downloading of maps is using the http protocol again. The old obsolete stats have been removed.</p>
+                        <div class="highlight">
+                            <h3>Ubuntu 23.04</h3>
+                            <p>Alien Arena 7.71.3 has been released on Ubuntu 23.04 - Lunar Lobster!</p>
+                        </div>
                         <h3>New IRC server</h3>
                         <p>For IRC, use irc.alienarena.org. The port should be 6697 for secure connections, otherwise 6667. With the latest game clients the IRC server will be changed automatically.</p>
                     </td>
