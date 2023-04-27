@@ -22,6 +22,7 @@
 
     body {
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 1em;
         background-color: var(--backgroundcolor);
         color: silver;
         padding: 8px;
@@ -33,7 +34,6 @@
 
     code {
         font-family: monospace;
-        font-size: larger;
         background-color: rgb(255, 255, 255, 0.1);
         color: white;
         padding: 1px;
@@ -41,7 +41,6 @@
 
     textarea.code {
         font-family: monospace;
-        font-size: larger;
         background-color: rgb(255, 255, 255, 0.1);
         border: none;
         color: white;
@@ -104,9 +103,10 @@
         overflow-y: auto;
     }
 
-    div.highlight {
-        border-image: repeating-linear-gradient(-45deg, orange, slategray, orange 4%) 15 round;
-        border-image-width: 15px;
+    div.highlight {        
+        border-image: repeating-linear-gradient(-45deg, orange, slategray, orange 3%) 15 round !important;
+        border-image-width: 15px !important;
+        border: solid 15px transparent;
         background: rgba(0, 0, 0, 0.4);
         padding-top: 17px;
         padding-bottom: 17px;
@@ -195,14 +195,44 @@
 
     /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
     @media (max-width: 1080px) {
+        body {
+            font-size: 1.5em;
+        }
+        
+        td p {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        li {
+            font-size: 1.5em;
+        }
+
+        code {
+            font-size: 0.6em;
+        }
+
+        textarea.code {
+            font-size: 0.6em;
+        }
+        
+        div.highlight {
+            border-image: revert !important;
+            border-image-width: revert !important;
+            border: solid 15px goldenrod;
+        }
+
         .grid-container  {
             grid-template-areas:
                 'header header header'
                 'left left left'
                 'right right right'
                 'footer footer footer';
-            row-gap: 0.5vh;
         }
+
         .left, .right {
             height: 100%;
         }
@@ -213,7 +243,7 @@
         }
 
         textarea.code {
-            min-height: 100px;
+            min-height: 12em;
         }
     }
 
