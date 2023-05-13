@@ -160,6 +160,7 @@
     table.maps {
         border-spacing: 0px;
         width: 100%;
+        margin-top: 10px;
     }
 
     table.maps td {
@@ -291,7 +292,12 @@
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
                                     <h3>New release 7.71.4</h3>
-                                    <p>Release 7.71.4 has most game operations running on alienarena.org. Automatic downloading of maps is using the http protocol again. The old obsolete stats have been removed.</p>
+                                    <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                        <li>Release 7.71.4 has most game operations running on alienarena.org.</li>
+                                        <li>Automatic downloading of maps is using the http protocol again.</li>
+                                        <li>The old obsolete stats have been removed.</li>
+                                        <li>A new console command has been added to easily download and install new maps and/or map packs: <code>installmap</code>.</li>
+                                    </ul>
                                     <h3>Debian 12</h3>
                                     <p>Alien Arena 7.71.3 will be released soon in Debian 12 - Bookworm. The release date for Debian 12 is planned for June 10th, 2023.<br>
                                     See also: <a href="https://release.debian.org/" target="_blank">Debian Release Management</a>.</p>
@@ -331,6 +337,7 @@
                             <li>Automatic downloading of maps uses the (slow) udp protocol.</li>
                             <li>The newsfeed is not working.</li>
                         </ul>
+                        <p>To fix these issues on windows, you can manually replace the alienarena.exe in your steam folder with the one from <a href="https://svn.icculus.org/*checkout*/alienarena/trunk/alienarena.steam.exe" >svn</a> that is built for steam. Rename the original one to something else, then rename the downloaded one to alienarena.exe.</p>
                     </td>
                 </tr>
             </table>
@@ -389,10 +396,9 @@ sudo make install</textarea>
         </div>
 
         <div class="right">
-            <h1 style="margin-bottom: 1px;">Map packs and 3rd party maps</h1>
-            <div style="font-size: smaller; cursor: pointer;margin-top: 5px; margin-bottom: 25px;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>Instructions</u></div>
-            <div>Easy installation with the console command <code>installmap</code>.</div>
-            <div style="font-size: smaller; margin-bottom: 15px;">(Only for linux SVN users for now)</div>
+            <h1>Map packs and 3rd party maps</h1>
+            <div>Easy installation with the console command <code>installmap</code>.<br></div>
+            Otherwise follow these <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>instructions</u>.</span>
             <table class="maps">
                 <tr>
                     <td>
