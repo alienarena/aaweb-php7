@@ -191,25 +191,33 @@
     .footer a {
         color: white;
     }
+
+    /* Map title above image */
+    table.maps td div.map div {
+        display: table-cell;
+    }
     
+    div.map {
+        position: relative;
+        display: inline-table;
+    }
+
+    div.map img {
+        margin-top: 5px;
+        position: absolute;
+    }
+
     /* bigger map image on hover only > 1081px */
     @media (min-width: 1081px) {
-        table.maps td div.map div {
-            display: table-cell;
-        }
 
         div.map {
-            position: relative;
-            display: inline-table;
             height: 95px;
             width: 140px;
         }
 
         div.map img {
-            margin-top: 5px;
             height: 78px;
             width: 138px;
-            position: absolute;
         }
 
         div.map:hover {
@@ -289,6 +297,11 @@
 
         .left, .right {
             height: 100%;
+        }
+
+        table.maps div.map {
+            height: calc(28vw / 1.78 + 20px);
+            width: calc(28vw + 20px);
         }
 
         table.maps img {
@@ -426,11 +439,13 @@ sudo make install</textarea>
                         <ul>
                             <li><a href="https://martianbackup.com" target="_blank">Official website</a></li>
                             <li><a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
-                            <li><a href="https://discord.gg/Rd5fwBg" target="_blank">Discord</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Alien_Arena" target="_blank">Alien Arena on Wikipedia</a></li>
+                            <li><a href="https://alienarena.fandom.com/wiki/Main_Page" target="_blank">Alien Arena fandom Wiki</a></li>
                         </ul>
                     </td>
                     <td class="leftsection divider" style="width: 25%;">
                         <ul>
+                            <li><a href="https://discord.gg/Rd5fwBg" target="_blank">Discord</a></li>
                             <li><a href="https://matrix.to/#/#alienarena:matrix.org" target="_blank">Matrix</a></li>
                             <li><a href="https://www.youtube.com/channel/UC4p_zL707sPjH-I9WqTbyNQ" target="_blank">YouTube</a></li>
                             <li><a href="https://www.twitch.tv/directory/game/Alien%20Arena%3A%20Warriors%20Of%20Mars" target="_blank">Twitch</a></li>
