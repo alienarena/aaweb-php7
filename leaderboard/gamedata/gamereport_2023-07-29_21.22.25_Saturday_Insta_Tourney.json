@@ -1,0 +1,42 @@
+{
+	"map": "dm-nkitrn1",
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 155,
+			"deaths": 55,
+			"ratio": 281,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 161, "shots": 409, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 72,
+			"deaths": 82,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 88, "shots": 232, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^SSly",
+			"score": 52,
+			"deaths": 94,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 61, "shots": 229, "accuracy": 26},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 45,
+			"deaths": 93,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 50, "shots": 269, "accuracy": 18}
+			]
+		}
+	]
+}

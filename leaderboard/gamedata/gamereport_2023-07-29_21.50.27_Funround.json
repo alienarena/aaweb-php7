@@ -1,0 +1,41 @@
+{
+	"map": "dm-leviathan-classic",
+	"players": [
+		{
+			"name": "^![666]^@Blitz",
+			"score": 45,
+			"deaths": 53,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 146, "shots": 424, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 41,
+			"deaths": 43,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 424, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar^5'El",
+			"score": 34,
+			"deaths": 53,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 132, "shots": 448, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^SSly",
+			"score": 23,
+			"deaths": 42,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 92, "shots": 408, "accuracy": 22}
+			]
+		}
+	]
+}

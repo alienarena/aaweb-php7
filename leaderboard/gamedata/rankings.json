@@ -1,6 +1,6 @@
 {
  "dateFrom": "2019-01-27",
- "dateTo": "2021-12-18",
+ "dateTo": "2023-07-29",
  "rankings": [
   {
    "name": "^0[^3GM^0]^1Vista",
@@ -39,18 +39,18 @@
   {
    "name": "^3[GM]^3^1Jar^5'El",
    "userID": "315223049471524866",
-   "points": 741.55,
+   "points": 746.34,
    "deathMatchPoints": 179.97,
-   "instagibPoints": 295.23,
-   "rocketArenaPoints": 266.35,
+   "instagibPoints": 297.18,
+   "rocketArenaPoints": 269.19,
    "mainRoundWins": 0,
    "funroundWins": 4,
    "mainRoundSeconds": 9,
    "funroundSeconds": 23,
    "mainRoundThirds": 34,
-   "funroundThirds": 29,
-   "mainRoundsPlayed": 123,
-   "funroundsPlayed": 103,
+   "funroundThirds": 30,
+   "mainRoundsPlayed": 124,
+   "funroundsPlayed": 104,
    "rank": 3
   },
   {
@@ -191,19 +191,19 @@
   },
   {
    "name": "^![666]^@Blitz",
-   "userID": "589628601406717962",
-   "points": 129.5,
+   "userID": "310892608618627072",
+   "points": 146.5,
    "deathMatchPoints": 49.94,
-   "instagibPoints": 36.63,
-   "rocketArenaPoints": 42.93,
-   "mainRoundWins": 3,
-   "funroundWins": 3,
+   "instagibPoints": 48.68,
+   "rocketArenaPoints": 47.88,
+   "mainRoundWins": 4,
+   "funroundWins": 4,
    "mainRoundSeconds": 3,
    "funroundSeconds": 5,
    "mainRoundThirds": 1,
    "funroundThirds": 1,
-   "mainRoundsPlayed": 18,
-   "funroundsPlayed": 12,
+   "mainRoundsPlayed": 19,
+   "funroundsPlayed": 13,
    "rank": 12
   },
   {
@@ -226,18 +226,18 @@
   {
    "name": "Sly",
    "userID": "984551918586175588",
-   "points": 68.53,
+   "points": 77.28,
    "deathMatchPoints": 15.3,
-   "instagibPoints": 31.62,
-   "rocketArenaPoints": 21.61,
+   "instagibPoints": 38.64,
+   "rocketArenaPoints": 23.34,
    "mainRoundWins": 0,
    "funroundWins": 0,
    "mainRoundSeconds": 0,
    "funroundSeconds": 0,
-   "mainRoundThirds": 2,
+   "mainRoundThirds": 3,
    "funroundThirds": 2,
-   "mainRoundsPlayed": 22,
-   "funroundsPlayed": 12,
+   "mainRoundsPlayed": 23,
+   "funroundsPlayed": 13,
    "rank": 14
   },
   {
@@ -275,6 +275,23 @@
    "rank": 16
   },
   {
+   "name": "^7[SiN]animal",
+   "userID": "504744083366084648",
+   "points": 46.79,
+   "deathMatchPoints": 18.85,
+   "instagibPoints": 17.17,
+   "rocketArenaPoints": 10.77,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundSeconds": 1,
+   "funroundSeconds": 0,
+   "mainRoundThirds": 2,
+   "funroundThirds": 2,
+   "mainRoundsPlayed": 12,
+   "funroundsPlayed": 5,
+   "rank": 17
+  },
+  {
    "name": "^7[SIN]^3pantera",
    "userID": "517097869443072001",
    "points": 38.84,
@@ -289,23 +306,6 @@
    "funroundThirds": 1,
    "mainRoundsPlayed": 10,
    "funroundsPlayed": 3,
-   "rank": 17
-  },
-  {
-   "name": "^7[SiN]animal",
-   "userID": "504744083366084648",
-   "points": 38.07,
-   "deathMatchPoints": 18.85,
-   "instagibPoints": 8.45,
-   "rocketArenaPoints": 10.77,
-   "mainRoundWins": 0,
-   "funroundWins": 0,
-   "mainRoundSeconds": 0,
-   "funroundSeconds": 0,
-   "mainRoundThirds": 2,
-   "funroundThirds": 2,
-   "mainRoundsPlayed": 11,
-   "funroundsPlayed": 5,
    "rank": 18
   },
   {
