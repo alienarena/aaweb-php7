@@ -11,8 +11,9 @@
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     :root {
-        --backgroundcolor: rgb(120, 120, 120);
+        --backgroundcolor: rgb(120, 120, 120);        
         --rightcolor-top: rgb(13, 10, 22);
+        --rightcolor-intermediate: rgb(30, 27, 39);
         --rightcolor-bottom: rgb(50, 50, 55);
     }
 
@@ -88,20 +89,34 @@
         justify-content: center;
         grid-template-areas:
             'header header header'
-            'left left right'
-            'footer footer footer';
+            'left left topright'
+            'left left right';
     }
 
     .left,
+    .topright,
     .right {
         padding-top: 10px;
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 5px;
-        height: 85vh;
         min-width: 500px;
         overflow-y: auto;
     }
+
+    .left {
+        height: 90vh;
+    }
+
+    .topright {
+        height: 22vh;
+    }    
+
+    .right {
+        height: 67vh;
+        /* height: 90vh; */
+    }
+
 
     div.highlight {
         border-image: repeating-linear-gradient(-45deg, orange, slategray, orange 3%) 15 round !important;
@@ -156,7 +171,8 @@
     }
 
     .left h1,
-    .right h1 {
+    .right h1,
+    .topright h1 {
         margin-top: 3px;
         margin-bottom: 6px;
     }
@@ -178,35 +194,29 @@
         border: solid darkgrey 2px;
     }
 
+    .topright {
+        background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
+        grid-area: topright;
+    }
+
     .right {
-        background: linear-gradient(var(--rightcolor-top), var(--rightcolor-bottom));
+        background: linear-gradient(var(--rightcolor-intermediate), var(--rightcolor-bottom));
         grid-area: right;
     }
 
-    .footer {
-        grid-area: footer;
-        background-color: var(--backgroundcolor);
-        color: white;
-        text-align: center;
-        overflow-y: hidden;
-        height: 5vh;
-    }
-
-    .footer a {
-        color: white;
-    }
-
     /* Map title above image */
-    table.maps td div.map div {
+    table.maps td div.map div,
+    table.maps td div.model div {
         display: table-cell;
     }
     
-    div.map {
+    div.map, div.model {
         position: relative;
         display: inline-table;
     }
 
-    div.map img {
+    div.map img,
+    div.model img {
         margin-top: 5px;
         position: absolute;
     }
@@ -219,24 +229,52 @@
             width: 140px;
         }
 
+        div.model {
+            height: 130px;
+            width: 95px;
+        }
+
         div.map img {
             height: 78px;
             width: 138px;
         }
 
-        div.map:hover {
+        div.model img {
+            height: 107px;
+            width: 78px;
+        }
+
+        div.map:hover,
+        div.model:hover {
             font-weight: bold;
             color: white;
-            top: -16px;
-            left: -29px;
             z-index: 100;
         }
-        
-        div.map img:hover {
+
+        div.map:hover {
+            top: -16px;
+            left: -29px;
+        }
+
+        div.model:hover {
+            top: -21px;
+            left: -16px;
+        }
+
+        div.map img:hover, 
+        div.model img:hover{
             border: solid white 2px;
             filter: drop-shadow(2px 2px 2px black);
+        }
+
+        div.map img:hover {
             height: 110px;
             width: 195px;
+        }
+
+        div.model img:hover {
+            height: 150px;
+            width: 110px;
         }
 
         /* 
@@ -295,11 +333,11 @@
             grid-template-areas:
                 'header header header'
                 'left left left'
-                'right right right'
-                'footer footer footer';
+                'topright topright topright'
+                'right right right';
         }
 
-        .left, .right {
+        .left, .right, .topright {
             height: 100%;
         }
 
@@ -308,9 +346,19 @@
             width: calc(28vw + 20px);
         }
 
-        table.maps img {
+        table.maps div.model {
+            height: calc(20vw * 1.37 + 20px);
+            width: calc(20vw + 20px);
+        }
+
+        table.maps div.map img {
             height: calc(28vw / 1.78);
             width: 28vw;
+        }
+
+        table.maps div.model img {
+            height: calc(20vw * 1.37);
+            width: 20vw;
         }
 
         textarea.code {
@@ -362,33 +410,20 @@
                             <tr>
                                 <td style="vertical-align: bottom; height: 100%">
                                     <h3>Alien Arena Installer</h3>
-                                    <img src="AlienArenaInstaller.png" width="100%" style="max-width: 650px">
+                                    <img src="AlienArenaInstaller.png" width="100%" style="max-width: 550px">
                                     <p>For Windows, there is a new installer to install the latest release directly from the source: <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>. This installer keeps the game up-to-date and can be used for launching the game as well.</p>
                                     <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
+                                    <h3>Classic player models and custom skins</h3>
+                                    <p>Four classic player models with all their custom skins are available again: slashbot-classic, martiancyborg-classic, martianenforcer-classic and martianwarrior-classic. From release 7.71.5, you can install them with the console command <code>installmodel</code>. If you have 7.71.4, you can use <code>installmap</code> for that.</p>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td class="rightsection" style="vertical-align: bottom; height: 100%">
-                        <!-- <table style="border-spacing: 0px; width: 100%;">
-                            <tr>
-                                <td style="height: 1px;">
-                                    <h3>Itch.io</h3>
-                                </td>
-                                <td rowspan="2">
-                                    <iframe frameborder="0" src="https://itch.io/embed/2209751?dark=true" width="208" height="167"><a href="https://alien-arena.itch.io/alien-arena">Alien Arena by Alien Arena</a></iframe>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">
-                                    Alien Arena is now on itch.io!
-                                </td>
-                            </tr>
-                        </table> -->
                         <h3>Itch.io</h3>
                         <p>Alien Arena is now on <a href="https://alien-arena.itch.io/alien-arena" target="_blank">itch.io</a>!</p>
                         <h3>Flathub</h3>
-                        <p>Alien Arena 7.71.4 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 1250 installs)</p>
+                        <p>Alien Arena 7.71.4 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 1800 installs)</p>
                         <h3>Steam</h3>
                         <p>Alien Arena 7.71.4 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>! For Linux, see <b>Known issues on Steam</b> and alternative methods in <b>How to install</b>.</p>
                         <h3>New release 7.71.4</h3>
@@ -434,7 +469,7 @@
                             <li>The newsfeed is not working.</li>
                         </ul>
                         <p>Above issues can for the moment be fixed by manually replacing the game client / executable. Rename the original one first to something else to have a backup.</p>
-                        Linux steam client 7.71.4: <a href="/arena/files/steam/alienarena.x86_64">alienarena.x86_64</a><br>
+                        Linux steam client 7.71.5: <a href="/arena/files/steam/alienarena.x86_64">alienarena.x86_64</a><br>
                         Warning: this Linux steam client doesn't work on all distributions.
                     </td>
                 </tr>
@@ -454,7 +489,7 @@ make
 sudo make install</textarea>
             </p>
             If you have already done this before, use <code>svn update</code> to download the latest sources.<br>
-            For windows, download the latest game client <a href="https://svn.icculus.org/*checkout*/alienarena/trunk/alienarena.exe">here.</a><br>
+            For windows, download the latest game client <a href="arena/files/alienarena.exe">here.</a><br>
             To compile faster, you can specify the number of threads it uses: <code>make -j 4</code>.
             <p>Other configure options that are useful:<br>
             Dedicated server: <code>./configure --disable-client</code><br>
@@ -514,6 +549,52 @@ sudo make install</textarea>
                             <li>irc.alienarena.org:6697</li>
                             <li>irc.alienarena.org:6667</li>
                         </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="topright">
+            <h1>Classic models and skins</h1>
+            <div>Easy installation with the console command <code>installmap</code>.<br></div>
+            Otherwise follow these <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>instructions</u>.</span>
+            <table class="maps">
+                <tr>
+                    <td>
+                        <div class="model">
+                            <a href="/arena/files/slashbot-classic.zip"
+                                title="This contains the classic slashbot model and all custom skins.&#13;To install, use installmap slashbot-classic">
+                                <img src="slashbot-classic.png" />
+                            </a>
+                            <div>slashbot</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="model">
+                            <a href="/arena/files/martiancyborg-classic.zip"
+                                title="This contains the classic martiancyborg model and all custom skins.&#13;To install, use installmap martiancyborg-classic">
+                                <img src="martiancyborg-classic.png" />
+                            </a>
+                            <div>martiancyborg</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="model">
+                            <a href="/arena/files/martianenforcer-classic.zip"
+                                title="This contains the classic martianenforcer model and all custom skins.&#13;To install, use installmap martianenforcer-classic">
+                                <img src="martianenforcer-classic.png" />
+                            </a>
+                            <div>martianenforcer</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="model">
+                            <a href="/arena/files/martianwarrior-classic.zip"
+                                title="This contains the classic martianwarrior model and all custom skins.&#13;To install, use installmap martianwarrior-classic">
+                                <img src="martianwarrior-classic.png" />
+                            </a>
+                            <div>martianwarrior</div>
+                        </div>
                     </td>
                 </tr>
             </table>
@@ -834,15 +915,6 @@ sudo make install</textarea>
                     </td>
                 </tr>
             </table>
-        </div>
-
-        <div class="footer">
-            <a href="https://discord.gg/Rd5fwBg" target="_blank" title="Join us on Discord">
-                <img style="background-color: rgb(46, 46, 46); object-fit: cover; border: solid var(--backgroundcolor) 2px; border-radius: 8px;" alt="Join us on Discord" width="180px" height="58px" src="/arena/browser/img/discord.png"></a>
-            <!-- <a href="https://snapcraft.io/alien-arena-linux" target="_blank" title="Get it from the Snap Store">
-                <img alt="Get it from the Snap Store" style="object-fit: none; border: solid var(--backgroundcolor) 2px; border-radius: 8px;" width="180px" height="58px" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg"></a> -->
-            <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank" title="Get it on Steam">
-                <img alt="Get it on Steam" style="object-fit: cover;  border: solid var(--backgroundcolor) 2px; border-radius: 8px;" width="180px" height="58px" src="/arena/browser/img/steam.png"></a>
         </div>
     </div>
     <script type="text/javascript" src="occupied-servers.js"></script>
