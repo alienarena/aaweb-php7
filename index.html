@@ -109,12 +109,11 @@
     }
 
     .topright {
-        height: 22vh;
+        height: 25vh;
     }    
 
     .right {
-        height: 67vh;
-        /* height: 90vh; */
+        height: 64vh;
     }
 
 
@@ -135,7 +134,8 @@
     }
 
     .left {
-        background: url("/arena/sharedimages/purgatory.jpg");
+        background: url("/arena/sharedimages/purgatory.jpg"), rgb(70, 70, 65);
+        background-blend-mode: overlay;
         background-size: cover;
         grid-area: left;
     }
@@ -415,6 +415,7 @@
                                     <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
                                     <h3>Classic player models and custom skins</h3>
                                     <p>Four classic player models with all their custom skins are available again: slashbot-classic, martiancyborg-classic, martianenforcer-classic and martianwarrior-classic. From release 7.71.5, you can install them with the console command <code>installmodel</code>. If you have 7.71.4, you can use <code>installmap</code> for that.</p>
+                                    <p>It's recommended to install all of them because you don't know which ones other players are using. Use <code>installmodel classicmodelpack</code> for that.</p>
                                 </td>
                             </tr>
                         </table>
@@ -511,6 +512,7 @@ sudo make install</textarea>
                     <td class="leftsection" style="width: 17%;">
                         <ul>
                             <li><a href="https://martianbackup.com" target="_blank">Official website</a></li>
+                            <li><a href="https://svn.icculus.org/alienarena" target="_blank">SVN</a></li>
                             <li><a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
                             <li><a href="https://en.wikipedia.org/wiki/Alien_Arena" target="_blank">Wikipedia</a></li>
                             <li><a href="https://alienarena.fandom.com/wiki/Main_Page" target="_blank">Fandom Wiki</a></li>
@@ -522,6 +524,7 @@ sudo make install</textarea>
                             <li><a href="https://matrix.to/#/#alienarena:matrix.org" target="_blank">Matrix</a></li>
                             <li><a href="https://www.youtube.com/channel/UC4p_zL707sPjH-I9WqTbyNQ" target="_blank">YouTube</a></li>
                             <li><a href="https://www.twitch.tv/directory/game/Alien%20Arena%3A%20Warriors%20Of%20Mars" target="_blank">Twitch</a></li>
+                            <li><a href="https://www.reddit.com/r/alienarena" target="_blank">Reddit</a></li>
                         </ul>
                     </td>
                     <td class="rightsection" style="width: 17%;">
@@ -562,7 +565,8 @@ sudo make install</textarea>
         <div class="topright">
             <h1>Classic models and skins</h1>
             <div>Easy installation with the console command <code>installmodel</code>.<br></div>
-            Otherwise follow these <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>instructions</u>.</span>
+            <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>Instructions</u> for installing manually.</span><br><br>
+            Install all: <a href="/arena/files/classicmodelpack.zip">classicmodelpack.zip</a> | <code>installmodel classicmodelpack</code><br>
             <table class="maps">
                 <tr>
                     <td>
@@ -608,7 +612,7 @@ sudo make install</textarea>
         <div class="right">
             <h1>Map packs and 3rd party maps</h1>
             <div>Easy installation with the console command <code>installmap</code>.<br></div>
-            Otherwise follow these <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>instructions</u>.</span>
+            <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>Instructions</u> for installing manually.</span>
             <table class="maps">
                 <tr>
                     <td>
