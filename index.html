@@ -90,7 +90,8 @@
         grid-template-areas:
             'header header header'
             'left left topright'
-            'left left right';
+            'left left right'
+            'footer footer footer';
     }
 
     .left,
@@ -105,7 +106,7 @@
     }
 
     .left {
-        height: 90vh;
+        height: calc(89vh - 32px);
     }
 
     .topright {
@@ -113,7 +114,7 @@
     }    
 
     .right {
-        height: calc(89vh - 331px);
+        height: calc(88vh - 331px - 32px);
     }
 
 
@@ -197,6 +198,19 @@
     .topright {
         background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
         grid-area: topright;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: var(--backgroundcolor);
+        color: white;
+        text-align: center;
+        overflow-y: hidden;
+        height: 32px;
+    }
+
+    .footer a {
+        color: white;
     }
 
     .right {
@@ -334,7 +348,8 @@
                 'header header header'
                 'left left left'
                 'topright topright topright'
-                'right right right';
+                'right right right'
+                'footer footer footer';
         }
 
         .left, .right, .topright {
@@ -379,7 +394,7 @@
 
     <div class="grid-container">
         <div class="header">
-            <h3>Alien Arena Community</h3>
+            <h3 style="text-align: center;">Alien Arena Community</h3>
         </div>
 
         <div class="left">
@@ -391,6 +406,7 @@
                 <tr>
                     <td class="leftsection divider" style="padding-bottom: 16px;">
                         <a href="https://invader.alienarena.org/arena/browser/index.php?action=playerstats" target="_blank">Check the player activity here</a>
+                        <p>We usually play CTF on the AAOCS server between 19:00 UTC and 23:00 UTC</p>
                     </td>
                     <td class="rightsection">
                         <div id="occupied-servers">Fetching data...</div>
@@ -416,18 +432,27 @@
                                     <h3>Classic player models and custom skins</h3>
                                     <p>Four classic player models with all their custom skins are available again: slashbot-classic, martiancyborg-classic, martianenforcer-classic and martianwarrior-classic. From release 7.71.5, you can install them with the console command <code>installmodel</code>. If you have 7.71.4, you can use <code>installmap</code> for that.</p>
                                     <p>It's recommended to install all of them because you don't know which ones other players are using. Use <code>installmodel classicmodelpack</code> for that.</p>
+                                    <h3>New release 7.71.5</h3>
+                                    <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                        <li>The player setup will handle classic player models better.</li>
+                                        <li>There is a new command to install classic player models: <code>installmodel</code>.</li>
+                                    </ul>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td class="rightsection" style="vertical-align: bottom; height: 100%">
-                        <h3>New release 7.71.5</h3>
+                        <h3>New in beta (SVN and github)</h3>
                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
-                            <li>The player setup will handle classic player models better.</li>
-                            <li>There is a new command to install classic player models: <code>installmodel</code>.</li>
+                            <li>The server list has a filter now to show active servers only</li>
+                            <li>It's easier to see the number of real players in the server list</li>
+                            <li>The server list sorts on player count, ping by default</li>
+                            <li>The antilag code got some optimizations</li>
+                            <li>The player setup pops-up at more places</li>
+                            <li>The newsfeed can show colors now apart from just yellow and white</li>
                         </ul>
                         <h3>Flathub</h3>
-                        <p>Alien Arena 7.71.5 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 2000 installs)</p>
+                        <p>Alien Arena 7.71.5 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 2600 installs)</p>
                         <h3>Steam</h3>
                         <p>Alien Arena 7.71.5 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>! For Linux, see <b>Known issues on Steam</b> and alternative methods in <b>How to install</b>.</p>
                         <h3>Itch.io</h3>
@@ -504,15 +529,16 @@ sudo make install</textarea>
             <hr>
             <table class="subsection">
                 <tr class="sectionheader">
-                    <td class="leftsection" colspan="2"><h1>Links</h1></td>
-                    <td class="rightsection divider" colspan="2"><h1>Help / Tools</h1></td>
-                    <td class="rightsection" colspan="2"><h1>Support</h1></td>
+                    <td class="leftsection" style="width: 34%" colspan="2"><h1>Links</h1></td>
+                    <td class="rightsection divider" style="width: 33%"><h1>Help / Tools</h1></td>
+                    <td class="rightsection" style="width: 33%"><h1>Support</h1></td>
                 </tr>
                 <tr>
-                    <td class="leftsection" style="width: 17%;">
+                    <td class="leftsection" style="width: 19%;">
                         <ul>
                             <li><a href="https://martianbackup.com" target="_blank">Official website</a></li>
                             <li><a href="https://svn.icculus.org/alienarena" target="_blank">SVN</a></li>
+                            <li><a href="https://github.com/alienarena/alienarena" target="_blank">GitHub</a></li>
                             <li><a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
                             <li><a href="https://en.wikipedia.org/wiki/Alien_Arena" target="_blank">Wikipedia</a></li>
                             <li><a href="https://alienarena.fandom.com/wiki/Main_Page" target="_blank">Fandom Wiki</a></li>
@@ -527,32 +553,21 @@ sudo make install</textarea>
                             <li><a href="https://www.reddit.com/r/alienarena" target="_blank">Reddit</a></li>
                         </ul>
                     </td>
-                    <td class="rightsection" style="width: 17%;">
-                        <br>
+                    <td class="rightsection divider" style="width: 33%;">
                         <ul>
                             <li><a href="https://alienarena.fandom.com/wiki/New_Player_Guide" target="_blank">New player guide</a></li>
                             <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1185832191" target="_blank">Gameplay guide</a></li>
                             <li><a href="https://alienarena.fandom.com/wiki/Frequently_Asked_Questions" target="_blank">FAQs</a></li>
-                        </ul>
-                    </td>
-                    <td class="rightsection divider" style="width: 17%;">
-                        <br>
-                        <ul>
                             <li><a href="https://steamcommunity.com/app/629540/discussions" target="_blank">Steam forum</a></li>
                             <li><a href="/qcc" target="_blank">Console commands</a></li>
                             <li><a href="/arena/dmflags.html" target="_blank">DM flags calculator</a></li>
                         </ul>
                     </td>
-                    <td class="rightsection" style="width: 15%;">
-                        <br>
+                    <td class="rightsection" style="width: 33%;">
                         <ul id="support">
                             <li><a href="https://discord.gg/Rd5fwBg" target="_blank">Discord</a></li>
                             <li><a href="https://matrix.to/#/#alienarena:matrix.org" target="_blank">Matrix</a></li>
-                        </ul>
-                    </td>
-                    <td class="rightsection" style="width: 17%;">
-                        <br>
-                        <ul>
+                            <br>
                             <li>IRC:</li>
                             <li>irc.alienarena.org:6697</li>
                             <li>irc.alienarena.org:6667</li>
@@ -925,6 +940,9 @@ sudo make install</textarea>
                 </tr>
             </table>
         </div>
+    </div>
+    <div class="footer">
+        <iframe src="https://github.com/sponsors/alienarena/button" title="Sponsor Alien Arena" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
     </div>
     <script type="text/javascript" src="occupied-servers.js"></script>
 </body>
