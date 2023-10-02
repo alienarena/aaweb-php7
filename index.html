@@ -435,17 +435,19 @@
                                         <li>The player setup pops-up at more places</li>
                                         <li>The newsfeed can show colors now apart from just yellow and white</li>
                                     </ul>            
-                                    <h3>Steam</h3>
-                                    <p>Alien Arena 7.71.6 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>! For Linux, see <b>Known issues on Steam</b> and alternative methods in <b>How to install</b>.</p>
                                     <h3>Alien Arena Installer</h3>
                                     <img src="AlienArenaInstaller.png" width="100%" style="max-width: 550px">
                                     <p>For Windows, there is a new installer to install the latest release directly from the source: <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>. This installer keeps the game up-to-date and can be used for launching the game as well.</p>
                                     <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
+                                    <h3>Steam</h3>
+                                    <p>Alien Arena 7.71.6 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>! For Linux, see <b>Known issues on Steam</b> and alternative methods in <b>How to install</b>.</p>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td class="rightsection" style="vertical-align: bottom; height: 100%">
+                        <h3>Flathub</h3>
+                        <p>Alien Arena 7.71.6 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 3000 installs)</p>
                         <h3>New release 7.71.5</h3>
                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
                             <li>The player setup will handle classic player models better.</li>
@@ -454,8 +456,6 @@
                         <h3>Classic player models and custom skins</h3>
                         <p>Four classic player models with all their custom skins are available again: slashbot-classic, martiancyborg-classic, martianenforcer-classic and martianwarrior-classic. From release 7.71.5, you can install them with the console command <code>installmodel</code>. If you have 7.71.4, you can use <code>installmap</code> for that.</p>
                         <p>It's recommended to install all of them because you don't know which ones other players are using. Use <code>installmodel classicmodelpack</code> for that.</p>
-                        <h3>Flathub</h3>
-                        <p>Alien Arena 7.71.5 is now on <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! (> 2900 installs)</p>
                         <h3>Itch.io</h3>
                         <p>Alien Arena is now on <a href="https://alien-arena.itch.io/alien-arena" target="_blank">itch.io</a>!</p>
                         <h3>New release 7.71.4</h3>
@@ -480,7 +480,7 @@
                         <p>Windows:</p>
                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
                             <li>Install using the new <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>.</li>
-                            <li>Install from SVN. You'll have the latest code (see below).</li>
+                            <li>Install from svn (icculus) or github. You'll have the latest code (see below).</li>
                             <li>Install from <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>.</li>
                         </ul>
                         <p>Linux:</p>
@@ -507,20 +507,26 @@
                 </tr>
             </table>
             <hr>
-            <h1>SVN</h1>
-            <p>The repository is located at: <code>svn://svn.icculus.org/alienarena/trunk</code>.<br>
-            On Windows, you can install TortoiseSVN and download the source code. The alienarena.exe is already there.<br>
+            <h1>SVN (icculus) and github</h1>
+            <p>The repository is located at: <code>svn://svn.icculus.org/alienarena/trunk</code> and <code>https://github.com/alienarena/alienarena</code>.<br>
+            On Windows, if you want to download from svn on icculus, you can install TortoiseSVN and download the source code. The alienarena.exe is already there.<br>
             On Linux, install subversion. Then you need to build the application yourself.</p>
             <p>For building on Linux, you need to install the following libraries first:
-            <textarea readonly="true" class="code" rows="3">apt install sharutils libglu1-mesa-dev libgl1-mesa-dev libjpeg-dev libpng-dev libxxf86vm-dev libxxf86dga-dev libxext-dev libx11-dev libcurl4-gnutls-dev libopenal-dev libvorbis-dev libfreetype6-dev pkg-config</textarea>
-            <p>Then execute the following commands to download the source code into folder <code>alienarena</code>:
-            <textarea readonly="true" class="code" rows="5">svn checkout svn://svn.icculus.org/alienarena/trunk alienarena
-cd alienarena
+                <textarea readonly="true" class="code" rows="3">apt install sharutils libglu1-mesa-dev libgl1-mesa-dev libjpeg-dev libpng-dev libxxf86vm-dev libxxf86dga-dev libxext-dev libx11-dev libcurl4-gnutls-dev libopenal-dev libvorbis-dev libfreetype6-dev pkg-config</textarea>
+            </p>
+            <p>Execute the following command to download the source code from SVN on icculus into folder <code>alienarena</code>:
+                <textarea readonly="true" class="code" rows="2" style="min-height: 20px;">svn checkout svn://svn.icculus.org/alienarena/trunk alienarena</textarea>
+            </p>
+            <p>Execute the following command to download the source code from github into folder <code>alienarena</code>:
+                <textarea readonly="true" class="code" rows="2" style="min-height: 20px;">git clone https://github.com/alienarena/alienarena alienarena</textarea>
+            </p>
+            <p>Then execute the following commands to build the executable:
+                <textarea readonly="true" class="code" rows="5">cd alienarena
 ./configure
 make
 sudo make install</textarea>
             </p>
-            If you have already done this before, use <code>svn update</code> to download the latest sources.<br>
+            If you have already done this before, use <code>svn update</code> or <code>git pull</code> to download the latest sources.<br>
             For windows, download the latest game client <a href="arena/files/alienarena.exe">here.</a><br>
             To compile faster, you can specify the number of threads it uses: <code>make -j 4</code>.
             <p>Other configure options that are useful:<br>
@@ -537,7 +543,7 @@ sudo make install</textarea>
                 <tr>
                     <td class="leftsection" style="width: 19%;">
                         <ul>
-                            <li><a href="https://martianbackup.com" target="_blank">Official website</a></li>
+                            <li><a href="https://martianbackup.com" target="_blank">Old official website</a></li>
                             <li><a href="https://svn.icculus.org/alienarena" target="_blank">SVN</a></li>
                             <li><a href="https://github.com/alienarena/alienarena" target="_blank">GitHub</a></li>
                             <li><a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a></li>
