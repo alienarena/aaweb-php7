@@ -4,6 +4,8 @@
     <title>Alien Arena</title>
     <link href="https://fonts.googleapis.com/css?family=Bowlby One SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/arena/sharedimages/favicon.ico">
     <meta charset="utf-8">
     <meta name="description" content="The place to start for Alien Arena players." />
@@ -53,6 +55,33 @@
         resize: none;
     }
 
+    div.sponsorbutton {
+        color: black;
+        border-radius: 7px;
+        height: 26px;
+        display: inline-block;
+        padding-top: 2px;
+        vertical-align: top;
+    }
+
+    div.buymeacoffee {
+        background-color: rgb(235, 175, 60);
+        font-family: "Cookie";
+    }    
+
+    div.buymeacoffee:hover {
+        background-color: rgb(255, 210, 90);
+    }
+
+    div.github {
+        font-family: "Strait";
+        background-color: lightgray;
+    }
+
+    div.github:hover {
+        background-color: whitesmoke;
+    }
+
     a {
         color: silver;
     }
@@ -77,7 +106,6 @@
         font-family: "Bowlby One SC";
         margin-top: 12px;
         margin-bottom: 7px;
-        /*text-shadow: 0 0 3px #fcf, 0 0 6px #dad;*/
     }
 
     hr {
@@ -508,7 +536,7 @@
                 </tr>
             </table>
             <hr>
-            <h1>SVN (icculus) and github</h1>
+            <h1>SVN (icculus) and GitHub</h1>
             <p>The repository is located at: <code>svn://svn.icculus.org/alienarena/trunk</code> and <code>https://github.com/alienarena/alienarena</code>.<br>
             On Windows, if you want to download from svn on icculus, you can install TortoiseSVN and download the source code. The alienarena.exe is already there.<br>
             On Linux, install subversion. Then you need to build the application yourself.</p>
@@ -950,7 +978,19 @@ sudo make install</textarea>
         </div>
     </div>
     <div class="footer">
-        <iframe src="https://github.com/sponsors/alienarena/button" title="Sponsor Alien Arena" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+        <table style="width: 100%; border-spacing: 0x;">
+            <tr>
+                <td style="width: 100%; padding: 0px;">
+                    <a href="https://www.buymeacoffee.com/alienarena" target="_blank" style="text-decoration:none;">
+                        <div class="sponsorbutton buymeacoffee">&nbsp;<span style="font-size: 1.2em">☕</span>&nbsp;<span style="font-size: 1.4em">Buy me a coffee</span>&nbsp;</div>
+                    </a>
+                    &nbsp;
+                    <a href="https://github.com/sponsors/alienarena" target="_blank" style="text-decoration:none;">
+                        <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
+                    </a>
+                </td>
+            </tr>
+        </table>
     </div>
     <script type="text/javascript" src="occupied-servers.js"></script>
 </body>
