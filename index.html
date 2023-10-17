@@ -15,7 +15,11 @@
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     :root {
-        --backgroundcolor: rgb(120, 120, 120);        
+        --halfyearamount: 256;
+        --donatedamount: 13.51;
+        --donatedpercentage: calc(var(--donatedamount) / var(--halfyearamount) * 100%);
+        --sponsorprogresscolor:  rgb(135, 130, 140);
+        --backgroundcolor: rgb(95, 105, 115);
         --rightcolor-top: rgb(13, 10, 22);
         --rightcolor-intermediate: rgb(30, 27, 39);
         --rightcolor-bottom: rgb(50, 50, 55);
@@ -66,6 +70,18 @@
         vertical-align: top;
     }
 
+    div.sponsorprogress {
+        color: white;
+        background: linear-gradient(to right, green 0%, green var(--donatedpercentage), var(--sponsorprogresscolor) var(--donatedpercentage), var(--sponsorprogresscolor) 100%);
+        border-radius: 7px;
+        height: 26px;
+        display: inline-block;
+        padding-top: 2px;
+        padding-left: 3px;
+        padding-right: 3px;
+        vertical-align: top;
+    }
+
     div.buymeacoffee {
         background-color: rgb(235, 175, 60);
         font-family: "Cookie";
@@ -95,9 +111,11 @@
 
     .header {
         grid-area: header;
-        background: url("/arena/sharedimages/background.jpg"), rgb(95, 90, 100);
-        background-blend-mode: overlay;
+        background: url("banner-notext.png"), rgb(70, 70, 65);
         background-size: cover;
+        background-blend-mode: overlay;
+        filter: saturate(0.6);
+        background-position-y: 30%;
         text-align: center;
         font-size: 35px;
         overflow-y: hidden;
@@ -106,6 +124,7 @@
 
     .header h3 {
         font-family: "Bowlby One SC";
+        font-size: 1.15em;
         margin-top: 12px;
         margin-bottom: 7px;
     }
@@ -990,6 +1009,8 @@ sudo make install</textarea>
                     <a href="https://github.com/sponsors/alienarena" target="_blank" style="text-decoration:none;">
                         <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
                     </a>
+                    &nbsp;
+                    <div class="sponsorprogress">&nbsp;€13.51 of €256 for 6 months&nbsp;</div>
                 </td>
             </tr>
         </table>
