@@ -18,6 +18,10 @@
         --halfyearamount: 256;
         --donatedamount: 27.28;
         --donatedpercentage: calc(var(--donatedamount) / var(--halfyearamount) * 100%);
+        --bodypadding: 8px;
+        --headerheight: 90px;
+        --footerheight: 36px;
+        --modelsectionheight: 331px;
         --sponsorprogresscolor:  rgb(135, 130, 140);
         --backgroundcolor: rgb(95, 105, 115);
         --rightcolor-top: rgb(15, 15, 20);
@@ -34,7 +38,7 @@
         font-size: 1em;
         background-color: var(--backgroundcolor);
         color: silver;
-        padding: 8px;
+        padding: var(--bodypadding);
     }
 
     h1, h2, h3 {
@@ -119,7 +123,7 @@
         text-align: center;
         font-size: 35px;
         overflow-y: hidden;
-        min-height: 60px;
+        height: var(--headerheight);
     }
 
     .header h3 {
@@ -154,18 +158,19 @@
         padding-bottom: 5px;
         min-width: 500px;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .left {
-        height: calc(89vh - 32px);
+        height: calc(96vh - var(--headerheight) - var(--footerheight) - (var(--bodypadding) * 2));
     }
 
     .topright {
-        height: 331px;
+        height: var(--modelsectionheight);
     }    
 
     .right {
-        height: calc(88vh - 331px - 32px);
+        height: calc(95vh - var(--headerheight) - var(--modelsectionheight) - var(--footerheight) - (var(--bodypadding) * 2));
     }
 
 
@@ -257,7 +262,8 @@
         color: white;
         text-align: center;
         overflow-y: hidden;
-        height: 32px;
+        height: 100%;
+        overflow: hidden;
     }
 
     .footer a {
@@ -999,7 +1005,7 @@ sudo make install</textarea>
         </div>
     </div>
     <div class="footer">
-        <table style="width: 100%; border-spacing: 0x;">
+        <table style="height: 36px; width: 100%; border-spacing: 0x;">
             <tr>
                 <td style="width: 100%; padding: 0px;">
                     <a href="https://www.buymeacoffee.com/alienarena" target="_blank" style="text-decoration:none;">
