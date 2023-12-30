@@ -19,7 +19,7 @@ define("MAX_SERVERS", 256); /* Used to be hardcoded to 64! */
 define("MASTER_QUERY", "query"); /* Query string to sent to master server */
 // define("SERVER_QUERY", "����status\n");
 define("SERVER_QUERY", chr(0xFF).chr(0xFF).chr(0xFF).chr(0xFF)."status\n"); /* Query string to send to individual games servers */
-define("MASTER_ADDRESS", 'master.alienarena.org');
+define("MASTER_ADDRESS", 'localhost');
 define("MASTER2_ADDRESS", 'master2.alienarena.org');
 define("MASTER_PORT", 27900);
 define("SERVER_RETRIES", 3); /* Maximum number of times to try querying a games server */
@@ -60,7 +60,7 @@ Function CheckInstances()
 	echo "Checking for other instances...";
 	
 	$result = shell_exec('ps x | egrep \'scan\\.php|devscan\\.php\' | egrep -v grep');
-	$result = explode("\n", $result); /* Last entry is always empty - must be other characters after the \n */
+	$result = explode("\n", $result ?? ''); /* Last entry is always empty - must be other characters after the \n */
 	$numinstances = count($result)-1; 
 
 	if($numinstances > 1)
@@ -317,8 +317,10 @@ Function QueryGamesServers(&$serverlist)
 
 	foreach ($socketlist as $id => $socket)
 	{
-		if($debug)
-			echo "Unresponsive: ".$serverlist[$id]["ip"].":".$serverlist[$id]["port"]." (Socket ".$socket.")<br>\n";
+		if($debug) {
+			//echo "Unresponsive: ".$serverlist[$id]["ip"].":".$serverlist[$id]["port"]." (Socket ".$socket.")<br>\n";
+			echo "Unresponsive: ".$serverlist[$id]["ip"].":".$serverlist[$id]["port"]."<br>\n";
+		}
 		unset($serverlist[$id]);  /* Remove server from list */
 		socket_close($socket);
 	}
@@ -351,7 +353,7 @@ Function PopulateServerEntry(&$server, $buffer)
 	/* Strip out ^n colour codes from server name */
 	$server['hostname'] = preg_replace('/\^([0-9])/', '', $server['hostname']);
 	/* Make sure map names are always lower case */
-	$server['mapname'] = strtolower($server['mapname']);
+	$server['mapname'] = substr(trim(strtolower($server['mapname'])), 0, 20);
 	$server['playerinfo'] = array();
 
 	$players = array_slice($exploded, 2, -1);
@@ -366,8 +368,8 @@ Function PopulateServerEntry(&$server, $buffer)
 		$space_delimited = explode(' ', $player);
 		$quote_delimited = explode('"', $player);
 		$player = array();  /* Convert type to array (within array of players) */
-		$player['score'] = $space_delimited[0];
-		$player['ping']  = $space_delimited[1];			
+		$player['score'] = max($space_delimited[0], 0); // Seems negative scores aren't allowed in the database
+		$player['ping']  = $space_delimited[1];
 		$player['name']  = addslashes(trim($quote_delimited[1],' "')); /* Strip off trailing/leading whitespace and quotes, fix any escape characters */
     	$player['name'] = preg_replace('/\^([0-9])/', '', $player['name']); /* Strip out ^n colour codes */
 		if(array_key_exists(3, $quote_delimited))
@@ -491,7 +493,12 @@ Function UpdateDatabase($serverlist, $time)
 		$result = mysqli_query($conn,"DELETE FROM servers WHERE lastseen < ".($time - $dbexpire));
 		/* Remove all previous bot entries from DB */
 		$result = mysqli_query($conn,"DELETE FROM playerlog WHERE time <> '".$time."' AND ping = '0'");
-		echo "Deleted ".mysqli_num_rows($result)." old entries.<br>\n";
+		if ($result) {
+			// echo "Deleted ".mysqli_num_rows($result)." old entries.<br>\n";
+			echo "Deleting database entries succeeded.";
+		} else {
+			echo "Deleting database entries failed.";
+		}
 	}
 
 	mysqli_close($conn);
@@ -507,15 +514,15 @@ echo "<h1>Alien Arena Server Database Updater (".VERSION.")</h1><br>\n";
 
 foreach ($_GET as $key => $value)
 {
-		switch ($key)
-		{
-			case 'debug':
-				$debug = 1;
-			break;
+	switch ($key)
+	{
+		case 'debug':
+			$debug = 1;
+		break;
 
-			default:
-			break;
-		}
+		default:
+		break;
+	}
 }
 
 if($debug)
@@ -526,7 +533,7 @@ if($debug)
 else
 {
 	echo "<b>Live mode - for debug use scan.php?debug</b><br>\n";
-	error_reporting (E_NONE);
+	error_reporting (E_ALL & ~E_WARNING & ~E_NOTICE);
 }
 
 /* Check that this script isn't running too many times already - hung on mysql access? */
@@ -592,7 +599,21 @@ if($debug)
 //echo "Database access disallowed\n</body></html>";
 //return;	
 
-UpdateDatabase($serverlist, $time);
+try {
+	UpdateDatabase($serverlist, $time);
+} catch (Exception $ex) {
+	echo "<br>\nError updating database, see the logs for details.<br>\n";
+	throw $ex;
+	
+	// Outcommented for security reasons
+	// echo "<br>\nError updating database: <b>".$ex->getMessage()."</b><br>\n";	
+	// $trace = $ex->getTrace();
+	// if ($trace) {
+	// 	for ($i = 0; $i < sizeof($trace); $i++) {
+	// 		echo $trace[$i]["file"]."(".$trace[$i]["line"]."): ".$trace[$i]["function"]."()<br>\n";
+	// 	}
+	// }
+}
 
 echo "</body></html>\n";
 ?>
