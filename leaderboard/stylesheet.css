@@ -31,6 +31,16 @@ div#content {
 	height: 40px;
 }
 
+.mapTitle {
+	text-align: right;
+	padding-top: 50px;
+	padding-right: 175px;
+	font-size: medium;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 15px rgb(0, 0, 0), 0 0;
+}
+
 .menu {
 	color: rgb(190, 198, 190);
 	text-align: center;

@@ -158,7 +158,7 @@ if ($singleTourneyMode) {
 
     echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle width: $boxWidth; height: $boxHeight;\">\n";
     echo "    <div style=\"height: 100px\">\n";
-    echo "       <div id=\"mapTitle\" style=\"text-align: right; padding-top: 50px; padding-right: 175px; font-size: medium; font-weight: bold; color: rgba(255, 255, 255, 0.4)\">".strtoupper($map)."</div>\n";
+    echo "       <div id=\"mapTitle\" class=\"mapTitle\">".strtoupper($map)."</div>\n";
     echo "    </div>\n";
     echo "    <div class=\"pagetitle\">$subTitle</div>\n";
 } else {

@@ -1,0 +1,52 @@
+{
+	"map": "dm-badabum",
+	"players": [
+		{
+			"name": "^1martian",
+			"score": 143,
+			"deaths": 96,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 342, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 134,
+			"deaths": 102,
+			"ratio": 131,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 137, "shots": 354, "accuracy": 38},
+				{"weapon": "violator", "hits": 0, "shots": 8, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 89,
+			"deaths": 86,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 90, "shots": 281, "accuracy": 32},
+				{"weapon": "violator", "hits": 0, "shots": 4, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 63,
+			"deaths": 100,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 63, "shots": 300, "accuracy": 21}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 55,
+			"deaths": 102,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 273, "accuracy": 20}
+			]
+		}
+	]
+}

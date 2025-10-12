@@ -1,0 +1,50 @@
+{
+	"map": "dm-cavern",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 71,
+			"deaths": 61,
+			"ratio": 116,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 194, "shots": 661, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 69,
+			"deaths": 67,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 566, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 47,
+			"deaths": 88,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 740, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 43,
+			"deaths": 72,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 149, "shots": 567, "accuracy": 26}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 33,
+			"deaths": 78,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 126, "shots": 765, "accuracy": 16}
+			]
+		}
+	]
+}
