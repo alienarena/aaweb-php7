@@ -14,9 +14,26 @@ if ($pageNumber < 1 || $pageNumber > 100) {
     $pageNumber = 1;
 }
 
+$gamedatapath = dirname(__FILE__).'/gamedata';
+// Get game files.
+// The file name must be in the format: 
+// "gamereport_2017-11-30_01.17.17_Martian_Supremacy_Tournament.json"
+// or "gamereport_2017-11-30_01.17.17.json"
+// The title is optional. Without title it will display "- No title -".
+$allfiles = scandir($gamedatapath, SCANDIR_SORT_DESCENDING);
+$files = array_values(array_filter(array_values($allfiles), function($file) {
+    return startsWith($file, 'gamereport_');
+}));
+
+//$onlyLastTourney is used from the main web site to show only the contents of the last tourney
+$onlyLastTourney = false;
+
 // Tourney date in format YYYYMMDD
 $dateFilter = (isset($_GET['date']) ? $_GET['date'] : NULL);
-if ($dateFilter < 20190127 || $dateFilter > 20991231) {
+if ($dateFilter == 'last') {
+    $dateFilter = substr($files[0], 11, 10);
+    $onlyLastTourney = true;
+} else if ($dateFilter < 20190127 || $dateFilter > 20991231) {
     $dateFilter = '';
 } else {
     $dateFilter = substr($dateFilter, 0, 4).'-'.substr($dateFilter, 4, 2).'-'.substr($dateFilter, 6, 2);
@@ -49,14 +66,6 @@ if (intval((isset($_GET["deletesession"])) ? $_GET["deletesession"] : NULL) == 1
     session_destroy();
     redirect(removeParameters(currentUrl()));
 }
-
-// Get game files.
-// The file name must be in the format: 
-// "gamereport_2017-11-30_01.17.17_Martian_Supremacy_Tournament.json"
-// or "gamereport_2017-11-30_01.17.17.json"
-// The title is optional. Without title it will display "- No title -".
-$gamedatapath = dirname(__FILE__).'/gamedata';
-$allfiles = scandir($gamedatapath, SCANDIR_SORT_DESCENDING);
 
 $files = array_values(array_filter(array_values($allfiles), function($file) {
     global $dateFilter;
@@ -115,7 +124,11 @@ echo "    <script src=\"../sharedscripts/parallaxie.js\"></script>\n";
 echo "    <script type=\"text/javascript\" src=\"index.js\"></script>\n";
 echo "    <script type=\"text/javascript\" src=\"utils.js\"></script>\n";
 echo "</head>\n";
-echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
+if ($onlyLastTourney) {
+    echo "<body style=\"background: transparent;\">\n";
+} else {
+    echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
+}
 
 if (!$singleTourneyMode) {
     /* Background with parallax-effect */
@@ -123,7 +136,9 @@ if (!$singleTourneyMode) {
     echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('../sharedimages/purgatory.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
 }
 
-echo "  <center>\n";
+if (!$onlyLastTourney) {
+    echo "  <center>\n";
+}
 
 if ($singleTourneyMode) {
     $mapImageLocation = '';
@@ -146,17 +161,25 @@ if ($singleTourneyMode) {
     }
 }
 
-echo "    <div style=\"height: ".$emptySpaceHeight."px\"></div>\n";
+if (!$onlyLastTourney) {
+    echo "    <div style=\"height: ".$emptySpaceHeight."px\"></div>\n";
+}
 if ($singleTourneyMode) {
     echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
     echo "        top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
     echo "        onclick=\"hidePopup();\"></div>\n";
 }
-echo "    <div class=\"pagetitle\">$pageTitle</div>\n";
+if (!$onlyLastTourney) {
+    echo "    <div class=\"pagetitle\">$pageTitle</div>\n";
+}
 if ($singleTourneyMode) {
-    echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
-
-    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle width: $boxWidth; height: $boxHeight;\">\n";
+    if (!$onlyLastTourney) {
+        echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
+    }
+    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle max-width: $boxWidth; height: $boxHeight;\">\n";
+    if ($onlyLastTourney) {
+        echo "    <center>";
+    }
     echo "    <div style=\"height: 100px\">\n";
     echo "       <div id=\"mapTitle\" class=\"mapTitle\">".strtoupper($map)."</div>\n";
     echo "    </div>\n";
@@ -217,9 +240,6 @@ if ($singleTourneyMode) {
     echo "           if (window.isUsedOnMobile()) {\n";
     echo "              $('#content').removeAttr('class');\n";
     echo "              $('#content').css('background-image', '');\n";
-    echo "              $('#mapImage').css('background-image', '');\n";
-    echo "              $('#mapImage').css('width', $leaderboardWidth);\n";
-    echo "              $('#mapTitle').hide();\n";
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
     echo "           }\n";
 } else {
@@ -231,9 +251,10 @@ if ($singleTourneyMode) {
     echo "              $('body').css('background-image', 'url(../sharedimages/purgatory.jpg)');\n";
     echo "           }\n";
 }
-if (!$details) 
-{
-    echo "           $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";
+if (!$details) {
+    if (!$onlyLastTourney) {
+        echo "           $(\"table.scoretable\").css(\"cursor\", \"pointer\");\n";
+    }
     echo "           $(document).keyup(function(e) {\n";
     echo "               if (e.keyCode == 27) {\n"; 
     echo "                   hidePopup();\n";
@@ -242,8 +263,13 @@ if (!$details)
 }
 echo "        });\n";
 echo "    </script>\n";
-echo "  </center>\n";
+if ($onlyLastTourney) {
+    echo "  </center>\n";
+}
 echo "</div>\n";
+if (!$onlyLastTourney) {
+    echo "  </center>\n";
+}
 echo "</body>\n";
 echo "</html>\n";
 
@@ -266,7 +292,7 @@ function renderScoreListAndPrepareDetails($file)
 {
     global $details, $maxPlayersForDetails, $maxPlayersTopView;
     global $template, $detailsTemplate, $weaponAccuracyTemplate, $detailsHtml;
-    global $singleTourneyMode;
+    global $singleTourneyMode, $onlyLastTourney;
 
     $detailsTop = $singleTourneyMode ? '270px' : '90px';
 
@@ -286,8 +312,8 @@ function renderScoreListAndPrepareDetails($file)
     
     $height = $details ? '950px' : '480px';
     $popupId = 'popup'.$data['tourney_id'];
-    $title = !$details ? " title=\"Click for more details\"" : "";
-    if (!$details) {
+    $title = !$details && !$onlyLastTourney ? " title=\"Click for more details\"" : "";
+    if (!$details && !$onlyLastTourney) {
         if ($singleTourneyMode) {
             $onclick = " onclick=\"showPopup('$popupId');\"";
         } else {
