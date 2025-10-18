@@ -176,7 +176,11 @@ if ($singleTourneyMode) {
     if (!$onlyLastTourney) {
         echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
     }
-    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle max-width: $boxWidth; height: $boxHeight;\">\n";
+    if ($onlyLastTourney) {
+        echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle\">\n";
+    } else {
+        echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle max-width: $boxWidth; height: $boxHeight;\">\n";
+    }
     if ($onlyLastTourney) {
         echo "    <center>";
     }
