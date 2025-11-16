@@ -1,0 +1,41 @@
+{
+	"map": "dm-crucible",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 49,
+			"deaths": 44,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 120, "shots": 493, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 31,
+			"deaths": 45,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 449, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 26,
+			"deaths": 43,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 93, "shots": 479, "accuracy": 19}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 14,
+			"deaths": 34,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 33, "shots": 518, "accuracy": 6}
+			]
+		}
+	]
+}

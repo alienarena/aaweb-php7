@@ -1,0 +1,150 @@
+{
+	"map": "dm-defence",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 204,
+			"deaths": 94,
+			"ratio": 217,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 204, "shots": 407, "accuracy": 50}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 173,
+			"deaths": 112,
+			"ratio": 154,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 170, "shots": 354, "accuracy": 48},
+				{"weapon": "violator", "hits": 3, "shots": 28, "accuracy": 10}
+			]
+		},
+		{
+			"name": "404",
+			"score": 145,
+			"deaths": 97,
+			"ratio": 149,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 145, "shots": 363, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 139,
+			"deaths": 101,
+			"ratio": 137,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 140, "shots": 396, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 135,
+			"deaths": 84,
+			"ratio": 160,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 135, "shots": 327, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^5iwdh",
+			"score": 129,
+			"deaths": 102,
+			"ratio": 126,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 127, "shots": 410, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 105,
+			"deaths": 104,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 105, "shots": 349, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 83,
+			"deaths": 91,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 86, "shots": 270, "accuracy": 31}
+			]
+		},
+		{
+			"name": "trickybilly",
+			"score": 78,
+			"deaths": 120,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 81, "shots": 270, "accuracy": 30}
+			]
+		},
+		{
+			"name": "(FO)Bonfire",
+			"score": 74,
+			"deaths": 113,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 251, "accuracy": 30}
+			]
+		},
+		{
+			"name": "Hooten",
+			"score": 64,
+			"deaths": 132,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 64, "shots": 308, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 63,
+			"deaths": 118,
+			"ratio": 53,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 378, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 52,
+			"deaths": 80,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 154, "accuracy": 33}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 33,
+			"deaths": 131,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 35, "shots": 391, "accuracy": 8}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 3,
+			"deaths": 4,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 3, "shots": 17, "accuracy": 17}
+			]
+		},
+		{
+			"name": "Dard",
+			"score": 1,
+			"deaths": 4,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 1, "shots": 6, "accuracy": 16}
+			]
+		}
+	]
+}

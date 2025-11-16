@@ -1,0 +1,51 @@
+{
+	"map": "dm-downfall",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 93,
+			"deaths": 83,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 91, "shots": 249, "accuracy": 36},
+				{"weapon": "violator", "hits": 1, "shots": 15, "accuracy": 6}
+			]
+		},
+		{
+			"name": "^3404",
+			"score": 92,
+			"deaths": 88,
+			"ratio": 104,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 92, "shots": 222, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 87,
+			"deaths": 82,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 226, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 78,
+			"deaths": 80,
+			"ratio": 97,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 205, "accuracy": 38}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 44,
+			"deaths": 47,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 44, "shots": 142, "accuracy": 30}
+			]
+		}
+	]
+}

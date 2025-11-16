@@ -50,7 +50,7 @@ $details = false;
 // Use one variable with three different possible values: All, Single, Details
 // Don't show funround in mode All
 $maxPlayersForDetails = 25;
-$maxPlayersTopView = $singleTourneyMode ? 16 : 12;
+$maxPlayersTopView = $singleTourneyMode ? 25 : 12;
 $gameReportsPerPage = 20;
 $template = $mustache->loadTemplate('scoretemplate');
 $detailsTemplate = $mustache->loadTemplate('scoretemplatedetails');
@@ -125,7 +125,7 @@ echo "    <script type=\"text/javascript\" src=\"index.js\"></script>\n";
 echo "    <script type=\"text/javascript\" src=\"utils.js\"></script>\n";
 echo "</head>\n";
 if ($onlyLastTourney) {
-    echo "<body style=\"background: transparent;\">\n";
+    echo "<body style=\"background-color: transparent;\">\n";
 } else {
     echo "<body style=\"background-image: url('../sharedimages/site-background.jpg'); background-attachment:fixed; background-repeat:no-repeat; background-size:cover;\">\n";
 }
@@ -142,9 +142,9 @@ if (!$onlyLastTourney) {
 
 if ($singleTourneyMode) {
     $mapImageLocation = '';
-    $boxBackgroundStyle = 'background-size: cover;';
     $boxWidth = '1333px';
     $boxHeight = '750px';
+    $boxBackgroundStyle = "background-size: cover; background-repeat: no-repeat; display: flex; flex-direction: column; align-items: center; max-width: $boxWidth; height: $boxHeight;";
 
     if (strlen($map) == 0) {
         $map = getMapFromTourney();
@@ -176,22 +176,17 @@ if ($singleTourneyMode) {
     if (!$onlyLastTourney) {
         echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
     }
-    if ($onlyLastTourney) {
-        echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle\">\n";
-    } else {
-        echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle max-width: $boxWidth; height: $boxHeight;\">\n";
-    }
-    if ($onlyLastTourney) {
-        echo "    <center>";
-    }
-    echo "    <div style=\"height: 100px\">\n";
+    echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle\">\n";
     echo "       <div id=\"mapTitle\" class=\"mapTitle\">".strtoupper($map)."</div>\n";
-    echo "    </div>\n";
     echo "    <div class=\"pagetitle\">$subTitle</div>\n";
 } else {
     echo "    <div class=\"menu\"><span class=\"active\">Matches</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 }
-echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
+if ($singleTourneyMode || $onlyLastTourney) {
+    echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; position: relative: top: 70px; display: none;\" id=\"leaderboardtable\">\n";
+} else {
+    echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
+}
 
 echo "        <tr>\n";
 
@@ -267,12 +262,9 @@ if (!$details) {
 }
 echo "        });\n";
 echo "    </script>\n";
-if ($onlyLastTourney) {
-    echo "  </center>\n";
-}
 echo "</div>\n";
 if (!$onlyLastTourney) {
-    echo "  </center>\n";
+     echo "  </center>\n";
 }
 echo "</body>\n";
 echo "</html>\n";
@@ -313,6 +305,11 @@ function renderScoreListAndPrepareDetails($file)
     // Copy into short list of players
     $shortlist = $data;
     array_splice($shortlist['players'], $maxPlayersTopView);
+
+    // If more players than actually shown then show extra row with dots
+    if (count($data['players']) > count($shortlist['players'])) {
+        array_push($shortlist['players'], ["name" => "...", "score" => "..."]);
+    }
     
     $height = $details ? '950px' : '480px';
     $popupId = 'popup'.$data['tourney_id'];

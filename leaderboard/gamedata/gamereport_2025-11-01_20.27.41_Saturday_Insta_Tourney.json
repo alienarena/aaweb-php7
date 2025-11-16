@@ -1,0 +1,78 @@
+{
+	"map": "dm-saucer-classic",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 140,
+			"deaths": 101,
+			"ratio": 138,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 142, "shots": 361, "accuracy": 39},
+				{"weapon": "violator", "hits": 1, "shots": 18, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 129,
+			"deaths": 99,
+			"ratio": 130,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 131, "shots": 340, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 108,
+			"deaths": 100,
+			"ratio": 108,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 109, "shots": 303, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 93,
+			"deaths": 98,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 94, "shots": 305, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 74,
+			"deaths": 111,
+			"ratio": 66,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 74, "shots": 306, "accuracy": 24}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 70,
+			"deaths": 125,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 74, "shots": 270, "accuracy": 27}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 58,
+			"deaths": 68,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 62, "shots": 165, "accuracy": 37}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 5,
+			"deaths": 9,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 5, "shots": 12, "accuracy": 41}
+			]
+		}
+	]
+}

@@ -1,0 +1,131 @@
+{
+	"map": "dm-bloodfactory",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 103,
+			"deaths": 77,
+			"ratio": 133,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 219, "shots": 508, "accuracy": 43}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 86,
+			"deaths": 63,
+			"ratio": 136,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 189, "shots": 494, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 76,
+			"deaths": 68,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 195, "shots": 473, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 71,
+			"deaths": 82,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 180, "shots": 510, "accuracy": 35}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 66,
+			"deaths": 68,
+			"ratio": 97,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 155, "shots": 559, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 63,
+			"deaths": 79,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 186, "shots": 560, "accuracy": 33}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 61,
+			"deaths": 62,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 154, "shots": 628, "accuracy": 24}
+			]
+		},
+		{
+			"name": "trickybilly",
+			"score": 52,
+			"deaths": 84,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 316, "accuracy": 33}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 51,
+			"deaths": 79,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 475, "accuracy": 31}
+			]
+		},
+		{
+			"name": "Dard",
+			"score": 49,
+			"deaths": 71,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 130, "shots": 461, "accuracy": 28}
+			]
+		},
+		{
+			"name": "(FO)Bonfire",
+			"score": 45,
+			"deaths": 77,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 392, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 43,
+			"deaths": 85,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 583, "accuracy": 17}
+			]
+		},
+		{
+			"name": "Hooten",
+			"score": 36,
+			"deaths": 78,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 136, "shots": 408, "accuracy": 33}
+			]
+		},
+		{
+			"name": "iwdh",
+			"score": 1,
+			"deaths": 3,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 2, "shots": 17, "accuracy": 11}
+			]
+		}
+	]
+}

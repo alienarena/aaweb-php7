@@ -1,0 +1,70 @@
+{
+	"map": "dm-zorn",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 151,
+			"deaths": 82,
+			"ratio": 184,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 156, "shots": 383, "accuracy": 40},
+				{"weapon": "violator", "hits": 0, "shots": 17, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 136,
+			"deaths": 81,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 206, "shots": 438, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 109,
+			"deaths": 93,
+			"ratio": 117,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 129, "shots": 368, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 84,
+			"deaths": 90,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 154, "shots": 342, "accuracy": 45},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 63,
+			"deaths": 92,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 128, "shots": 322, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 52,
+			"deaths": 105,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 283, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 40,
+			"deaths": 110,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 148, "shots": 291, "accuracy": 50}
+			]
+		}
+	]
+}

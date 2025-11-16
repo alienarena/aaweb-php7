@@ -1,0 +1,41 @@
+{
+	"map": "dm-undergroundlabs",
+	"players": [
+		{
+			"name": "^1martian",
+			"score": 32,
+			"deaths": 37,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 94, "shots": 295, "accuracy": 31}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 29,
+			"deaths": 39,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 340, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 7,
+			"deaths": 4,
+			"ratio": 175,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 19, "shots": 74, "accuracy": 25}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 1,
+			"deaths": 4,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 3, "shots": 35, "accuracy": 8}
+			]
+		}
+	]
+}

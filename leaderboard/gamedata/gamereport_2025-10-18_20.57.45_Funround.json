@@ -1,0 +1,59 @@
+{
+	"map": "dm-extermination",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 63,
+			"deaths": 49,
+			"ratio": 128,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 457, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^9|^4|^3Sly",
+			"score": 44,
+			"deaths": 47,
+			"ratio": 93,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 445, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 44,
+			"deaths": 51,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 615, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 41,
+			"deaths": 49,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 103, "shots": 464, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 36,
+			"deaths": 56,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 99, "shots": 513, "accuracy": 19}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 19,
+			"deaths": 61,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 76, "shots": 487, "accuracy": 15}
+			]
+		}
+	]
+}

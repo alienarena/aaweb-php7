@@ -1,0 +1,59 @@
+{
+	"map": "dm-goregrinder",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 63,
+			"deaths": 48,
+			"ratio": 131,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 171, "shots": 456, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 54,
+			"deaths": 54,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 417, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 45,
+			"deaths": 60,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 142, "shots": 523, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 41,
+			"deaths": 59,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 142, "shots": 470, "accuracy": 30}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 21,
+			"deaths": 62,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 341, "accuracy": 23}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 20,
+			"deaths": 62,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 98, "shots": 371, "accuracy": 26}
+			]
+		}
+	]
+}
