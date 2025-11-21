@@ -1,5 +1,5 @@
 window.isUsedOnMobile = function() {
-    if (window.localStorage.getItem("mobiletest") === "true") {
+    if (window.localorage.getItem("mobiletest") === "true") {
         return true;
     }
 

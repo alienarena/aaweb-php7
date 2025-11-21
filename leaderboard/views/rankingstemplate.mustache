@@ -2,13 +2,14 @@
     <div class="title">
         <span class="subtitle">{{rankingsTitle}}</span>
     </div>
-    <table border="0" cellspacing="0" cellpadding="3" class="scoretable">
+    <table border="0" cellspacing="0" cellpadding="3" class="scoretable tourneytable">
         <tr>
-            <td class="header playerid" rowspan="2">RANK</td>
-            <td class="header" style="text-align: left" rowspan="2">NAME</td>
+            <td class="playerid" rowspan="2"></td>
+            <td></td>
             <td class="header" colspan="4">POINTS</td>
         </tr>
         <tr>
+            <td class="header" style="text-align: left">NAME</td>
             <td class="subheader {{orderByDeathMatch}}" style="width: 135px; cursor: pointer"
                 title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=1';">{{deathMatchHeader}}</td>
             <td class="subheader {{orderByInstagib}}" style="width: 100px; cursor: pointer"
@@ -21,11 +22,11 @@
     {{#rankings}}
         <tr id="{{rank}}_row" style="cursor: pointer" onclick="toggleRankingDetails('{{rank}}');"
                 title="Click for more details">
-            <td class="datarow playerid" rowspan="2" style="text-align: right;">{{rank}}</td>
+            <td class="playerid" rowspan="2" style="text-align: right;">{{rank}}</td>
             <td class="playername datarow" rowspan="2" >{{name}}</td>
-            <td class="datarow" align="right">{{deathMatchPoints}}</td>
-            <td class="datarow" align="right">{{instagibPoints}}</td>
-            <td class="datarow" align="right">{{rocketArenaPoints}}</td>
+            <td class="datarow rankingscore" align="right">{{deathMatchPoints}}</td>
+            <td class="datarow rankingscore" align="right">{{instagibPoints}}</td>
+            <td class="datarow rankingscore" align="right">{{rocketArenaPoints}}</td>
             <td class="datarow" align="right">{{points}}</td>
         </tr>
         <tr id="{{rank}}_details_row" style="cursor: pointer" onclick="toggleRankingDetails('{{rank}}');"

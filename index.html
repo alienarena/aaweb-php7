@@ -362,6 +362,12 @@
             width: 110px;
         }
 
+        iframe.video {
+            width: calc(100vw - 740px);
+            max-width: 1333px;
+            border: none;
+        }
+
         /* 
         Even bigger images:
 
@@ -450,6 +456,12 @@
         textarea.code {
             min-height: 8em;
         }
+
+        iframe.video {
+            width: calc(100vw - 150px);
+            border: none;
+        }
+
     }
 
     #occupied-servers h3 {
@@ -494,11 +506,23 @@
                     <p>
                         <a href="/arena/leaderboard/index.php" target="_blank">All tourney results</a>
                         &nbsp;
-                        <a href="/arena/leaderboard/rankings.php" target="_blank">Rankings</a>
+                        <a href="/arena/leaderboard/rankings.php" target="_blank">Rankings since 2019</a>
+                        &nbsp;
+                        <a href="/arena/leaderboard/rankings.php?lastyear=1" target="_blank">Rankings of last year</a>
                     </p>
                     <p>
-                        <iframe src="/arena/leaderboard/index.php?date=last" style="height: 646px; width: 100%; border: none;" scrolling="no"></iframe>
-                        <a href="https://www.youtube.com/watch?v=IdTpNNctwOI" target="_blank">Watch the video here of the tourney on October 18, 2025</a>
+                        <iframe src="/arena/leaderboard/index.php?date=last" style="height: 750px; width: 100%; border: none;" scrolling="no"></iframe>                        
+                    </p>
+                    <p>
+                        <iframe class="video" height="500" src="https://youtube.com/embed/AC8cn9Ij0ZY"></iframe>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=AC8cn9Ij0ZY" target="_blank">Video of November 15, 2025</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=IdTpNNctwOI" target="_blank">Video of October 18, 2025</a>
+                            </li>
+                        </ul>
                     </p>
                 </td>
                 </tr>

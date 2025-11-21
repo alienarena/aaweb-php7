@@ -14,6 +14,7 @@ $orderByInstagib = 2;
 $orderByRocketArena = 3;
 $orderByTotal = 0; // default
 $orderby = intval((isset($_GET['orderby']) ? $_GET['orderby'] : NULL));
+$lastyear = intval((isset($_GET['lastyear']) ? $_GET['lastyear'] : NULL));
 
 $tourneyStartDate = '2019-01-27';
 
@@ -65,11 +66,12 @@ echo "</html>\n";
 
 function renderRankings()
 {
-    global $mustache, $tourneyStartDate;
+    global $mustache, $tourneyStartDate, $lastyear;
     
     $template = $mustache->loadTemplate('rankingstemplate');
 
-    $json = fileGetContents("gamedata/rankings.json");
+    $rankingsFile = $lastyear == 1 ? "gamedata/rankings.lastyear.json" : "gamedata/rankings.json";
+    $json = fileGetContents($rankingsFile);
     $data = jsonDecode($json, true);
 
     if (strlen($data['dateFrom']) == 0) {

@@ -50,7 +50,7 @@ $details = false;
 // Use one variable with three different possible values: All, Single, Details
 // Don't show funround in mode All
 $maxPlayersForDetails = 25;
-$maxPlayersTopView = $singleTourneyMode ? 25 : 12;
+$maxPlayersTopView = $singleTourneyMode ? 25 : 10;
 $gameReportsPerPage = 20;
 $template = $mustache->loadTemplate('scoretemplate');
 $detailsTemplate = $mustache->loadTemplate('scoretemplatedetails');
@@ -68,8 +68,8 @@ if (intval((isset($_GET["deletesession"])) ? $_GET["deletesession"] : NULL) == 1
 }
 
 $files = array_values(array_filter(array_values($allfiles), function($file) {
-    global $dateFilter;
-    return startsWith($file, 'gamereport_'.$dateFilter);
+    global $dateFilter, $singleTourneyMode, $onlyLastTourney;
+    return startsWith($file, 'gamereport_'.$dateFilter) && ($singleTourneyMode || $onlyLastTourney || strtolower(substr($file, 31, strlen($file) - 36)) != 'funround');
 }));
 
 $pageTitle = 'Alien Arena Tournament Leaderboard';
@@ -81,8 +81,7 @@ if (count($files) == 1 && !$singleTourneyMode) {
 
 if (count($files) > 1 || $singleTourneyMode) {
     for($i = 0; $i < count($files); $i++) {
-
-        $tourneyTitle = htmlspecialchars(strlen($files[$i]) <= 35 ? '- No title -' : str_replace('_', ' ', substr($files[$i], 31, strlen($files[$i]) - 36)));        
+        $tourneyTitle = htmlspecialchars(strlen($files[$i]) <= 35 ? '- No title -' : str_replace('_', ' ', substr($files[$i], 31, strlen($files[$i]) - 36)));
         $tourneyDateString = substr($files[$i], 11, 10);
 
         if ($singleTourneyMode) {
@@ -166,7 +165,7 @@ if (!$onlyLastTourney) {
 }
 if ($singleTourneyMode) {
     echo "    <div id=\"overlay\" style=\" border: none; display:none; z-index: 100; position: absolute; \n";
-    echo "        top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 4, 8); opacity: 0.85;\" \n";
+    echo "        top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 4, 8); opacity: 0.5;\" \n";
     echo "        onclick=\"hidePopup();\"></div>\n";
 }
 if (!$onlyLastTourney) {
@@ -177,15 +176,15 @@ if ($singleTourneyMode) {
         echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
     }
     echo "    <div id=\"mapImage\" style=\"background-image: url('$mapImageLocation'); $boxBackgroundStyle\">\n";
-    echo "       <div id=\"mapTitle\" class=\"mapTitle\">".strtoupper($map)."</div>\n";
-    echo "    <div class=\"pagetitle\">$subTitle</div>\n";
+    echo "       <div id=\"mapTitle\" class=\"mapTitle\">map:&nbsp;<b>".(strlen($map) > 0 ? strtoupper($map) : "unknown")."</b></div>\n";
+    echo "    <div class=\"tourneytitle\">$subTitle</div>\n";
 } else {
     echo "    <div class=\"menu\"><span class=\"active\">Matches</span><span class=\"navdisabled\">&nbsp;|&nbsp;</span><a href=\"rankings.php\">Rankings</a></div>\n";
 }
 if ($singleTourneyMode || $onlyLastTourney) {
-    echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; position: relative: top: 70px; display: none;\" id=\"leaderboardtable\">\n";
+    echo "    <table border=\"0\" style=\"position: relative: top: 70px; display: none;\" id=\"leaderboardtable\" class=\"tourneytable\">\n";
 } else {
-    echo "    <table border=\"0\" style=\"width: ".$leaderboardWidth."px; display: none;\" id=\"leaderboardtable\">\n";
+    echo "    <table border=\"0\" cellspacing=\"12\" style=\"width: 1000px; display: none;\" id=\"leaderboardtable\">\n";
 }
 
 echo "        <tr>\n";
@@ -282,6 +281,7 @@ function renderFile($file) {
         $colCount++;
         $renderedFileCount++;
     }
+
 }
 
 function renderScoreListAndPrepareDetails($file)
@@ -294,6 +294,7 @@ function renderScoreListAndPrepareDetails($file)
 
     $data_json = getCachedContents($file);
     if (strlen($data_json) == 0) {
+        echo "Warning, empty file: ".$file;
         return false;
     }
 
@@ -311,7 +312,7 @@ function renderScoreListAndPrepareDetails($file)
         array_push($shortlist['players'], ["name" => "...", "score" => "..."]);
     }
     
-    $height = $details ? '950px' : '480px';
+    $height = $details ? '950px' : '400px';
     $popupId = 'popup'.$data['tourney_id'];
     $title = !$details && !$onlyLastTourney ? " title=\"Click for more details\"" : "";
     if (!$details && !$onlyLastTourney) {
@@ -322,7 +323,12 @@ function renderScoreListAndPrepareDetails($file)
         }    
     }
     
-    $table = "<td style=\"vertical-align: top; height: $height;\" $onclick $title>\n";
+    if ($singleTourneyMode || $onlyLastTourney) {
+        $padLeft = strtolower($data['tourney_title']) == 'funround' ? 'padding-left: 30px;' : '';
+        $table = "<td style=\"".$padLeft."vertical-align: top; height: $height;\" $onclick $title>\n";
+    } else {
+        $table = "<td class=\"mainpagetourney\" style=\"height: $height;\" $onclick $title>\n";
+    }
     if ($details) {
         $table = $table.$detailsTemplate->render($data);
     } else {
@@ -333,7 +339,7 @@ function renderScoreListAndPrepareDetails($file)
     if (!$details)
     {
         $detailsHtml = $detailsHtml."<div class=\"details\" id=\"$popupId\" style=\"display: none; z-index: 200; ";
-        $detailsHtml = $detailsHtml."  position: fixed; top: ".$detailsTop."; left: 50%; margin-left: -363px; height: 950px; width: 725px;\" ";
+        $detailsHtml = $detailsHtml."  position: fixed; top: ".$detailsTop.";\" ";
         $detailsHtml = $detailsHtml."  onclick=\"hidePopup();\">\n";
         $detailsHtml = $detailsHtml.$detailsTemplate->render($data);
         $detailsHtml = $detailsHtml."</div>\n";    
@@ -347,6 +353,8 @@ function renderScoreListAndPrepareDetails($file)
 
 function enrichData($file, $data)
 {
+    global $singleTourneyMode, $onlyLastTourney;
+
     // Define {{index}} to show player number (also needed if not shown, for the weapon accuracy table)
     for ($i = 0; $i < count($data['players']); $i++) 
     {
@@ -369,7 +377,7 @@ function enrichData($file, $data)
     $tourneyId = str_replace(' ', '', $tourneyTitle).$tourneyDateString;
     
     // Fill tourney title, tourney link, tourney id and tourney date which are used in the templates
-    $data['tourney_title'] = $tourneyTitle;   
+    $data['tourney_title'] = ($singleTourneyMode || $onlyLastTourney) && strtolower($tourneyTitle) != 'funround' ? 'Main round' : $tourneyTitle;
     $data['tourney_link'] = 'index.php?date='.str_replace('-', '', $tourneyDateString);
     $data['tourney_id'] = $tourneyId;
     $data['tourney_date'] = dateToString($tourneyDateString);

@@ -24,6 +24,16 @@ div#content {
 	white-space: nowrap;
 }
 
+.tourneytitle {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 24px;
+    font-weight: bold;
+	height: 60px;
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
 .title {
 	color: rgb(255, 255, 255);
 	text-align: center;
@@ -32,13 +42,35 @@ div#content {
 	height: 40px;
 }
 
+td.mainpagetourney {
+	vertical-align: top;
+	background-color: rgba(30, 30, 30, 0.9);
+	padding-top: 10px;
+	border-radius: 15px;
+	border: solid 2px rgb(120, 120, 140);
+}
+
+.tourneytable {
+	background-color: rgba(30, 30, 30, 0.9);
+	padding: 15px 30px;
+	border-radius: 15px;
+	border: solid 2px rgb(120, 120, 140);
+}
+
+div.details {
+	background-color: rgba(70, 70, 70, 0.9);
+	border-radius: 10px;
+	border: solid 2px rgb(120, 120, 140);
+	padding: 15px;
+	font-size: smaller;
+}
+
 .mapTitle {
 	text-align: right;
 	position: relative;
 	top: 30px;
 	right: -450px;
 	font-size: medium;
-	font-weight: bold;
 	color: rgba(255, 255, 255, 0.5);
 	text-shadow: 0 0 15px rgb(0, 0, 0), 0 0;
 }
@@ -69,52 +101,28 @@ div#content {
 }
 
 td.header {
-	background-image: linear-gradient(rgb(82, 73, 82), rgb(60, 55, 60));
 	font-size: smaller;
 	text-align: center;
 	white-space: nowrap;
-	border: solid 2px;
-	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
-	border-radius: 4px;
-	text-shadow: 3px 3px 2px rgb(10, 10, 10);
 }
 
 td.subheader {
-	background-color: rgb(82, 73, 82);
 	font-size: small;
 	text-align: right;
 	white-space: nowrap;
-	border: solid 2px;
 	line-height: 13px;
 	padding-left: 0px;
 	padding-right: 4px;
-	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
-	border-radius: 4px;
-	text-shadow: 3px 3px 2px rgb(25, 25, 25);
 }
 
 td.selected {
 	color: rgb(255, 255, 255);
-	text-shadow: 3px 3px 2px rgb(20, 20, 20);
 }
 
 td.datarow {
 	vertical-align: top;
-	background-image: linear-gradient(rgb(50, 45, 50), rgb(60, 53, 60));
-	border: solid 2px;
-	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
-	border-radius: 4px;
-}
-
-td.datarowdetails {
-	color: rgb(150, 180, 160);
-	background-color: rgb(80, 80, 80);
-	border: solid 2px;
-	border-color: rgb(80, 80, 80) rgb(90, 100, 100) rgb(90, 100, 100) rgb(80, 80, 80);
-	border-radius: 4px;
-	padding: 0px;
-	opacity: 0.95;
-	font-size: x-small;
+	border-top: solid 2px rgba(255, 255, 255, 0.3);
+	color: white;
 }
 
 a:link, a:visited, a:active { 
@@ -128,11 +136,12 @@ a:hover {
 }
 
 tr.navigation {
-	height: 40px;
+	height: 60px;
 }
 
 td.navigation {
 	text-align: center; 
+	vertical-align: top;
 	font-size: large;
 }
 
@@ -146,16 +155,13 @@ span.navdisabled {
 
 .infotooltip {
 	position: absolute;
-	border: none;
-	border: solid 2px;
-	border-color: rgb(90, 110, 100) rgb(100, 120, 100)  rgb(100, 120, 100) rgb(90, 110, 100);
-	border-radius: 3px;	 
+	background-color: rgb(65, 65, 65);
+	border: solid 2px rgb(170, 170, 170);
+	border-radius: 6px;
 }
 
 td.infotooltipheader {
 	color: rgb(150, 180, 160);
-	opacity: 0.95;
-	background-color: rgb(80, 80, 80);
 	font-size: x-small;
 	white-space: nowrap;
 	border: none;
@@ -163,8 +169,32 @@ td.infotooltipheader {
 
 td.infotooltipdatarow {
 	color: rgb(22, 45, 29);
-	opacity: 0.95;
-	background-color: rgb(150, 150, 150);
+	background-color: rgb(170, 170, 170);
 	font-size: small;
+	border: none;
+}
+
+/* Rankings */
+td.playerid {
+	vertical-align: top;
+	font-size: smaller;
+	font-family: Verdana;
+}
+
+td.datarowdetails {
+	padding: 0px;
+	opacity: 0.95;
+	font-size: small;
+}
+
+td.rankingscore {
+	font-size: smaller;
+}
+
+td.rankingdetailsheader {
+	border: none;
+}
+
+td.rankingdetailsdatarow {
 	border: none;
 }
