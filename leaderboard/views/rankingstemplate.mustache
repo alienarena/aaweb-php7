@@ -11,13 +11,13 @@
         <tr>
             <td class="header" style="text-align: left">NAME</td>
             <td class="subheader {{orderByDeathMatch}}" style="width: 135px; cursor: pointer"
-                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=1';">{{deathMatchHeader}}</td>
+                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=1&lastyear={{lastyear}}';">{{deathMatchHeader}}</td>
             <td class="subheader {{orderByInstagib}}" style="width: 100px; cursor: pointer"
-                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=2';">{{instagibHeader}}</td>
+                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=2&lastyear={{lastyear}}';">{{instagibHeader}}</td>
             <td class="subheader {{orderByRocketArena}}" style="width: 135px; cursor: pointer"
-                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=3';">{{rocketArenaHeader}}</td>
+                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=3&lastyear={{lastyear}}';">{{rocketArenaHeader}}</td>
             <td class="subheader {{orderByTotal}}" style="width: 90px; cursor: pointer"
-                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=';">{{totalHeader}}</td>
+                title="Click to sort on this column" onclick="window.location = 'rankings.php?orderby=&lastyear={{lastyear}}';">{{totalHeader}}</td>
         </tr>
     {{#rankings}}
         <tr id="{{rank}}_row" style="cursor: pointer" onclick="toggleRankingDetails('{{rank}}');"

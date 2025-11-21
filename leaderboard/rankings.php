@@ -102,12 +102,14 @@ function renderDetails($data)
 }
 
 function handleOrderBy(&$data) {
-    global $orderby, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
+    global $orderby, $lastyear, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
      
     $deathMatchHeader = 'DEATHMATCH';
     $instagibHeader = 'INSTAGIB';
     $rocketArenaHeader = 'ROCKET ARENA';
     $totalHeader = 'TOTAL';
+    
+    $data['lastyear'] = $lastyear;
 
     switch ($orderby) {
         case $orderByDeathMatch:
