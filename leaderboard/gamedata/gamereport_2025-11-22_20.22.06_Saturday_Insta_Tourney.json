@@ -1,0 +1,97 @@
+{
+	"map": "dm-dred-retro",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 167,
+			"deaths": 94,
+			"ratio": 177,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 172, "shots": 407, "accuracy": 42}
+			]
+		},
+		{
+			"name": "ToastRawr",
+			"score": 160,
+			"deaths": 88,
+			"ratio": 181,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 164, "shots": 389, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 126,
+			"deaths": 118,
+			"ratio": 106,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 124, "shots": 361, "accuracy": 34},
+				{"weapon": "violator", "hits": 1, "shots": 5, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 119,
+			"deaths": 82,
+			"ratio": 145,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 133, "shots": 361, "accuracy": 36},
+				{"weapon": "violator", "hits": 0, "shots": 3, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 116,
+			"deaths": 90,
+			"ratio": 128,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 121, "shots": 355, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 89,
+			"deaths": 111,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 101, "shots": 316, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 79,
+			"deaths": 116,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 80, "shots": 247, "accuracy": 32}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 60,
+			"deaths": 109,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 62, "shots": 292, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 49,
+			"deaths": 100,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 283, "accuracy": 20}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 34,
+			"deaths": 93,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 35, "shots": 261, "accuracy": 13}
+			]
+		}
+	]
+}

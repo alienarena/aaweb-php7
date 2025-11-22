@@ -81,6 +81,8 @@ div.details {
 	font-size: medium;	
     font-weight: bold;
 	height: 40px;
+	display: flex;
+	justify-content: center;
 }
 
 .underline{
@@ -176,6 +178,7 @@ td.infotooltipdatarow {
 
 /* Rankings */
 td.playerid {
+	border-top: solid 1px transparent;
 	vertical-align: top;
 	font-size: smaller;
 	font-family: Verdana;
@@ -197,4 +200,11 @@ td.rankingdetailsheader {
 
 td.rankingdetailsdatarow {
 	border: none;
+}
+
+select.periodfilter {
+	background-color: rgb(190, 185, 210);
+	border: none;
+	border-radius: 4px;
+	margin-left: 10px;
 }

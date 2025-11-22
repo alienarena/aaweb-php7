@@ -1,0 +1,68 @@
+{
+	"map": "dm-turbo",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 58,
+			"deaths": 51,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 532, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 49,
+			"deaths": 61,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 429, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 46,
+			"deaths": 58,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 635, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 43,
+			"deaths": 59,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 119, "shots": 534, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 40,
+			"deaths": 47,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 116, "shots": 531, "accuracy": 21}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 28,
+			"deaths": 67,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 58, "shots": 299, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 24,
+			"deaths": 57,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 79, "shots": 483, "accuracy": 16}
+			]
+		}
+	]
+}

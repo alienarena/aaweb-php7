@@ -14,7 +14,11 @@ $orderByInstagib = 2;
 $orderByRocketArena = 3;
 $orderByTotal = 0; // default
 $orderby = intval((isset($_GET['orderby']) ? $_GET['orderby'] : NULL));
-$lastyear = intval((isset($_GET['lastyear']) ? $_GET['lastyear'] : NULL));
+$pastyear = intval(
+    ($_POST['pastyear'] !== null && $_POST['pastyear'] !== 0
+        ? $_POST['pastyear']
+        : ($_GET['pastyear'] !== null ? $_GET['pastyear'] : NULL))
+);
 
 $tourneyStartDate = '2019-01-27';
 
@@ -37,11 +41,20 @@ echo "<body style=\"background-image: url('../sharedimages/site-background.jpg')
 /* Background with parallax-effect */
 /* https://github.com/TheUltrasoft/Parallaxie */	
 echo "<div id=\"content\" class=\"parallaxie\" style=\"background-image: url('../sharedimages/purgatory.jpg');\" data-parallaxie='{\"speed\": 0.8, \"size\": \"auto\"}'>\n";
+echo "   <center>\n";
+echo "      <div style=\"height: 30px\"></div>\n";
+echo "      <div class=\"pagetitle\">$pageTitle</div>\n";
+echo "   </center>\n";
 
-echo "  <center>\n";
-echo "    <div style=\"height: 30px\"></div>\n";
-echo "    <div class=\"pagetitle\">$pageTitle</div>\n";
-echo "    <div class=\"menu\"><a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><span class=\"active\">Rankings</span></div>\n";
+echo "   <div class=\"menu\">\n";
+echo "      <a href=\"index.php\">Matches</a><span class=\"navdisabled\">&nbsp;|&nbsp;</span><span class=\"active\">Rankings</span>\n";
+echo "      <form id=\"form\" method=\"post\" action=\"/arena/leaderboard/rankings.php\">\n";
+echo "         <select name=\"pastyear\" value=\"$pastyear\" class=\"periodfilter\" onchange=\"document.getElementById('form').submit();\">\n";
+echo "            <option value=\"0\" ".($pastyear == 0 ? "selected" : "").">since 2019</option>\n";
+echo "            <option value=\"1\" ".($pastyear == 1 ? "selected" : "").">of past year</option>\n";
+echo "         </select>\n";
+echo "      </form>\n";
+echo "   </div>\n";
 
 renderRankings();
 
@@ -59,18 +72,17 @@ echo "        });\n";
 echo "    </script>\n";
 
 echo "    <div style=\"height: 30px\"></div>\n";
-echo "  </center>\n";
 echo "</div>\n";
 echo "</body>\n";
 echo "</html>\n";
 
 function renderRankings()
 {
-    global $mustache, $tourneyStartDate, $lastyear;
+    global $mustache, $tourneyStartDate, $pastyear;
     
     $template = $mustache->loadTemplate('rankingstemplate');
 
-    $rankingsFile = $lastyear == 1 ? "gamedata/rankings.lastyear.json" : "gamedata/rankings.json";
+    $rankingsFile = $pastyear == 1 ? "gamedata/rankings.pastyear.json" : "gamedata/rankings.json";
     $json = fileGetContents($rankingsFile);
     $data = jsonDecode($json, true);
 
@@ -102,14 +114,16 @@ function renderDetails($data)
 }
 
 function handleOrderBy(&$data) {
-    global $orderby, $lastyear, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
+    global $orderby, $pastyear, $orderByDeathMatch, $orderByInstagib, $orderByRocketArena, $orderByTotal;
      
     $deathMatchHeader = 'DEATHMATCH';
     $instagibHeader = 'INSTAGIB';
     $rocketArenaHeader = 'ROCKET ARENA';
     $totalHeader = 'TOTAL';
     
-    $data['lastyear'] = $lastyear;
+    if ($pastyear == 1) {
+        $data['pastyear'] = $pastyear;
+    }
 
     switch ($orderby) {
         case $orderByDeathMatch:
