@@ -143,7 +143,7 @@ if ($singleTourneyMode) {
     $mapImageLocation = '';
     $boxWidth = '1333px';
     $boxHeight = '750px';
-    $boxBackgroundStyle = "background-size: cover; background-repeat: no-repeat; display: flex; flex-direction: column; align-items: center; max-width: $boxWidth; height: $boxHeight;";
+    $boxBackgroundStyle = "background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-direction: column; align-items: center; max-width: $boxWidth; height: $boxHeight;";
 
     if (strlen($map) == 0) {
         $map = getMapFromTourney();
