@@ -1,0 +1,59 @@
+{
+	"map": "dm-oblivion",
+	"players": [
+		{
+			"name": "^1martian",
+			"score": 66,
+			"deaths": 58,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 148, "shots": 435, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 60,
+			"deaths": 54,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 156, "shots": 446, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^9[^7SiN^9]^7Touchi",
+			"score": 60,
+			"deaths": 65,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 150, "shots": 465, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 50,
+			"deaths": 62,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 142, "shots": 618, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 30,
+			"deaths": 30,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 73, "shots": 244, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 26,
+			"deaths": 71,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 286, "accuracy": 29}
+			]
+		}
+	]
+}
