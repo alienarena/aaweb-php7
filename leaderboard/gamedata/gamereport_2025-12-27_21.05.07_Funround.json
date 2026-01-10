@@ -1,0 +1,32 @@
+{
+	"map": "dm-atlantis-retro",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 48,
+			"deaths": 27,
+			"ratio": 177,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 422, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 25,
+			"deaths": 43,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 418, "accuracy": 20}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 21,
+			"deaths": 48,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 82, "shots": 459, "accuracy": 17}
+			]
+		}
+	]
+}

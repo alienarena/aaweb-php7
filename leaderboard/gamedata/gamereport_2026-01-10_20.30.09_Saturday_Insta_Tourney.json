@@ -1,0 +1,87 @@
+{
+	"map": "dm-liberation",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 218,
+			"deaths": 90,
+			"ratio": 242,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 222, "shots": 420, "accuracy": 52}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 143,
+			"deaths": 106,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 142, "shots": 344, "accuracy": 41},
+				{"weapon": "violator", "hits": 3, "shots": 28, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 120,
+			"deaths": 106,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 119, "shots": 337, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 113,
+			"deaths": 95,
+			"ratio": 118,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 114, "shots": 302, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 104,
+			"deaths": 104,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 106, "shots": 299, "accuracy": 35}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 80,
+			"deaths": 120,
+			"ratio": 66,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 80, "shots": 215, "accuracy": 37}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 80,
+			"deaths": 126,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 231, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 70,
+			"deaths": 117,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 307, "accuracy": 23}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 54,
+			"deaths": 122,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 54, "shots": 332, "accuracy": 16}
+			]
+		}
+	]
+}

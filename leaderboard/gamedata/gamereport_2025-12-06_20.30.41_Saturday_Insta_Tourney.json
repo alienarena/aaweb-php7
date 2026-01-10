@@ -1,0 +1,96 @@
+{
+	"map": "dm-neptune",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 259,
+			"deaths": 102,
+			"ratio": 253,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 258, "shots": 497, "accuracy": 51}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 158,
+			"deaths": 139,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 156, "shots": 386, "accuracy": 40},
+				{"weapon": "violator", "hits": 1, "shots": 47, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 146,
+			"deaths": 131,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 145, "shots": 431, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 137,
+			"deaths": 123,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 135, "shots": 401, "accuracy": 33}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 121,
+			"deaths": 98,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 118, "shots": 342, "accuracy": 34}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 110,
+			"deaths": 122,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 110, "shots": 300, "accuracy": 36}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 101,
+			"deaths": 132,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 99, "shots": 375, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 90,
+			"deaths": 122,
+			"ratio": 73,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 89, "shots": 365, "accuracy": 24}
+			]
+		},
+		{
+			"name": "ItsMeSanta",
+			"score": 79,
+			"deaths": 136,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 310, "accuracy": 25}
+			]
+		},
+		{
+			"name": "dez",
+			"score": 40,
+			"deaths": 136,
+			"ratio": 29,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 39, "shots": 188, "accuracy": 20}
+			]
+		}
+	]
+}

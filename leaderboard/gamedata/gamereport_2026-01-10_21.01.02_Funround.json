@@ -1,0 +1,50 @@
+{
+	"map": "dm-furious-retro",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 60,
+			"deaths": 47,
+			"ratio": 127,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 174, "shots": 439, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 43,
+			"deaths": 50,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 488, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 37,
+			"deaths": 59,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 490, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 33,
+			"deaths": 56,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 401, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 33,
+			"deaths": 60,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 91, "shots": 304, "accuracy": 29}
+			]
+		}
+	]
+}

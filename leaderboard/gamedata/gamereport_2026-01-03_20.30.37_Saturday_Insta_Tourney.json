@@ -1,0 +1,52 @@
+{
+	"map": "ctf-zorn",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 141,
+			"deaths": 85,
+			"ratio": 165,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 354, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 110,
+			"deaths": 85,
+			"ratio": 129,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 113, "shots": 317, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 107,
+			"deaths": 98,
+			"ratio": 109,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 105, "shots": 300, "accuracy": 35},
+				{"weapon": "violator", "hits": 2, "shots": 22, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 92,
+			"deaths": 93,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 93, "shots": 306, "accuracy": 30},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 52,
+			"deaths": 123,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 184, "accuracy": 28}
+			]
+		}
+	]
+}

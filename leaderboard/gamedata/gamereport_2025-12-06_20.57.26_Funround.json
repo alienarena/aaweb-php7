@@ -1,0 +1,68 @@
+{
+	"map": "dm-babel",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 94,
+			"deaths": 71,
+			"ratio": 132,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 208, "shots": 376, "accuracy": 55}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 74,
+			"deaths": 66,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 194, "shots": 463, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 53,
+			"deaths": 73,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 174, "shots": 329, "accuracy": 52}
+			]
+		},
+		{
+			"name": "ItsMeSanta",
+			"score": 42,
+			"deaths": 66,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 128, "shots": 276, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 38,
+			"deaths": 81,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 130, "shots": 439, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 31,
+			"deaths": 84,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 261, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 30,
+			"deaths": 38,
+			"ratio": 78,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 94, "shots": 235, "accuracy": 40}
+			]
+		}
+	]
+}

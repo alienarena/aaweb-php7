@@ -1,0 +1,32 @@
+{
+	"map": "dm-leviathan-classic",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 48,
+			"deaths": 34,
+			"ratio": 141,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 151, "shots": 428, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 28,
+			"deaths": 40,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 332, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 18,
+			"deaths": 55,
+			"ratio": 32,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 390, "accuracy": 20}
+			]
+		}
+	]
+}

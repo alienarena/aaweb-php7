@@ -1,0 +1,104 @@
+{
+	"map": "dm-longestyard",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 256,
+			"deaths": 136,
+			"ratio": 188,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 254, "shots": 541, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 199,
+			"deaths": 142,
+			"ratio": 140,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 197, "shots": 464, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 192,
+			"deaths": 129,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 195, "shots": 498, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 153,
+			"deaths": 145,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 153, "shots": 449, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^7[^8SiN^7]^8Touchi",
+			"score": 142,
+			"deaths": 144,
+			"ratio": 98,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 457, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[OS]Bery",
+			"score": 121,
+			"deaths": 150,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 124, "shots": 360, "accuracy": 34}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 119,
+			"deaths": 148,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 116, "shots": 349, "accuracy": 33}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 97,
+			"deaths": 154,
+			"ratio": 62,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 101, "shots": 315, "accuracy": 32}
+			]
+		},
+		{
+			"name": "Hooten",
+			"score": 95,
+			"deaths": 149,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 343, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 77,
+			"deaths": 152,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 352, "accuracy": 22}
+			]
+		},
+		{
+			"name": "[BPC]dez",
+			"score": 55,
+			"deaths": 161,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 241, "accuracy": 24}
+			]
+		}
+	]
+}
