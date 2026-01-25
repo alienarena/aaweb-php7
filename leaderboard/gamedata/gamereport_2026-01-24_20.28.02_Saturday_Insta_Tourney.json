@@ -1,0 +1,62 @@
+{
+	"map": "ctf-aquila",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 155,
+			"deaths": 76,
+			"ratio": 203,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 175, "shots": 392, "accuracy": 44}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 125,
+			"deaths": 93,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 136, "shots": 336, "accuracy": 40},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 121,
+			"deaths": 84,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 120, "shots": 308, "accuracy": 38},
+				{"weapon": "violator", "hits": 4, "shots": 31, "accuracy": 12}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 53,
+			"deaths": 105,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 238, "accuracy": 24}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 47,
+			"deaths": 100,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 51, "shots": 285, "accuracy": 17}
+			]
+		},
+		{
+			"name": "elfor2",
+			"score": 38,
+			"deaths": 81,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 40, "shots": 233, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		}
+	]
+}

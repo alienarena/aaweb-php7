@@ -1,0 +1,41 @@
+{
+	"map": "dm-dynamo",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 46,
+			"deaths": 32,
+			"ratio": 143,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 122, "shots": 331, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 37,
+			"deaths": 46,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 95, "shots": 371, "accuracy": 25}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 21,
+			"deaths": 37,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 71, "shots": 293, "accuracy": 24}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 11,
+			"deaths": 20,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 34, "shots": 145, "accuracy": 23}
+			]
+		}
+	]
+}

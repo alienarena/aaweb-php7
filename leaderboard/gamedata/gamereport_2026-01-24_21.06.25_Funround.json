@@ -1,0 +1,46 @@
+{
+	"map": "dm-purgatory",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 81,
+			"deaths": 22,
+			"ratio": 368,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 9, "shots": 22, "accuracy": 40},
+				{"weapon": "disruptor", "hits": 89, "shots": 158, "accuracy": 56},
+				{"weapon": "chaingun", "hits": 30, "shots": 112, "accuracy": 26},
+				{"weapon": "rocketlauncher", "hits": 35, "shots": 69, "accuracy": 50},
+				{"weapon": "beamgun", "hits": 202, "shots": 288, "accuracy": 70},
+				{"weapon": "violator", "hits": 7, "shots": 60, "accuracy": 11}
+			]
+		},
+		{
+			"name": "elfor2",
+			"score": 22,
+			"deaths": 52,
+			"ratio": 42,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 19, "shots": 85, "accuracy": 22},
+				{"weapon": "disruptor", "hits": 21, "shots": 62, "accuracy": 33},
+				{"weapon": "chaingun", "hits": 30, "shots": 133, "accuracy": 22},
+				{"weapon": "rocketlauncher", "hits": 7, "shots": 39, "accuracy": 17},
+				{"weapon": "beamgun", "hits": 190, "shots": 447, "accuracy": 42}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 16,
+			"deaths": 57,
+			"ratio": 28,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 45, "shots": 109, "accuracy": 41},
+				{"weapon": "disruptor", "hits": 13, "shots": 59, "accuracy": 22},
+				{"weapon": "chaingun", "hits": 22, "shots": 73, "accuracy": 30},
+				{"weapon": "rocketlauncher", "hits": 28, "shots": 121, "accuracy": 23},
+				{"weapon": "beamgun", "hits": 70, "shots": 223, "accuracy": 31},
+				{"weapon": "violator", "hits": 0, "shots": 22, "accuracy": 0}
+			]
+		}
+	]
+}

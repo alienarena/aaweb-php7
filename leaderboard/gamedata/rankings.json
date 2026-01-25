@@ -1,6 +1,6 @@
 {
  "dateFrom": "2019-01-27",
- "dateTo": "2026-01-10",
+ "dateTo": "2026-01-24",
  "rankings": [
   {
    "name": "^0[^3GM^0]^1Vista",
@@ -39,18 +39,18 @@
   {
    "name": "^3[GM]^3^1Jar^5'El",
    "userID": "315223049471524866",
-   "points": 791.71,
-   "deathMatchPoints": 183.02,
-   "instagibPoints": 316.62,
-   "rocketArenaPoints": 292.07,
+   "points": 802.15,
+   "deathMatchPoints": 185.68,
+   "instagibPoints": 320.53,
+   "rocketArenaPoints": 295.94,
    "mainRoundWins": 0,
    "funroundWins": 4,
    "mainRoundSeconds": 9,
-   "funroundSeconds": 23,
+   "funroundSeconds": 24,
    "mainRoundThirds": 34,
-   "funroundThirds": 36,
-   "mainRoundsPlayed": 133,
-   "funroundsPlayed": 115,
+   "funroundThirds": 37,
+   "mainRoundsPlayed": 135,
+   "funroundsPlayed": 117,
    "rank": 3
   },
   {
@@ -90,18 +90,18 @@
   {
    "name": "^7[OS]^2METROID",
    "userID": "METROIDHunter_",
-   "points": 418.23,
-   "deathMatchPoints": 122.81,
-   "instagibPoints": 195.37,
-   "rocketArenaPoints": 100.05,
+   "points": 445.82,
+   "deathMatchPoints": 128.12,
+   "instagibPoints": 212.69,
+   "rocketArenaPoints": 105.01,
    "mainRoundWins": 9,
-   "funroundWins": 10,
-   "mainRoundSeconds": 11,
+   "funroundWins": 12,
+   "mainRoundSeconds": 12,
    "funroundSeconds": 4,
-   "mainRoundThirds": 10,
+   "mainRoundThirds": 11,
    "funroundThirds": 8,
-   "mainRoundsPlayed": 49,
-   "funroundsPlayed": 31,
+   "mainRoundsPlayed": 51,
+   "funroundsPlayed": 33,
    "rank": 6
   },
   {
@@ -124,17 +124,17 @@
   {
    "name": "^![666]^@Blitz",
    "userID": "310892608618627072",
-   "points": 275.54,
+   "points": 298.47,
    "deathMatchPoints": 55.14,
-   "instagibPoints": 155.7,
+   "instagibPoints": 178.63,
    "rocketArenaPoints": 64.7,
-   "mainRoundWins": 12,
+   "mainRoundWins": 14,
    "funroundWins": 7,
    "mainRoundSeconds": 4,
    "funroundSeconds": 6,
    "mainRoundThirds": 1,
    "funroundThirds": 1,
-   "mainRoundsPlayed": 28,
+   "mainRoundsPlayed": 30,
    "funroundsPlayed": 18,
    "rank": 8
   },
@@ -173,6 +173,23 @@
    "rank": 10
   },
   {
+   "name": "Sly",
+   "userID": "1397923975861895200",
+   "points": 180.34,
+   "deathMatchPoints": 19.15,
+   "instagibPoints": 118.44,
+   "rocketArenaPoints": 42.75,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundSeconds": 3,
+   "funroundSeconds": 1,
+   "mainRoundThirds": 7,
+   "funroundThirds": 5,
+   "mainRoundsPlayed": 39,
+   "funroundsPlayed": 23,
+   "rank": 11
+  },
+  {
    "name": "^7[OS]^3Izaiasss",
    "userID": "457233861890408458",
    "points": 177.85,
@@ -187,7 +204,7 @@
    "funroundThirds": 3,
    "mainRoundsPlayed": 29,
    "funroundsPlayed": 19,
-   "rank": 11
+   "rank": 12
   },
   {
    "name": "[T3]generic_sn",
@@ -204,40 +221,23 @@
    "funroundThirds": 4,
    "mainRoundsPlayed": 21,
    "funroundsPlayed": 23,
-   "rank": 12
-  },
-  {
-   "name": "Sly",
-   "userID": "1397923975861895200",
-   "points": 164.04,
-   "deathMatchPoints": 19.15,
-   "instagibPoints": 102.14,
-   "rocketArenaPoints": 42.75,
-   "mainRoundWins": 0,
-   "funroundWins": 0,
-   "mainRoundSeconds": 2,
-   "funroundSeconds": 1,
-   "mainRoundThirds": 6,
-   "funroundThirds": 5,
-   "mainRoundsPlayed": 37,
-   "funroundsPlayed": 23,
    "rank": 13
   },
   {
    "name": "^1martian",
    "userID": "martian-aa",
-   "points": 157.48,
+   "points": 162.69,
    "deathMatchPoints": 7.16,
-   "instagibPoints": 102.39,
-   "rocketArenaPoints": 47.93,
+   "instagibPoints": 104.89,
+   "rocketArenaPoints": 50.64,
    "mainRoundWins": 2,
    "funroundWins": 2,
    "mainRoundSeconds": 3,
    "funroundSeconds": 9,
    "mainRoundThirds": 5,
-   "funroundThirds": 2,
-   "mainRoundsPlayed": 14,
-   "funroundsPlayed": 15,
+   "funroundThirds": 3,
+   "mainRoundsPlayed": 15,
+   "funroundsPlayed": 16,
    "rank": 14
   },
   {
@@ -445,6 +445,23 @@
    "rank": 26
   },
   {
+   "name": "[BPC]ur",
+   "userID": "729105113146196009",
+   "points": 23.43,
+   "deathMatchPoints": 0,
+   "instagibPoints": 23.43,
+   "rocketArenaPoints": 0,
+   "mainRoundWins": 0,
+   "funroundWins": 0,
+   "mainRoundSeconds": 0,
+   "funroundSeconds": 0,
+   "mainRoundThirds": 0,
+   "funroundThirds": 0,
+   "mainRoundsPlayed": 15,
+   "funroundsPlayed": 0,
+   "rank": 27
+  },
+  {
    "name": "[fo]trickybilly",
    "userID": "1155236581666476093",
    "points": 23.35,
@@ -459,24 +476,24 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 6,
    "funroundsPlayed": 5,
-   "rank": 27
+   "rank": 28
   },
   {
-   "name": "[BPC]ur",
-   "userID": "729105113146196009",
-   "points": 20.43,
-   "deathMatchPoints": 0,
-   "instagibPoints": 20.43,
-   "rocketArenaPoints": 0,
+   "name": "elfor",
+   "userID": "290228212930445314",
+   "points": 18.22,
+   "deathMatchPoints": 3.72,
+   "instagibPoints": 9.77,
+   "rocketArenaPoints": 4.73,
    "mainRoundWins": 0,
    "funroundWins": 0,
    "mainRoundSeconds": 0,
-   "funroundSeconds": 0,
+   "funroundSeconds": 1,
    "mainRoundThirds": 0,
    "funroundThirds": 0,
-   "mainRoundsPlayed": 13,
-   "funroundsPlayed": 0,
-   "rank": 28
+   "mainRoundsPlayed": 6,
+   "funroundsPlayed": 4,
+   "rank": 29
   },
   {
    "name": "vicious",
@@ -493,7 +510,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 1,
-   "rank": 29
+   "rank": 30
   },
   {
    "name": "^7[OS]^2chessplayer",
@@ -510,7 +527,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 4,
    "funroundsPlayed": 4,
-   "rank": 30
+   "rank": 31
   },
   {
    "name": "(T3)mtsu",
@@ -527,7 +544,7 @@
    "funroundThirds": 1,
    "mainRoundsPlayed": 5,
    "funroundsPlayed": 1,
-   "rank": 31
+   "rank": 32
   },
   {
    "name": "[T3]Nero",
@@ -544,7 +561,7 @@
    "funroundThirds": 1,
    "mainRoundsPlayed": 2,
    "funroundsPlayed": 2,
-   "rank": 32
+   "rank": 33
   },
   {
    "name": "Ismerald",
@@ -561,7 +578,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 4,
    "funroundsPlayed": 3,
-   "rank": 33
+   "rank": 34
   },
   {
    "name": "The^1Chosen^5One",
@@ -578,7 +595,7 @@
    "funroundThirds": 0,
    "mainRoundsPlayed": 1,
    "funroundsPlayed": 2,
-   "rank": 34
+   "rank": 35
   },
   {
    "name": "Manchev",
@@ -595,23 +612,6 @@
    "funroundThirds": 1,
    "mainRoundsPlayed": 3,
    "funroundsPlayed": 3,
-   "rank": 35
-  },
-  {
-   "name": "elfor",
-   "userID": "290228212930445314",
-   "points": 11.51,
-   "deathMatchPoints": 0,
-   "instagibPoints": 7.89,
-   "rocketArenaPoints": 3.62,
-   "mainRoundWins": 0,
-   "funroundWins": 0,
-   "mainRoundSeconds": 0,
-   "funroundSeconds": 0,
-   "mainRoundThirds": 0,
-   "funroundThirds": 0,
-   "mainRoundsPlayed": 5,
-   "funroundsPlayed": 2,
    "rank": 36
   },
   {
