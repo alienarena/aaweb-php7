@@ -1,0 +1,41 @@
+{
+	"map": "dm-steakums",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 52,
+			"deaths": 37,
+			"ratio": 140,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 132, "shots": 561, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 37,
+			"deaths": 53,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 299, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 37,
+			"deaths": 54,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 101, "shots": 548, "accuracy": 18}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 22,
+			"deaths": 46,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 381, "accuracy": 23}
+			]
+		}
+	]
+}

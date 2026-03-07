@@ -1,0 +1,32 @@
+{
+	"map": "dm-tetrigib",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 61,
+			"deaths": 28,
+			"ratio": 217,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 148, "shots": 356, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 19,
+			"deaths": 44,
+			"ratio": 43,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 330, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 17,
+			"deaths": 49,
+			"ratio": 34,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 403, "accuracy": 20}
+			]
+		}
+	]
+}

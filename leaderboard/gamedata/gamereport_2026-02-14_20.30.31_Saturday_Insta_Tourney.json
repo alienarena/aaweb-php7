@@ -1,0 +1,61 @@
+{
+	"map": "dm-inferno",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 134,
+			"deaths": 80,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 134, "shots": 266, "accuracy": 50},
+				{"weapon": "violator", "hits": 4, "shots": 74, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 119,
+			"deaths": 95,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 121, "shots": 314, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 95,
+			"deaths": 67,
+			"ratio": 141,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 104, "shots": 277, "accuracy": 37},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 66,
+			"deaths": 86,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 235, "accuracy": 29}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 54,
+			"deaths": 112,
+			"ratio": 48,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 170, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 45,
+			"deaths": 109,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 47, "shots": 260, "accuracy": 18}
+			]
+		}
+	]
+}

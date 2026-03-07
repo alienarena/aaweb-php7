@@ -1,0 +1,69 @@
+{
+	"map": "ctf-dualscourge",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 127,
+			"deaths": 76,
+			"ratio": 167,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 127, "shots": 326, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 113,
+			"deaths": 84,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 115, "shots": 271, "accuracy": 42},
+				{"weapon": "violator", "hits": 1, "shots": 18, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 95,
+			"deaths": 80,
+			"ratio": 118,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 97, "shots": 266, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 87,
+			"deaths": 81,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 246, "accuracy": 35}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 67,
+			"deaths": 94,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 68, "shots": 213, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 37,
+			"deaths": 78,
+			"ratio": 47,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 38, "shots": 206, "accuracy": 18}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 14,
+			"deaths": 55,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 15, "shots": 150, "accuracy": 10}
+			]
+		}
+	]
+}

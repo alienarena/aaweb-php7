@@ -1,0 +1,41 @@
+{
+	"map": "dm-tourney0",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 63,
+			"deaths": 51,
+			"ratio": 123,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 141, "shots": 356, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 38,
+			"deaths": 44,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 111, "shots": 370, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^1Do^7n^8do",
+			"score": 31,
+			"deaths": 46,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 100, "shots": 465, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 29,
+			"deaths": 56,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 81, "shots": 503, "accuracy": 16}
+			]
+		}
+	]
+}

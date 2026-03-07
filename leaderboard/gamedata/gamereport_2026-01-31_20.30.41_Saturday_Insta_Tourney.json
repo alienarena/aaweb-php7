@@ -1,0 +1,68 @@
+{
+	"map": "dm-omega-retro",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 147,
+			"deaths": 92,
+			"ratio": 159,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 155, "shots": 320, "accuracy": 48}
+			]
+		},
+		{
+			"name": "^1Do^7n^8do",
+			"score": 130,
+			"deaths": 90,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 137, "shots": 301, "accuracy": 45}
+			]
+		},
+		{
+			"name": "^1|^4|^3Sly",
+			"score": 109,
+			"deaths": 92,
+			"ratio": 118,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 117, "shots": 298, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 102,
+			"deaths": 76,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 104, "shots": 275, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 58,
+			"deaths": 115,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 63, "shots": 249, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 47,
+			"deaths": 76,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 60, "shots": 168, "accuracy": 35}
+			]
+		},
+		{
+			"name": "elfor2",
+			"score": 30,
+			"deaths": 82,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 39, "shots": 226, "accuracy": 17}
+			]
+		}
+	]
+}

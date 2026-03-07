@@ -1,0 +1,61 @@
+{
+	"map": "ctf-conexus",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 128,
+			"deaths": 59,
+			"ratio": 216,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 126, "shots": 284, "accuracy": 44},
+				{"weapon": "violator", "hits": 3, "shots": 22, "accuracy": 13}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 80,
+			"deaths": 80,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 261, "accuracy": 33},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 79,
+			"deaths": 63,
+			"ratio": 125,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 262, "accuracy": 31}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 67,
+			"deaths": 65,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 69, "shots": 222, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 50,
+			"deaths": 82,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 52, "shots": 249, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 44,
+			"deaths": 99,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 48, "shots": 185, "accuracy": 25}
+			]
+		}
+	]
+}

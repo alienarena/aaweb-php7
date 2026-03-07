@@ -17,7 +17,7 @@
     :root {
         --yearlyrequiredamount: 480;
         --monthlyrequiredamount: 40;
-        --donatedamount: 385.79;
+        --donatedamount: 385.27;
         --monthlydonation: 18.00;
         --donatedpercentage: calc(var(--donatedamount) / var(--yearlyrequiredamount) * 100%);
         --donatedmonthlypercentage: calc(var(--monthlydonation) / var(--monthlyrequiredamount) * 100%);
@@ -499,41 +499,18 @@
             </table>
             <hr>
             <table class="subsection">
-                <tbody>
-                <tr>
-                <td>
-                    <h1>Most recent tourney</h1>
-                    <p>
-                        <a href="/arena/leaderboard/index.php" target="_blank">All tourney results</a>
-                        &nbsp;
-                        <a href="/arena/leaderboard/rankings.php" target="_blank">Rankings</a>
-                    </p>
-                    <p>
-                        <iframe src="/arena/leaderboard/index.php?date=last" style="height: 750px; width: 100%; border: none;" scrolling="no"></iframe>                        
-                    </p>
-                    <p>
-                        <iframe class="video" height="500" src="https://youtube.com/embed/AC8cn9Ij0ZY"></iframe>
-                        <ul>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=AC8cn9Ij0ZY" target="_blank">Video of November 15, 2025</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=IdTpNNctwOI" target="_blank">Video of October 18, 2025</a>
-                            </li>
-                        </ul>
-                    </p>
-                </td>
-                </tr>
-                </tbody>
-            </table>
-            <hr>
-            <table class="subsection">
                 <tr>
                     <td class="leftsection">
                         <table style="border-spacing: 0px; height: 100%;">
                             <tr>
                                 <td>
                                     <h1>News</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3><div style="font-weight: bold; color: springgreen;">Upcoming event</div>John Diamond Memorial Tourney on 20th of June, 2026</h3>
+                                    <p>The John Diamond Memorial Tourney will be held on June 20, 2026, in memory of the founding father of Alien Arena. Everone is welcome to join, we hope to have a big event with multiple rounds.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -620,6 +597,35 @@
                         <p>For IRC, use irc.alienarena.org. The port should be 6697 for secure connections, otherwise 6667. With the latest game clients the IRC server will be changed automatically.</p>
                     </td>
                 </tr>
+            </table>
+            <hr>
+            <table class="subsection">
+                <tbody>
+                <tr>
+                <td>
+                    <h1>Most recent tourney</h1>
+                    <p>
+                        <a href="/arena/leaderboard/index.php" target="_blank">All tourney results</a>
+                        &nbsp;
+                        <a href="/arena/leaderboard/rankings.php" target="_blank">Rankings</a>
+                    </p>
+                    <p>
+                        <iframe src="/arena/leaderboard/index.php?date=last" style="height: 750px; width: 100%; border: none;" scrolling="no"></iframe>                        
+                    </p>
+                    <p>
+                        <iframe class="video" height="500" src="https://youtube.com/embed/AC8cn9Ij0ZY"></iframe>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=AC8cn9Ij0ZY" target="_blank">Video of November 15, 2025</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=IdTpNNctwOI" target="_blank">Video of October 18, 2025</a>
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+                </tr>
+                </tbody>
             </table>
             <hr>
             <table class="subsection">
@@ -713,7 +719,8 @@ sudo make install</textarea>
                             <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1185832191" target="_blank">Gameplay guide</a></li>
                             <li><a href="https://alienarena.fandom.com/wiki/Frequently_Asked_Questions" target="_blank">FAQs</a></li>
                             <li><a href="https://steamcommunity.com/app/629540/discussions" target="_blank">Steam forum</a></li>
-                            <li><a href="/qcc" target="_blank">Console commands</a></li>
+                            <li><a href="/CVAR.html" target="_blank">CVars</a></li>
+                            <li><a href="/CMD.html" target="_blank">Console commands</a></li>
                             <li><a href="/arena/dmflags.html" target="_blank">DM flags calculator</a></li>
                         </ul>
                     </td>
@@ -1160,6 +1167,24 @@ sudo make install</textarea>
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <div class="map">
+                            <a href="/arena/files/ctf-dualscourge.zip" title="To install, use installmap ctf-dualscourge">
+                                <img src="/arena/browser/maps/3rd/ctf-dualscourge.jpg" />
+                            </a>
+                            <div>ctf-dualscourge</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="map">
+                            <a href="/arena/files/ctf-area51.zip" title="To install, use installmap ctf-area51">
+                                <img src="/arena/browser/maps/3rd/ctf-area51.jpg" />
+                            </a>
+                            <div>ctf-area51</div>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>
@@ -1175,7 +1200,7 @@ sudo make install</textarea>
                         <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
                     </a>
                     &nbsp;
-                    <div class="sponsorprogress current">&nbsp;€385.79 of €480 for one year&nbsp;</div>
+                    <div class="sponsorprogress current">&nbsp;€385.27 of €480 for one year&nbsp;</div>
                     &nbsp;
                     <div class="sponsorprogress monthly">&nbsp;€18 of €40 recurring per month&nbsp;</div>
                 </td>

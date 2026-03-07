@@ -1,0 +1,41 @@
+{
+	"map": "dm-deadsimple",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 59,
+			"deaths": 28,
+			"ratio": 210,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 578, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 30,
+			"deaths": 43,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 93, "shots": 638, "accuracy": 14}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 19,
+			"deaths": 31,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 72, "shots": 494, "accuracy": 14}
+			]
+		},
+		{
+			"name": "Hooten",
+			"score": 16,
+			"deaths": 44,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 37, "shots": 343, "accuracy": 10}
+			]
+		}
+	]
+}

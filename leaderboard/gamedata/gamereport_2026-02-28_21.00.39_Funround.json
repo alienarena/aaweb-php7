@@ -1,0 +1,72 @@
+{
+	"map": "dm-deathray",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 43,
+			"deaths": 43,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 26, "shots": 41, "accuracy": 63},
+				{"weapon": "disruptor", "hits": 12, "shots": 19, "accuracy": 63},
+				{"weapon": "smartgun", "hits": 31, "shots": 45, "accuracy": 68},
+				{"weapon": "chaingun", "hits": 51, "shots": 220, "accuracy": 23},
+				{"weapon": "flamethrower", "hits": 46, "shots": 323, "accuracy": 14},
+				{"weapon": "rocketlauncher", "hits": 14, "shots": 30, "accuracy": 46},
+				{"weapon": "beamgun", "hits": 110, "shots": 194, "accuracy": 56},
+				{"weapon": "vaporizer", "hits": 7, "shots": 9, "accuracy": 77},
+				{"weapon": "violator", "hits": 32, "shots": 251, "accuracy": 12}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 42,
+			"deaths": 46,
+			"ratio": 91,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 10, "shots": 42, "accuracy": 23},
+				{"weapon": "disruptor", "hits": 20, "shots": 41, "accuracy": 48},
+				{"weapon": "smartgun", "hits": 114, "shots": 167, "accuracy": 68},
+				{"weapon": "chaingun", "hits": 53, "shots": 351, "accuracy": 15},
+				{"weapon": "flamethrower", "hits": 10, "shots": 15, "accuracy": 66},
+				{"weapon": "rocketlauncher", "hits": 1, "shots": 3, "accuracy": 33},
+				{"weapon": "beamgun", "hits": 27, "shots": 64, "accuracy": 42},
+				{"weapon": "vaporizer", "hits": 23, "shots": 36, "accuracy": 63},
+				{"weapon": "violator", "hits": 10, "shots": 138, "accuracy": 7}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 38,
+			"deaths": 39,
+			"ratio": 97,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 23, "shots": 48, "accuracy": 47},
+				{"weapon": "disruptor", "hits": 1, "shots": 4, "accuracy": 25},
+				{"weapon": "smartgun", "hits": 272, "shots": 335, "accuracy": 81},
+				{"weapon": "chaingun", "hits": 30, "shots": 186, "accuracy": 16},
+				{"weapon": "flamethrower", "hits": 41, "shots": 366, "accuracy": 11},
+				{"weapon": "rocketlauncher", "hits": 11, "shots": 38, "accuracy": 28},
+				{"weapon": "beamgun", "hits": 66, "shots": 195, "accuracy": 33},
+				{"weapon": "vaporizer", "hits": 6, "shots": 8, "accuracy": 75},
+				{"weapon": "violator", "hits": 0, "shots": 5, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 8,
+			"deaths": 16,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "blaster", "hits": 8, "shots": 23, "accuracy": 34},
+				{"weapon": "disruptor", "hits": 2, "shots": 3, "accuracy": 66},
+				{"weapon": "smartgun", "hits": 17, "shots": 20, "accuracy": 85},
+				{"weapon": "chaingun", "hits": 9, "shots": 23, "accuracy": 39},
+				{"weapon": "flamethrower", "hits": 11, "shots": 132, "accuracy": 8},
+				{"weapon": "rocketlauncher", "hits": 1, "shots": 8, "accuracy": 12},
+				{"weapon": "beamgun", "hits": 18, "shots": 31, "accuracy": 58},
+				{"weapon": "vaporizer", "hits": 1, "shots": 3, "accuracy": 33}
+			]
+		}
+	]
+}

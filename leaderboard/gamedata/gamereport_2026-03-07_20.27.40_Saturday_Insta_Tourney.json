@@ -1,0 +1,69 @@
+{
+	"map": "ctf-corrosion",
+	"players": [
+		{
+			"name": "ToastRawr",
+			"score": 157,
+			"deaths": 86,
+			"ratio": 182,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 171, "shots": 362, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 121,
+			"deaths": 89,
+			"ratio": 135,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 129, "shots": 332, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 118,
+			"deaths": 105,
+			"ratio": 112,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 133, "shots": 291, "accuracy": 45}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 110,
+			"deaths": 109,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 120, "shots": 315, "accuracy": 38},
+				{"weapon": "violator", "hits": 2, "shots": 19, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 91,
+			"deaths": 91,
+			"ratio": 100,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 98, "shots": 287, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 49,
+			"deaths": 111,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 271, "accuracy": 19}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 47,
+			"deaths": 106,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 171, "accuracy": 30}
+			]
+		}
+	]
+}

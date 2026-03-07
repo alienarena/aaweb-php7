@@ -1,0 +1,80 @@
+{
+	"map": "ctf-vesuvius",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 175,
+			"deaths": 99,
+			"ratio": 176,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 175, "shots": 365, "accuracy": 47}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 154,
+			"deaths": 115,
+			"ratio": 133,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 153, "shots": 383, "accuracy": 39},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 136,
+			"deaths": 115,
+			"ratio": 118,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 128, "shots": 305, "accuracy": 41},
+				{"weapon": "violator", "hits": 6, "shots": 68, "accuracy": 8}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 119,
+			"deaths": 116,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 118, "shots": 316, "accuracy": 37},
+				{"weapon": "violator", "hits": 1, "shots": 24, "accuracy": 4}
+			]
+		},
+		{
+			"name": "morv",
+			"score": 93,
+			"deaths": 73,
+			"ratio": 127,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 93, "shots": 240, "accuracy": 38}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 79,
+			"deaths": 114,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 79, "shots": 262, "accuracy": 30}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 75,
+			"deaths": 115,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 75, "shots": 299, "accuracy": 25}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 43,
+			"deaths": 127,
+			"ratio": 33,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 43, "shots": 302, "accuracy": 14}
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+	"map": "dm-gauntlet",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 63,
+			"deaths": 37,
+			"ratio": 170,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 145, "shots": 526, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 38,
+			"deaths": 60,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 124, "shots": 573, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 21,
+			"deaths": 46,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 401, "accuracy": 20}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 11,
+			"deaths": 64,
+			"ratio": 17,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 54, "shots": 470, "accuracy": 11}
+			]
+		}
+	]
+}
