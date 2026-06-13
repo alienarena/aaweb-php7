@@ -1,0 +1,42 @@
+{
+	"map": "ctf-area51",
+	"players": [
+		{
+			"name": "^1martian",
+			"score": 101,
+			"deaths": 75,
+			"ratio": 134,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 101, "shots": 313, "accuracy": 32}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 92,
+			"deaths": 78,
+			"ratio": 117,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 92, "shots": 275, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 76,
+			"deaths": 71,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 76, "shots": 244, "accuracy": 31},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "Ismerald",
+			"score": 54,
+			"deaths": 93,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 54, "shots": 199, "accuracy": 27}
+			]
+		}
+	]
+}

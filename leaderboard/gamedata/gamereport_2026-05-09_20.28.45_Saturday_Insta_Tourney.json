@@ -1,0 +1,52 @@
+{
+	"map": "ctf-oblivion",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 108,
+			"deaths": 51,
+			"ratio": 211,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 104, "shots": 238, "accuracy": 43},
+				{"weapon": "violator", "hits": 4, "shots": 63, "accuracy": 6}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 81,
+			"deaths": 46,
+			"ratio": 176,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 86, "shots": 188, "accuracy": 45}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 54,
+			"deaths": 74,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 253, "accuracy": 21},
+				{"weapon": "violator", "hits": 0, "shots": 23, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 54,
+			"deaths": 76,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 225, "accuracy": 25}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 42,
+			"deaths": 92,
+			"ratio": 45,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 45, "shots": 221, "accuracy": 20}
+			]
+		}
+	]
+}

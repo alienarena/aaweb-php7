@@ -1,0 +1,41 @@
+{
+	"map": "dm-violator",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 47,
+			"deaths": 42,
+			"ratio": 111,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 161, "shots": 347, "accuracy": 46}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 43,
+			"deaths": 49,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 152, "shots": 434, "accuracy": 35}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 23,
+			"deaths": 52,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 117, "shots": 458, "accuracy": 25}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 12,
+			"deaths": 48,
+			"ratio": 25,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 93, "shots": 328, "accuracy": 28}
+			]
+		}
+	]
+}

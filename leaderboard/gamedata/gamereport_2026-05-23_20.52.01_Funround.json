@@ -1,0 +1,50 @@
+{
+	"map": "ctf-conexus",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 51,
+			"deaths": 27,
+			"ratio": 188,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 129, "shots": 402, "accuracy": 32}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 24,
+			"deaths": 40,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 85, "shots": 436, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 21,
+			"deaths": 40,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 89, "shots": 433, "accuracy": 20}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 19,
+			"deaths": 21,
+			"ratio": 90,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 72, "shots": 239, "accuracy": 30}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 18,
+			"deaths": 45,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 67, "shots": 397, "accuracy": 16}
+			]
+		}
+	]
+}

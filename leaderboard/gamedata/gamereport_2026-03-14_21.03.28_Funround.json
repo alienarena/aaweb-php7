@@ -1,0 +1,41 @@
+{
+	"map": "ctf-icarus2",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 45,
+			"deaths": 53,
+			"ratio": 84,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 451, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 44,
+			"deaths": 54,
+			"ratio": 81,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 352, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 29,
+			"deaths": 53,
+			"ratio": 54,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 106, "shots": 385, "accuracy": 27}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 22,
+			"deaths": 62,
+			"ratio": 35,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 108, "shots": 529, "accuracy": 20}
+			]
+		}
+	]
+}

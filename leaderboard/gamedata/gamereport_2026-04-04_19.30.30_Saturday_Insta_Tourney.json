@@ -1,0 +1,61 @@
+{
+	"map": "ctf-eizo",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 141,
+			"deaths": 72,
+			"ratio": 195,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 144, "shots": 333, "accuracy": 43},
+				{"weapon": "violator", "hits": 4, "shots": 75, "accuracy": 5}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 103,
+			"deaths": 96,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 130, "shots": 373, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 98,
+			"deaths": 84,
+			"ratio": 116,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 124, "shots": 338, "accuracy": 36},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 69,
+			"deaths": 99,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 83, "shots": 185, "accuracy": 44}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 66,
+			"deaths": 98,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 88, "shots": 221, "accuracy": 39}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 64,
+			"deaths": 94,
+			"ratio": 68,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 301, "accuracy": 23}
+			]
+		}
+	]
+}

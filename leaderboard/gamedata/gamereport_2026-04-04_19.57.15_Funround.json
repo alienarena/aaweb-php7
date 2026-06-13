@@ -1,0 +1,50 @@
+{
+	"map": "ctf-rockwar",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 89,
+			"deaths": 55,
+			"ratio": 161,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 229, "shots": 590, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 62,
+			"deaths": 61,
+			"ratio": 101,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 192, "shots": 503, "accuracy": 38}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 48,
+			"deaths": 73,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 156, "shots": 449, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 45,
+			"deaths": 79,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 493, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 27,
+			"deaths": 73,
+			"ratio": 36,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 325, "accuracy": 25}
+			]
+		}
+	]
+}

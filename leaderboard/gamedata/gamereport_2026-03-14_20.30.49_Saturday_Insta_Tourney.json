@@ -1,0 +1,61 @@
+{
+	"map": "ctf-bloodline",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 140,
+			"deaths": 82,
+			"ratio": 170,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 140, "shots": 336, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 121,
+			"deaths": 79,
+			"ratio": 153,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 121, "shots": 350, "accuracy": 34}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 116,
+			"deaths": 80,
+			"ratio": 145,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 116, "shots": 311, "accuracy": 37},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 104,
+			"deaths": 97,
+			"ratio": 107,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 103, "shots": 262, "accuracy": 39},
+				{"weapon": "violator", "hits": 1, "shots": 38, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 65,
+			"deaths": 94,
+			"ratio": 69,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 253, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 64,
+			"deaths": 108,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 170, "accuracy": 38}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"map": "ctf-dualscourge",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 150,
+			"deaths": 74,
+			"ratio": 202,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 154, "shots": 433, "accuracy": 35},
+				{"weapon": "violator", "hits": 4, "shots": 101, "accuracy": 3}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 130,
+			"deaths": 85,
+			"ratio": 152,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 140, "shots": 433, "accuracy": 32}
+			]
+		},
+		{
+			"name": "Tuna",
+			"score": 125,
+			"deaths": 87,
+			"ratio": 143,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 126, "shots": 315, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 95,
+			"deaths": 101,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 98, "shots": 400, "accuracy": 24}
+			]
+		},
+		{
+			"name": "raisin",
+			"score": 82,
+			"deaths": 89,
+			"ratio": 92,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 78, "shots": 258, "accuracy": 30},
+				{"weapon": "violator", "hits": 5, "shots": 113, "accuracy": 4}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 63,
+			"deaths": 87,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 65, "shots": 377, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 4, "accuracy": 0}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 59,
+			"deaths": 103,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 62, "shots": 355, "accuracy": 17}
+			]
+		},
+		{
+			"name": "Lance",
+			"score": 56,
+			"deaths": 108,
+			"ratio": 51,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 59, "shots": 419, "accuracy": 14}
+			]
+		}
+	]
+}

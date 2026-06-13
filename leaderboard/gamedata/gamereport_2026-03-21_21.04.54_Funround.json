@@ -1,0 +1,32 @@
+{
+	"map": "ctf-facingworlds",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 50,
+			"deaths": 30,
+			"ratio": 166,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 142, "shots": 450, "accuracy": 31}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 21,
+			"deaths": 47,
+			"ratio": 44,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 118, "shots": 398, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 12,
+			"deaths": 62,
+			"ratio": 19,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 83, "shots": 396, "accuracy": 20}
+			]
+		}
+	]
+}

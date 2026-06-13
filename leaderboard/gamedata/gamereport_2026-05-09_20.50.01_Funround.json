@@ -1,0 +1,50 @@
+{
+	"map": "ctf-fortofpillars",
+	"players": [
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 49,
+			"deaths": 68,
+			"ratio": 72,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 134, "shots": 557, "accuracy": 24}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 43,
+			"deaths": 68,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 135, "shots": 549, "accuracy": 24}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 42,
+			"deaths": 66,
+			"ratio": 63,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 128, "shots": 543, "accuracy": 23}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 36,
+			"deaths": 69,
+			"ratio": 52,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 90, "shots": 502, "accuracy": 17}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 32,
+			"deaths": 16,
+			"ratio": 200,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 72, "shots": 183, "accuracy": 39}
+			]
+		}
+	]
+}

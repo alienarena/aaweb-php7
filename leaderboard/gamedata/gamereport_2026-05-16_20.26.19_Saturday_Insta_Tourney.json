@@ -1,0 +1,43 @@
+{
+	"map": "dm-atlantis-retro",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 143,
+			"deaths": 83,
+			"ratio": 172,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 154, "shots": 392, "accuracy": 39},
+				{"weapon": "violator", "hits": 1, "shots": 43, "accuracy": 2}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 124,
+			"deaths": 87,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 138, "shots": 394, "accuracy": 35},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 85,
+			"deaths": 110,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 93, "shots": 336, "accuracy": 27}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 48,
+			"deaths": 120,
+			"ratio": 40,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 53, "shots": 305, "accuracy": 17}
+			]
+		}
+	]
+}

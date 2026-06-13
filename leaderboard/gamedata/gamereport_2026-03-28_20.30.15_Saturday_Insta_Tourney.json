@@ -1,0 +1,60 @@
+{
+	"map": "ctf-bonechewer",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 141,
+			"deaths": 93,
+			"ratio": 151,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 142, "shots": 378, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 130,
+			"deaths": 90,
+			"ratio": 144,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 127, "shots": 348, "accuracy": 36},
+				{"weapon": "violator", "hits": 4, "shots": 38, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 122,
+			"deaths": 85,
+			"ratio": 143,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 123, "shots": 366, "accuracy": 33}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 96,
+			"deaths": 94,
+			"ratio": 102,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 96, "shots": 303, "accuracy": 31}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 55,
+			"deaths": 108,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 56, "shots": 263, "accuracy": 21}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 14,
+			"deaths": 68,
+			"ratio": 20,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 14, "shots": 160, "accuracy": 8}
+			]
+		}
+	]
+}

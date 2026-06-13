@@ -1,0 +1,62 @@
+{
+	"map": "dm-deimos",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 157,
+			"deaths": 84,
+			"ratio": 186,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 149, "shots": 367, "accuracy": 40},
+				{"weapon": "violator", "hits": 17, "shots": 178, "accuracy": 9}
+			]
+		},
+		{
+			"name": "^3Sly",
+			"score": 128,
+			"deaths": 82,
+			"ratio": 156,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 143, "shots": 379, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 91,
+			"deaths": 104,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 100, "shots": 383, "accuracy": 26}
+			]
+		},
+		{
+			"name": "Tuna",
+			"score": 85,
+			"deaths": 99,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 243, "accuracy": 35},
+				{"weapon": "violator", "hits": 1, "shots": 33, "accuracy": 3}
+			]
+		},
+		{
+			"name": "raisin",
+			"score": 72,
+			"deaths": 101,
+			"ratio": 71,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 66, "shots": 240, "accuracy": 27},
+				{"weapon": "violator", "hits": 6, "shots": 101, "accuracy": 5}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 64,
+			"deaths": 100,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 67, "shots": 265, "accuracy": 25}
+			]
+		}
+	]
+}

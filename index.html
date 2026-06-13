@@ -17,7 +17,7 @@
     :root {
         --yearlyrequiredamount: 480;
         --monthlyrequiredamount: 40;
-        --donatedamount: 385.27;
+        --donatedamount: 297.08;
         --monthlydonation: 18.00;
         --donatedpercentage: calc(var(--donatedamount) / var(--yearlyrequiredamount) * 100%);
         --donatedmonthlypercentage: calc(var(--monthlydonation) / var(--monthlyrequiredamount) * 100%);
@@ -501,7 +501,7 @@
             <table class="subsection">
                 <tr>
                     <td class="leftsection">
-                        <table style="border-spacing: 0px; height: 100%;">
+                        <table style="border-spacing: 0px; height: 100%; display: flex;">
                             <tr>
                                 <td>
                                     <h1>News</h1>
@@ -509,8 +509,38 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <h3><div style="font-weight: bold; color: springgreen;">Upcoming event</div>John Diamond Memorial Tourney on 20th of June, 2026</h3>
-                                    <p>The John Diamond Memorial Tourney will be held on June 20, 2026, in memory of the founding father of Alien Arena. Everone is welcome to join, we hope to have a big event with multiple rounds.</p>
+                                    <h3>Alien Arena 7.72.1 available for Windows users</h3>
+                                    <p>Windows users using SVN, GitHub, <a href="https://alien-arena.itch.io/alien-arena" target="_blank">itch.io</a> or the Alien Arena Installer can now upgrade to 7.72.1. See release notes below.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Alien Arena 7.72.1 available on Flathub</h3>
+                                    <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank"><img src="Flathub.png" width="100%" style="max-width: 650px"></a>
+                                    <p>
+                                        Changes in 7.72:
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Project 100: optimized the game to support at least 100 FPS framerate, 100 FPS server tickrate, 100 PPS packet rate, and mouse polling rate that aligns with the framerate, this greatly improves the smoothness and responsiveness of the game</li>
+                                            <li>Extended single player mode with more game modes: CTF and <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1185375745" target="_blank">Tactical</a>, and weapon modes: Insta and Insta/Rockets</li>
+                                            <li>Added fairer antilag calculation based on one-way ping with server-side configuration options and diminishing effect on very high pings</li>
+                                            <li>Optimized mouse movement logic (Linux-only, under cvar m_direct, recommended to set m_direct to 1)</li>
+                                            <li>Added centered message about who killed you</li>
+                                            <li>Drop old particles if the particle buffer is full</li>
+                                            <li>Check ragdoll buffer before creating new ragdolls</li>
+                                            <li>Fixed bug with crashing clients when lots of rockets were fired</li>
+                                            <li>Fixed bug with duplicate ragdolls</li>
+                                            <li>Fixed bug with ragdolls hanging in mid air</li>
+                                            <li>Fixed bug with disappearing flag in CTF mode when people quit the match or disconnected</li>
+                                            <li>Added command teamselect to the list of available commands</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Additional changes in 7.72.1 after some feedback and testing:
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Fixed stuttering issue on 60 FPS</li>
+                                            <li>Fixed bot firing rate on high tickrates</li>
+                                        </ul>
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -533,7 +563,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="vertical-align: bottom; height: 100%">
+                                <td>
                                     <h3>New release 7.71.7</h3>
                                     <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
                                         <li>Automatic and ultra-fast installation of map packs before loading a map (by default enabled)</li>
@@ -552,17 +582,18 @@
                                     <p>Alien Arena 7.71.7 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>.</p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td style="vertical-align: bottom; height: 100%">
-                                    <h3>Alien Arena Installer</h3>
-                                    <img src="AlienArenaInstaller.png" width="100%" style="max-width: 550px">
-                                    <p>For Windows, there is a new installer to install the latest release directly from the source: <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>. This installer keeps the game up-to-date and can be used for launching the game as well.</p>
-                                    <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
-                                </td>
-                            </tr>
                         </table>
                     </td>
                     <td class="rightsection" style="vertical-align: top; height: 100%">
+                        <div style="border: solid 1px white; padding-left: 10px; padding-right: 10px;">
+                            <h3 style="padding-top: 0px;"><div style="font-weight: bold; color: springgreen;">Upcoming event</div>John Diamond Memorial Tourney on 20th of June, 2026</h3>
+                            <p>The John Diamond Memorial Tourney will be held on June 20, 2026, in memory of the founding father of Alien Arena. Everone is welcome to join, we hope to have a big event with multiple rounds.</p>
+                            <p>Register <a href="https://form.jotform.com/261558212611047" target="_blank">here</a>.</p>
+                        </div>
+                        <h3>Alien Arena Installer</h3>
+                        <img src="AlienArenaInstaller.png" width="100%" style="max-width: 650px">
+                        <p>For Windows, there is a new installer to install the latest release directly from the source: <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>. This installer keeps the game up-to-date and can be used for launching the game as well.</p>
+                        <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
                         <h3>Flathub</h3>
                         <p>Alien Arena has been installed more than <b>25K</b> times from <a href="https://flathub.org/apps/org.alienarena.alienarena" target="_blank">Flathub</a>! The latest release on Flathub is 7.71.7.</p>
                         <h3>New release 7.71.6</h3>
@@ -1200,7 +1231,7 @@ sudo make install</textarea>
                         <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
                     </a>
                     &nbsp;
-                    <div class="sponsorprogress current">&nbsp;€385.27 of €480 for one year&nbsp;</div>
+                    <div class="sponsorprogress current">&nbsp;€297.08 of €480 for one year&nbsp;</div>
                     &nbsp;
                     <div class="sponsorprogress monthly">&nbsp;€18 of €40 recurring per month&nbsp;</div>
                 </td>
@@ -1208,5 +1239,6 @@ sudo make install</textarea>
         </table>
     </div>
     <script type="text/javascript" src="occupied-servers.js"></script>
+    <script src="https://keepandroidopen.org/banner.js?size=minimal&animation=off"></script>
 </body>
 </html>
