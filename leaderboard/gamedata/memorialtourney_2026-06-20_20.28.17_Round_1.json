@@ -1,0 +1,191 @@
+{
+	"map": "dm-deathray",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 277,
+			"deaths": 119,
+			"ratio": 232,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 264, "shots": 581, "accuracy": 45},
+				{"weapon": "violator", "hits": 9, "shots": 84, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 234,
+			"deaths": 107,
+			"ratio": 218,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 230, "shots": 552, "accuracy": 41}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 192,
+			"deaths": 120,
+			"ratio": 160,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 187, "shots": 511, "accuracy": 36},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 177,
+			"deaths": 119,
+			"ratio": 148,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 170, "shots": 514, "accuracy": 33},
+				{"weapon": "violator", "hits": 2, "shots": 95, "accuracy": 2}
+			]
+		},
+		{
+			"name": "^5[^1666^5]^4UR-Next",
+			"score": 166,
+			"deaths": 133,
+			"ratio": 124,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 161, "shots": 541, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 139,
+			"deaths": 132,
+			"ratio": 105,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 133, "shots": 492, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 122,
+			"deaths": 138,
+			"ratio": 88,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 118, "shots": 680, "accuracy": 17}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 121,
+			"deaths": 126,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 112, "shots": 419, "accuracy": 26}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 121,
+			"deaths": 127,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 117, "shots": 503, "accuracy": 23}
+			]
+		},
+		{
+			"name": "^3Goose_Ball",
+			"score": 117,
+			"deaths": 133,
+			"ratio": 87,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 113, "shots": 348, "accuracy": 32},
+				{"weapon": "violator", "hits": 0, "shots": 31, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^7(OS^3)Izaias",
+			"score": 114,
+			"deaths": 134,
+			"ratio": 85,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 112, "shots": 361, "accuracy": 31}
+			]
+		},
+		{
+			"name": "[BPC]ur",
+			"score": 98,
+			"deaths": 128,
+			"ratio": 76,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 95, "shots": 446, "accuracy": 21}
+			]
+		},
+		{
+			"name": "^1MaxToTheMax",
+			"score": 96,
+			"deaths": 147,
+			"ratio": 65,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 90, "shots": 455, "accuracy": 19}
+			]
+		},
+		{
+			"name": "Augustin",
+			"score": 84,
+			"deaths": 131,
+			"ratio": 64,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 71, "shots": 388, "accuracy": 18},
+				{"weapon": "violator", "hits": 11, "shots": 588, "accuracy": 1}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 72,
+			"deaths": 74,
+			"ratio": 97,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 68, "shots": 267, "accuracy": 25}
+			]
+		},
+		{
+			"name": "[BPC]MamaB",
+			"score": 68,
+			"deaths": 138,
+			"ratio": 49,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 58, "shots": 572, "accuracy": 10}
+			]
+		},
+		{
+			"name": "^!^)^ Black^5ICE",
+			"score": 60,
+			"deaths": 143,
+			"ratio": 41,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 57, "shots": 326, "accuracy": 17},
+				{"weapon": "violator", "hits": 0, "shots": 12, "accuracy": 0}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 55,
+			"deaths": 48,
+			"ratio": 114,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 55, "shots": 177, "accuracy": 31}
+			]
+		},
+		{
+			"name": "theoldguy",
+			"score": 53,
+			"deaths": 96,
+			"ratio": 55,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 49, "shots": 235, "accuracy": 20}
+			]
+		},
+		{
+			"name": "Lucille",
+			"score": 46,
+			"deaths": 119,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 41, "shots": 267, "accuracy": 15}
+			]
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	"map": "dm-extermination",
+	"players": [
+		{
+			"name": "^1(666)^@Blitz",
+			"score": 107,
+			"deaths": 75,
+			"ratio": 142,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 227, "shots": 399, "accuracy": 56}
+			]
+		},
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 98,
+			"deaths": 64,
+			"ratio": 153,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 222, "shots": 485, "accuracy": 45}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 75,
+			"deaths": 66,
+			"ratio": 113,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 181, "shots": 553, "accuracy": 32}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 67,
+			"deaths": 65,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 178, "shots": 439, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^1MaxToTheMax",
+			"score": 61,
+			"deaths": 81,
+			"ratio": 75,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 141, "shots": 389, "accuracy": 36}
+			]
+		},
+		{
+			"name": "^1martian",
+			"score": 56,
+			"deaths": 59,
+			"ratio": 94,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 411, "accuracy": 33}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 56,
+			"deaths": 70,
+			"ratio": 80,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 127, "shots": 452, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 55,
+			"deaths": 69,
+			"ratio": 79,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 155, "shots": 432, "accuracy": 35}
+			]
+		},
+		{
+			"name": "[fo]trickybilly",
+			"score": 55,
+			"deaths": 78,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 144, "shots": 352, "accuracy": 40}
+			]
+		},
+		{
+			"name": "^5[^1666^5]^4UR-Next",
+			"score": 50,
+			"deaths": 67,
+			"ratio": 74,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 113, "shots": 390, "accuracy": 28}
+			]
+		},
+		{
+			"name": "theoldguy",
+			"score": 48,
+			"deaths": 68,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 133, "shots": 358, "accuracy": 37}
+			]
+		},
+		{
+			"name": "^7(OS^3)Izaias",
+			"score": 45,
+			"deaths": 76,
+			"ratio": 59,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 137, "shots": 448, "accuracy": 30}
+			]
+		},
+		{
+			"name": "[T3]Xzantronos",
+			"score": 45,
+			"deaths": 77,
+			"ratio": 58,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 132, "shots": 547, "accuracy": 24}
+			]
+		},
+		{
+			"name": "[T3]Cthulhu",
+			"score": 40,
+			"deaths": 70,
+			"ratio": 57,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 109, "shots": 396, "accuracy": 27}
+			]
+		},
+		{
+			"name": "[BPC]MamaB",
+			"score": 36,
+			"deaths": 72,
+			"ratio": 50,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 105, "shots": 545, "accuracy": 19}
+			]
+		},
+		{
+			"name": "^3Goose_Ball",
+			"score": 33,
+			"deaths": 58,
+			"ratio": 56,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 296, "accuracy": 29}
+			]
+		}
+	]
+}
