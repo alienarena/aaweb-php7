@@ -1,0 +1,44 @@
+{
+	"map": "dm-badabum",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 155,
+			"deaths": 85,
+			"ratio": 182,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 152, "shots": 435, "accuracy": 34},
+				{"weapon": "violator", "hits": 8, "shots": 139, "accuracy": 5}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 118,
+			"deaths": 82,
+			"ratio": 143,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 130, "shots": 402, "accuracy": 32},
+				{"weapon": "violator", "hits": 0, "shots": 1, "accuracy": 0}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 66,
+			"deaths": 107,
+			"ratio": 61,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 291, "accuracy": 24},
+				{"weapon": "violator", "hits": 0, "shots": 47, "accuracy": 0}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 60,
+			"deaths": 99,
+			"ratio": 60,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 66, "shots": 274, "accuracy": 24}
+			]
+		}
+	]
+}

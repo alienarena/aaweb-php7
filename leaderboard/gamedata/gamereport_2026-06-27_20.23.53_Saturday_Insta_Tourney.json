@@ -1,0 +1,53 @@
+{
+	"map": "ctf-rampage",
+	"players": [
+		{
+			"name": "Sly",
+			"score": 168,
+			"deaths": 84,
+			"ratio": 200,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 194, "shots": 546, "accuracy": 35},
+				{"weapon": "violator", "hits": 0, "shots": 2, "accuracy": 0}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 105,
+			"deaths": 121,
+			"ratio": 86,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 119, "shots": 413, "accuracy": 28}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 104,
+			"deaths": 108,
+			"ratio": 96,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 119, "shots": 444, "accuracy": 26}
+			]
+		},
+		{
+			"name": "^ Black^5ICE",
+			"score": 81,
+			"deaths": 115,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 87, "shots": 343, "accuracy": 25},
+				{"weapon": "violator", "hits": 1, "shots": 70, "accuracy": 1}
+			]
+		},
+		{
+			"name": "elfor",
+			"score": 65,
+			"deaths": 92,
+			"ratio": 70,
+			"weapon_skill": [
+				{"weapon": "disruptor", "hits": 70, "shots": 436, "accuracy": 16},
+				{"weapon": "violator", "hits": 5, "shots": 364, "accuracy": 1}
+			]
+		}
+	]
+}

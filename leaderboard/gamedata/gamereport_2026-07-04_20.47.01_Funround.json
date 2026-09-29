@@ -1,0 +1,41 @@
+{
+	"map": "ctf-spacejam-classic",
+	"players": [
+		{
+			"name": "^7[OS]^2METROID",
+			"score": 32,
+			"deaths": 31,
+			"ratio": 103,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 115, "shots": 520, "accuracy": 22}
+			]
+		},
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 22,
+			"deaths": 47,
+			"ratio": 46,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 86, "shots": 563, "accuracy": 15}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 16,
+			"deaths": 51,
+			"ratio": 31,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 80, "shots": 460, "accuracy": 17}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 5,
+			"deaths": 13,
+			"ratio": 38,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 28, "shots": 116, "accuracy": 24}
+			]
+		}
+	]
+}

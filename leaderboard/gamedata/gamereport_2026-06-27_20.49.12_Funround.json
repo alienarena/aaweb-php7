@@ -1,0 +1,50 @@
+{
+	"map": "ctf-rockwar",
+	"players": [
+		{
+			"name": "^3[GM]^1Jar'^5El",
+			"score": 65,
+			"deaths": 68,
+			"ratio": 95,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 176, "shots": 615, "accuracy": 28}
+			]
+		},
+		{
+			"name": "Sly",
+			"score": 57,
+			"deaths": 68,
+			"ratio": 83,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 182, "shots": 436, "accuracy": 41}
+			]
+		},
+		{
+			"name": "^ Black^5ICE",
+			"score": 56,
+			"deaths": 68,
+			"ratio": 82,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 138, "shots": 460, "accuracy": 30}
+			]
+		},
+		{
+			"name": "dbok",
+			"score": 51,
+			"deaths": 66,
+			"ratio": 77,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 156, "shots": 527, "accuracy": 29}
+			]
+		},
+		{
+			"name": "^7animal",
+			"score": 42,
+			"deaths": 62,
+			"ratio": 67,
+			"weapon_skill": [
+				{"weapon": "rocketlauncher", "hits": 112, "shots": 399, "accuracy": 28}
+			]
+		}
+	]
+}
