@@ -454,12 +454,16 @@
         margin-bottom: 1em;
     }
 
-    /* the embedded leaderboard page has a fixed 750x750 design; position:absolute takes the iframe out of flow so its fixed size can't force the surrounding column to a fixed width, letting it scale (up or down) to fill the column instead */
+    /* the embedded leaderboard page has a fixed 1333x750 (w x h) design; position:absolute takes the iframe out of flow so its fixed size can't force the surrounding column to a fixed width, letting it scale (up or down) to fill the column instead */
+    /* max-width caps it at native resolution so it never upscales past its real size (that also prevents it from ballooning when the column width reacts to browser zoom) */
+    /* --embed-crop-width is how much of the design's 1333px width to fit to the column; scaleEmbeds() reads it, and overflow:hidden crops the rest - lower values zoom in further */
     .scaled-embed {
         position: relative;
         width: 100%;
-        aspect-ratio: 1 / 1;
+        max-width: 1333px;
+        aspect-ratio: 1333 / 750;
         overflow: hidden;
+        --embed-crop-width: 1333;
     }
 
     .scaled-embed iframe {
@@ -468,6 +472,15 @@
         left: 0;
         border: none;
         transform-origin: top left;
+    }
+
+    /* zoom into just the left square portion of the design on narrow phones, since fitting the full 1333px width makes the text too small to read */
+    @media (max-width: 1080px) {
+        .scaled-embed {
+            max-width: none;
+            aspect-ratio: 1 / 1;
+            --embed-crop-width: 750;
+        }
     }
     </style>
 </head>
@@ -692,7 +705,7 @@
                     </p>
                     <p>
                         <div class="scaled-embed">
-                            <iframe src="/arena/leaderboard/index.php?date=last" width="750" height="750" scrolling="no"></iframe>
+                            <iframe src="/arena/leaderboard/index.php?date=last" width="1333" height="750" scrolling="no"></iframe>
                         </div>
                     </p>
                     <p>
@@ -1157,8 +1170,12 @@ sudo make install</textarea>
             document.querySelectorAll('.scaled-embed').forEach(function (wrapper) {
                 var iframe = wrapper.querySelector('iframe');
                 if (!iframe) return;
-                var scale = wrapper.clientWidth / iframe.width;
-                iframe.style.transform = 'scale(' + scale + ')';
+                // --embed-crop-width lets the mobile breakpoint zoom into just part of the design instead of fitting the full width
+                var cropWidth = parseFloat(getComputedStyle(wrapper).getPropertyValue('--embed-crop-width')) || iframe.width;
+                var scale = wrapper.clientWidth / cropWidth;
+                // center the crop window horizontally instead of always showing the left edge of the design
+                var offsetX = -(iframe.width - cropWidth) / 2;
+                iframe.style.transform = 'scale(' + scale + ') translateX(' + offsetX + 'px)';
             });
         }
         window.addEventListener('resize', scaleEmbeds);
