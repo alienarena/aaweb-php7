@@ -267,6 +267,8 @@
     .topright {
         background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
         grid-area: topright;
+        /* extra room so the last row's hover-zoom (invisible to scrollHeight) doesn't get clipped at the bottom edge */
+        padding-bottom: 40px;
     }
 
     .footer {
@@ -294,6 +296,8 @@
     .right {
         background: linear-gradient(var(--rightcolor-intermediate), var(--rightcolor-bottom));
         grid-area: right;
+        /* extra room so the last row's hover-zoom (invisible to scrollHeight) doesn't get clipped at the bottom edge */
+        padding-bottom: 60px;
     }
 
     div.map, div.model {
