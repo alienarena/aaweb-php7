@@ -162,33 +162,68 @@
         justify-content: center;
         grid-template-areas:
             'header header header'
-            'left left topright'
-            'left left right'
+            'left left rightcol'
             'footer footer footer';
     }
 
     .left,
-    .topright,
+    .rightcol {
+        min-width: 500px;
+    }
+
+    .left {
+        padding-top: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 5px;
+        height: calc(96vh - var(--headerheight) - var(--footerheight) - (var(--bodypadding) * 2));
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    /* the right column is a flex column (instead of independently calc'd heights per section) so its total height
+       always matches .left's exactly: the carousel keeps its natural height and stays fully visible (never
+       scrolled), while the classic-models and map-packs sections below it are grouped into one scrollable area
+       (.lower-right) that absorbs whatever vertical space remains -- so a short window scrolls just that group
+       instead of either squeezing map packs into a sliver or scrolling the carousel out of view */
+    .rightcol {
+        height: calc(96vh - var(--headerheight) - var(--footerheight) - (var(--bodypadding) * 2));
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        overflow: hidden;
+        grid-area: rightcol;
+    }
+
+    .carousel-panel {
+        flex: 0 0 auto;
+        padding-top: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 5px;
+    }
+
+    .lower-right {
+        flex: 1 1 auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .models-section,
     .right {
         padding-top: 10px;
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 5px;
-        min-width: 500px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        flex: 0 0 auto;
     }
 
-    .left {
-        height: calc(96vh - var(--headerheight) - var(--footerheight) - (var(--bodypadding) * 2));
-    }
-
-    .topright {
+    .models-section {
         height: var(--modelsectionheight);
-    }    
-
-    .right {
-        height: calc(95vh - var(--headerheight) - var(--modelsectionheight) - var(--footerheight) - (var(--bodypadding) * 2));
     }
 
 
@@ -241,7 +276,7 @@
 
     .left h1,
     .right h1,
-    .topright h1 {
+    .models-section h1 {
         margin-top: 3px;
         margin-bottom: 6px;
     }
@@ -256,7 +291,7 @@
         justify-content: center;
     }
 
-    .topright .maps {
+    .models-section .maps {
         grid-template-columns: repeat(4, minmax(0, 110px));
     }
 
@@ -264,11 +299,14 @@
         grid-template-columns: repeat(3, minmax(0, 180px));
     }
 
-    .topright {
+    .carousel-panel {
         background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
-        grid-area: topright;
-        /* extra room so the last row's hover-zoom (invisible to scrollHeight) doesn't get clipped at the bottom edge */
-        padding-bottom: 40px;
+    }
+
+    .models-section {
+        background-color: var(--rightcolor-intermediate);
+        /* just enough room for the last row's 1.3x hover-zoom (~23px overflow for a 110px-wide, 1:1.37 thumbnail) to clear the bottom edge, without leaving a large empty gap the rest of the time */
+        padding-bottom: 26px;
     }
 
     .footer {
@@ -295,7 +333,6 @@
 
     .right {
         background: linear-gradient(var(--rightcolor-intermediate), var(--rightcolor-bottom));
-        grid-area: right;
         /* extra room so the last row's hover-zoom (invisible to scrollHeight) doesn't get clipped at the bottom edge */
         padding-bottom: 60px;
     }
@@ -330,6 +367,86 @@
 
     div.model img {
         aspect-ratio: 1 / 1.37;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+        overflow: hidden;
+        border: solid darkgrey 2px;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+
+    .carousel-slide {
+        flex: 0 0 100%;
+        min-width: 0;
+    }
+
+    .carousel-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1.78 / 1;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        margin-top: 8px;
+        color: white;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border: none;
+        background: rgba(0, 0, 0, 0.35);
+        color: white;
+        font-size: 1.4em;
+        line-height: 1;
+        width: 36px;
+        cursor: pointer;
+    }
+
+    .carousel-btn:hover {
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .carousel-btn.prev {
+        left: 0;
+    }
+
+    .carousel-btn.next {
+        right: 0;
+    }
+
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-dot {
+        width: 9px;
+        height: 9px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+    }
+
+    .carousel-dot.active {
+        background: white;
     }
 
     /* scale-on-hover replaces the old fixed-pixel absolute positioning trick so it keeps working at any grid cell size */
@@ -396,21 +513,40 @@
             grid-template-areas:
                 'header'
                 'left'
-                'topright'
-                'right'
+                'rightcol'
                 'footer';
         }
 
-        .left, .right, .topright {
+        .left, .rightcol {
             height: 100%;
             /* the 500px desktop min-width forces zoomed-out, inconsistent rendering on phones */
             min-width: unset;
+        }
+
+        .left {
             padding-left: 16px;
             padding-right: 16px;
         }
 
+        /* undo the desktop equal-height constraint only: keep display:flex (not block) so the existing `gap`
+           still creates visible spacing between the stacked sections on a single mobile column */
+        .rightcol,
+        .lower-right {
+            height: auto;
+            overflow: visible;
+        }
+
+        .carousel-panel, .models-section, .right {
+            height: auto;
+            flex: none;
+            min-width: unset;
+            padding-left: 16px;
+            padding-right: 16px;
+            overflow: visible;
+        }
+
         /* drop both grids to 2 columns on narrow phones */
-        .topright .maps,
+        .models-section .maps,
         .right .maps {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -836,7 +972,27 @@ sudo make install</textarea>
             </table>
         </div>
 
-        <div class="topright">
+        <div class="rightcol">
+        <div class="carousel-panel">
+            <div class="carousel" id="screenshot-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="dm-deathray.jpg" alt="Deathray"></div>
+                    <div class="carousel-slide"><img src="dm-neptune.jpg" alt="Neptune with sharks"></div>
+                    <div class="carousel-slide"><img src="dm-turbo.jpg" alt="Turbo with martian cyborgs"></div>
+                    <div class="carousel-slide"><img src="dm-wasteland.jpg" alt="Wasteland"></div>
+                    <div class="carousel-slide"><img src="frost-interior.jpg" alt="Frost interior"></div>
+                    <div class="carousel-slide"><img src="playermodels.jpg" alt="Martians and humans"></div>
+                    <div class="carousel-slide"><img src="two-martians.jpg" alt="Two martians"></div>
+                </div>
+                <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#10094;</button>
+                <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#10095;</button>
+            </div>
+            <div class="carousel-caption" id="screenshot-carousel-caption"></div>
+            <div class="carousel-dots" id="screenshot-carousel-dots"></div>
+        </div>
+
+        <div class="lower-right">
+        <div class="models-section">
             <h1>Classic models and skins</h1>
             <div>Easy installation with the console command <code>installmodel</code>.<br></div>
             <span style="cursor: pointer;" title="Download and extract the zip, then copy the contents of the arena folder in the zip into your arena folder. Make sure that the folder structure remains the same.&#13;&#13; Linux:&#13;   Steam: ~/.local/share/Steam/steamapps/common/AAWoM&#13;   Non-Steam: ~/.local/share/cor-games&#13;&#13; Windows:&#13   Steam: [Your steam folder]\steamapps\common\AAWoM&#13;   Non-Steam: The installation folder of Alien Arena"><u>Instructions</u> for installing manually.</span><br><br>
@@ -1153,6 +1309,8 @@ sudo make install</textarea>
                 </div>
             </div>
         </div>
+        </div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer-content">
@@ -1184,6 +1342,55 @@ sudo make install</textarea>
         }
         window.addEventListener('resize', scaleEmbeds);
         scaleEmbeds();
+
+        // simple dependency-free carousel: slides translate horizontally, with buttons, dot navigation and autoplay
+        function initCarousel(root) {
+            var track = root.querySelector('.carousel-track');
+            var slides = track ? Array.prototype.slice.call(track.children) : [];
+            var dotsContainer = document.getElementById(root.id + '-dots');
+            var captionEl = document.getElementById(root.id + '-caption');
+            if (!track || slides.length === 0) return;
+
+            var index = 0;
+            var autoplayTimer;
+            var dots = [];
+
+            slides.forEach(function (_, i) {
+                var dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+                dot.addEventListener('click', function () { goTo(i); });
+                dotsContainer.appendChild(dot);
+                dots.push(dot);
+            });
+
+            function render() {
+                track.style.transform = 'translateX(-' + (index * 100) + '%)';
+                dots.forEach(function (dot, i) { dot.classList.toggle('active', i === index); });
+                // the caption text lives on the slide's own img alt attribute, so there's a single source of truth
+                if (captionEl) captionEl.textContent = slides[index].querySelector('img').alt;
+            }
+
+            function goTo(i) {
+                index = (i + slides.length) % slides.length;
+                render();
+                restartAutoplay();
+            }
+
+            function restartAutoplay() {
+                clearInterval(autoplayTimer);
+                autoplayTimer = setInterval(function () { goTo(index + 1); }, 6000);
+            }
+
+            root.querySelector('.carousel-btn.prev').addEventListener('click', function () { goTo(index - 1); });
+            root.querySelector('.carousel-btn.next').addEventListener('click', function () { goTo(index + 1); });
+
+            render();
+            restartAutoplay();
+        }
+
+        document.querySelectorAll('.carousel').forEach(initCarousel);
     </script>
 </body>
 </html>
