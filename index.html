@@ -18,7 +18,7 @@
     :root {
         --yearlyrequiredamount: 480;
         --monthlyrequiredamount: 40;
-        --donatedamount: 214.83;
+        --donatedamount: 196.89;
         --monthlydonation: 18.00;
         --donatedpercentage: calc(var(--donatedamount) / var(--yearlyrequiredamount) * 100%);
         --donatedmonthlypercentage: calc(var(--monthlydonation) / var(--monthlyrequiredamount) * 100%);
@@ -510,30 +510,45 @@
             /* justify-content:center (set for the desktop layout) makes a grid container shrink-wrap its auto/fr columns instead of stretching to the viewport */
             justify-content: normal;
             grid-template-columns: minmax(0, 1fr);
+            /* carousel comes right after the header (not nested under rightcol/lower-right like on desktop) so mobile
+               visitors see the screenshots immediately, instead of having to scroll past the whole left column first */
             grid-template-areas:
                 'header'
+                'carousel'
                 'left'
-                'rightcol'
+                'models'
+                'right'
                 'footer';
         }
 
-        .left, .rightcol {
+        .left {
             height: 100%;
             /* the 500px desktop min-width forces zoomed-out, inconsistent rendering on phones */
             min-width: unset;
-        }
-
-        .left {
             padding-left: 16px;
             padding-right: 16px;
         }
 
-        /* undo the desktop equal-height constraint only: keep display:flex (not block) so the existing `gap`
-           still creates visible spacing between the stacked sections on a single mobile column */
+        /* unwrap these desktop-only grouping containers so their children (carousel-panel, models-section, right)
+           become direct grid items instead, free to be placed into the reordered mobile grid-template-areas above */
         .rightcol,
         .lower-right {
-            height: auto;
-            overflow: visible;
+            display: contents;
+        }
+
+        .carousel-panel {
+            grid-area: carousel;
+        }
+
+        .models-section {
+            grid-area: models;
+            /* on mobile, .left now sits between the carousel and this section (instead of them being stacked directly,
+               like on desktop), so match the carousel's own starting color here instead of starting mid-tone */
+            background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
+        }
+
+        .right {
+            grid-area: right;
         }
 
         .carousel-panel, .models-section, .right {
@@ -1320,7 +1335,7 @@ sudo make install</textarea>
             <a href="https://github.com/sponsors/alienarena" target="_blank" style="text-decoration:none;">
                 <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
             </a>
-            <div class="sponsorprogress current">&nbsp;€214.83 of €480 for one year&nbsp;</div>
+            <div class="sponsorprogress current">&nbsp;€196.89 of €480 for one year&nbsp;</div>
             <div class="sponsorprogress monthly">&nbsp;€18 of €40 recurring per month&nbsp;</div>
         </div>
     </div>
