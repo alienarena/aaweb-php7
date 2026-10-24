@@ -300,11 +300,13 @@
     }
 
     .carousel-panel {
-        background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
+        background: url("/arena/sharedimages/purgatory.jpg"), rgb(35, 43, 38);
+        background-blend-mode: soft-light;
+        background-size: contain;
     }
 
     .models-section {
-        background-color: var(--rightcolor-intermediate);
+        background: linear-gradient(var(--rightcolor-top), var(--rightcolor-intermediate));
         /* just enough room for the last row's 1.3x hover-zoom (~23px overflow for a 110px-wide, 1:1.37 thumbnail) to clear the bottom edge, without leaving a large empty gap the rest of the time */
         padding-bottom: 26px;
     }
