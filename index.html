@@ -16,9 +16,9 @@
     <link rel="canonical" href="https://www.alienarena.org/" />
     <style>
     :root {
-        --yearlyrequiredamount: 480;
-        --monthlyrequiredamount: 40;
-        --donatedamount: 196.89;
+        --yearlyrequiredamount: 600;
+        --monthlyrequiredamount: 50;
+        --donatedamount: 206.31;
         --monthlydonation: 18.00;
         --donatedpercentage: calc(var(--donatedamount) / var(--yearlyrequiredamount) * 100%);
         --donatedmonthlypercentage: calc(var(--monthlydonation) / var(--monthlyrequiredamount) * 100%);
@@ -432,14 +432,14 @@
     .carousel-dots {
         display: flex;
         justify-content: center;
-        gap: 7px;
+        gap: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .carousel-dot {
-        width: 9px;
-        height: 9px;
+        width: 12px;
+        height: 12px;
         padding: 0;
         border: none;
         border-radius: 50%;
@@ -670,6 +670,25 @@
                             <tr>
                                 <td>
                                     <h1>News</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Alien Arena 7.72.4 available in SVN and on GitHub</h3>                                    
+                                    <span style="font-size: smaller;">(for now only available to Linux users who compile from sources)</span>
+                                    <p>
+                                        <b>Release notes 7.72.4:</b>
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Added sub-tick accumulation, to fix movement issues with low framerate and to optimize strafing</li>
+                                            <li>More lag compensation for players with packet loss</li>
+                                            <li>More lag compensation for players with an unstable ping</li>
+                                            <li>Netcode: added sv_netdebug for showing detailed packet info per player</li>
+                                            <li>Netcode: Increased entity state buffer size, to prevent packets being overwritten before having been confirmed, leading to full packet floods</li>
+                                            <li>Netcode: Added resync throttling, to only send one full packet instead of 100+ on high ping</li>
+                                            <li>Enhanced dynamic culling, based on the combination of entity count and connection quality</li>
+                                            <li>Enabled map downloads via https</li>
+                                        </ul>
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -1339,8 +1358,8 @@ sudo make install</textarea>
             <a href="https://github.com/sponsors/alienarena" target="_blank" style="text-decoration:none;">
                 <div class="sponsorbutton github">&nbsp;❤️&nbsp;<span style="font-size: 1.1em">Sponsor on GitHub</span>&nbsp;</div>
             </a>
-            <div class="sponsorprogress current">&nbsp;€196.89 of €480 for one year&nbsp;</div>
-            <div class="sponsorprogress monthly">&nbsp;€18 of €40 recurring per month&nbsp;</div>
+            <div class="sponsorprogress current">&nbsp;€206.31 of €600 for one year&nbsp;</div>
+            <div class="sponsorprogress monthly">&nbsp;€18 of €50 recurring per month&nbsp;</div>
         </div>
     </div>
     <script type="text/javascript" src="occupied-servers.js"></script>
