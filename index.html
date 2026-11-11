@@ -677,16 +677,38 @@
                                     <h3>Alien Arena 7.72.4 available in SVN and on GitHub</h3>                                    
                                     <span style="font-size: smaller;">(for now only available to Linux users who compile from sources)</span>
                                     <p>
-                                        <b>Release notes 7.72.4:</b>
+                                        <b>Release notes 7.72.4</b>
+                                        
+                                        <p>Gameplay and performance optimizations</p>
                                         <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
                                             <li>Added sub-tick accumulation, to fix movement issues with low framerate and to optimize strafing</li>
                                             <li>More lag compensation for players with packet loss</li>
                                             <li>More lag compensation for players with an unstable ping</li>
-                                            <li>Netcode: added sv_netdebug for showing detailed packet info per player</li>
-                                            <li>Netcode: Increased entity state buffer size, to prevent packets being overwritten before having been confirmed, leading to full packet floods</li>
-                                            <li>Netcode: Added resync throttling, to only send one full packet instead of 100+ on high ping</li>
                                             <li>Enhanced dynamic culling, based on the combination of entity count and connection quality</li>
+                                            <li>Added bot reaction time and bot sight range to better control bot difficulty on high tickrates</li>
+                                            <li>Bots now visibly turn towards you before shooting</li>
+                                            <li>Fixed bug that bots shot at already dead targets</li>
+                                        </ul>
+
+                                        <p>Netcode optimizations</p>
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Added sv_netdebug for showing detailed packet info per player</li>
+                                            <li>Increased entity state buffer size, to prevent packets being overwritten before having been confirmed, leading to full packet floods</li>
+                                            <li>Added resync throttling, to only send one full packet instead of 100+ on high ping</li>
+                                        </ul>
+
+                                        <p>Graphical improvements and additions</p>
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Added chat overlay, showing the last x number of messages for the specific chat</li>
+                                            <li>Fixed flag and teleporter animation speed</li>
+                                            <li>Small graphical improvement to the HUD</li>
+                                        </ul>
+
+                                        <p>Other</p>
+                                        <ul style="list-style-type: square; padding-left: 15px; padding-bottom: 0px; margin-bottom: 4px;">
+                                            <li>Close console with Escape</li>
                                             <li>Enabled map downloads via https</li>
+                                            <li>Updated cvar and commands documentation</li>
                                         </ul>
                                     </p>
                                 </td>
@@ -773,19 +795,6 @@
                                     <p><a about="_blank" href="https://bits.debian.org/2025/08/trixie-released.html">Debian 13 - Trixie</a> just got released, which includes Alien Arena 7.71.7!</p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <h3>John Diamond</h3>
-                                    <p>The Alien Arena community is deeply saddened to share the news that the founding father of Alien Arena has passed away on June 15, 2025. We wish lots of strength to his loved ones that he left behind.</p>
-                                    <p><a href="https://everloved.com/life-of/john-diamond/" about="_blank">Obituary of John Diamond</a></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h3>Steam on Linux</h3>
-                                    <p>Alien Arena 7.71.7 for Linux has been finally released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>.</p>
-                                </td>
-                            </tr>
                         </table>
                     </td>
                     <td class="rightsection" style="vertical-align: top; height: 100%">
@@ -798,6 +807,11 @@
                         <img src="AlienArenaInstaller.png" width="100%" style="max-width: 650px">
                         <p>For Windows, there is a new installer to install the latest release directly from the source: <a href="/alienarenainstaller/setup.exe">Alien Arena Installer</a>. This installer keeps the game up-to-date and can be used for launching the game as well.</p>
                         <p>Also the installer needs to be installed. When installing it, you might get warnings from Windows Defender that Windows protected your pc. In that case, click on "More info" and choose "Run anyway".</p>
+                        <h3>John Diamond</h3>
+                        <p>The Alien Arena community is deeply saddened to share the news that the founding father of Alien Arena has passed away on June 15, 2025. We wish lots of strength to his loved ones that he left behind.</p>
+                        <p><a href="https://everloved.com/life-of/john-diamond/" about="_blank">Obituary of John Diamond</a></p>
+                        <h3>Steam on Linux</h3>
+                        <p>Alien Arena 7.71.7 for Linux has been finally released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>.</p>
                         <h3>Steam</h3>
                         <p>Alien Arena 7.71.7 for Windows has been released on <a href="https://store.steampowered.com/app/629540/Alien_Arena_Warriors_Of_Mars" target="_blank">Steam</a>.</p>
                         <h3>New release 7.71.7</h3>
